@@ -123,10 +123,13 @@
   .table-wrapper {
     @apply w-full overflow-x-auto my-4 rounded-(--radius-large) border border-black/5 dark:border-white/10;
     -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+    position: relative;
 
     table {
       @apply w-full border-collapse text-left text-xs md:text-sm;
+      min-width: 480px;
       margin: 0;
 
       th {
@@ -142,9 +145,10 @@
         }
 
         a:not(.no-styling) {
-          @apply inline-flex items-center justify-center px-2 py-0.5 text-xs font-medium rounded bg-(--primary) text-white no-underline border-none whitespace-nowrap transition-transform active:scale-95;
+          @apply inline-flex items-center justify-center px-3 py-1 text-xs font-semibold rounded-full bg-(--primary) text-white no-underline border-none whitespace-nowrap transition-all active:scale-95 shadow-xs;
           text-decoration: none !important;
           border-bottom: none !important;
+          touch-action: manipulation;
 
           &:hover {
             @apply opacity-90;
