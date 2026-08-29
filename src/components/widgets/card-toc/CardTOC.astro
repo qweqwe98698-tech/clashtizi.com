@@ -20,15 +20,16 @@ interface Props {
 	headings?: MarkdownHeading[];
 }
 
-const { class: className, style } = Astro.props;
+const { class: className, style, headings } = Astro.props;
 const useJapaneseBadge = siteConfig.toc.useJapaneseBadge;
 const tocDepth = siteConfig.toc.depth;
+const hasHeadings = Array.isArray(headings) && headings.length > 0;
 ---
 
 <WidgetLayout
 	name={i18n(I18nKey.tableOfContents)}
 	id="card-toc"
-	class={"group " + (className || "")}
+	class={"group " + (className || "") + (hasHeadings ? "" : " hidden")}
 	style={style}
 >
 	<div

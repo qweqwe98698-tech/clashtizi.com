@@ -80,6 +80,7 @@ const logoSrc = rawLogo?.match(/^(http|https|\/\/)/)
 		: "";
 
 const rawIcon = siteConfig.navbarTitle?.icon;
+const isIconifyIcon = rawIcon?.includes(":") && !rawIcon?.includes("/");
 const iconSrc = rawIcon?.match(/^(http|https|\/\/)/)
 	? rawIcon
 	: rawIcon
@@ -115,21 +116,27 @@ const iconWebpSrc = hasIconPngFallback
                         )
                     ) : (
                         <>
-                            {hasIconPngFallback ? (
-                                <picture>
-                                    <source srcset={iconWebpSrc} type="image/webp" />
-                                    <img src={iconSrc} alt="" class="h-[1.75rem] w-[1.75rem] mr-2 object-contain" loading="lazy" />
-                                </picture>
+                            {isIconifyIcon ? (
+                                <Icon name={rawIcon} class="text-[1.75rem] mr-2 text-[var(--primary)] shrink-0" />
+                            ) : rawIcon ? (
+                                hasIconPngFallback ? (
+                                    <picture>
+                                        <source srcset={iconWebpSrc} type="image/webp" />
+                                        <img src={iconSrc} alt="" class="h-[1.75rem] w-[1.75rem] mr-2 object-contain" loading="eager" />
+                                    </picture>
+                                ) : (
+                                    <img src={iconSrc} alt="" class="h-[1.75rem] w-[1.75rem] mr-2 object-contain" loading="eager" />
+                                )
                             ) : (
-                                <img src={iconSrc} alt="" class="h-[1.75rem] w-[1.75rem] mr-2 object-contain" loading="lazy" />
+                                <Icon name="material-symbols:rocket-launch-rounded" class="text-[1.75rem] mr-2 text-[var(--primary)] shrink-0" />
                             )}
-                            <span class="dark:text-white text-black">{siteConfig.navbarTitle.text}</span>
+                            <span class="dark:text-white text-black font-bold tracking-wide">{siteConfig.navbarTitle.text}</span>
                         </>
                     )
                 ) : (
                     <>
-                        <Icon name="material-symbols:home-pin-outline" class="text-[1.75rem] mr-2" />
-                        <span class="dark:text-white text-black">{siteConfig.title}</span>
+                        <Icon name="material-symbols:rocket-launch-rounded" class="text-[1.75rem] mr-2 text-[var(--primary)] shrink-0" />
+                        <span class="dark:text-white text-black font-bold tracking-wide">{siteConfig.title}</span>
                     </>
                 )}
             </div>

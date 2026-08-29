@@ -217,6 +217,26 @@ export class TOCManager {
 			return;
 		}
 
+		const headings = this.getAllHeadings();
+		const widgetContainer =
+			tocContent.closest("widget-layout") ||
+			tocContent.closest("#card-toc") ||
+			(tocContent.parentElement?.closest(".card-base") as HTMLElement | null);
+
+		if (headings.length === 0 || this.filterHeadings(headings).length === 0) {
+			if (widgetContainer instanceof HTMLElement) {
+				widgetContainer.style.display = "none";
+			}
+			tocContent.innerHTML = "";
+			this.tocItems = [];
+			return;
+		}
+
+		if (widgetContainer instanceof HTMLElement) {
+			widgetContainer.style.display = "";
+			widgetContainer.classList.remove("hidden");
+		}
+
 		tocContent.innerHTML = this.generateTOCHTML();
 		this.tocItems = Array.from(tocContent.querySelectorAll("a"));
 	}

@@ -1,39 +1,28 @@
 import type { ProfileConfig } from "../types/config";
 
-// 个人资料配置
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/avatar.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
-	name: "まつざか ゆき",
-	bio: "世界は大きい、君は行かなければならない",
+	avatar: "assets/images/avatar.webp",
+	name: "ClashTizi 极客评测",
+	bio: "专注 Clash Verge、Sing-box、小火箭客户端配置与优质 IPLC 专线机场深度评测",
 	typewriter: {
-		enable: true, // 启用个人简介打字机效果
-		speed: 80, // 打字速度（毫秒）
+		enable: true,
+		speed: 60,
 	},
 	links: [
 		{
-			name: "Bilibili",
-			icon: "fa7-brands:bilibili",
-			url: "https://space.bilibili.com/701864046",
+			name: "机场推荐",
+			icon: "material-symbols:rocket-launch",
+			url: "/recommend/airport/",
 		},
 		{
-			name: "Gitee",
-			icon: "mdi:git",
-			url: "https://gitee.com/matsuzakayuki",
+			name: "Clash 教程",
+			icon: "material-symbols:menu-book",
+			url: "/tutorials/clash-verge-setup/",
 		},
 		{
-			name: "GitHub",
-			icon: "fa7-brands:github",
-			url: "https://github.com/matsuzaka-yuki",
-		},
-		{
-			name: "Codeberg",
-			icon: "simple-icons:codeberg",
-			url: "https://codeberg.org",
-		},
-		{
-			name: "Discord",
-			icon: "fa7-brands:discord",
-			url: "https://discord.gg/MqW6TcQtVM",
+			name: "排障中心",
+			icon: "material-symbols:build-circle",
+			url: "/issues/clash-nodes-timeout/",
 		},
 	],
 };

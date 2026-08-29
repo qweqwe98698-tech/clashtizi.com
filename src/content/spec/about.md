@@ -1,49 +1,50 @@
+## 🌐 关于 Clash梯子网 (clashtizi.com)
 
-This website is built with the **Astro** framework using the [Mizuki](https://github.com/LyraVoid/Mizuki) theme.
+**Clash梯子网 (clashtizi.com)** 是一个专注于**网络代理客户端生态、前沿跨境传输协议、企业级高速专线机场客观评测与网络排障指南**的独立极客技术评测平台。
 
-::github{repo="LyraVoid/Mizuki"}
-
-## 🌟 Theme Features
-
-### 🎨 Design & User Experience
-- **Modern & Elegant Design** - Clean, minimalist interface with beautiful typography
-- **Fully Responsive** - Optimized for all devices from mobile to desktop
-- **Dark/Light Mode** - Automatic theme switching with smooth transitions
-- **Beautiful Typography** - Enhanced readability with JetBrains Mono font
-- **Smooth Animations** - Fluid page transitions and interactive elements
-
-### 🔍 Content & Search
-- **Advanced Search** - Powered by [Pagefind](https://pagefind.app/) for fast, accurate results
-- **Enhanced Markdown** - Extended syntax with code highlighting and math support
-- **Interactive Table of Contents** - Auto-scroll navigation for long articles
-- **RSS Feed Generation** - Stay updated with automatic feed generation
-- **Reading Time Estimation** - Know how long articles take to read
-- **Post Categorization** - Organize content with tags and categories
-
-
-
-### 📱 Special Pages
-- **Anime Tracking Page** - Track your anime watching progress with ratings
-- **Friends Links Page** - Showcase friend websites with beautiful cards
-- **Diary/Moments Page** - Share life moments like social media posts
-- **Archive Page** - Organized timeline view of all posts
-- **About Page** - Customizable personal introduction (this page!)
-
-### 🛠 Technical Features
-- **Enhanced Code Blocks** - Powered by [Expressive Code](https://expressive-code.com/)
-- **Math Support** - LaTeX rendering with KaTeX for mathematical expressions
-- **Image Optimization** - PhotoSwipe gallery with lazy loading
-- **SEO Optimized** - Built-in sitemap and meta tags for better search visibility
-- **Performance Optimized** - Fast loading with caching and optimization
-- **Comment System Ready** - Integration support for Twikoo comments
-
-### 🎯 Advanced Markdown Features
-- **Callouts & Admonitions** - Beautiful info boxes with `> [!NOTE]`, `> [!TIP]`, `> [!WARNING]`
-- **Mathematical Equations** - Write LaTeX math with `$inline$` and `$$block$$` syntax
-- **GitHub Cards** - Embed repository cards with `::github{repo="user/repo"}`
-- **Syntax Highlighting** - Advanced code highlighting with line numbers
-- **Copy Code Buttons** - Easy code copying functionality
+我们致力于为跨国电商卖家、海外学术科研人员、外贸办公团队及影音娱乐爱好者，提供透明、真实、高可用、可落地的科学上网解决方案。
 
 ---
 
-*Built with ❤️ using Astro and inspired by modern web design principles.*
+## 🎯 我们的核心使命与评测准则
+
+```text
+[真实晚高峰压测] ──► [严格准入门槛] ──► [前沿协议支持] ──► [全链路排障体系]
+```
+
+### 1. 坚持多运营商长周期实测
+- 拒绝单次虚高测速图，坚持在**晚高峰拥堵时段（20:00 - 23:30）**对接入服务商进行多轮带宽跑满、丢包率、延迟抖动与 4K/8K 视频缓冲测试。
+- 覆盖中国电信、中国联通、中国移动及广电等主流宽带网络环境。
+
+### 2. 严选稳定线路，杜绝跑路风险
+- 重点评测具备 **IEPL / IPLC 纯专线** 架构的服务商，杜绝因公网敏感时期封锁导致的断连失联。
+- 优先收录运营时间超 2 年以上、具备良好用户口碑与客服工单 SLA 保障的老牌大厂。
+
+### 3. 紧跟下一代开源客户端与协议演进
+- 全面覆盖 **Clash Verge Rev (Mihomo 内核)**、**Sing-box**、**Shadowrocket (小火箭)**、**Surge** 等跨平台主流工具。
+- 深入解析与实测 **Hysteria 2**、**TUIC v5**、**VLESS Reality** 等新一代基于 QUIC/UDP 的抗封锁与抗丢包传输技术。
+
+### 4. 体系化排障与海外 AI 访问保障
+- 针对用户日常最高频遇到的**节点超时全红**、**TUN 虚拟网卡断网**、**系统代理自动关闭**提供步骤化自愈方案。
+- 为 **OpenAI ChatGPT、Claude、Midjourney** 访问受限用户提供干净原生住宅 IP 识别与分流实操指南。
+
+---
+
+## 🧭 站点核心模块导航
+
+- ⚡ **[2026 高速稳定机场推荐与评测排行榜](/recommend/airport/)** —— 深度横评、真实测速数据与独家折扣
+- 📖 **[Clash Verge Rev 客户端配置全教程](/tutorials/clash-verge-setup/)** —— 跨平台现代客户端快速上手
+- 🛠️ **[Clash 节点超时/全红排障修复指南](/issues/clash-nodes-timeout/)** —— 5 步快速排查系统时间与网络冲突
+- 🤖 **[ChatGPT 1020 报错与访问限制终极解决](/issues/chatgpt-access-denied/)** —— 海外 AI 原生解锁方案
+
+---
+
+## ⚠️ 免责声明与使用须知
+
+1. 本站发布的所有客户端软件教程、网络传输协议分析及技术文档，仅供用于**跨境电商运营、海外学术文献检索、正规外贸沟通及海外流媒体合规体验**等合法合规场景。
+2. 严禁将本站介绍的技术与节点用于任何违反当地法律法规的活动。
+3. 节点测速数据受用户本地网络环境、运营商 QoS 策略及具体服务器负载影响，评测数据仅供决策参考。
+
+---
+
+💡 *如有评测投稿、线路数据校准或商务合作需求，欢迎关注本站后续更新。*

@@ -1,12 +1,12 @@
 import type { SiteConfig } from "../types/config";
 
 // 定义站点语言
-const SITE_LANG = "en"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
+const SITE_LANG = "zh_CN"; // 语言代码，简体中文
 
 export const siteConfig: SiteConfig = {
-	title: "Mizuki",
-	subtitle: "One demo website",
-	siteURL: "https://mizuki.mysqil.com/", // 请替换为你的站点URL，以斜杠结尾
+	title: "Clash梯子网",
+	subtitle: "2026 高速稳定机场推荐与科学上网配置指南",
+	siteURL: "https://clashtizi.com/", // 请替换为你的站点URL，以斜杠结尾
 	siteStartDate: "2025-01-01", // 站点开始运行日期，用于站点统计组件计算运行天数
 	timeZone: "Asia/Shanghai", // 文章日期使用的 IANA 时区，可改为 Asia/Tokyo、Europe/Berlin 等
 
@@ -35,11 +35,11 @@ export const siteConfig: SiteConfig = {
 		// 显示模式："text-icon" 显示图标+文本，"logo" 仅显示Logo
 		mode: "text-icon",
 		// 顶栏标题文本
-		text: "MizukiUI",
-		// 顶栏标题图标路径，默认使用 public/assets/home/home.webp
-		icon: "assets/home/home.webp",
+		text: "Clash梯子网",
+		// 顶栏标题图标：使用 Iconify 矢量图标，杜绝图片加载失败
+		icon: "material-symbols:rocket-launch-rounded",
 		// 网站Logo图片路径
-		logo: "assets/home/default-logo.webp",
+		logo: "assets/home/logo.svg",
 	},
 
 	// 旧版页面自动缩放配置。默认关闭，页面尺寸优先交由响应式布局处理。
@@ -162,15 +162,14 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true,
-			title: "わたしの部屋",
+			title: "Clash梯子网",
 			switchable: true,
 
 			subtitle: [
-				"特別なことはないけど、君がいると十分です",
-				"今でもあなたは私の光",
-				"君ってさ、知らないうちに私の毎日になってたよ",
-				"君と話すと、なんか毎日がちょっと楽しくなるんだ",
-				"今日はなんでもない日。でも、ちょっとだけいい日",
+				"2026 高速稳定翻墙机场推荐与客观评测",
+				"Clash Verge Rev / Sing-box / 小火箭全平台实操教程",
+				"企业级 IPLC 纯专线实测，晚高峰 4K 秒开不断连",
+				"ChatGPT / Claude 专用原生住宅 IP 解锁与疑难排障",
 			],
 			typewriter: {
 				enable: true, // 启用副标题打字机效果
