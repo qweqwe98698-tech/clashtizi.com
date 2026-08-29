@@ -18,25 +18,25 @@ permalink: "/recommend/airport/"
 
 ## 2026 优质稳定翻墙机场综合排行榜速查表 (17 家完整版)
 
-| 排名 | 机场品牌 | 核心线路与协议 | 入门套餐资费 | 独家优惠码 | 官方注册直达 |
+| 排名 | 机场品牌 | 线路协议 | 入门资费 | 独家优惠码 | 官网注册 |
 | :---: | :--- | :--- | :--- | :---: | :---: |
-| 🥇 | **光速云** | IEPL 专线 / VLESS | 年付折合 **7.5元/月** (59GB) | `AMM` (8折) | [直达官网](https://sahude.gsyvipaff.com/#/?code=keqgvT5Y) |
-| 🥈 | **飞猫云** | IEPL 专线 / 轻度套餐 | 年付折合 **7元/月** (50GB) | `flycat888` (8折) | [直达官网](https://guangs.flycataff.com/#/?code=6uq0Xe9y) |
-| 🥉 | **微风网络** | IEPL 专线 / 小流量 | 年付折合 **7元/月** (50GB) | `flat888` (9折) | [直达官网](https://edp01.breezenetaff.com/#/?code=R9ZazSfE) |
-| 4 | **星岛梦** | 企业内网专线 | 年付折合 **8元/月** (60GB) | `nmw888` (9折) | [直达官网](https://guangs.xingdaomeng.com/#/?code=1TynBYnR) |
-| 5 | **U1S1** | IEPL 专线 / VLESS | **20元/月** (120GB 月付) | `akaka` | [直达官网](https://guangs.vipaff.cc/#/?code=xhX5X22f) |
-| 6 | **极连云** | IEPL 专线 / 智能调度 | **18元/月** (100GB 月付) | `ji8888` | [直达官网](https://guangs.jlyvipaff.com/#/?code=VM1rKGUu) |
-| 7 | **宇宙云** | IEPL 专线 / VLESS | **14.9元/月** (100GB 月付) | `YUZHOU553` | [直达官网](https://guangs.yuzoucloud.cc/#/register?code=yrThwMP1) |
-| 8 | **唯兔云** | 三网优化 / VLESS | **14.9元/月** (100GB 月付) | `rabbit` (9折) | [直达官网](https://guangs.v2yunvipaff.com/#/?code=xIutqOBA) |
-| 9 | **灵猫网络** | 企业级内网专线 | **19元/月** (150GB 月付) | `lmao888` (9折) | [直达官网](https://vip01.civetnet.com/#/?code=8MIAyxak) |
-| 10 | **光年梯** | IEPL 专线 / VLESS | **18元/月** (110GB 月付) | `gnt6666` | [直达官网](https://guangs.gntaff.com/#/?code=X1FoxjGE) |
-| 11 | **一翻云** | 企业专线 / VLESS | **20元/月** (150GB 月付) | `yfy6666` | [直达官网](https://guangs.1flyunaff.cc/#/register?code=Yr7FhB7r) |
-| 12 | **二猫云** | IEPL 专线 / 高清优化 | **20元/月** (130GB 月付) | `ermao5555` | [直达官网](https://guangs.2maoyunaff.cc/#/?code=7mjvgGbW) |
-| 13 | **SOGO 云** | 高速专线 / 大流量 | **25元/月** (150GB 月付) | `sss777` | [直达官网](https://guangs.sogoyunaff.cc/#/?code=327Vs0w7) |
-| 14 | **可信云** | 企业内网专线 / 纯净IP | **25元/月** (150GB 月付) | `kkk333` | [直达官网](https://guangs.kosingaff.com/#/register?code=UYDtNlCY) |
-| 15 | **速界** | 极速专线 / 游戏加速 | **25元/月** (150GB 月付) | `sss1111` | [直达官网](https://guangs.speedworldaff.cc/#/register?code=xgXzEfZB) |
-| 16 | **快狸** | 跨境高速专线 | **25元/月** (150GB 月付) | `kkk2222` | [直达官网](https://guangs.kuailicloud.cc/#/register?code=AiqyM8oG) |
-| 17 | **全球云** | 全球多节点专线 | **20元/月** (120GB 月付) | `qqy7777` | [直达官网](https://guangs.gcvipaff.com/#/?code=Ov2nvU9C) |
+| 🥇 | **光速云** | IEPL 专线 / VLESS | **7.5元/月** (59G) | `AMM` (8折) | [官网注册 ↗](https://sahude.gsyvipaff.com/#/?code=keqgvT5Y) |
+| 🥈 | **飞猫云** | IEPL 专线 / 纯净 | **7元/月** (50G) | `flycat888` (8折) | [官网注册 ↗](https://guangs.flycataff.com/#/?code=6uq0Xe9y) |
+| 🥉 | **微风网络** | IEPL 专线 / 高清 | **7元/月** (50G) | `flat888` (9折) | [官网注册 ↗](https://edp01.breezenetaff.com/#/?code=R9ZazSfE) |
+| 4 | **星岛梦** | 企业内网专线 | **8元/月** (60G) | `nmw888` (9折) | [官网注册 ↗](https://guangs.xingdaomeng.com/#/?code=1TynBYnR) |
+| 5 | **U1S1** | IEPL 专线 / VLESS | **20元/月** (120G) | `akaka` | [官网注册 ↗](https://guangs.vipaff.cc/#/?code=xhX5X22f) |
+| 6 | **极连云** | IEPL 专线 / 智能调度 | **18元/月** (100G) | `ji8888` | [官网注册 ↗](https://guangs.jlyvipaff.com/#/?code=VM1rKGUu) |
+| 7 | **宇宙云** | IEPL 专线 / VLESS | **14.9元/月** (100G) | `YUZHOU553` | [官网注册 ↗](https://guangs.yuzoucloud.cc/#/register?code=yrThwMP1) |
+| 8 | **唯兔云** | 三网优化 / VLESS | **14.9元/月** (100G) | `rabbit` (9折) | [官网注册 ↗](https://guangs.v2yunvipaff.com/#/?code=xIutqOBA) |
+| 9 | **灵猫网络** | 企业级内网专线 | **19元/月** (150G) | `lmao888` (9折) | [官网注册 ↗](https://vip01.civetnet.com/#/?code=8MIAyxak) |
+| 10 | **光年梯** | IEPL 专线 / VLESS | **18元/月** (110G) | `gnt6666` | [官网注册 ↗](https://guangs.gntaff.com/#/?code=X1FoxjGE) |
+| 11 | **一翻云** | 企业专线 / VLESS | **20元/月** (150G) | `yfy6666` | [官网注册 ↗](https://guangs.1flyunaff.cc/#/register?code=Yr7FhB7r) |
+| 12 | **二猫云** | IEPL 专线 / 高清优化 | **20元/月** (130G) | `ermao5555` | [官网注册 ↗](https://guangs.2maoyunaff.cc/#/?code=7mjvgGbW) |
+| 13 | **SOGO 云** | 高速专线 / 大流量 | **25元/月** (150G) | `sss777` | [官网注册 ↗](https://guangs.sogoyunaff.cc/#/?code=327Vs0w7) |
+| 14 | **可信云** | 企业专线 / 纯净IP | **25元/月** (150G) | `kkk333` | [官网注册 ↗](https://guangs.kosingaff.com/#/register?code=UYDtNlCY) |
+| 15 | **速界** | 极速专线 / 游戏加速 | **25元/月** (150G) | `sss1111` | [官网注册 ↗](https://guangs.speedworldaff.cc/#/register?code=xgXzEfZB) |
+| 16 | **快狸** | 跨境高速专线 | **25元/月** (150G) | `kkk2222` | [官网注册 ↗](https://guangs.kuailicloud.cc/#/register?code=AiqyM8oG) |
+| 17 | **全球云** | 全球多节点专线 | **20元/月** (120G) | `qqy7777` | [官网注册 ↗](https://guangs.gcvipaff.com/#/?code=Ov2nvU9C) |
 
 ---
 

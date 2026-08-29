@@ -121,8 +121,46 @@
 
   /* --- 表格样式 --- */
   .table-wrapper {
-    @apply w-full overflow-x-auto m-0 rounded-(--radius-large);
+    @apply w-full overflow-x-auto my-4 rounded-(--radius-large) border border-black/5 dark:border-white/10;
     -webkit-overflow-scrolling: touch;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+
+    table {
+      @apply w-full border-collapse text-left text-xs md:text-sm;
+      margin: 0;
+
+      th {
+        @apply font-bold py-2.5 px-2.5 bg-black/[0.03] dark:bg-white/[0.05] border-b border-black/10 dark:border-white/10 text-neutral-800 dark:text-neutral-200 whitespace-nowrap;
+      }
+
+      td {
+        @apply py-2 px-2.5 border-b border-black/[0.05] dark:border-white/[0.05] text-neutral-700 dark:text-neutral-300 align-middle;
+        line-height: 1.35;
+
+        code {
+          @apply text-xs font-mono font-semibold px-1 py-0.5 bg-blue-50 text-blue-600 dark:bg-blue-950/50 dark:text-blue-300 rounded whitespace-nowrap;
+        }
+
+        a:not(.no-styling) {
+          @apply inline-flex items-center justify-center px-2 py-0.5 text-xs font-medium rounded bg-(--primary) text-white no-underline border-none whitespace-nowrap transition-transform active:scale-95;
+          text-decoration: none !important;
+          border-bottom: none !important;
+
+          &:hover {
+            @apply opacity-90;
+            background: var(--primary);
+          }
+        }
+      }
+
+      tr:last-child td {
+        border-bottom: none;
+      }
+
+      tr:hover td {
+        @apply bg-black/[0.015] dark:bg-white/[0.02];
+      }
+    }
 
     /* --- 滚动条样式 --- */
     &::-webkit-scrollbar {
