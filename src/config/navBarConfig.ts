@@ -20,6 +20,11 @@ export const navBarConfig: NavBarConfig = {
 					icon: "material-symbols:terminal",
 				},
 				{
+					name: "v2rayN Windows 配置教程",
+					url: "/v2rayn/",
+					icon: "material-symbols:desktop-windows",
+				},
+				{
 					name: "Shadowrocket 小火箭教程",
 					url: "/shadowrocket/",
 					icon: "material-symbols:rocket-launch",
