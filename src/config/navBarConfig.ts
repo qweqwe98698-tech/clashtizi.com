@@ -22,7 +22,7 @@ export const navBarConfig: NavBarConfig = {
 				{
 					name: "Shadowrocket 小火箭教程",
 					url: "/shadowrocket/",
-					icon: "material-symbols:rocket",
+					icon: "material-symbols:rocket-launch",
 				},
 				{
 					name: "Sing-box 跨平台配置全指南",
