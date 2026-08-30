@@ -66,7 +66,7 @@ Windows 和 Mac 电脑上的掉线通常与底层系统状态变更密切相关�
 
 | 电脑端掉线场景 | 底层根本原因 | 对应极速修复方案 |
 | :--- | :--- | :--- |
-| **Windows 睡眠唤醒后断网** | 系统睡眠导致网卡供电挂起，唤醒后 TUN 虚拟接口未正确初始化 | 在 [Clash Verge Rev](/tutorials/clash-verge-setup/) 中重启内核，或暂时改用【系统代理】 |
+| **Windows 睡眠唤醒后断网** | 系统睡眠导致网卡供电挂起，唤醒后 TUN 虚拟接口未正确初始化 | 在 [Clash Verge Rev](/clash-verge-rev/) 中重启内核，或暂时改用【系统代理】 |
 | **Mac 笔记本合盖唤醒后失效** | macOS 睡眠期间切断了 NetworkExtension 守护进程 | 点击客户端状态栏图标，重新勾选一次“System Proxy” |
 | **客户端运行中突然所有节点断开** | 底层代理核心（Core）遇到内存溢出或被安全软件误杀崩溃 | 检查 Windows Defender 拦截记录，更新客户端至最新稳定版 |
 | **路由器定时重拨引发断线** | 家庭宽带光猫每 48 小时动态 IP 强制刷新 | 路由器重新获取公网 IP 后，客户端会在 5 秒内自动重连 |
@@ -206,5 +206,6 @@ Windows 和 Mac 电脑上的掉线通常与底层系统状态变更密切相关�
 - 🔴 **节点全红与超时排查**：[梯子节点全部超时怎么办？节点全红与 Timeout 完整排查（2026）](/tizi/nodes-timeout/)
 - 🌐 **连接成功但没网排查**：[梯子连接成功但没有网络怎么办？系统代理与规则排查（2026）](/tizi/connected-no-internet/)
 - 🚀 **速度慢与延迟高排查**：[梯子速度慢怎么办？延迟高、下载慢与视频卡顿排查（2026）](/tizi/slow-speed/)
-- 💻 **Windows/Mac 客户端配置**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/tutorials/clash-verge-setup/)
+- 💻 **Windows/Mac 客户端配置**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/clash-verge-rev/)
 - 📊 **2026 优质专线与机场排行榜**：[2026 翻墙机场与 IPLC 专线排行榜评测速查](/recommend/airport/)
+

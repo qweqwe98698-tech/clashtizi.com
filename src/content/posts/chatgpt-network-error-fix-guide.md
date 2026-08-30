@@ -1,4 +1,4 @@
----
+﻿---
 title: "ChatGPT Network Error 怎么办？消息发送失败、连接中断与网络错误完整排查（2026）"
 published: 2026-08-29
 updated: 2026-08-29
@@ -177,7 +177,7 @@ permalink: "/chatgpt/network-error/"
 ### 2. 检查 Windows / macOS 系统代理残留
 如果代理工具异常关闭，系统网络设置中仍保留着失效的代理端口（如 `127.0.0.1:7890`），会导致后续所有网络请求全部失败。
 - **Windows 修复**：进入【设置】──►【网络和 Internet】──►【代理】──► 关闭【使用代理服务器】；
-- **Clash 用户排查**：若使用 [Clash Verge Rev](/tutorials/clash-verge-setup/) 或 [Sing-box](/tutorials/sing-box-config/)，请确认客户端正常运行且节点未出现 [节点全红/超时](/issues/clash-nodes-timeout/)。
+- **Clash 用户排查**：若使用 [Clash Verge Rev](/clash-verge-rev/) 或 [Sing-box](/tutorials/sing-box-config/)，请确认客户端正常运行且节点未出现 [节点全红/超时](/issues/clash-nodes-timeout/)。
 
 ---
 
@@ -371,4 +371,5 @@ permalink: "/chatgpt/network-error/"
 - 🔑 **身份认证与登录问题专题**：[ChatGPT 无法登录 / Google与邮箱认证排查指南（2026）](/chatgpt/login-failed/)
 - 🛡️ **Cloudflare 防火墙拦截专题**：[ChatGPT Access Denied 1020 报错终极解决教程（2026）](/issues/chatgpt-access-denied/)
 - 📊 **高速稳定专线网络推荐**：[2026 翻墙机场与 IPLC 专线排行榜评测速查](/recommend/airport/)
-- 🛠️ **全平台现代客户端实操指南**：[Clash Verge Rev 跨平台下载与 TUN 模式配置手册](/tutorials/clash-verge-setup/)
+- 🛠️ **全平台现代客户端实操指南**：[Clash Verge Rev 跨平台下载与 TUN 模式配置手册](/clash-verge-rev/)
+

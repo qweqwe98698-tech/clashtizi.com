@@ -226,6 +226,7 @@ permalink: "/tizi/troubleshooting/"
 - 🚦 **分流规则与规则集**：[梯子分流规则是什么？域名规则、IP规则与Rule Provider说明（2026）](/tizi/routing-rules/)
 - 🌐 **IPv6 双栈网络指南**：[梯子IPv6是什么？IPv4、IPv6、双栈网络与代理兼容说明（2026）](/tizi/ipv6/)
 - ⚠️ **IP 与网络泄漏检查**：[梯子IP泄漏是什么？DNS泄漏、IPv6与WebRTC检查指南（2026）](/tizi/ip-leak/)
-- 💻 **Windows/Mac 客户端配置**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/tutorials/clash-verge-setup/)
+- 💻 **Windows/Mac 客户端配置**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/clash-verge-rev/)
 - 🚀 **sing-box 极速配置指南**：[sing-box 客户端从零上手与核心配置教程（2026）](/tutorials/sing-box-config/)
 - 📊 **2026 优质专线与机场排行榜**：[2026 翻墙机场与 IPLC 专线排行榜评测速查](/recommend/airport/)
+

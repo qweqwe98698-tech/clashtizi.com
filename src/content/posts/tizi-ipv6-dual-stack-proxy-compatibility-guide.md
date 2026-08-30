@@ -205,6 +205,7 @@ permalink: "/tizi/ipv6/"
 - 🧭 **三模式机制详解**：[梯子Rule、Global、Direct是什么？规则模式与全局代理区别（2026）](/tizi/rule-global-direct/)
 - 🚦 **分流规则与规则集**：[梯子分流规则是什么？域名规则、IP规则与Rule Provider说明（2026）](/tizi/routing-rules/)
 - 🔍 **软件不走代理排障**：[梯子为什么有些软件不走代理？浏览器、游戏与系统代理排查（2026）](/tizi/app-not-using-proxy/)
-- 💻 **Windows/Mac 客户端配置**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/tutorials/clash-verge-setup/)
+- 💻 **Windows/Mac 客户端配置**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/clash-verge-rev/)
 - 🚀 **sing-box 极速配置指南**：[sing-box 客户端从零上手与核心配置教程（2026）](/tutorials/sing-box-config/)
 - 📊 **2026 优质专线与机场排行榜**：[2026 翻墙机场与 IPLC 专线排行榜评测速查](/recommend/airport/)
+

@@ -11,7 +11,7 @@ permalink: "/tizi/how-to-use/"
 
 > **【💡 第一次使用梯子，新手只看这 6 步黄金流程】**
 > 1. **确认服务类型**：明确你拿到的是“商业一键 VPN 账号”还是“机场订阅链接”；
-> 2. **下载对应客户端**：Windows/Mac 推荐 [Clash Verge Rev](/tutorials/clash-verge-setup/)，安卓推荐 Clash Meta，iPhone 推荐 Shadowrocket（小火箭）；
+> 2. **下载对应客户端**：Windows/Mac 推荐 [Clash Verge Rev](/clash-verge-rev/)，安卓推荐 Clash Meta，iPhone 推荐 Shadowrocket（小火箭）；
 > 3. **获取专属订阅链接**：在机场用户后台复制你的 HTTPS 专属订阅 URL（🔒 严禁公开发送他人）；
 > 4. **导入客户端并刷新**：打开客户端配置/订阅管理，粘贴链接并点击“下载/更新”，拉取全部节点；
 > 5. **选择节点并开启代理**：在节点列表选择一个绿色低延迟节点（如香港或日本），开启 **【系统代理 (System Proxy)】** 并选择 **【规则模式 (Rule)】**；
@@ -68,7 +68,7 @@ permalink: "/tizi/how-to-use/"
 
 | 操作系统 | 推荐主力客户端 | 备选轻量客户端 | 核心特色与新手建议 |
 | :--- | :--- | :--- | :--- |
-| **Windows 电脑** | [Clash Verge Rev](/tutorials/clash-verge-setup/) | v2rayN / sing-box GUI | 界面现代美观，自带内核切换与一键系统代理开关 |
+| **Windows 电脑** | [Clash Verge Rev](/clash-verge-rev/) | v2rayN / sing-box GUI | 界面现代美观，自带内核切换与一键系统代理开关 |
 | **macOS (苹果电脑)** | Clash Verge Rev (Mac 版) | sing-box / Surge (高价) | 原生支持 Apple Silicon (M1/M2/M3/M4) 芯片，低功耗 |
 | **Android (安卓手机)** | Clash Meta for Android | v2rayNG / sing-box | 支持应用级单独分流，分屏操作流畅 |
 | **iOS (iPhone / iPad)** | Shadowrocket (小火箭) | Stash / Loon / Quantumult X | 需使用外区 Apple ID 从 App Store 下载 (约 $2.99) |
@@ -167,7 +167,7 @@ permalink: "/tizi/how-to-use/"
 7. 挑选一个连通性最好的节点即可畅快使用。
 
 ### 3. 💻 Windows 电脑实操 6 步法
-1. 从官网 Releases 下载安装 [Clash Verge Rev Windows 安装包](/tutorials/clash-verge-setup/)；
+1. 从官网 Releases 下载安装 [Clash Verge Rev Windows 安装包](/clash-verge-rev/)；
 2. 启动软件 ──► 点击左侧菜单 **【订阅 (Profiles)】**；
 3. 顶部输入框粘贴订阅链接 ──► 点击 **【导入 (Import)】**；
 4. 鼠标右键点击导入的订阅卡片 ──► 选中该配置（卡片显示蓝色高亮）；
@@ -323,8 +323,9 @@ permalink: "/tizi/how-to-use/"
 ## 📚 站内相关技术与进阶专题推荐
 
 - 📖 **基础概念认知百科**：[梯子是什么？VPN、代理、机场、节点与客户端区别一次讲清（2026）](/tizi/)
-- 💻 **Windows/Mac 客户端实操**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/tutorials/clash-verge-setup/)
+- 💻 **Windows/Mac 客户端实操**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/clash-verge-rev/)
 - ⚙️ **通用代理核心深度配置**：[sing-box 全平台通用配置与规则分流实操教程（2026）](/tutorials/sing-box-config/)
 - 🛠️ **节点全红与连接超时排查**：[Clash 节点全部超时 / 出现全红解决终极指南（2026）](/issues/clash-nodes-timeout/)
 - 📊 **优质专线与服务商排行榜**：[2026 翻墙机场与 IPLC 专线排行榜评测速查](/recommend/airport/)
 - 🤖 **AI 工具访问全域故障排查**：[ChatGPT 无法登录 / 报错 / 上传与生成故障排查专栏](/chatgpt/cannot-open/)
+

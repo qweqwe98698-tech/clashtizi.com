@@ -83,7 +83,7 @@ sing-box 广受推崇的核心原因之一是对现代前沿协议的原生极�
 | **路由匹配机制** | 基于 \`rule_set\`、Headless 规则集设计 | 基于传统的 \`rules\`、\`rule-providers\` 列表 |
 | **新手上手门槛** | 相对较高（需理解 JSON 结构与字段） | 较低（市面拥有大量成熟的中文 GUI 客户端） |
 
-> 📌 **技术结论**：两者均为当前顶级的开源代理项目，并不存在谁淘汰谁的关系。追求新协议极速体验与轻量资源消耗可选 sing-box；追求成熟图形界面与丰富分流规则组可选 **[Clash Verge Rev](/tutorials/clash-verge-setup/)**。
+> 📌 **技术结论**：两者均为当前顶级的开源代理项目，并不存在谁淘汰谁的关系。追求新协议极速体验与轻量资源消耗可选 sing-box；追求成熟图形界面与丰富分流规则组可选 **[Clash Verge Rev](/clash-verge-rev/)**。
 
 ---
 
@@ -551,7 +551,8 @@ sing-box 内置了独立的 DNS 解析系统，直接与路由模块绑定：
 ---
 
 ### 📖 相关推荐阅读
-- 🚀 **[Clash Verge Rev 跨平台客户端新手配置图文教程](/tutorials/clash-verge-setup/)** —— 现代图形化分流客户端实操
+- 🚀 **[Clash Verge Rev 跨平台客户端新手配置图文教程](/clash-verge-rev/)** —— 现代图形化分流客户端实操
 - 🛠️ **[Clash 节点超时 / 全红故障排查与修复步骤](/issues/clash-nodes-timeout/)** —— 5 步排查 TLS 证书校验与系统时间偏差
 - 🤖 **[ChatGPT Access Denied 1020 报错排查与解决指南](/issues/chatgpt-access-denied/)** —— 浏览器安全与 AI 访问保障
 - ⚡ **[2026 高速稳定翻墙机场推荐与评测排行榜](/recommend/airport/)** —— 企业级 IEPL 专线晚高峰实测数据汇总
+

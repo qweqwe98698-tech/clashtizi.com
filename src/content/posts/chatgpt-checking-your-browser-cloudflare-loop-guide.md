@@ -1,4 +1,4 @@
----
+﻿---
 title: "ChatGPT 一直显示 Checking your browser 怎么办？Cloudflare 验证循环完整排查（2026）"
 published: 2026-08-29
 updated: 2026-08-29
@@ -366,4 +366,5 @@ Cloudflare 签发的验证凭据严格绑定 **UNIX 时间戳**。如果你的�
 - 🔑 **身份认证与登录问题专题**：[ChatGPT 无法登录 / Google与邮箱认证排查指南（2026）](/chatgpt/login-failed/)
 - 🛡️ **Cloudflare 防火墙拦截专题**：[ChatGPT Access Denied 1020 报错终极解决教程（2026）](/issues/chatgpt-access-denied/)
 - 📊 **优质高速稳定专线网络推荐**：[2026 翻墙机场与 IPLC 专线排行榜评测速查](/recommend/airport/)
-- 🛠️ **全平台现代客户端实操指南**：[Clash Verge Rev 跨平台下载与 TUN 模式配置手册](/tutorials/clash-verge-setup/)
+- 🛠️ **全平台现代客户端实操指南**：[Clash Verge Rev 跨平台下载与 TUN 模式配置手册](/clash-verge-rev/)
+

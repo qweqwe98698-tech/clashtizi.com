@@ -191,6 +191,7 @@ permalink: "/tizi/app-not-using-proxy/"
 - 🚦 **分流规则与规则集**：[梯子分流规则是什么？域名规则、IP规则与Rule Provider说明（2026）](/tizi/routing-rules/)
 - 🏷️ **Fake-IP 与 DNS 映射**：[梯子Fake-IP是什么？Fake-IP、Redir-Host与TUN联动指南（2026）](/tizi/fake-ip/)
 - 🌐 **连接成功但没网排查**：[梯子连接成功但没有网络怎么办？系统代理与规则排查（2026）](/tizi/connected-no-internet/)
-- 💻 **Windows/Mac 客户端配置**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/tutorials/clash-verge-setup/)
+- 💻 **Windows/Mac 客户端配置**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/clash-verge-rev/)
 - 🚀 **sing-box 极速配置指南**：[sing-box 客户端从零上手与核心配置教程（2026）](/tutorials/sing-box-config/)
 - 📊 **2026 优质专线与机场排行榜**：[2026 翻墙机场与 IPLC 专线排行榜评测速查](/recommend/airport/)
+

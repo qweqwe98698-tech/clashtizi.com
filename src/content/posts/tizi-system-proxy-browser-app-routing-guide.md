@@ -128,7 +128,7 @@ permalink: "/tizi/system-proxy/"
     ↓
  Layer 4: 节点连通性层 ──► 在客户端内点击节点延迟测速，排除海外服务器端宕机
     ↓
- Layer 5: 分流规则匹配 ──► 切换为 [Global 全局模式](/tutorials/clash-verge-setup/)，排除 Rule 规则库语法错误
+ Layer 5: 分流规则匹配 ──► 切换为 [Global 全局模式](/clash-verge-rev/)，排除 Rule 规则库语法错误
     ↓
  Layer 6: 本地防火墙层 ──► 确认 Windows Defender 未将客户端的本地代理端口阻断
     ↓
@@ -209,6 +209,7 @@ permalink: "/tizi/system-proxy/"
 - 🏷️ **Fake-IP 与 DNS 映射**：[梯子Fake-IP是什么？Fake-IP、Redir-Host与TUN联动指南（2026）](/tizi/fake-ip/)
 - 🛡️ **TUN 模式与虚拟网卡**：[梯子TUN模式是什么？TUN、虚拟网卡与应用分流说明（2026）](/tizi/tun/)
 - 🌐 **连接成功但没网排查**：[梯子连接成功但没有网络怎么办？系统代理与规则排查（2026）](/tizi/connected-no-internet/)
-- 💻 **Windows/Mac 客户端配置**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/tutorials/clash-verge-setup/)
+- 💻 **Windows/Mac 客户端配置**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/clash-verge-rev/)
 - 🚀 **sing-box 极速配置指南**：[sing-box 客户端从零上手与核心配置教程（2026）](/tutorials/sing-box-config/)
 - 📊 **2026 优质专线与机场排行榜**：[2026 翻墙机场与 IPLC 专线排行榜评测速查](/recommend/airport/)
+

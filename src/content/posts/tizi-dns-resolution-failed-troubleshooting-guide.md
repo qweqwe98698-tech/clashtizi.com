@@ -217,6 +217,7 @@ DoH 虽然加密了 DNS 查询过程，但在梯子环境下极易产生**“鸡
 - 🔍 **软件不走代理排障**：[梯子为什么有些软件不走代理？浏览器、游戏与系统代理排查（2026）](/tizi/app-not-using-proxy/)
 - 🌐 **IPv6 与双栈网络**：[梯子IPv6是什么？IPv4、IPv6、双栈网络与代理兼容说明（2026）](/tizi/ipv6/)
 - 🔌 **连接成功但没网排查**：[梯子连接成功但没有网络怎么办？系统代理与规则排查（2026）](/tizi/connected-no-internet/)
-- 💻 **Windows/Mac 客户端配置**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/tutorials/clash-verge-setup/)
+- 💻 **Windows/Mac 客户端配置**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/clash-verge-rev/)
 - 🚀 **sing-box 极速配置指南**：[sing-box 客户端从零上手与核心配置教程（2026）](/tutorials/sing-box-config/)
 - 📊 **2026 优质专线与机场排行榜**：[2026 翻墙机场与 IPLC 专线排行榜评测速查](/recommend/airport/)
+

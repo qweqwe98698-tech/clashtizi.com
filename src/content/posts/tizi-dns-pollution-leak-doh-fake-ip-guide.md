@@ -71,7 +71,7 @@ permalink: "/tizi/dns/"
  分流规则要求匹配目标 IP ──► 客户端被迫在本地强行先解析域名 ──► 遭遇本地网络拦截 ──► 导致分流失败
 ```
 
-- **核心修复原则**：在客户端中开启 **远程 DNS 解析 (Remote DNS)**、**Fake-IP 模式** 或开启 [TUN 虚拟网卡模式](/tutorials/clash-verge-setup/)，彻底切断本地明文 DNS 查询路径。
+- **核心修复原则**：在客户端中开启 **远程 DNS 解析 (Remote DNS)**、**Fake-IP 模式** 或开启 [TUN 虚拟网卡模式](/clash-verge-rev/)，彻底切断本地明文 DNS 查询路径。
 
 ---
 
@@ -232,6 +232,7 @@ permalink: "/tizi/dns/"
 - ⚠️ **IP 与网络泄漏检查**：[梯子IP泄漏是什么？DNS泄漏、IPv6与WebRTC检查指南（2026）](/tizi/ip-leak/)
 - 🔴 **节点全红与超时排查**：[梯子节点全部超时怎么办？节点全红与 Timeout 完整排查（2026）](/tizi/nodes-timeout/)
 - 🌐 **连接成功但没网排查**：[梯子连接成功但没有网络怎么办？系统代理与规则排查（2026）](/tizi/connected-no-internet/)
-- 💻 **Windows/Mac 客户端配置**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/tutorials/clash-verge-setup/)
+- 💻 **Windows/Mac 客户端配置**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/clash-verge-rev/)
 - 🚀 **sing-box 极速配置指南**：[sing-box 客户端从零上手与核心配置教程（2026）](/tutorials/sing-box-config/)
 - 📊 **2026 优质专线与机场排行榜**：[2026 翻墙机场与 IPLC 专线排行榜评测速查](/recommend/airport/)
+

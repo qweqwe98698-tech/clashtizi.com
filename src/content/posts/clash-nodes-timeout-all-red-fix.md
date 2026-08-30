@@ -1,4 +1,4 @@
----
+﻿---
 title: "Clash 节点超时、全红、无法连接怎么办？完整排查与修复指南（2026）"
 published: 2026-08-29
 updated: 2026-08-29
@@ -133,7 +133,7 @@ permalink: "/issues/clash-nodes-timeout/"
 如果确认订阅更新成功、节点列表也完整存在，但测速依旧全红，请按以下优先级排查：
 
 1. **检查本地防火墙**：确认 Windows Defender 防火墙没有拦截 `verge-mihomo.exe` 或 `clash-core.exe`。
-2. **检查节点加密协议**：某些老旧 Clash 客户端不支持 Hysteria 2、TUIC v5 或 VLESS Reality 新协议，导致无法解析出站。建议升级至现代化的 **[Clash Verge Rev 客户端](/tutorials/clash-verge-setup/)**。
+2. **检查节点加密协议**：某些老旧 Clash 客户端不支持 Hysteria 2、TUIC v5 或 VLESS Reality 新协议，导致无法解析出站。建议升级至现代化的 **[Clash Verge Rev 客户端](/clash-verge-rev/)**。
 3. **更换测试 URL**：在设置中将延迟测试 URL 由默认地址修改为：`http://cp.cloudflare.com/generate_204` 或 `http://www.google.com/generate_204`。
 
 ---
@@ -169,7 +169,7 @@ permalink: "/issues/clash-nodes-timeout/"
 如果仍在坚持使用 Clash for Windows 并遇到大面积全红：
 - **原因**：CFW 搭载的内核版本较旧，无法识别目前主流机场部署的 **VLESS、Hysteria 2、TUIC** 等新一代协议，或者其内置的 TUN 驱动与 Windows 11 最新补丁存在兼容性冲突。
 - **推荐方案**：建议迁移至活跃维护且完全开源的现代化替代客户端：
-  - 📖 详细迁移与配置教程：👉 **[Clash Verge Rev 下载与配置完整图文教程](/tutorials/clash-verge-setup/)**
+  - 📖 详细迁移与配置教程：👉 **[Clash Verge Rev 下载与配置完整图文教程](/clash-verge-rev/)**
   - 📖 跨平台极简客户端：👉 **[Sing-box 跨平台新手配置全指南](/tutorials/sing-box-config/)**
 
 ---
@@ -373,7 +373,7 @@ DNS 是科学上网中最容易产生隐蔽故障的环节：
 > **答**：通常是因为默认端口（7890/7897）被旧的 Clash 进程或其他后台代理占用。打开任务管理器结束所有残留的 clash/mihomo 进程，并在设置中修改端口后重启内核。
 
 ### Q8: Clash for Windows 节点总是全红还能用吗？
-> **答**：CFW 已停止维护多年，无法较好兼容现代 VLESS/Hysteria 2 协议。建议直接切换至仍在活跃维护的现代化替代客户端 **[Clash Verge Rev](/tutorials/clash-verge-setup/)**。
+> **答**：CFW 已停止维护多年，无法较好兼容现代 VLESS/Hysteria 2 协议。建议直接切换至仍在活跃维护的现代化替代客户端 **[Clash Verge Rev](/clash-verge-rev/)**。
 
 ### Q9: 刷新 DNS 解析缓存对解决 Clash 故障有用吗？
 > **答**：非常有用。在 CMD 中运行 `ipconfig /flushdns` 可以清除本机过期的域名映射，解决因 DNS 脏缓存导致的网页无法加载问题。
@@ -399,7 +399,8 @@ DNS 是科学上网中最容易产生隐蔽故障的环节：
 ---
 
 ### 📖 相关推荐阅读
-- 🚀 **[Clash Verge Rev 跨平台客户端新手下载与配置教程](/tutorials/clash-verge-setup/)** —— 现代内核分流与 TUN 网卡模式指南
+- 🚀 **[Clash Verge Rev 跨平台客户端新手下载与配置教程](/clash-verge-rev/)** —— 现代内核分流与 TUN 网卡模式指南
 - 🤖 **[ChatGPT Access Denied 1020 报错排查与解决指南](/issues/chatgpt-access-denied/)** —— 浏览器安全与 AI 访问保障
 - ⚡ **[2026 高速稳定翻墙机场推荐与评测排行榜](/recommend/airport/)** —— 企业级 IEPL 专线晚高峰实测数据汇总
 - 🌐 **[Sing-box 跨平台全协议通用配置教程](/tutorials/sing-box-config/)** —— 下一代轻量化代理核心实操
+

@@ -81,7 +81,7 @@ permalink: "/tizi/subscription/"
  ├──────────────┬──────────────────────────────┬──────────────────────────────┬────────────────┤
  │ 操作系统     │ 推荐主流客户端               │ 订阅导入标准路径             │ 核心操作要点   │
  ├──────────────┼──────────────────────────────┼──────────────────────────────┼────────────────┤
- │ **Windows**  │ [Clash Verge Rev](/tutorials/clash-verge-setup/) | 左侧【订阅 (Profiles)】 ──► 顶部粘贴 URL ──► 点击【导入】 | 导入后右键卡片选择“激活选中” |
+ │ **Windows**  │ [Clash Verge Rev](/clash-verge-rev/) | 左侧【订阅 (Profiles)】 ──► 顶部粘贴 URL ──► 点击【导入】 | 导入后右键卡片选择“激活选中” |
  │ **macOS**    │ Clash Verge Rev (Mac 版)     │ 左侧【Profiles】 ──► 粘贴 URL ──► 点击【Import】 ──► 右键更新 | 开启系统代理开关并选 Rule 模式 |
  │ **iOS 苹果** │ Shadowrocket (小火箭)        │ 首页右上角【+】 ──► 类型选【Subscribe】 ──► 粘贴 URL ──► 完成 | 自动刷新节点，开启未连接开关 |
  │ **Android**  │ Clash Meta for Android       │ 首页【配置】 ──► 右上角【+】 ──► 选【URL 导入】 ──► 粘贴保存 | 返回首页启动，授权 VPN 连接 |
@@ -233,5 +233,6 @@ permalink: "/tizi/subscription/"
 - 🧩 **生态分工深度解析**：[梯子和机场有什么区别？机场、客户端、节点、订阅到底是什么关系（2026）](/tizi/airport-vs-tizi/)
 - ⚡ **节点挑选核心技巧**：[梯子节点是什么？节点地区、延迟、倍率、线路与选择完整指南（2026）](/tizi/nodes/)
 - 📊 **2026 优质专线与机场排行榜**：[2026 翻墙机场与 IPLC 专线排行榜评测速查](/recommend/airport/)
-- 💻 **Windows/Mac 客户端实操指南**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/tutorials/clash-verge-setup/)
+- 💻 **Windows/Mac 客户端实操指南**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/clash-verge-rev/)
 - 🛠️ **节点全红与超时排查专栏**：[Clash 节点全部超时 / 出现全红解决终极指南（2026）](/issues/clash-nodes-timeout/)
+

@@ -126,7 +126,7 @@ permalink: "/tizi/ip-address/"
 
 ## 六、分流规则（Rule）导致不同网站看到不同 IP 的现象
 
-在客户端开启 [Rule 规则分流模式](/tutorials/clash-verge-setup/) 时，流量会按域名分道扬镳：
+在客户端开启 [Rule 规则分流模式](/clash-verge-rev/) 时，流量会按域名分道扬镳：
 
 ```text
                              【分流规则下的多出口 IP 并存现象】
@@ -211,5 +211,6 @@ permalink: "/tizi/ip-address/"
 - 🔴 **节点全红与超时排查**：[梯子节点全部超时怎么办？节点全红与 Timeout 完整排查（2026）](/tizi/nodes-timeout/)
 - 🌐 **连接成功但没网排查**：[梯子连接成功但没有网络怎么办？系统代理与规则排查（2026）](/tizi/connected-no-internet/)
 - 🤖 **ChatGPT 无法打开专栏**：[ChatGPT 无法打开怎么办？官网打不开与打不开排查（2026）](/chatgpt/cannot-open/)
-- 💻 **Windows/Mac 客户端配置**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/tutorials/clash-verge-setup/)
+- 💻 **Windows/Mac 客户端配置**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/clash-verge-rev/)
 - 📊 **2026 优质专线与机场排行榜**：[2026 翻墙机场与 IPLC 专线排行榜评测速查](/recommend/airport/)
+

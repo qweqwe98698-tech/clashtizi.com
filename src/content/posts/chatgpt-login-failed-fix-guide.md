@@ -1,4 +1,4 @@
----
+﻿---
 title: "ChatGPT 无法登录怎么办？账号、浏览器、网络与登录方式完整排查指南（2026）"
 published: 2026-08-29
 updated: 2026-08-29
@@ -410,5 +410,6 @@ ChatGPT 无法登录通常是由多个层次的交互链条出现断裂造成的
 
 - 📖 **Cloudflare 安全策略拦截专题**：[ChatGPT Access Denied 1020 报错终极解决教程（2026）](/issues/chatgpt-access-denied/)
 - 📊 **优质高速稳定专线网络推荐**：[2026 翻墙机场与 IPLC 专线排行榜评测速查](/recommend/airport/)
-- 🛠️ **全平台现代代理客户端实操**：[Clash Verge Rev 跨平台下载与 TUN 模式配置手册](/tutorials/clash-verge-setup/)
+- 🛠️ **全平台现代代理客户端实操**：[Clash Verge Rev 跨平台下载与 TUN 模式配置手册](/clash-verge-rev/)
 - ⚡ **下一代通用核心协议指南**：[Sing-box 跨平台全协议通用新手指南](/tutorials/sing-box-config/)
+

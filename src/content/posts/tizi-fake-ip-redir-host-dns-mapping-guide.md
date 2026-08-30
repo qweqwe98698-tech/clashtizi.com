@@ -135,7 +135,7 @@ permalink: "/tizi/fake-ip/"
     ↓
  Layer 3: 内存映射池 ──► 检查客户端运行时长，重启代理内核以重置 Fake-IP 映射表
     ↓
- Layer 4: 分流规则匹配 ──► 切换为 [Global 全局模式](/tutorials/clash-verge-setup/)，排除域名分流规则误判
+ Layer 4: 分流规则匹配 ──► 切换为 [Global 全局模式](/clash-verge-rev/)，排除域名分流规则误判
     ↓
  Layer 5: 上游 DNS 连通性 ──► 确认配置文件中的 `nameserver` (如 `223.5.5.5` / `8.8.8.8`) 可达
     ↓
@@ -217,6 +217,7 @@ permalink: "/tizi/fake-ip/"
 - 📡 **DNS 污染与 DoH 全景**：[梯子DNS是什么？DNS污染、DoH与解析失败说明（2026）](/tizi/dns/)
 - 🔴 **节点全红与超时排查**：[梯子节点全部超时怎么办？节点全红与 Timeout 完整排查（2026）](/tizi/nodes-timeout/)
 - 🌐 **连接成功但没网排查**：[梯子连接成功但没有网络怎么办？系统代理与规则排查（2026）](/tizi/connected-no-internet/)
-- 💻 **Windows/Mac 客户端配置**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/tutorials/clash-verge-setup/)
+- 💻 **Windows/Mac 客户端配置**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/clash-verge-rev/)
 - 🚀 **sing-box 极速配置指南**：[sing-box 客户端从零上手与核心配置教程（2026）](/tutorials/sing-box-config/)
 - 📊 **2026 优质专线与机场排行榜**：[2026 翻墙机场与 IPLC 专线排行榜评测速查](/recommend/airport/)
+

@@ -1,4 +1,4 @@
----
+﻿---
 title: "ChatGPT 打不开怎么办？网页无法访问、一直加载与网络错误完整排查（2026）"
 published: 2026-08-29
 updated: 2026-08-29
@@ -288,7 +288,7 @@ permalink: "/chatgpt/cannot-open/"
 
 许多用户在使用代理工具时，直接在任务栏右键点击了“退出”，但没有预先关闭系统代理开关，导致断网：
 
-1. **重新打开代理客户端**（如 [Clash Verge Rev](/tutorials/clash-verge-setup/) 或 [Sing-box](/tutorials/sing-box-config/)）；
+1. **重新打开代理客户端**（如 [Clash Verge Rev](/clash-verge-rev/) 或 [Sing-box](/tutorials/sing-box-config/)）；
 2. 在客户端控制面板中，明确将 **【系统代理 (System Proxy)】** 开关**手动拨动到关闭状态**，然后再正常退出客户端；
 3. 若使用了虚拟网卡模式，请在网络连接中确认 **【TUN 虚拟网卡】** 已正常卸载。
 
@@ -466,5 +466,6 @@ HTTPS 建立安全握手需要校验数字证书的 **NotBefore（生效时间�
 - 📖 **身份认证与登录问题专题**：[ChatGPT 无法登录 / Google与邮箱认证排查指南（2026）](/chatgpt/login-failed/)
 - 🛡️ **Cloudflare 防火墙拦截专题**：[ChatGPT Access Denied 1020 报错终极解决方案（2026）](/issues/chatgpt-access-denied/)
 - 📊 **高速稳定企业级专线网络推荐**：[2026 翻墙机场与 IPLC 专线排行榜评测速查](/recommend/airport/)
-- 🛠️ **全平台现代客户端实操指南**：[Clash Verge Rev 跨平台下载与 TUN 模式配置手册](/tutorials/clash-verge-setup/)
+- 🛠️ **全平台现代客户端实操指南**：[Clash Verge Rev 跨平台下载与 TUN 模式配置手册](/clash-verge-rev/)
 - ⚡ **下一代高性能代理核心指南**：[Sing-box 跨平台全协议通用新手配置全指南](/tutorials/sing-box-config/)
+

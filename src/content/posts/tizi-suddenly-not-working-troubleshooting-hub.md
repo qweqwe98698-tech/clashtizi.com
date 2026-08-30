@@ -44,7 +44,7 @@ permalink: "/tizi/suddenly-not-working/"
 | :--- | :--- | :--- | :--- |
 | **机场套餐与账户** | 套餐有效、流量充裕 | **套餐在午夜刚好到期欠费** | 登录机场后台，查看订单与流量余量 |
 | **操作系统更新** | 未更新 | **Windows/macOS 自动安装了补丁** | 检查系统更新历史，重新授权 TUN 虚拟网卡 |
-| **客户端与 Core** | 旧版稳定运行 | **软件自动升级后内核未成功加载** | 在 [Clash Verge Rev](/tutorials/clash-verge-setup/) 中点击【重启内核】 |
+| **客户端与 Core** | 旧版稳定运行 | **软件自动升级后内核未成功加载** | 在 [Clash Verge Rev](/clash-verge-rev/) 中点击【重启内核】 |
 | **家庭网络环境** | 原 Wi-Fi 正常 | **光猫凌晨自动重拨，动态 IP 变化** | 手机连接 5G 热点做交叉对比测试 |
 | **机场后端集群** | 线路稳定 | **服务商更换了节点域名或升级协议** | 在客户端右键点击配置卡片，选择【更新订阅】 |
 
@@ -225,5 +225,6 @@ permalink: "/tizi/suddenly-not-working/"
 - 🚀 **速度慢与延迟高排查**：[梯子速度慢怎么办？延迟高、下载慢与视频卡顿排查（2026）](/tizi/slow-speed/)
 - 🔄 **经常掉线与断开排查**：[梯子经常掉线怎么办？连接中断与网络切换排查（2026）](/tizi/disconnect/)
 - 🤖 **ChatGPT 无法打开专栏**：[ChatGPT 无法打开怎么办？官网打不开与打不开排查（2026）](/chatgpt/cannot-open/)
-- 💻 **Windows/Mac 客户端配置**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/tutorials/clash-verge-setup/)
+- 💻 **Windows/Mac 客户端配置**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/clash-verge-rev/)
 - 📊 **2026 优质专线与机场排行榜**：[2026 翻墙机场与 IPLC 专线排行榜评测速查](/recommend/airport/)
+

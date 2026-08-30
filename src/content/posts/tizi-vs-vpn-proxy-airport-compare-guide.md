@@ -252,6 +252,7 @@ permalink: "/tizi/vpn-vs-tizi/"
 - 📖 **基础概念全面科普**：[梯子是什么？VPN、代理、机场、节点与客户端区别一次讲清（2026）](/tizi/)
 - 🛠️ **小白新手实操教程**：[梯子怎么用？手机、电脑、客户端、订阅与节点新手教程（2026）](/tizi/how-to-use/)
 - 📊 **2026 优质专线与机场排行榜**：[2026 翻墙机场与 IPLC 专线排行榜评测速查](/recommend/airport/)
-- 💻 **Windows/Mac 客户端实操指南**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/tutorials/clash-verge-setup/)
+- 💻 **Windows/Mac 客户端实操指南**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/clash-verge-rev/)
 - ⚙️ **跨平台通用代理核心教程**：[sing-box 全平台通用配置与规则分流实操教程（2026）](/tutorials/sing-box-config/)
 - 🤖 **AI 工具访问全域故障排查**：[ChatGPT 无法登录 / 报错 / 上传与生成故障排查专栏](/chatgpt/cannot-open/)
+

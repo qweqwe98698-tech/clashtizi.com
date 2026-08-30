@@ -47,7 +47,7 @@ permalink: "/tizi/nodes-timeout/"
 | :--- | :--- | :--- | :--- |
 | **单节点超时** | 只有 `香港 01` 超时，`香港 02` 和 `日本` 正常 | 该物理服务器正在重启或机房维护 | 鼠标切换至其他绿色节点即可 |
 | **单地区全部超时** | 所有香港节点全红，但日本、美国全部是绿色 | 机场到香港方向的中继海缆发生波动 | 临时换用日本或新加坡节点过渡 |
-| **特定协议全部超时** | VLESS 节点全红，Shadowsocks 节点全绿 | 客户端底层 Core 版本过旧不支持新协议 | [升级客户端版本](/tutorials/clash-verge-setup/) 或更新内置 Core |
+| **特定协议全部超时** | VLESS 节点全红，Shadowsocks 节点全绿 | 客户端底层 Core 版本过旧不支持新协议 | [升级客户端版本](/clash-verge-rev/) 或更新内置 Core |
 | **所有节点全部全红** | 无论切换哪个国家和协议，100% 显示 Timeout | 本地网络阻断、Core 崩溃、或测试 URL 挂掉 | 按照本文下述步骤逐层排障 |
 
 ---
@@ -98,7 +98,7 @@ permalink: "/tizi/nodes-timeout/"
 
 ## 四、第三步：排查客户端底层 Core（内核）运行状态
 
-在 [Clash Verge Rev](/tutorials/clash-verge-setup/)、sing-box 等现代客户端中，界面（UI）与底层代理内核（Core）是分离的：
+在 [Clash Verge Rev](/clash-verge-rev/)、sing-box 等现代客户端中，界面（UI）与底层代理内核（Core）是分离的：
 
 ```text
  界面 (UI 正常点按) ──(若通信中断/内核崩溃)──► 底层 Core (无法收发数据) ──► 导致所有节点显示 Timeout
@@ -241,5 +241,6 @@ permalink: "/tizi/nodes-timeout/"
 - 📋 **订阅机制与管理**：[梯子订阅是什么？订阅链接、节点更新、导入客户端完整指南（2026）](/tizi/subscription/)
 - ⚠️ **订阅更新故障排查**：[梯子订阅更新失败怎么办？401/403/Timeout 错误排查（2026）](/tizi/subscription-update-failed/)
 - ⚡ **节点挑选核心指标**：[梯子节点是什么？节点地区、延迟、倍率、线路与选择指南（2026）](/tizi/nodes/)
-- 💻 **Windows/Mac 客户端配置**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/tutorials/clash-verge-setup/)
+- 💻 **Windows/Mac 客户端配置**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/clash-verge-rev/)
 - 📊 **2026 优质专线与机场排行榜**：[2026 翻墙机场与 IPLC 专线排行榜评测速查](/recommend/airport/)
+

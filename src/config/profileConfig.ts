@@ -1,4 +1,4 @@
-import type { ProfileConfig } from "../types/config";
+﻿import type { ProfileConfig } from "../types/config";
 
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/avatar.webp",
@@ -17,7 +17,7 @@ export const profileConfig: ProfileConfig = {
 		{
 			name: "Clash 教程",
 			icon: "material-symbols:menu-book",
-			url: "/tutorials/clash-verge-setup/",
+			url: "/clash-verge-rev/",
 		},
 		{
 			name: "排障中心",
@@ -26,3 +26,4 @@ export const profileConfig: ProfileConfig = {
 		},
 	],
 };
+

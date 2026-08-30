@@ -194,5 +194,6 @@ permalink: "/tizi/slow-speed/"
 - ⚠️ **订阅更新故障排查**：[梯子订阅更新失败怎么办？401/403/Timeout 错误排查（2026）](/tizi/subscription-update-failed/)
 - 🔴 **节点全红与超时排查**：[梯子节点全部超时怎么办？节点全红与 Timeout 完整排查（2026）](/tizi/nodes-timeout/)
 - 🌐 **连接成功但没网排查**：[梯子连接成功但没有网络怎么办？系统代理与规则排查（2026）](/tizi/connected-no-internet/)
-- 💻 **Windows/Mac 客户端配置**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/tutorials/clash-verge-setup/)
+- 💻 **Windows/Mac 客户端配置**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/clash-verge-rev/)
 - 📊 **2026 优质专线与机场排行榜**：[2026 翻墙机场与 IPLC 专线排行榜评测速查](/recommend/airport/)
+

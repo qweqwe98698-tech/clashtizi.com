@@ -1,4 +1,4 @@
----
+﻿---
 title: "2026 优质稳定翻墙梯子机场推荐与深度客观评测排行榜 (IPLC/IEPL 专线/4K秒开/不跑路)"
 published: 2026-08-29
 updated: 2026-08-29
@@ -237,7 +237,7 @@ permalink: "/recommend/airport/"
 根据您的操作系统下载推荐客户端，导入上述机场订阅即可一键翻墙：
 
 - **Windows / macOS / Linux**：首选 **Clash Verge Rev**（基于 Mihomo 内核，支持原生中文与 TUN 虚拟网卡模式）。
-  - 📖 图文教程：👉 **[Clash Verge Rev 下载与配置完整图文教程](/tutorials/clash-verge-setup/)**
+  - 📖 图文教程：👉 **[Clash Verge Rev 下载与配置完整图文教程](/clash-verge-rev/)**
 - **全平台通用下一代代理**：首选 **Sing-box**（支持 Hysteria 2、TUIC、VLESS Reality 全协议）。
   - 📖 图文教程：👉 **[Sing-box 跨平台新手配置全指南](/tutorials/sing-box-config/)**
 - **iOS (苹果手机/iPad)**：首选美区 App Store 下载 **Shadowrocket (小火箭)** 或 **Quantumult X / Loon / Stash**。
@@ -258,3 +258,4 @@ permalink: "/recommend/airport/"
 ### Q3：Clash 提示节点超时、所有节点测速全红无法上网怎么排查？
 **答**：90% 的情况是因为系统时间与网络标准时间偏差超过 60 秒触发 TLS 握手失败，或开启了系统代理后端口被占用。详细 5 步排查步骤请阅读：
 👉 **[Clash 节点超时 / 全红 / 无法连接完整排障指南](/issues/clash-nodes-timeout/)**
+

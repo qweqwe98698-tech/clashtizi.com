@@ -62,7 +62,7 @@ permalink: "/tizi/connected-no-internet/"
 在 Windows 和 macOS 上，浏览器默认依赖操作系统的系统代理设置：
 
 ### 1. 现象一：客户端开了，但浏览器依然直连
-- **原因**：很多开源客户端（如 [Clash Verge Rev](/tutorials/clash-verge-setup/)）安装后，默认仅在本地开启代理端口（如 `127.0.0.1:7897`），并不会自动修改系统设置；
+- **原因**：很多开源客户端（如 [Clash Verge Rev](/clash-verge-rev/)）安装后，默认仅在本地开启代理端口（如 `127.0.0.1:7897`），并不会自动修改系统设置；
 - **修复方法**：在客户端左侧或设置界面，找到 **【系统代理 (System Proxy)】** 并将其切换为开启状态。
 
 ### 2. 现象二：退出梯子软件后，电脑彻底断网连不上国内网页
@@ -221,5 +221,6 @@ permalink: "/tizi/connected-no-internet/"
 - ⚠️ **订阅更新故障排查**：[梯子订阅更新失败怎么办？401/403/Timeout 错误排查（2026）](/tizi/subscription-update-failed/)
 - 🔴 **节点全红与超时排查**：[梯子节点全部超时怎么办？节点全红与 Timeout 完整排查（2026）](/tizi/nodes-timeout/)
 - 🤖 **ChatGPT 无法打开专栏**：[ChatGPT 无法打开怎么办？官网打不开与打不开排查（2026）](/chatgpt/cannot-open/)
-- 💻 **Windows/Mac 客户端配置**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/tutorials/clash-verge-setup/)
+- 💻 **Windows/Mac 客户端配置**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/clash-verge-rev/)
 - 📊 **2026 优质专线与机场排行榜**：[2026 翻墙机场与 IPLC 专线排行榜评测速查](/recommend/airport/)
+

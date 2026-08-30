@@ -54,7 +54,7 @@ permalink: "/tizi/nodes/"
  [机场服务商] ──(售卖服务)──► [生成订阅链接] ──(下发给客户端)──► [解析出数十个具体节点] ──► [对应后端机房服务器]
 ```
 
-- **节点（Node）**：是你在客户端（如 [Clash Verge Rev](/tutorials/clash-verge-setup/) 或 Shadowrocket）节点列表里看到的一行具体配置。它记录了**服务器域名、端口、加密协议（如 Shadowsocks / VLESS / Trojan）以及你的鉴权密码**；
+- **节点（Node）**：是你在客户端（如 [Clash Verge Rev](/clash-verge-rev/) 或 Shadowrocket）节点列表里看到的一行具体配置。它记录了**服务器域名、端口、加密协议（如 Shadowsocks / VLESS / Trojan）以及你的鉴权密码**；
 - **节点 vs 物理服务器**：节点不一定等于一台独立的物理机器。一台高性能独立服务器可以通过配置不同端口和分流策略，虚拟出多个不同用途的“节点”；
 - **节点 vs 机场**：机场是拥有这些服务器资产的服务商，节点是机场提供给你的具体连接通道。
 
@@ -260,6 +260,7 @@ permalink: "/tizi/nodes/"
 - ⚖️ **概念技术深度对比**：[梯子和 VPN 有什么区别？VPN、代理、机场、加速器到底哪个好（2026）](/tizi/vpn-vs-tizi/)
 - 🧩 **生态分工深度解析**：[梯子和机场有什么区别？机场、客户端、节点、订阅到底是什么关系（2026）](/tizi/airport-vs-tizi/)
 - 📊 **2026 优质专线与机场排行榜**：[2026 翻墙机场与 IPLC 专线排行榜评测速查](/recommend/airport/)
-- 💻 **Windows/Mac 客户端实操指南**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/tutorials/clash-verge-setup/)
+- 💻 **Windows/Mac 客户端实操指南**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/clash-verge-rev/)
 - 🛠️ **节点全红与超时排查专栏**：[Clash 节点全部超时 / 出现全红解决终极指南（2026）](/issues/clash-nodes-timeout/)
 - 🤖 **AI 工具访问全域故障排查**：[ChatGPT 无法登录 / 报错 / 上传与生成故障排查专栏](/chatgpt/cannot-open/)
+

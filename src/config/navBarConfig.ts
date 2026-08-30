@@ -1,4 +1,4 @@
-import type { NavBarConfig } from "../types/config";
+﻿import type { NavBarConfig } from "../types/config";
 import { LinkPreset } from "../types/config";
 
 export const navBarConfig: NavBarConfig = {
@@ -16,7 +16,7 @@ export const navBarConfig: NavBarConfig = {
 			children: [
 				{
 					name: "Clash Verge Rev 配置教程",
-					url: "/tutorials/clash-verge-setup/",
+					url: "/clash-verge-rev/",
 					icon: "material-symbols:terminal",
 				},
 				{
@@ -46,3 +46,4 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Archive,
 	],
 };
+

@@ -1,4 +1,4 @@
-## 🌐 关于 Clash梯子网 (clashtizi.com)
+﻿## 🌐 关于 Clash梯子网 (clashtizi.com)
 
 **Clash梯子网 (clashtizi.com)** 是一个专注于**网络代理客户端生态、前沿跨境传输协议、企业级高速专线机场客观评测与网络排障指南**的独立极客技术评测平台。
 
@@ -33,7 +33,7 @@
 ## 🧭 站点核心模块导航
 
 - ⚡ **[2026 高速稳定机场推荐与评测排行榜](/recommend/airport/)** —— 深度横评、真实测速数据与独家折扣
-- 📖 **[Clash Verge Rev 客户端配置全教程](/tutorials/clash-verge-setup/)** —— 跨平台现代客户端快速上手
+- 📖 **[Clash Verge Rev 客户端配置全教程](/clash-verge-rev/)** —— 跨平台现代客户端快速上手
 - 🛠️ **[Clash 节点超时/全红排障修复指南](/issues/clash-nodes-timeout/)** —— 5 步快速排查系统时间与网络冲突
 - 🤖 **[ChatGPT 1020 报错与访问限制终极解决](/issues/chatgpt-access-denied/)** —— 海外 AI 原生解锁方案
 
@@ -48,3 +48,4 @@
 ---
 
 💡 *如有评测投稿、线路数据校准或商务合作需求，欢迎关注本站后续更新。*
+

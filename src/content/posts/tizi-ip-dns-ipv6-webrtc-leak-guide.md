@@ -54,7 +54,7 @@ permalink: "/tizi/ip-leak/"
 
 | 泄漏类型分类 | 发生的核心原因 | 会对外暴露哪些信息 | 核心修复与排查方向 |
 | :--- | :--- | :--- | :--- |
-| **公网 IPv4 旁路** | 部分软件不遵循系统代理设置，直接走物理网卡 | 本地家庭宽带/移动网络的公网 IPv4 | 开启 [TUN 虚拟网卡模式](/tutorials/clash-verge-setup/) 接管全系统流量 |
+| **公网 IPv4 旁路** | 部分软件不遵循系统代理设置，直接走物理网卡 | 本地家庭宽带/移动网络的公网 IPv4 | 开启 [TUN 虚拟网卡模式](/clash-verge-rev/) 接管全系统流量 |
 | **DNS 泄漏** | 域名解析请求发送给了本地宽带运营商的默认 DNS | 运营商可获知你查询过哪些海外域名 | 开启代理客户端远程 DNS 或 Fake-IP 模式 |
 | **IPv6 直连泄漏** | 客户端仅代理了 IPv4，系统自动通过 IPv6 直连外网 | 设备真实的本地运营商 IPv6 公网地址 | 客户端开启 IPv6 代理路由，或在配置中接管 IPv6 |
 | **WebRTC 暴露** | 浏览器音视频点对点通信（P2P）探测候选网络地址 | 局域网内网地址或本地公网反射地址 | 现代浏览器默认已启用 mDNS 脱敏保护 |
@@ -247,6 +247,7 @@ WebRTC 是现代浏览器用于网页视频通话（如 Google Meet、Zoom 网�
 - ⚠️ **突发断网排查总枢纽**：[梯子突然不能用了怎么办？昨天正常今天失效完整排查（2026）](/tizi/suddenly-not-working/)
 - 🔴 **节点全红与超时排查**：[梯子节点全部超时怎么办？节点全红与 Timeout 完整排查（2026）](/tizi/nodes-timeout/)
 - 🌐 **连接成功但没网排查**：[梯子连接成功但没有网络怎么办？系统代理与规则排查（2026）](/tizi/connected-no-internet/)
-- 💻 **Windows/Mac 客户端配置**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/tutorials/clash-verge-setup/)
+- 💻 **Windows/Mac 客户端配置**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/clash-verge-rev/)
 - 🚀 **sing-box 极速配置指南**：[sing-box 客户端从零上手与核心配置教程（2026）](/tutorials/sing-box-config/)
 - 📊 **2026 优质专线与机场排行榜**：[2026 翻墙机场与 IPLC 专线排行榜评测速查](/recommend/airport/)
+

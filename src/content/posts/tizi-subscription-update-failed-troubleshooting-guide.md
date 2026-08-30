@@ -144,7 +144,7 @@ HTTPS 订阅链接依赖严苛的 TLS 加密握手协议：
 
 | 客户端类别 | 推荐专属订阅格式 | 遇到兼容性问题时的表现 | 应对方案 |
 | :--- | :--- | :--- | :--- |
-| **[Clash Verge Rev](/tutorials/clash-verge-setup/)** | Clash 标准 YAML 格式 | 提示 `yaml: unmarshal errors` | 在机场后台选择“一键导入 Clash”格式 |
+| **[Clash Verge Rev](/clash-verge-rev/)** | Clash 标准 YAML 格式 | 提示 `yaml: unmarshal errors` | 在机场后台选择“一键导入 Clash”格式 |
 | **Shadowrocket (小火箭)** | 通用 Subscribe 聚合链接 | 提示 `Invalid format` | 在小火箭中选择类型为【Subscribe】 |
 | **v2rayN** | v2ray 标准 base64 格式 | 提示无法识别节点 | 从机场后台复制“v2ray 订阅”导入 |
 | **[sing-box GUI](/tutorials/sing-box-config/)** | sing-box 标准 JSON 格式 | 提示 `json decode error` | 确认机场后端是否原生支持 sing-box 格式 |
@@ -247,5 +247,6 @@ HTTPS 订阅链接依赖严苛的 TLS 加密握手协议：
 - 📋 **订阅机制与安全管理**：[梯子订阅是什么？订阅链接、节点更新、导入客户端完整指南（2026）](/tizi/subscription/)
 - ⚡ **节点指标与选型技巧**：[梯子节点是什么？节点地区、延迟、倍率、线路与选择指南（2026）](/tizi/nodes/)
 - 🛠️ **节点全红与超时排查**：[Clash 节点全部超时 / 出现全红解决终极指南（2026）](/issues/clash-nodes-timeout/)
-- 💻 **Windows/Mac 客户端实操**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/tutorials/clash-verge-setup/)
+- 💻 **Windows/Mac 客户端实操**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/clash-verge-rev/)
 - 📊 **2026 优质专线与机场排行榜**：[2026 翻墙机场与 IPLC 专线排行榜评测速查](/recommend/airport/)
+

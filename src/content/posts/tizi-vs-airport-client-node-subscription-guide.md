@@ -83,7 +83,7 @@ permalink: "/tizi/airport-vs-tizi/"
 ## 三、客户端是什么？Clash 和 Shadowrocket 是机场吗？
 
 ### 1. 客户端是“纯净连接器”，绝非服务商
-- **Clash / [Clash Verge Rev](/tutorials/clash-verge-setup/)**：是开源跨平台的**规则分流代理客户端**；
+- **Clash / [Clash Verge Rev](/clash-verge-rev/)**：是开源跨平台的**规则分流代理客户端**；
 - **Shadowrocket（小火箭）**：是 iOS 平台上经典的**网络代理管理软件**；
 - **[sing-box](/tutorials/sing-box-config/) / v2rayN**：是跨平台高性能代理核心与 Windows 客户端。
 
@@ -273,6 +273,7 @@ permalink: "/tizi/airport-vs-tizi/"
 - 🛠️ **小白实操使用教程**：[梯子怎么用？手机、电脑、客户端、订阅与节点新手教程（2026）](/tizi/how-to-use/)
 - ⚖️ **概念技术深度对比**：[梯子和 VPN 有什么区别？VPN、代理、机场、加速器到底哪个好（2026）](/tizi/vpn-vs-tizi/)
 - 📊 **2026 优质专线与机场排行榜**：[2026 翻墙机场与 IPLC 专线排行榜评测速查](/recommend/airport/)
-- 💻 **Windows/Mac 客户端实操指南**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/tutorials/clash-verge-setup/)
+- 💻 **Windows/Mac 客户端实操指南**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/clash-verge-rev/)
 - ⚙️ **跨平台通用代理核心教程**：[sing-box 全平台通用配置与规则分流实操教程（2026）](/tutorials/sing-box-config/)
 - 🛠️ **节点全红与超时排查专栏**：[Clash 节点全部超时 / 出现全红解决终极指南（2026）](/issues/clash-nodes-timeout/)
+

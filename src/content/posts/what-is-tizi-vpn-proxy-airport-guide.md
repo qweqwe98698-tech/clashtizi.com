@@ -161,7 +161,7 @@ permalink: "/tizi/"
 
 | 操作系统 | 推荐主力客户端 | 备选轻量客户端 | 软件性质与费用 |
 | :--- | :--- | :--- | :--- |
-| **Windows 电脑** | [Clash Verge Rev](/tutorials/clash-verge-setup/) | v2rayN / sing-box | 免费开源，功能极其全面 |
+| **Windows 电脑** | [Clash Verge Rev](/clash-verge-rev/) | v2rayN / sing-box | 免费开源，功能极其全面 |
 | **macOS (苹果电脑)** | Clash Verge Rev (Mac 版) | Surge (高级收费) / sing-box | 免费开源，适配 M 系列芯片 |
 | **Android (安卓手机)** | Clash Meta for Android | sing-box Android / v2rayNG | 免费开源，支持应用独立分流 |
 | **iOS (iPhone/iPad)** | Shadowrocket (小火箭) | Loon / Quantumult X / Stash | 需要非国区 Apple ID 购买 (约 $2.99) |
@@ -312,7 +312,8 @@ permalink: "/tizi/"
 ## 📚 站内相关技术与进阶专题推荐
 
 - 📊 **优质专线与服务商评测**：[2026 翻墙机场与 IPLC 专线排行榜评测速查](/recommend/airport/)
-- 💻 **Windows/Mac 客户端实操教程**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/tutorials/clash-verge-setup/)
+- 💻 **Windows/Mac 客户端实操教程**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/clash-verge-rev/)
 - ⚙️ **跨平台通用代理核心教程**：[sing-box 全平台通用配置与规则分流实操教程（2026）](/tutorials/sing-box-config/)
 - 🛠️ **节点大面积超时故障解决**：[Clash 节点全部超时 / 出现全红解决终极指南（2026）](/issues/clash-nodes-timeout/)
 - 🤖 **AI 工具访问与故障全域矩阵**：[ChatGPT 无法登录 / 报错 / 上传与生成故障排查专栏](/chatgpt/cannot-open/)
+

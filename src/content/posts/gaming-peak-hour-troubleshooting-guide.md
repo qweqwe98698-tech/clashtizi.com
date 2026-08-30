@@ -250,6 +250,7 @@ permalink: "/gaming-peak-hour/"
 - 🛡️ **TUN 模式与游戏接管**：[梯子TUN模式是什么？TUN、虚拟网卡与应用分流说明（2026）](/tizi/tun/)
 - 🌐 **系统代理与应用路由**：[梯子System Proxy是什么？系统代理与应用不走代理说明（2026）](/tizi/system-proxy/)
 - 🏷️ **Fake-IP 与 DNS 映射**：[梯子Fake-IP是什么？Fake-IP、Redir-Host与TUN联动指南（2026）](/tizi/fake-ip/)
-- 💻 **Windows/Mac 客户端配置**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/tutorials/clash-verge-setup/)
+- 💻 **Windows/Mac 客户端配置**：[Clash Verge Rev 新手小白从零配置完整指南（2026）](/clash-verge-rev/)
 - 🚀 **sing-box 极速配置指南**：[sing-box 客户端从零上手与核心配置教程（2026）](/tutorials/sing-box-config/)
 - 📊 **2026 优质专线与机场排行榜**：[2026 翻墙机场与 IPLC 专线排行榜评测速查](/recommend/airport/)
+
