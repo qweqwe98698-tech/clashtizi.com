@@ -1,4 +1,4 @@
-﻿import type { NavBarConfig } from "../types/config";
+import type { NavBarConfig } from "../types/config";
 import { LinkPreset } from "../types/config";
 
 export const navBarConfig: NavBarConfig = {
@@ -18,6 +18,11 @@ export const navBarConfig: NavBarConfig = {
 					name: "Clash Verge Rev 配置教程",
 					url: "/clash-verge-rev/",
 					icon: "material-symbols:terminal",
+				},
+				{
+					name: "Shadowrocket 小火箭教程",
+					url: "/shadowrocket/",
+					icon: "material-symbols:rocket",
 				},
 				{
 					name: "Sing-box 跨平台配置全指南",
