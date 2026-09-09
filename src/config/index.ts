@@ -51,6 +51,7 @@
  */
 
 export { announcementConfig } from "./announcementConfig";
+export { commercialConfig } from "./commercialConfig";
 
 // ─── 外观与壁纸 ─────────────────────────────────────────────
 export { fullscreenWallpaperConfig } from "./backgroundWallpaper";
@@ -81,6 +82,7 @@ export { sidebarLayoutConfig } from "./sidebarConfig";
 export { SITE_LANG, siteConfig } from "./siteConfig";
 
 import { announcementConfig } from "./announcementConfig";
+import { commercialConfig } from "./commercialConfig";
 import { fullscreenWallpaperConfig } from "./backgroundWallpaper";
 import { sakuraConfig } from "./effectsConfig";
 import { musicPlayerConfig } from "./musicConfig";
@@ -95,6 +97,7 @@ import { sidebarLayoutConfig } from "./sidebarConfig";
 export const widgetConfigs = {
 	profile: profileConfig,
 	announcement: announcementConfig,
+	commercial: commercialConfig,
 	music: musicPlayerConfig,
 	layout: sidebarLayoutConfig,
 	sakura: sakuraConfig,

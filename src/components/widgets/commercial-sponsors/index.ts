@@ -1,0 +1,1 @@
+export { default as CommercialSponsors } from "./CommercialSponsors.astro";

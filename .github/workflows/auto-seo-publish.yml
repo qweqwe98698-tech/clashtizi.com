@@ -1,0 +1,83 @@
+name: Weekly Auto SEO & GEO Publisher
+
+on:
+  schedule:
+    # 每周一上午 02:00 UTC (即北京时间上午 10:00) 定时全自动触发
+    - cron: '0 2 * * 1'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: '是否仅执行测试模式 (Dry Run: 不调用 Gemini API，不消耗 Token，不推送代码)'
+        required: false
+        type: boolean
+        default: false
+      slug:
+        description: '指定生成特定文章 slug（留空则自动根据选题库轮巡或生成本周动态专栏）'
+        required: false
+        type: string
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  publish-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+
+      - name: Install dependencies
+        run: pnpm install --no-frozen-lockfile
+
+      - name: Run Auto SEO Publisher
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          ARGS=""
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+          if [ -n "${{ inputs.slug }}" ]; then
+            ARGS="$ARGS --slug=${{ inputs.slug }}"
+          fi
+          node scripts/auto-seo-publisher.mjs $ARGS
+
+      - name: Commit and push changes to main
+        if: ${{ inputs.dry_run != true }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/content/posts/ seo-system/
+          if git diff --staged --quiet; then
+            echo "没有检测到新增或更新的文章内容，跳过提交。"
+          else
+            git commit -m "feat(seo): 🤖 自动发布万字级 SEO 深度专题文章与合作品牌推荐"
+            git push origin main
+          fi
+
+      - name: Build site
+        if: ${{ inputs.dry_run != true }}
+        run: pnpm run build
+
+      - name: Deploy to pages branch
+        if: ${{ inputs.dry_run != true }}
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: pages
+          folder: dist
+          clean: true

@@ -1,0 +1,68 @@
+---
+import { Icon } from "astro-icon/components";
+import { commercialConfig } from "../../../config";
+import WidgetLayout from "../common/WidgetLayout.astro";
+
+interface Props {
+	class?: string;
+	style?: string;
+}
+
+const { class: className, style } = Astro.props;
+const { title, partners } = commercialConfig;
+---
+
+<WidgetLayout
+	name={title}
+	id="commercial-sponsors"
+	class={className}
+	style={style}
+>
+	<div slot="title-icon" class="flex items-center ml-auto">
+		<span class="text-[0.65rem] px-1.5 py-0.5 rounded-md font-semibold tracking-wide bg-(--primary)/10 text-(--primary) border border-(--primary)/20 flex items-center gap-0.5">
+			<Icon name="material-symbols:verified-rounded" class="text-xs" />
+			官方赞助
+		</span>
+	</div>
+
+	<div class="grid grid-cols-2 gap-2 mt-1">
+		{partners.map((partner) => (
+			<a
+				href={partner.url}
+				target="_blank"
+				rel="noopener noreferrer nofollow"
+				class="group relative flex flex-col justify-between p-2 rounded-xl transition-all duration-200 bg-[var(--btn-regular-bg)] hover:bg-[var(--btn-plain-bg-hover)] active:scale-[0.98] border border-black/5 dark:border-white/5 hover:border-(--primary)/40 hover:shadow-xs"
+			>
+				<div class="flex items-center justify-between w-full mb-1">
+					<span class="font-bold text-[0.82rem] text-neutral-800 dark:text-neutral-100 group-hover:text-(--primary) transition-colors truncate">
+						{partner.name}
+					</span>
+					<span class={`text-[0.62rem] px-1 py-0.2 rounded font-semibold whitespace-nowrap leading-tight ${partner.badgeColor || "bg-(--primary)/10 text-(--primary)"}`}>
+						{partner.badge}
+					</span>
+				</div>
+				<div class="flex items-center justify-between w-full text-[0.68rem] text-neutral-500 dark:text-neutral-400">
+					<span class="truncate">{partner.desc}</span>
+					<Icon
+						name="material-symbols:arrow-outward-rounded"
+						class="text-xs text-neutral-400 group-hover:text-(--primary) transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 shrink-0 ml-0.5"
+					/>
+				</div>
+			</a>
+		))}
+	</div>
+
+	<div class="mt-2.5 pt-2 border-t border-black/5 dark:border-white/5 flex items-center justify-between text-[0.7rem] text-neutral-400 dark:text-neutral-500">
+		<span class="flex items-center gap-1">
+			<Icon name="material-symbols:verified-user-outline" class="text-xs text-(--primary)" />
+			晚高峰测速认证
+		</span>
+		<a
+			href="/recommend/airport/"
+			class="text-(--primary) hover:underline flex items-center gap-0.5 font-medium transition-colors"
+		>
+			完整榜单
+			<Icon name="material-symbols:chevron-right-rounded" class="text-sm" />
+		</a>
+	</div>
+</WidgetLayout>

@@ -86,6 +86,16 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			animationDelay: 200,
 		},
 		{
+			// 组件类型：商业合作区组件
+			type: "commercial-sponsors",
+			// 组件位置
+			position: "top",
+			// CSS 类名
+			class: "onload-animation",
+			// 动画延迟时间
+			animationDelay: 220,
+		},
+		{
 			// 组件类型：日历组件(移动端不显示)
 			type: "calendar",
 			// 组件位置
@@ -100,8 +110,21 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 	// 侧栏组件布局配置
 	components: {
 		left: ["profile", "announcement", "tags", "card-toc"],
-		right: ["site-stats", "calendar", "categories", "music-sidebar"],
-		drawer: ["profile", "announcement", "music-sidebar", "categories", "tags"],
+		right: [
+			"site-stats",
+			"commercial-sponsors",
+			"calendar",
+			"categories",
+			"music-sidebar",
+		],
+		drawer: [
+			"profile",
+			"announcement",
+			"commercial-sponsors",
+			"music-sidebar",
+			"categories",
+			"tags",
+		],
 	},
 
 	// 默认动画配置

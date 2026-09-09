@@ -12,6 +12,7 @@ import { CardTOC } from "../widgets/card-toc";
 import Categories from "../widgets/categories/Categories.astro";
 import MusicPlayer from "../widgets/music-player/MusicPlayer.svelte";
 import { MusicSidebarWidget } from "../widgets/music-sidebar";
+import CommercialSponsors from "../widgets/commercial-sponsors/CommercialSponsors.astro";
 import Profile from "../widgets/profile/Profile.astro";
 import SiteStats from "../widgets/site-stats/SiteStats.astro";
 import Tags from "../widgets/tags/Tags.astro";
@@ -53,6 +54,7 @@ const componentMap: Record<string, unknown> = {
 	"music-sidebar": MusicSidebarWidget,
 	"site-stats": SiteStats,
 	calendar: Calendar,
+	"commercial-sponsors": CommercialSponsors,
 };
 
 type WidgetComponentConfig = ReturnType<
