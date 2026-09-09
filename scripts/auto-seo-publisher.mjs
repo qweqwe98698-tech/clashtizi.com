@@ -284,17 +284,20 @@ pinned: false
  * 调用 Google Gemini API
  */
 async function callGeminiApi(prompt) {
-	const apiKey = process.env.GEMINI_API_KEY;
+	const rawKey = process.env.GEMINI_API_KEY || "";
+	const apiKey = rawKey.trim().replace(/^["']|["']$/g, "").trim();
 	if (!apiKey) {
 		throw new Error("缺少 GEMINI_API_KEY 环境变量！请在 GitHub Secrets 或本地 .env 中配置。");
 	}
 
-	// 优先尝试 gemini-2.5-flash，若失败自动降级到 gemini-1.5-flash
-	const models = ["gemini-2.5-flash", "gemini-1.5-flash", "gemini-2.0-flash"];
+	console.log(`🔑 检测到 GEMINI_API_KEY (长度: ${apiKey.length} 字符, 前缀: ${apiKey.slice(0, 6)}...)`);
+
+	// 标准 Google Gemini API 生产级模型
+	const models = ["gemini-1.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"];
 
 	let lastError = null;
 	for (const model of models) {
-		const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+		const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(apiKey)}`;
 		console.log(`📡 正在调用 Google Gemini API (模型: ${model})...`);
 
 		try {
@@ -302,6 +305,7 @@ async function callGeminiApi(prompt) {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
+					"x-goog-api-key": apiKey,
 				},
 				body: JSON.stringify({
 					contents: [
