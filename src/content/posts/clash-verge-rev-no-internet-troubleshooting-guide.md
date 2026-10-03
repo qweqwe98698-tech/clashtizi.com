@@ -1,5 +1,5 @@
 ---
-title: Clash Verge Rev开了没网怎么办？System Proxy、TUN、DNS、Rule与路由完整排查（2026）
+title: Clash Verge Rev开了连不上网怎么办？TUN、系统代理与DNS排查
 published: 2026-08-30T00:00:00.000Z
 updated: 2026-08-30T00:00:00.000Z
 description: >-

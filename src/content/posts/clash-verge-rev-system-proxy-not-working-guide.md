@@ -1,5 +1,5 @@
 ---
-title: Clash Verge Rev System Proxy不生效怎么办？浏览器能用、软件不走代理与系统代理残留完整排查（2026）
+title: Clash Verge Rev系统代理不生效怎么办？应用不走代理完整排查
 published: 2026-08-30T00:00:00.000Z
 updated: 2026-08-30T00:00:00.000Z
 description: >-

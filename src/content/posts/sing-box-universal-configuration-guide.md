@@ -1,7 +1,5 @@
 ---
-title: >-
-  Sing-box 跨平台新手配置指南：Windows、macOS、Android、iOS 与 Hysteria2 / TUIC / VLESS
-  教程（2026）
+title: Sing-box跨平台新手配置教程：多端客户端与分流规则指南（2026）
 published: 2026-08-29T00:00:00.000Z
 updated: 2026-08-29T00:00:00.000Z
 description: >-

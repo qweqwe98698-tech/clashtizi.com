@@ -1,5 +1,5 @@
 ---
-title: 梯子代理模式怎么选？System Proxy、TUN、Rule、Global、Direct 与不同使用场景完整指南（2026）
+title: 代理模式怎么选？System Proxy、TUN、Rule与全局模式区别指南
 published: 2026-08-29T00:00:00.000Z
 updated: 2026-08-29T00:00:00.000Z
 description: >-

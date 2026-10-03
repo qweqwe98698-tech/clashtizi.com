@@ -1,5 +1,5 @@
 ---
-title: Clash Verge Rev Global能用Rule不能用怎么办？规则命中、策略组、Rule Provider 与 DNS 异常完整排查（2026）
+title: Clash Verge Rev全局能用规则不能用怎么办？Rule模式分流排查
 published: 2026-08-30T00:00:00.000Z
 updated: 2026-08-30T00:00:00.000Z
 description: >-

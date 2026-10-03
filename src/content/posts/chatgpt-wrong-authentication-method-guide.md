@@ -1,7 +1,5 @@
 ---
-title: >-
-  ChatGPT Wrong authentication method 怎么办？Google、Apple、Microsoft
-  登录方式错误完整排查（2026）
+title: ChatGPT提示Wrong authentication method怎么办？三方登录错误排查
 published: 2026-08-29T00:00:00.000Z
 updated: 2026-08-29T00:00:00.000Z
 description: >-

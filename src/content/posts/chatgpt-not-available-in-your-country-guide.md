@@ -1,5 +1,5 @@
 ---
-title: ChatGPT Not available in your country 怎么办？地区不可用、支持国家与账号风险完整说明（2026）
+title: ChatGPT提示地区不可用怎么办？Not available in your country排查指南
 published: 2026-08-29T00:00:00.000Z
 updated: 2026-08-29T00:00:00.000Z
 description: >-

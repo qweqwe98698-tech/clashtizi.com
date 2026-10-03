@@ -1,5 +1,5 @@
 ---
-title: Clash Verge Rev 2026完整使用教程：下载安装、订阅导入、节点选择、System Proxy、TUN与常见问题
+title: Clash Verge Rev 2026使用教程：下载安装、订阅导入与TUN配置指南
 published: 2026-08-30T00:00:00.000Z
 updated: 2026-08-30T00:00:00.000Z
 description: >-

@@ -23,7 +23,7 @@ const prefix = type === "rss" ? "rss" : "atom";
 const t = (key: string) => i18n(key as I18nKey);
 ---
 
-<MainGridLayout title={t(`${prefix}`)}>
+<MainGridLayout title={type === "rss" ? "官方RSS内容订阅聚合源" : "官方Atom标准订阅聚合源"}>
 	<script>
 		import("../../../scripts/right-sidebar-layout.js");
 	</script>
