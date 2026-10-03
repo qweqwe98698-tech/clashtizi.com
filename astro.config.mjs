@@ -1,6 +1,22 @@
+import fs from "node:fs";
+import path from "node:path";
 import { unified } from "@astrojs/markdown-remark";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
+
+// 提取所有拥有自定义 permalink 的文章 slug，避免在 sitemap 中重复索引 /posts/ 路径
+const postsDir = path.resolve("./src/content/posts");
+const customPermalinkSlugs = new Set();
+if (fs.existsSync(postsDir)) {
+	const files = fs.readdirSync(postsDir).filter((f) => f.endsWith(".md") || f.endsWith(".mdx"));
+	for (const file of files) {
+		const content = fs.readFileSync(path.join(postsDir, file), "utf-8");
+		if (/permalink:\s*['"]?[^'\n\r]+/.test(content)) {
+			const slug = file.replace(/\.(md|mdx)$/, "");
+			customPermalinkSlugs.add(slug);
+		}
+	}
+}
 import svelte, { vitePreprocess } from "@astrojs/svelte";
 import { pluginCollapsibleSections } from "@expressive-code/plugin-collapsible-sections";
 import { pluginLineNumbers } from "@expressive-code/plugin-line-numbers";
@@ -205,7 +221,15 @@ export default defineConfig({
 		svelte({
 			preprocess: vitePreprocess(),
 		}),
-		sitemap(),
+		sitemap({
+			filter: (page) => {
+				const match = page.match(/\/posts\/([^/]+)\/?$/);
+				if (match && customPermalinkSlugs.has(match[1])) {
+					return false;
+				}
+				return true;
+			},
+		}),
 		mdx(),
 	],
 	markdown: {

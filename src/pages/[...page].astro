@@ -23,9 +23,19 @@ export const getStaticPaths = (async ({ paginate }) => {
 const { page } = Astro.props;
 
 const len = page.data.length;
+
+const pageTitle =
+	page.currentPage > 1
+		? `${siteConfig.title} (第${page.currentPage}页)`
+		: undefined;
+
+const pageDescription =
+	page.currentPage > 1
+		? `Clash梯子网专注于2026年最新高速稳定翻墙机场推荐、节点测速与科学上网配置指南（第${page.currentPage}页）。全面实测IEPL/IPLC纯专线大厂晚高峰抗丢包性能，提供Clash Verge、Sing-box、小火箭Shadowrocket及v2rayN多端客户端教程与流媒体解锁技巧，助您零门槛搭建安全极速出海网络。`
+		: undefined;
 ---
 
-<MainGridLayout description="Clash梯子网专注于2026年最新高速稳定翻墙机场推荐、科学上网配置指南与网络排障大全。深度实测IEPL/IPLC纯专线大厂晚高峰抗丢包性能，全面覆盖Clash Verge、Sing-box、小火箭Shadowrocket及v2rayN多平台跨端客户端配置教程与流媒体解锁技巧。">
+<MainGridLayout title={pageTitle} description={pageDescription}>
 	{showCategoryBar && <CategoryBar />}
 	<PostPage page={page} />
 	<Pagination

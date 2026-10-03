@@ -132,8 +132,15 @@ for (const file of allHtmlFiles) {
     hasCriticalError = true;
   }
 
-  // B. Check Noindex
+  // B. Check Redirect Pages
   const is404 = relPath === "404.html";
+  const isRedirect = /<meta[^>]*http-equiv=["']refresh["']/i.test(html) || /<title>Redirecting/i.test(html);
+  if (isRedirect) {
+    stats.noindexPages++;
+    // Redirect pages are expected to have noindex and redirect headers
+    continue;
+  }
+
   const hasNoindex = /<meta[^>]*name=["'](robots|googlebot|bingbot)["'][^>]*content=["'][^"']*noindex/i.test(html);
   if (hasNoindex) {
     stats.noindexPages++;
