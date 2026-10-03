@@ -1,12 +1,21 @@
-﻿---
-title: "YouTube打不开怎么办？视频加载失败、一直转圈与播放卡顿完整排查（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "YouTube打不开怎么办？视频发生错误请稍后重试、一直转圈不缓冲、4K频繁卡顿？本文详解QUIC禁用、GoogleVideo分流、AV1硬解、手机TV端排障全流程。"
-category: "梯子科普"
-tags: ["YouTube打不开", "YouTube视频加载失败", "YouTube一直转圈", "视频卡顿缓冲", "GoogleVideo分流", "QUIC协议", "4K流媒体", "排障指南"]
+---
+title: YouTube打不开怎么办？视频加载失败、一直转圈与播放卡顿完整排查（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  YouTube打不开怎么办？视频发生错误请稍后重试、一直转圈不缓冲、4K频繁卡顿？本文详解QUIC禁用、GoogleVideo分流、AV1硬解、手机TV端排障全流程。系统化梳理系统代理配置残留、TUN网卡驱动异常、本地DNS污染死锁、分流规则误切以及第三方杀毒软件拦截等常见症结，提供跨平台全设备一步到位的实操排障秘籍。
+category: 梯子科普
+tags:
+  - YouTube打不开
+  - YouTube视频加载失败
+  - YouTube一直转圈
+  - 视频卡顿缓冲
+  - GoogleVideo分流
+  - QUIC协议
+  - 4K流媒体
+  - 排障指南
 pinned: true
-permalink: "/tizi/youtube-cannot-open/"
+permalink: /tizi/youtube-cannot-open/
 ---
 
 > **【💡 30 秒极速直接答案：YouTube 视频加载失败、一直转圈与播放卡顿怎么秒解？】**

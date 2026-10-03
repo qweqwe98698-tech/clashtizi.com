@@ -1,12 +1,23 @@
-﻿---
-title: "DNS解析失败怎么办？NXDOMAIN、DNS Timeout、DoH、IPv6与域名打不开完整排查（2026）"
-published: 2026-08-29
-updated: 2026-08-30
-description: "DNS 解析失败、网页提示 NXDOMAIN、DNS Timeout、DNS_PROBE_FINISHED_NXDOMAIN 或纯 IP 能通域名打不开怎么办？本文深度排查 DoH、Fake-IP、IPv6、Bootstrap DNS 与跨客户端修复。"
-category: "梯子工具"
-tags: ["DNS解析失败", "NXDOMAIN", "DNS Timeout", "DoH", "Fake-IP", "IPv6", "域名打不开", "故障排查"]
+---
+title: DNS解析失败怎么办？NXDOMAIN、DNS Timeout、DoH、IPv6与域名打不开完整排查（2026）
+published: 2026-08-29T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  DNS 解析失败、网页提示 NXDOMAIN、DNS Timeout、DNS_PROBE_FINISHED_NXDOMAIN 或纯 IP
+  能通域名打不开怎么办？本文深度排查 DoH、Fake-IP、IPv6、Bootstrap DNS
+  与跨客户端修复。全面排查网络死锁与配置异常，提供跨平台极速修复方案。
+category: 梯子工具
+tags:
+  - DNS解析失败
+  - NXDOMAIN
+  - DNS Timeout
+  - DoH
+  - Fake-IP
+  - IPv6
+  - 域名打不开
+  - 故障排查
 pinned: true
-permalink: "/tizi/dns-resolution-failed/"
+permalink: /tizi/dns-resolution-failed/
 ---
 
 > **【💡 30 秒极速直接答案：DNS 解析失败核心定性与四大排障原则】**

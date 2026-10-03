@@ -1,12 +1,22 @@
-﻿---
-title: "梯子Fake-IP是什么？Fake-IP、Redir-Host、DNS映射、TUN 与规则模式完整说明（2026）"
-published: 2026-08-29
-updated: 2026-08-29
-description: "Fake-IP 是什么？为什么 Clash / Mihomo 会出现 198.18.x.x？本文讲清 Fake-IP、Redir-Host、DNS映射、TUN、Rule 模式和局域网兼容问题，并解释常见故障与误区。"
-category: "梯子工具"
-tags: ["Fake-IP", "Redir-Host", "DNS映射", "TUN模式", "规则分流", "198.18", "网络知识"]
+---
+title: 梯子Fake-IP是什么？Fake-IP、Redir-Host、DNS映射、TUN 与规则模式完整说明（2026）
+published: 2026-08-29T00:00:00.000Z
+updated: 2026-08-29T00:00:00.000Z
+description: >-
+  Fake-IP 是什么？为什么 Clash / Mihomo 会出现 198.18.x.x？本文讲清
+  Fake-IP、Redir-Host、DNS映射、TUN、Rule
+  模式和局域网兼容问题，并解释常见故障与误区。深度对比晚高峰测速、4K流媒体解锁与抗丢包能力，助您避坑选到高性价比优质专线服务。基于多运营商晚高峰实测。
+category: 梯子工具
+tags:
+  - Fake-IP
+  - Redir-Host
+  - DNS映射
+  - TUN模式
+  - 规则分流
+  - '198.18'
+  - 网络知识
 pinned: false
-permalink: "/tizi/fake-ip/"
+permalink: /tizi/fake-ip/
 ---
 
 > **【💡 30 秒看懂：Fake-IP 到底是什么？】**

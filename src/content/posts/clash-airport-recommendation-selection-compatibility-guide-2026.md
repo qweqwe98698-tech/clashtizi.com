@@ -1,12 +1,22 @@
-﻿---
-title: "Clash机场推荐怎么选？订阅、节点、线路与客户端兼容完整指南（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "Clash机场推荐怎么选？支持Clash Verge Rev/Mihomo的优质机场有哪些？本文详解Clash订阅格式、Mihomo内核新协议支持、IPLC专线分流与选型全流程。"
-category: "Clash教程"
-tags: ["Clash机场推荐", "Clash订阅", "Clash节点", "IPLC专线", "Mihomo内核", "TUN模式", "客户端兼容", "选购指南"]
+---
+title: Clash机场推荐怎么选？订阅、节点、线路与客户端兼容完整指南（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  Clash机场推荐怎么选？支持Clash Verge
+  Rev/Mihomo的优质机场有哪些？本文详解Clash订阅格式、Mihomo内核新协议支持、IPLC专线分流与选型全流程。手把手指导正版客户端下载安装、多节点订阅导入与自动更新、智能分流策略组调优以及TUN全流量接管，全面满足电脑与手机跨平台极速出海办公需求。
+category: Clash教程
+tags:
+  - Clash机场推荐
+  - Clash订阅
+  - Clash节点
+  - IPLC专线
+  - Mihomo内核
+  - TUN模式
+  - 客户端兼容
+  - 选购指南
 pinned: true
-permalink: "/clash-verge-rev/clash-airport/"
+permalink: /clash-verge-rev/clash-airport/
 ---
 
 > **【💡 30 秒极速直接答案：Clash 专属机场怎么选？如何与客户端完美兼容？】**

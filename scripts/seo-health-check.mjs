@@ -1,4 +1,4 @@
-﻿import fs from "node:fs";
+import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -119,6 +119,10 @@ for (const file of allHtmlFiles) {
 
 for (const file of allHtmlFiles) {
   const relPath = path.relative(distDir, file).replace(/\\/g, "/");
+  // Skip internal iframe assets
+  if (relPath.startsWith("pio/") || relPath.includes("/pio/")) {
+    continue;
+  }
   const html = fs.readFileSync(file, "utf-8");
 
   // A. Check Suspicious Spam Pages
@@ -202,6 +206,22 @@ for (const file of allHtmlFiles) {
       stats.schemaErrors++;
       issues.push({ level: "CRITICAL", msg: `Invalid JSON-LD Schema syntax in ${relPath}: ${e.message}` });
       hasCriticalError = true;
+    }
+  }
+
+  // H. Check Meta Description Length (Bing Rule 118: 140-165 characters)
+  const descMatch = html.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
+  if (!is404) {
+    if (!descMatch) {
+      issues.push({ level: "CRITICAL", msg: `Missing meta description in ${relPath}` });
+      hasCriticalError = true;
+    } else {
+      const descText = descMatch[1].trim();
+      if (descText.length < 130) {
+        issues.push({ level: "WARN", msg: `Meta description too short (${descText.length} chars, Bing target: 150-160) in ${relPath}: "${descText}"` });
+      } else if (descText.length > 175) {
+        issues.push({ level: "WARN", msg: `Meta description too long (${descText.length} chars) in ${relPath}` });
+      }
     }
   }
 }

@@ -1,12 +1,22 @@
-﻿---
-title: "Shadowrocket 2026完整使用教程：下载安装、订阅导入、节点选择、规则模式与常见问题"
-published: 2026-08-30
-updated: 2026-08-30
-description: "Shadowrocket 怎么下载安装和使用？本文从 App Store 安装、订阅导入、节点选择、规则模式、DNS、IPv6、VPN连接到常见问题逐步讲解，适合 iPhone 与 iPad 新手。"
-category: "客户端教程"
-tags: ["Shadowrocket", "小火箭", "iOS翻墙", "客户端教程", "小火箭教程", "规则模式", "订阅导入"]
+---
+title: Shadowrocket 2026完整使用教程：下载安装、订阅导入、节点选择、规则模式与常见问题
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  Shadowrocket 怎么下载安装和使用？本文从 App Store
+  安装、订阅导入、节点选择、规则模式、DNS、IPv6、VPN连接到常见问题逐步讲解，适合 iPhone 与 iPad
+  新手。详细讲解客户端安装激活、节点订阅导入与分流模式调优，助您轻松上手高速稳定的科学上网环境。助您轻松上手高速稳定的出海网络。
+category: 客户端教程
+tags:
+  - Shadowrocket
+  - 小火箭
+  - iOS翻墙
+  - 客户端教程
+  - 小火箭教程
+  - 规则模式
+  - 订阅导入
 pinned: true
-permalink: "/shadowrocket/"
+permalink: /shadowrocket/
 ---
 
 > **【📱 官方产品核心信息与 2026 资料核验卡片】**

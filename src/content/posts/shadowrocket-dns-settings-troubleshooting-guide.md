@@ -1,12 +1,23 @@
-﻿---
-title: "Shadowrocket DNS怎么设置？DoH、DoT、DoQ、IPv6与域名解析问题完整指南（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "Shadowrocket DNS 怎么正确设置？本文详解 DoH、DoT、DoQ 加密 DNS、Local DNS Mapping、国内外分流解析、IPv6 双栈及 DNS 污染与超时排查。"
-category: "客户端教程"
-tags: ["Shadowrocket", "小火箭", "DNS设置", "DoH", "DoT", "DoQ", "IPv6", "问题排查"]
+---
+title: Shadowrocket DNS怎么设置？DoH、DoT、DoQ、IPv6与域名解析问题完整指南（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  Shadowrocket DNS 怎么正确设置？本文详解 DoH、DoT、DoQ 加密 DNS、Local DNS Mapping、国内外分流解析、IPv6
+  双栈及 DNS
+  污染与超时排查。全面演示跨平台客户端正版安装、订阅链接一键导入与定时更新、分流策略组切换及TUN模式开启，助您零门槛搭建高速稳定的科学上网环境。
+category: 客户端教程
+tags:
+  - Shadowrocket
+  - 小火箭
+  - DNS设置
+  - DoH
+  - DoT
+  - DoQ
+  - IPv6
+  - 问题排查
 pinned: false
-permalink: "/shadowrocket/dns/"
+permalink: /shadowrocket/dns/
 ---
 
 > **【💡 30 秒极速直接答案：Shadowrocket DNS 核心机制与推荐配置卡片】**

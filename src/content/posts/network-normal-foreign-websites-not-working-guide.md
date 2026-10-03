@@ -1,12 +1,21 @@
-﻿---
-title: "网络正常但国外网站打不开怎么办？DNS、连接超时与浏览器完整排查（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "网络正常但国外网站打不开怎么办？微信百度秒开但Google一直连接超时？本文详解DNS污染、QUIC协议阻断、Fake-IP设置、系统代理接管与Winsock重置全流程。"
-category: "梯子科普"
-tags: ["网络正常国外网站打不开", "连接超时", "DNS污染", "QUIC协议", "Fake-IP", "Winsock重置", "浏览器设置", "网络排障"]
+---
+title: 网络正常但国外网站打不开怎么办？DNS、连接超时与浏览器完整排查（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  网络正常但国外网站打不开怎么办？微信百度秒开但Google一直连接超时？本文详解DNS污染、QUIC协议阻断、Fake-IP设置、系统代理接管与Winsock重置全流程。深度排查系统代理写入失败、TUN虚拟网卡未授权、本地DNS死锁、分流规则误判以及端口占用冲突等核心故障，提供跨平台全设备一步到位的极速修复指南。
+category: 梯子科普
+tags:
+  - 网络正常国外网站打不开
+  - 连接超时
+  - DNS污染
+  - QUIC协议
+  - Fake-IP
+  - Winsock重置
+  - 浏览器设置
+  - 网络排障
 pinned: true
-permalink: "/tizi/network-normal-cannot-open-foreign-websites/"
+permalink: /tizi/network-normal-cannot-open-foreign-websites/
 ---
 
 > **【💡 30 秒极速直接答案：本地网络正常（国内秒开），但国外网站打不开怎么办？】**

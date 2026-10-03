@@ -1,12 +1,21 @@
-﻿---
-title: "Clash Verge Rev 2026完整使用教程：下载安装、订阅导入、节点选择、System Proxy、TUN与常见问题"
-published: 2026-08-30
-updated: 2026-08-30
-description: "Clash Verge Rev 怎么下载安装和使用？本文从官方下载安装、订阅导入、节点选择、Rule/Global/Direct、System Proxy、TUN、DNS 到常见问题逐步讲解，适合 Windows、macOS 与 Linux 新手。"
-category: "客户端教程"
-tags: ["Clash Verge Rev", "Clash", "Mihomo", "客户端教程", "TUN", "系统代理", "订阅配置"]
+---
+title: Clash Verge Rev 2026完整使用教程：下载安装、订阅导入、节点选择、System Proxy、TUN与常见问题
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  Clash Verge Rev 怎么下载安装和使用？本文从官方下载安装、订阅导入、节点选择、Rule/Global/Direct、System
+  Proxy、TUN、DNS 到常见问题逐步讲解，适合 Windows、macOS 与 Linux 新手。包含跨平台客户端安装、节点导入与智能分流全流程指南。
+category: 客户端教程
+tags:
+  - Clash Verge Rev
+  - Clash
+  - Mihomo
+  - 客户端教程
+  - TUN
+  - 系统代理
+  - 订阅配置
 pinned: true
-permalink: "/clash-verge-rev/"
+permalink: /clash-verge-rev/
 ---
 
 > **【💡 软件定位与 30 秒极速上手指南】**

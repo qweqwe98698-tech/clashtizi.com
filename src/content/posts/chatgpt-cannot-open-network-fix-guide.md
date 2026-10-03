@@ -1,12 +1,20 @@
-﻿---
-title: "ChatGPT 打不开怎么办？网页无法访问、一直加载与网络错误完整排查（2026）"
-published: 2026-08-29
-updated: 2026-08-29
-description: "ChatGPT 网页打不开、一直加载、白屏、Network Error 或连接超时怎么办？本文从 OpenAI 服务状态、浏览器、DNS、Wi-Fi、系统网络、代理、防火墙与页面资源加载逐步排查。"
-category: "AI工具访问"
-tags: ["ChatGPT", "OpenAI", "网络错误", "网页打不开", "浏览器排查", "DNS"]
+---
+title: ChatGPT 打不开怎么办？网页无法访问、一直加载与网络错误完整排查（2026）
+published: 2026-08-29T00:00:00.000Z
+updated: 2026-08-29T00:00:00.000Z
+description: >-
+  ChatGPT 网页打不开、一直加载、白屏、Network Error 或连接超时怎么办？本文从 OpenAI
+  服务状态、浏览器、DNS、Wi-Fi、系统网络、代理、防火墙与页面资源加载逐步排查。深入剖析客户端驱动冲突、DNS解析死锁与规则路由异常，助您秒级定位断网原因并快速恢复网络畅通。助您秒级恢复网络畅通。
+category: AI工具访问
+tags:
+  - ChatGPT
+  - OpenAI
+  - 网络错误
+  - 网页打不开
+  - 浏览器排查
+  - DNS
 pinned: false
-permalink: "/chatgpt/cannot-open/"
+permalink: /chatgpt/cannot-open/
 ---
 
 > **【30 秒快速判断核心导读】**

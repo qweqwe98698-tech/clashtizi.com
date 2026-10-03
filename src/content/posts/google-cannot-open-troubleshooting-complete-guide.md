@@ -1,12 +1,21 @@
-﻿---
-title: "Google打不开怎么办？搜索、账号、Gmail、Drive与连接失败完整排查（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "Google打不开怎么办？谷歌搜索一直转圈、Google账号无法登录、Gmail正在载入、Drive同步失败？本文详解QUIC禁用、Fake-IP设置、异常流量人机验证与全场景排障。"
-category: "梯子科普"
-tags: ["Google打不开", "谷歌搜索超时", "Google账号登录失败", "Gmail打不开", "Google Drive同步", "异常流量人机验证", "QUIC协议", "排障指南"]
+---
+title: Google打不开怎么办？搜索、账号、Gmail、Drive与连接失败完整排查（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  Google打不开怎么办？谷歌搜索一直转圈、Google账号无法登录、Gmail正在载入、Drive同步失败？本文详解QUIC禁用、Fake-IP设置、异常流量人机验证与全场景排障。全面拆解系统代理未写入、TUN虚拟网卡权限、本地DNS污染死锁、分流规则误切及出口断流等底层原因，提供跨平台一步到位的排障修复方案。
+category: 梯子科普
+tags:
+  - Google打不开
+  - 谷歌搜索超时
+  - Google账号登录失败
+  - Gmail打不开
+  - Google Drive同步
+  - 异常流量人机验证
+  - QUIC协议
+  - 排障指南
 pinned: true
-permalink: "/tizi/google-cannot-open/"
+permalink: /tizi/google-cannot-open/
 ---
 
 > **【💡 30 秒极速直接答案：Google 搜索、账号登录、Gmail 与 Drive 打不开怎么秒解？】**

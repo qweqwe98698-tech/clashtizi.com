@@ -1,12 +1,22 @@
-﻿---
-title: "Shadowrocket规则模式怎么用？Proxy、Direct、Reject、规则匹配与分流设置完整教程（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "Shadowrocket 规则模式怎么设置与使用？本文深度讲解 Proxy、Direct、Reject 三大分流动作、域名与 IP 规则匹配语法、添加自定义规则与远程规则文件导入。"
-category: "客户端教程"
-tags: ["Shadowrocket", "小火箭", "规则模式", "分流设置", "Proxy", "Direct", "Reject", "教程"]
+---
+title: Shadowrocket规则模式怎么用？Proxy、Direct、Reject、规则匹配与分流设置完整教程（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  Shadowrocket 规则模式怎么设置与使用？本文深度讲解 Proxy、Direct、Reject 三大分流动作、域名与 IP
+  规则匹配语法、添加自定义规则与远程规则文件导入。手把手指导正版客户端下载安装、多节点订阅导入与自动更新、智能分流策略组调优以及TUN全流量接管，全面满足电脑与手机跨平台极速出海办公需求。
+category: 客户端教程
+tags:
+  - Shadowrocket
+  - 小火箭
+  - 规则模式
+  - 分流设置
+  - Proxy
+  - Direct
+  - Reject
+  - 教程
 pinned: false
-permalink: "/shadowrocket/rules/"
+permalink: /shadowrocket/rules/
 ---
 
 > **【💡 30 秒极速直接答案：Shadowrocket 规则模式核心逻辑与三大动作】**

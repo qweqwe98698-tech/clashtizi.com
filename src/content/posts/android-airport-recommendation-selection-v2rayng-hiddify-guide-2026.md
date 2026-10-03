@@ -1,12 +1,21 @@
-﻿---
-title: "Android机场推荐怎么选？v2rayNG、Hiddify与节点订阅完整指南（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "Android安卓手机机场推荐怎么选？v2rayNG与Hiddify怎么配置？本文详解安卓订阅导入、分应用代理、电池优化后台保活、IPLC专线与选型全流程。"
-category: "机场推荐"
-tags: ["Android机场推荐", "安卓手机梯子", "v2rayNG", "Hiddify", "分应用代理", "安卓后台保活", "IPLC专线", "选购指南"]
+---
+title: Android机场推荐怎么选？v2rayNG、Hiddify与节点订阅完整指南（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  Android安卓手机机场推荐怎么选？v2rayNG与Hiddify怎么配置？本文详解安卓订阅导入、分应用代理、电池优化后台保活、IPLC专线与选型全流程。深入指导跨平台客户端下载安装、节点订阅导入与自动测速、全局与规则分流模式切换以及本地DNS防污染优化，助您轻松解决各类连接异常，享受丝滑跨境网络。
+category: 机场推荐
+tags:
+  - Android机场推荐
+  - 安卓手机梯子
+  - v2rayNG
+  - Hiddify
+  - 分应用代理
+  - 安卓后台保活
+  - IPLC专线
+  - 选购指南
 pinned: true
-permalink: "/recommend/android-airport/"
+permalink: /recommend/android-airport/
 ---
 
 > **【💡 30 秒极速直接答案：Android 安卓手机机场怎么选？如何配置最省电不杀后台？】**

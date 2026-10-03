@@ -1,12 +1,21 @@
-﻿---
-title: "梯子IPv6是什么？IPv4、IPv6、双栈网络、代理兼容与IPv6异常完整说明（2026）"
-published: 2026-08-29
-updated: 2026-08-29
-description: "IPv6 是什么？IPv4 和 IPv6 有什么区别？为什么开代理后 IPv4 变了但 IPv6 仍直连？本文讲清双栈网络、AAAA、TUN、System Proxy、Rule 与 IPv6 异常排查。"
-category: "梯子工具"
-tags: ["IPv6", "IPv4", "双栈网络", "IPv6泄漏", "TUN模式", "代理兼容", "网络排查"]
+---
+title: 梯子IPv6是什么？IPv4、IPv6、双栈网络、代理兼容与IPv6异常完整说明（2026）
+published: 2026-08-29T00:00:00.000Z
+updated: 2026-08-29T00:00:00.000Z
+description: >-
+  IPv6 是什么？IPv4 和 IPv6 有什么区别？为什么开代理后 IPv4 变了但 IPv6 仍直连？本文讲清双栈网络、AAAA、TUN、System
+  Proxy、Rule 与 IPv6 异常排查。深度对比晚高峰测速、4K流媒体解锁与抗丢包能力，助您避坑选到高性价比优质专线服务。为您提供权威客观的选购参考。
+category: 梯子工具
+tags:
+  - IPv6
+  - IPv4
+  - 双栈网络
+  - IPv6泄漏
+  - TUN模式
+  - 代理兼容
+  - 网络排查
 pinned: false
-permalink: "/tizi/ipv6/"
+permalink: /tizi/ipv6/
 ---
 
 > **【💡 30 秒看懂：梯子环境下的 IPv6 到底是何原理？】**

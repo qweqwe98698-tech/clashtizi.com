@@ -1,12 +1,22 @@
-﻿---
-title: "Mihomo免费节点怎么用？订阅、配置文件、节点导入与风险说明（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "Mihomo免费节点怎么用？Clash.Meta内核配置文件怎么写？Hysteria2与VLESS Reality免费订阅怎么导入？本文详解Mihomo/Meta节点配置、Proxy-Providers、GUI客户端与排错指南。"
-category: "机场推荐"
-tags: ["Mihomo", "Mihomo免费节点", "Clash.Meta", "Proxy-Providers", "Hysteria 2", "VLESS Reality", "配置文件", "节点导入"]
+---
+title: Mihomo免费节点怎么用？订阅、配置文件、节点导入与风险说明（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  Mihomo免费节点怎么用？Clash.Meta内核配置文件怎么写？Hysteria2与VLESS
+  Reality免费订阅怎么导入？本文详解Mihomo/Meta节点配置、Proxy-Providers、GUI客户端与排错指南。详细讲解客户端安装激活、节点订阅导入与分流模式调优，助您轻松上手高速稳定的科学上网环境。
+category: 机场推荐
+tags:
+  - Mihomo
+  - Mihomo免费节点
+  - Clash.Meta
+  - Proxy-Providers
+  - Hysteria 2
+  - VLESS Reality
+  - 配置文件
+  - 节点导入
 pinned: true
-permalink: "/recommend/mihomo-free-nodes/"
+permalink: /recommend/mihomo-free-nodes/
 ---
 
 > **【💡 30 秒极速直接答案：Mihomo (Clash.Meta) 免费节点怎么用？】**

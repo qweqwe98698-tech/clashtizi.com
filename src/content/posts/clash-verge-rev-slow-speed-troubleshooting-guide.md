@@ -1,12 +1,21 @@
-﻿---
-title: "Clash Verge Rev速度慢怎么办？节点延迟、带宽、丢包、晚高峰与线路异常完整排查（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "Clash Verge Rev 节点能连接但速度慢怎么办？本文从延迟、带宽、丢包、抖动、晚高峰、节点负载、Wi-Fi、线路和 IPv4/IPv6 逐层排查。"
-category: "客户端教程"
-tags: ["Clash Verge Rev", "速度慢", "节点延迟高", "视频卡顿", "晚高峰慢", "丢包排查", "问题排查"]
+---
+title: Clash Verge Rev速度慢怎么办？节点延迟、带宽、丢包、晚高峰与线路异常完整排查（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  Clash Verge Rev 节点能连接但速度慢怎么办？本文从延迟、带宽、丢包、抖动、晚高峰、节点负载、Wi-Fi、线路和 IPv4/IPv6
+  逐层排查。深入指导跨平台客户端下载安装、节点订阅导入与自动测速、全局与规则分流模式切换以及本地DNS防污染优化，助您轻松解决各类连接异常，享受丝滑跨境网络。
+category: 客户端教程
+tags:
+  - Clash Verge Rev
+  - 速度慢
+  - 节点延迟高
+  - 视频卡顿
+  - 晚高峰慢
+  - 丢包排查
+  - 问题排查
 pinned: false
-permalink: "/clash-verge-rev/slow-speed/"
+permalink: /clash-verge-rev/slow-speed/
 ---
 
 > **【💡 30 秒极速分诊：Clash Verge Rev 速度慢到底慢在哪里？】**

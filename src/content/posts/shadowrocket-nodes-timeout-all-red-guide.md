@@ -1,12 +1,22 @@
-﻿---
-title: "Shadowrocket节点全部Timeout怎么办？节点超时、连接失败、延迟测试异常与全节点不可用完整排查（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "Shadowrocket 节点全部 Timeout、连接失败或延迟测试异常怎么办？本文从单节点与全节点差异、Wi-Fi、蜂窝网络、DNS、TLS、IPv4/IPv6 和配置逐层排查。"
-category: "客户端教程"
-tags: ["Shadowrocket", "小火箭", "节点Timeout", "节点全红", "节点超时", "连接失败", "问题排查"]
+---
+title: Shadowrocket节点全部Timeout怎么办？节点超时、连接失败、延迟测试异常与全节点不可用完整排查（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  Shadowrocket 节点全部
+  Timeout、连接失败或延迟测试异常怎么办？本文从单节点与全节点差异、Wi-Fi、蜂窝网络、DNS、TLS、IPv4/IPv6
+  和配置逐层排查。全面拆解系统代理未写入、TUN虚拟网卡权限、本地DNS污染死锁、分流规则误切及出口断流等底层原因，提供跨平台一步到位的排障修复方案。
+category: 客户端教程
+tags:
+  - Shadowrocket
+  - 小火箭
+  - 节点Timeout
+  - 节点全红
+  - 节点超时
+  - 连接失败
+  - 问题排查
 pinned: false
-permalink: "/shadowrocket/nodes-timeout/"
+permalink: /shadowrocket/nodes-timeout/
 ---
 
 > **【💡 30 秒极速直接答案：Shadowrocket 节点全红 Timeout 核心定性与黄金法则】**

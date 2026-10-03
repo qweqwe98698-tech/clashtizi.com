@@ -1,12 +1,21 @@
-﻿---
-title: "国内怎么访问国外网站？手机、电脑、浏览器与网络工具完整入门指南（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "国内怎么访问国外网站？手机电脑如何上外网？本文详解Windows、Mac、iOS、Android主流客户端工具选择、订阅导入、分流模式与浏览器设置小白入门全流程。"
-category: "梯子科普"
-tags: ["国内怎么访问国外网站", "科学上网入门", "手机上外网", "电脑上外网", "Clash Verge", "Shadowrocket", "v2rayN", "入门指南"]
+---
+title: 国内怎么访问国外网站？手机、电脑、浏览器与网络工具完整入门指南（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  国内怎么访问国外网站？手机电脑如何上外网？本文详解Windows、Mac、iOS、Android主流客户端工具选择、订阅导入、分流模式与浏览器设置小白入门全流程。深入指导跨平台客户端下载安装、节点订阅导入与自动测速、全局与规则分流模式切换以及本地DNS防污染优化，助您轻松解决各类连接异常，享受丝滑跨境网络。
+category: 梯子科普
+tags:
+  - 国内怎么访问国外网站
+  - 科学上网入门
+  - 手机上外网
+  - 电脑上外网
+  - Clash Verge
+  - Shadowrocket
+  - v2rayN
+  - 入门指南
 pinned: true
-permalink: "/tizi/how-to-access-foreign-websites/"
+permalink: /tizi/how-to-access-foreign-websites/
 ---
 
 > **【💡 30 秒极速直接答案：国内怎么在手机和电脑上访问国外网站？】**

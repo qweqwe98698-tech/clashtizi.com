@@ -1,12 +1,22 @@
-﻿---
-title: "梯子DNS是什么？DNS污染、DNS泄漏、DoH、Fake-IP 与解析失败完整说明（2026）"
-published: 2026-08-29
-updated: 2026-08-29
-description: "梯子里的 DNS 是什么？DNS 污染、DNS 泄漏、DoH、DoT、Fake-IP、Redir-Host 和解析失败有什么区别？本文讲清代理环境中的 DNS 路径、常见错误和排查方法。"
-category: "梯子工具"
-tags: ["梯子DNS", "DNS污染", "DNS泄漏", "DoH", "Fake-IP", "DNS解析失败", "网络知识"]
+---
+title: 梯子DNS是什么？DNS污染、DNS泄漏、DoH、Fake-IP 与解析失败完整说明（2026）
+published: 2026-08-29T00:00:00.000Z
+updated: 2026-08-29T00:00:00.000Z
+description: >-
+  梯子里的 DNS 是什么？DNS 污染、DNS 泄漏、DoH、DoT、Fake-IP、Redir-Host 和解析失败有什么区别？本文讲清代理环境中的
+  DNS
+  路径、常见错误和排查方法。本文严格基于晚高峰电信、联通与移动三网实测表现，全面对比物理专线延迟、4K流媒体秒开率与防跑路策略，助您选出稳定可靠的高速翻墙机场。
+category: 梯子工具
+tags:
+  - 梯子DNS
+  - DNS污染
+  - DNS泄漏
+  - DoH
+  - Fake-IP
+  - DNS解析失败
+  - 网络知识
 pinned: false
-permalink: "/tizi/dns/"
+permalink: /tizi/dns/
 ---
 
 > **【💡 30 秒看懂：梯子里的 DNS 到底起什么作用？】**

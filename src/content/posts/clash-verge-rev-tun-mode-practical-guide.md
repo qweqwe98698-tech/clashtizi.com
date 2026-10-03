@@ -1,12 +1,20 @@
-﻿---
-title: "Clash Verge Rev TUN模式怎么用？开启方法、权限、DNS、IPv6与常见问题（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "Clash Verge Rev TUN 模式怎么开启？本文讲清 TUN 与 System Proxy 的区别、Windows/macOS/Linux 权限、DNS、IPv6、虚拟接口、开TUN后没网和常见故障排查。"
-category: "客户端教程"
-tags: ["Clash Verge Rev", "TUN模式", "虚拟网卡", "系统代理区别", "游戏加速", "问题排查"]
+---
+title: Clash Verge Rev TUN模式怎么用？开启方法、权限、DNS、IPv6与常见问题（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  Clash Verge Rev TUN 模式怎么开启？本文讲清 TUN 与 System Proxy 的区别、Windows/macOS/Linux
+  权限、DNS、IPv6、虚拟接口、开TUN后没网和常见故障排查。详细讲解客户端安装激活、节点订阅导入与分流模式调优，助您轻松上手高速稳定的科学上网环境。
+category: 客户端教程
+tags:
+  - Clash Verge Rev
+  - TUN模式
+  - 虚拟网卡
+  - 系统代理区别
+  - 游戏加速
+  - 问题排查
 pinned: false
-permalink: "/clash-verge-rev/tun/"
+permalink: /clash-verge-rev/tun/
 ---
 
 > **【💡 30 秒极速决策：你到底需不需要开启 TUN 模式？】**

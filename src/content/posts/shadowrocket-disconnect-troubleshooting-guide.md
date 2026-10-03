@@ -1,12 +1,21 @@
-﻿---
-title: "Shadowrocket经常掉线怎么办？VPN自动断开、锁屏失效、Wi-Fi切换与节点不稳定完整排查（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "Shadowrocket 经常掉线、VPN 自动断开、锁屏后断连或 Wi-Fi 切蜂窝网络断线怎么办？本文详解 iOS 内存限制、按需连接、低电量模式与节点稳定性排查。"
-category: "客户端教程"
-tags: ["Shadowrocket", "小火箭", "经常掉线", "自动断开", "锁屏断连", "Wi-Fi切换掉线", "问题排查"]
+---
+title: Shadowrocket经常掉线怎么办？VPN自动断开、锁屏失效、Wi-Fi切换与节点不稳定完整排查（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  Shadowrocket 经常掉线、VPN 自动断开、锁屏后断连或 Wi-Fi 切蜂窝网络断线怎么办？本文详解 iOS
+  内存限制、按需连接、低电量模式与节点稳定性排查。深入指导跨平台客户端下载安装、节点订阅导入与自动测速、全局与规则分流模式切换以及本地DNS防污染优化，助您轻松解决各类连接异常，享受丝滑跨境网络。
+category: 客户端教程
+tags:
+  - Shadowrocket
+  - 小火箭
+  - 经常掉线
+  - 自动断开
+  - 锁屏断连
+  - Wi-Fi切换掉线
+  - 问题排查
 pinned: false
-permalink: "/shadowrocket/disconnect/"
+permalink: /shadowrocket/disconnect/
 ---
 
 > **【💡 30 秒极速直接答案：Shadowrocket 频繁掉线三大核心元凶与黄金解法】**

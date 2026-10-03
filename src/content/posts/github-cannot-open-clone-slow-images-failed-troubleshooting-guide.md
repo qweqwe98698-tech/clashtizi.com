@@ -1,12 +1,22 @@
-﻿---
-title: "GitHub打不开怎么办？连接超时、下载慢、图片加载失败完整排查（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "GitHub打不开怎么办？网页连接超时、git clone报443 timed out、rawusercontent图片全裂开？本文详解TUN模式、Git代理配置、SSH通道与下载加速全流程。"
-category: "梯子科普"
-tags: ["GitHub打不开", "git clone慢", "443超时", "raw.githubusercontent", "GitHub图片裂开", "Git代理配置", "TUN模式", "排障指南"]
+---
+title: GitHub打不开怎么办？连接超时、下载慢、图片加载失败完整排查（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  GitHub打不开怎么办？网页连接超时、git clone报443 timed
+  out、rawusercontent图片全裂开？本文详解TUN模式、Git代理配置、SSH通道与下载加速全流程。深入剖析客户端驱动冲突、DNS解析死锁与规则路由异常，助您秒级定位断网原因并快速恢复网络畅通。助您秒级恢复网络畅通。
+category: 梯子科普
+tags:
+  - GitHub打不开
+  - git clone慢
+  - 443超时
+  - raw.githubusercontent
+  - GitHub图片裂开
+  - Git代理配置
+  - TUN模式
+  - 排障指南
 pinned: true
-permalink: "/tizi/github-cannot-open/"
+permalink: /tizi/github-cannot-open/
 ---
 
 > **【💡 30 秒极速直接答案：GitHub 网页打不开、git clone 报错 443 超时怎么秒解？】**

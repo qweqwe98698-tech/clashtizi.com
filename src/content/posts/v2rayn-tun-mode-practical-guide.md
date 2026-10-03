@@ -1,12 +1,23 @@
-﻿---
-title: "v2rayN TUN模式怎么用？开启方法、权限、DNS、IPv6与常见问题（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "v2rayN TUN 虚拟网卡模式怎么正确开启与使用？本文详解管理员权限、Wintun 驱动、Sing-box/Xray 内核选择、游戏 UDP 加速、DNS 劫持、IPv6 与开了没网排查。"
-category: "客户端教程"
-tags: ["v2rayN", "Windows客户端", "TUN模式", "Wintun", "管理员权限", "游戏加速", "IPv6", "教程"]
+---
+title: v2rayN TUN模式怎么用？开启方法、权限、DNS、IPv6与常见问题（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  v2rayN TUN 虚拟网卡模式怎么正确开启与使用？本文详解管理员权限、Wintun 驱动、Sing-box/Xray 内核选择、游戏 UDP
+  加速、DNS 劫持、IPv6
+  与开了没网排查。全面演示跨平台客户端正版安装、订阅链接一键导入与定时更新、分流策略组切换及TUN模式开启，助您零门槛搭建高速稳定的科学上网环境。
+category: 客户端教程
+tags:
+  - v2rayN
+  - Windows客户端
+  - TUN模式
+  - Wintun
+  - 管理员权限
+  - 游戏加速
+  - IPv6
+  - 教程
 pinned: false
-permalink: "/v2rayn/tun/"
+permalink: /v2rayn/tun/
 ---
 
 > **【💡 30 秒极速直接答案：v2rayN TUN 模式核心定义与一键开启黄金法则】**

@@ -1,12 +1,21 @@
-﻿---
-title: "梯子代理模式怎么选？System Proxy、TUN、Rule、Global、Direct 与不同使用场景完整指南（2026）"
-published: 2026-08-29
-updated: 2026-08-29
-description: "梯子代理模式怎么选？本文从浏览器、游戏、命令行、AI、视频、下载和局域网场景出发，对比 System Proxy、TUN、Rule、Global、Direct，并给出新手模式选择建议。"
-category: "梯子工具"
-tags: ["代理模式选择", "System Proxy", "TUN模式", "Rule模式", "Global模式", "Direct", "使用场景"]
+---
+title: 梯子代理模式怎么选？System Proxy、TUN、Rule、Global、Direct 与不同使用场景完整指南（2026）
+published: 2026-08-29T00:00:00.000Z
+updated: 2026-08-29T00:00:00.000Z
+description: >-
+  梯子代理模式怎么选？本文从浏览器、游戏、命令行、AI、视频、下载和局域网场景出发，对比 System
+  Proxy、TUN、Rule、Global、Direct，并给出新手模式选择建议。详细拆解跨平台客户端下载安装、订阅链接一键导入、分流规则优化与TUN虚拟网卡配置流程，助您轻松解决节点超时与掉线难题，秒级畅通出海。
+category: 梯子工具
+tags:
+  - 代理模式选择
+  - System Proxy
+  - TUN模式
+  - Rule模式
+  - Global模式
+  - Direct
+  - 使用场景
 pinned: false
-permalink: "/tizi/proxy-mode-guide/"
+permalink: /tizi/proxy-mode-guide/
 ---
 
 > **【💡 30 秒极速决策：梯子模式到底应该怎么选？】**

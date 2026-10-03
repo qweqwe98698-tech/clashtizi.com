@@ -1,12 +1,21 @@
-﻿---
-title: "Shadowrocket速度慢怎么办？节点延迟、带宽、丢包、线路与视频卡顿完整排查（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "Shadowrocket 节点能连接但速度慢、延迟高或看视频卡顿怎么办？本文从延迟、带宽、丢包、晚高峰、节点倍率、Wi-Fi 干扰与 iOS 设置逐层排查。"
-category: "客户端教程"
-tags: ["Shadowrocket", "小火箭", "速度慢", "视频卡顿", "节点延迟高", "晚高峰慢", "问题排查"]
+---
+title: Shadowrocket速度慢怎么办？节点延迟、带宽、丢包、线路与视频卡顿完整排查（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  Shadowrocket 节点能连接但速度慢、延迟高或看视频卡顿怎么办？本文从延迟、带宽、丢包、晚高峰、节点倍率、Wi-Fi 干扰与 iOS
+  设置逐层排查。深入指导跨平台客户端下载安装、节点订阅导入与自动测速、全局与规则分流模式切换以及本地DNS防污染优化，助您轻松解决各类连接异常，享受丝滑跨境网络。
+category: 客户端教程
+tags:
+  - Shadowrocket
+  - 小火箭
+  - 速度慢
+  - 视频卡顿
+  - 节点延迟高
+  - 晚高峰慢
+  - 问题排查
 pinned: false
-permalink: "/shadowrocket/slow-speed/"
+permalink: /shadowrocket/slow-speed/
 ---
 
 > **【💡 30 秒极速直接答案：Shadowrocket 速度慢核心定性与四大排障原则】**

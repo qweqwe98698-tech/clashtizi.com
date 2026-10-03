@@ -1,12 +1,22 @@
-﻿---
-title: "Clash Verge Rev Global能用Rule不能用怎么办？规则命中、策略组、Rule Provider 与 DNS 异常完整排查（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "Clash Verge Rev Global 能用但 Rule 模式打不开怎么办？本文从规则命中、策略组、Rule Provider、DNS、Fake-IP 和 IPv6 逐层排查 Rule 模式失效。"
-category: "客户端教程"
-tags: ["Clash Verge Rev", "Rule模式失效", "Global能用Rule不能", "规则不命中", "策略组异常", "Rule Provider", "问题排查"]
+---
+title: Clash Verge Rev Global能用Rule不能用怎么办？规则命中、策略组、Rule Provider 与 DNS 异常完整排查（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  Clash Verge Rev Global 能用但 Rule 模式打不开怎么办？本文从规则命中、策略组、Rule Provider、DNS、Fake-IP
+  和 IPv6 逐层排查 Rule
+  模式失效。全面演示跨平台客户端正版安装、订阅链接一键导入与定时更新、分流策略组切换及TUN模式开启，助您零门槛搭建高速稳定的科。
+category: 客户端教程
+tags:
+  - Clash Verge Rev
+  - Rule模式失效
+  - Global能用Rule不能
+  - 规则不命中
+  - 策略组异常
+  - Rule Provider
+  - 问题排查
 pinned: false
-permalink: "/clash-verge-rev/rule-mode-not-working/"
+permalink: /clash-verge-rev/rule-mode-not-working/
 ---
 
 > **【💡 30 秒极速分诊：为什么 Global 能翻墙，切回 Rule 就打不开？】**

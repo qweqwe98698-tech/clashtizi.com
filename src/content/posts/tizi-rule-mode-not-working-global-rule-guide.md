@@ -1,12 +1,21 @@
-﻿---
-title: "规则模式失效怎么办？Global能用Rule不能用、规则不命中与策略组异常完整排查（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "规则模式失效、Global 能用但 Rule 模式打不开、规则不命中或策略组选错节点怎么办？本文深度排查规则匹配顺序、Rule Provider、GEOIP 误判直连与跨客户端修复。"
-category: "梯子工具"
-tags: ["规则模式失效", "Global能用Rule不能用", "规则不命中", "策略组异常", "Rule Provider", "分流规则", "故障排查"]
+---
+title: 规则模式失效怎么办？Global能用Rule不能用、规则不命中与策略组异常完整排查（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  规则模式失效、Global 能用但 Rule 模式打不开、规则不命中或策略组选错节点怎么办？本文深度排查规则匹配顺序、Rule Provider、GEOIP
+  误判直连与跨客户端修复。本文严格基于晚高峰电信、联通与移动三网实测表现，全面对比物理专线延迟、4K流媒体秒开率与防跑路策略，助您选出稳定可靠的高速翻墙机场。
+category: 梯子工具
+tags:
+  - 规则模式失效
+  - Global能用Rule不能用
+  - 规则不命中
+  - 策略组异常
+  - Rule Provider
+  - 分流规则
+  - 故障排查
 pinned: true
-permalink: "/tizi/rule-mode-not-working/"
+permalink: /tizi/rule-mode-not-working/
 ---
 
 > **【💡 30 秒极速直接答案：规则模式失效核心定性与四大排障原则】**

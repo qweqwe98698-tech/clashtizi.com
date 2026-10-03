@@ -1,12 +1,21 @@
-﻿---
-title: "2026免费节点怎么找？Clash、Shadowrocket、v2rayN免费节点与使用风险完整说明"
-published: 2026-08-30
-updated: 2026-08-30
-description: "免费节点怎么找？GitHub免费节点池、Telegram公开节点、Base64订阅链接靠谱吗？本文详解Clash、小火箭、v2rayN免费节点导入方法、极速存活期与安全使用风险。"
-category: "机场推荐"
-tags: ["免费节点", "免费节点怎么找", "Clash免费节点", "小火箭免费节点", "v2rayN免费节点", "GitHub节点池", "订阅转换", "安全风险"]
+---
+title: 2026免费节点怎么找？Clash、Shadowrocket、v2rayN免费节点与使用风险完整说明
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  免费节点怎么找？GitHub免费节点池、Telegram公开节点、Base64订阅链接靠谱吗？本文详解Clash、小火箭、v2rayN免费节点导入方法、极速存活期与安全使用风险。手把手指导正版客户端下载安装、多节点订阅导入与自动更新、智能分流策略组调优以及TUN全流量接管，全面满足电脑与手机跨平台极速出海办公需求。
+category: 机场推荐
+tags:
+  - 免费节点
+  - 免费节点怎么找
+  - Clash免费节点
+  - 小火箭免费节点
+  - v2rayN免费节点
+  - GitHub节点池
+  - 订阅转换
+  - 安全风险
 pinned: true
-permalink: "/recommend/free-nodes/"
+permalink: /recommend/free-nodes/
 ---
 
 > **【💡 30 秒极速直接答案：2026 免费节点去哪找？怎么导入？安全吗？】**

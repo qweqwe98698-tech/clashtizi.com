@@ -1,12 +1,23 @@
-﻿---
-title: "v2rayN 2026完整使用教程：Windows下载安装、订阅导入、节点选择、系统代理与TUN完整指南"
-published: 2026-08-30
-updated: 2026-08-30
-description: "2026 最新 v2rayN Windows 客户端新手到高阶全方位指南：从 With-Core 版本下载安装、.NET 8 运行时依赖、订阅链接导入与更新，到真连接延迟测速、系统代理、路由规则与 TUN 模式游戏加速全景详解。"
-category: "客户端教程"
-tags: ["v2rayN", "Windows梯子客户端", "v2rayN教程", "系统代理", "TUN模式", "订阅导入", "Xray", "Sing-box"]
+---
+title: v2rayN 2026完整使用教程：Windows下载安装、订阅导入、节点选择、系统代理与TUN完整指南
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  2026 最新 v2rayN Windows 客户端新手到高阶全方位指南：从 With-Core 版本下载安装、.NET 8
+  运行时依赖、订阅链接导入与更新，到真连接延迟测速、系统代理、路由规则与 TUN
+  模式游戏加速全景详解。详细讲解客户端安装激活、节点订阅导入与分流模式调优，助您轻松上手高速稳定的科学上网环境。
+category: 客户端教程
+tags:
+  - v2rayN
+  - Windows梯子客户端
+  - v2rayN教程
+  - 系统代理
+  - TUN模式
+  - 订阅导入
+  - Xray
+  - Sing-box
 pinned: false
-permalink: "/v2rayn/"
+permalink: /v2rayn/
 ---
 
 > **【💡 30 秒极速直接答案：v2rayN 核心架构与 2026 上手黄金法则】**

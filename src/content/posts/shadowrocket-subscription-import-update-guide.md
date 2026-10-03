@@ -1,12 +1,21 @@
-﻿---
-title: "Shadowrocket怎么导入订阅？订阅链接、二维码、节点更新与导入失败完整教程（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "Shadowrocket 怎么导入订阅？本文讲清订阅链接、二维码、节点更新、订阅刷新，以及 Timeout、401/403/404、节点不显示和配置解析失败的完整排查方法。"
-category: "客户端教程"
-tags: ["Shadowrocket", "小火箭", "导入订阅", "订阅更新失败", "小火箭扫码", "节点不显示", "问题排查"]
+---
+title: Shadowrocket怎么导入订阅？订阅链接、二维码、节点更新与导入失败完整教程（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  Shadowrocket 怎么导入订阅？本文讲清订阅链接、二维码、节点更新、订阅刷新，以及
+  Timeout、401/403/404、节点不显示和配置解析失败的完整排查方法。深入指导跨平台客户端下载安装、节点订阅导入与自动测速、全局与规则分流模式切换以及本地DNS防污染优化，助您轻松解决各类连接异常，享受丝滑跨境网络。
+category: 客户端教程
+tags:
+  - Shadowrocket
+  - 小火箭
+  - 导入订阅
+  - 订阅更新失败
+  - 小火箭扫码
+  - 节点不显示
+  - 问题排查
 pinned: false
-permalink: "/shadowrocket/subscription/"
+permalink: /shadowrocket/subscription/
 ---
 
 > **【💡 30 秒极速直接答案：Shadowrocket 导入订阅核心流程与首要原则】**

@@ -1,12 +1,21 @@
-﻿---
-title: "Wi-Fi能用但国外网站打不开怎么办？DNS、IPv6、浏览器与路由完整排查（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "Wi-Fi能用但国外网站打不开怎么办？为什么切5G流量能翻墙但连Wi-Fi就断网？本文详解路由器IPv6泄漏、宽带DNS劫持、旁路由网关冲突与无线网卡排查全流程。"
-category: "梯子科普"
-tags: ["WiFi国外网站打不开", "连WiFi无法翻墙", "路由器IPv6", "DNS劫持", "旁路由冲突", "局域网代理", "无线网络排障", "网络教程"]
+---
+title: Wi-Fi能用但国外网站打不开怎么办？DNS、IPv6、浏览器与路由完整排查（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  Wi-Fi能用但国外网站打不开怎么办？为什么切5G流量能翻墙但连Wi-Fi就断网？本文详解路由器IPv6泄漏、宽带DNS劫持、旁路由网关冲突与无线网卡排查全流程。系统化梳理系统代理配置残留、TUN网卡驱动异常、本地DNS污染死锁、分流规则误切以及第三方杀毒软件拦截等常见症结，提供跨平台全设备一步到位的实操排障秘籍。
+category: 梯子科普
+tags:
+  - WiFi国外网站打不开
+  - 连WiFi无法翻墙
+  - 路由器IPv6
+  - DNS劫持
+  - 旁路由冲突
+  - 局域网代理
+  - 无线网络排障
+  - 网络教程
 pinned: true
-permalink: "/tizi/wifi-normal-cannot-open-foreign-websites/"
+permalink: /tizi/wifi-normal-cannot-open-foreign-websites/
 ---
 
 > **【💡 30 秒极速直接答案：为什么连 Wi-Fi 无法访问国外网站，切 5G 流量却正常？】**

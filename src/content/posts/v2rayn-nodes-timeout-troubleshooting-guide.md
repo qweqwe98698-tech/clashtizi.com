@@ -1,12 +1,21 @@
-﻿---
-title: "v2rayN节点全部Timeout怎么办？节点超时、连接失败、延迟测试异常完整排查（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "v2rayN 节点全部 Timeout、真连接延迟显示 -1 或测速全红怎么办？本文详解系统时钟同步、Xray 内核崩溃、杀毒软件拦截、本地端口冲突与断流排查。"
-category: "客户端教程"
-tags: ["v2rayN", "Windows客户端", "节点全部Timeout", "节点超时", "延迟测试失败", "测速全红", "问题排查"]
+---
+title: v2rayN节点全部Timeout怎么办？节点超时、连接失败、延迟测试异常完整排查（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  v2rayN 节点全部 Timeout、真连接延迟显示 -1 或测速全红怎么办？本文详解系统时钟同步、Xray
+  内核崩溃、杀毒软件拦截、本地端口冲突与断流排查。系统化梳理系统代理配置残留、TUN网卡驱动异常、本地DNS污染死锁、分流规则误切以及第三方杀毒软件拦截等常见症结，提供跨平台全设备一步到位的实操排障秘籍。
+category: 客户端教程
+tags:
+  - v2rayN
+  - Windows客户端
+  - 节点全部Timeout
+  - 节点超时
+  - 延迟测试失败
+  - 测速全红
+  - 问题排查
 pinned: false
-permalink: "/v2rayn/nodes-timeout/"
+permalink: /v2rayn/nodes-timeout/
 ---
 
 > **【💡 30 秒极速直接答案：v2rayN 节点全部 Timeout 核心根因与黄金排查法则】**

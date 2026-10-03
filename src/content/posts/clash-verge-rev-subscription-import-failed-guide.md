@@ -1,12 +1,20 @@
-﻿---
-title: "Clash Verge Rev订阅导入失败怎么办？订阅URL、Profile更新、Timeout与节点不显示完整排查（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "Clash Verge Rev 订阅导入失败、Profile 更新 Timeout、节点不显示怎么办？本文从订阅URL、HTTP错误、DNS、TLS、配置格式和Mihomo解析逐层排查。"
-category: "客户端教程"
-tags: ["Clash Verge Rev", "订阅导入失败", "Profile更新失败", "Subscription Timeout", "节点不显示", "问题排查"]
+---
+title: Clash Verge Rev订阅导入失败怎么办？订阅URL、Profile更新、Timeout与节点不显示完整排查（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  Clash Verge Rev 订阅导入失败、Profile 更新
+  Timeout、节点不显示怎么办？本文从订阅URL、HTTP错误、DNS、TLS、配置格式和Mihomo解析逐层排查。详细拆解跨平台客户端下载安装、订阅链接一键导入、分流规则优化与TUN虚拟网卡配置流程，助您轻松解决节点超时与掉线难题，秒级畅通出海。
+category: 客户端教程
+tags:
+  - Clash Verge Rev
+  - 订阅导入失败
+  - Profile更新失败
+  - Subscription Timeout
+  - 节点不显示
+  - 问题排查
 pinned: false
-permalink: "/clash-verge-rev/subscription-import-failed/"
+permalink: /clash-verge-rev/subscription-import-failed/
 ---
 
 > **【💡 30 秒极速分诊：Clash Verge Rev 订阅到底卡在哪一步？】**

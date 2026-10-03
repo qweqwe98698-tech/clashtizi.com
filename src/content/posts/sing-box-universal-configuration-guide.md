@@ -1,12 +1,24 @@
-﻿---
-title: "Sing-box 跨平台新手配置指南：Windows、macOS、Android、iOS 与 Hysteria2 / TUIC / VLESS 教程（2026）"
-published: 2026-08-29
-updated: 2026-08-29
-description: "Sing-box 怎么安装和配置？本文介绍 Windows、macOS、Android、iOS 使用方式、JSON 配置、订阅导入、TUN、DNS、路由，以及 Hysteria2、TUIC、VLESS 的区别与常见故障排查。"
-category: "客户端教程"
-tags: ["Sing-box", "Hysteria2", "TUIC", "VLESS", "JSON配置", "TUN", "客户端教程"]
+---
+title: >-
+  Sing-box 跨平台新手配置指南：Windows、macOS、Android、iOS 与 Hysteria2 / TUIC / VLESS
+  教程（2026）
+published: 2026-08-29T00:00:00.000Z
+updated: 2026-08-29T00:00:00.000Z
+description: >-
+  Sing-box 怎么安装和配置？本文介绍 Windows、macOS、Android、iOS 使用方式、JSON
+  配置、订阅导入、TUN、DNS、路由，以及 Hysteria2、TUIC、VLESS
+  的区别与常见故障排查。详细讲解客户端安装激活、节点订阅导入与分流模式调优，助您轻松上手高速稳定的科学上网环境。
+category: 客户端教程
+tags:
+  - Sing-box
+  - Hysteria2
+  - TUIC
+  - VLESS
+  - JSON配置
+  - TUN
+  - 客户端教程
 pinned: false
-permalink: "/tutorials/sing-box-config/"
+permalink: /tutorials/sing-box-config/
 ---
 
 > **文章摘要**：

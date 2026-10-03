@@ -1,12 +1,21 @@
-﻿---
-title: "iPhone机场推荐怎么选？Shadowrocket、Stash与订阅兼容完整指南（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "iPhone苹果手机机场推荐怎么选？Shadowrocket小火箭与Stash怎么选？本文详解iOS客户端对比、Clash订阅兼容、On-Demand自动连接、IPv6防漏与选型全流程。"
-category: "机场推荐"
-tags: ["iPhone机场推荐", "苹果手机梯子", "Shadowrocket", "Stash", "iOS客户端对比", "On-Demand按需连接", "IPLC专线", "选购指南"]
+---
+title: iPhone机场推荐怎么选？Shadowrocket、Stash与订阅兼容完整指南（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  iPhone苹果手机机场推荐怎么选？Shadowrocket小火箭与Stash怎么选？本文详解iOS客户端对比、Clash订阅兼容、On-Demand自动连接、IPv6防漏与选型全流程。详细拆解跨平台客户端下载安装、订阅链接一键导入、分流规则优化与TUN虚拟网卡配置流程，助您轻松解决节点超时与掉线难题，秒级畅通出海。
+category: 机场推荐
+tags:
+  - iPhone机场推荐
+  - 苹果手机梯子
+  - Shadowrocket
+  - Stash
+  - iOS客户端对比
+  - On-Demand按需连接
+  - IPLC专线
+  - 选购指南
 pinned: true
-permalink: "/recommend/iphone-airport/"
+permalink: /recommend/iphone-airport/
 ---
 
 > **【💡 30 秒极速直接答案：iPhone 苹果手机机场怎么选？客户端与节点怎么调优最稳定？】**

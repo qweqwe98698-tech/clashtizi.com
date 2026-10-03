@@ -1,12 +1,22 @@
-﻿---
-title: "Clash Verge Rev开了没网怎么办？System Proxy、TUN、DNS、Rule与路由完整排查（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "Clash Verge Rev 开启后没有网络、节点正常但网页打不开怎么办？本文从 System Proxy、TUN、DNS、Rule、路由、IPv4/IPv6 和 Mihomo Core 逐层排查。"
-category: "客户端教程"
-tags: ["Clash Verge Rev", "开了没网", "连上不能上网", "System Proxy", "TUN", "DNS错误", "问题排查"]
+---
+title: Clash Verge Rev开了没网怎么办？System Proxy、TUN、DNS、Rule与路由完整排查（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  Clash Verge Rev 开启后没有网络、节点正常但网页打不开怎么办？本文从 System
+  Proxy、TUN、DNS、Rule、路由、IPv4/IPv6 和 Mihomo Core
+  逐层排查。深入剖析客户端驱动冲突、DNS解析死锁与规则路由异常，助您秒级定位断网原因并快速恢复网络畅通。助您秒级恢复网络畅通。
+category: 客户端教程
+tags:
+  - Clash Verge Rev
+  - 开了没网
+  - 连上不能上网
+  - System Proxy
+  - TUN
+  - DNS错误
+  - 问题排查
 pinned: false
-permalink: "/clash-verge-rev/no-internet/"
+permalink: /clash-verge-rev/no-internet/
 ---
 
 > **【💡 30 秒极速分诊：Clash Verge Rev 开了但没网，问题到底在哪一层？】**

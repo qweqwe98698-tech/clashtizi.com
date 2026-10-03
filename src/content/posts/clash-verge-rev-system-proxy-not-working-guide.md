@@ -1,12 +1,20 @@
-﻿---
-title: "Clash Verge Rev System Proxy不生效怎么办？浏览器能用、软件不走代理与系统代理残留完整排查（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "Clash Verge Rev 开启 System Proxy 后软件仍不走代理怎么办？本文从系统代理、本地端口、App网络栈、Connections、Rule、TUN和代理残留逐层排查。"
-category: "客户端教程"
-tags: ["Clash Verge Rev", "System Proxy", "系统代理不生效", "软件不走代理", "系统代理残留", "问题排查"]
+---
+title: Clash Verge Rev System Proxy不生效怎么办？浏览器能用、软件不走代理与系统代理残留完整排查（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  Clash Verge Rev 开启 System Proxy
+  后软件仍不走代理怎么办？本文从系统代理、本地端口、App网络栈、Connections、Rule、TUN和代理残留逐层排查。详细拆解跨平台客户端下载安装、订阅链接一键导入、分流规则优化与TUN虚拟网卡配置流程，助您轻松解决节点超时与掉线难题，秒级畅通出海。
+category: 客户端教程
+tags:
+  - Clash Verge Rev
+  - System Proxy
+  - 系统代理不生效
+  - 软件不走代理
+  - 系统代理残留
+  - 问题排查
 pinned: false
-permalink: "/clash-verge-rev/system-proxy-not-working/"
+permalink: /clash-verge-rev/system-proxy-not-working/
 ---
 
 > **【💡 30 秒极速分诊：为什么开启系统代理后，软件依然不走代理？】**

@@ -1,12 +1,21 @@
-﻿---
-title: "Shadowrocket免费节点怎么用？免费订阅、二维码、节点导入与安全风险（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "Shadowrocket小火箭免费节点怎么用？免费订阅链接怎么添加？本文详解小火箭扫码导入、订阅自动更新、节点感叹号超时排查与全局路由分流指南。"
-category: "小火箭教程"
-tags: ["Shadowrocket", "小火箭免费节点", "小火箭免费订阅", "二维码导入", "全局路由", "节点感叹号", "自动更新", "安全风险"]
+---
+title: Shadowrocket免费节点怎么用？免费订阅、二维码、节点导入与安全风险（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  Shadowrocket小火箭免费节点怎么用？免费订阅链接怎么添加？本文详解小火箭扫码导入、订阅自动更新、节点感叹号超时排查与全局路由分流指南。手把手指导正版客户端下载安装、多节点订阅导入与自动更新、智能分流策略组调优以及TUN全流量接管，全面满足电脑与手机跨平台极速出海办公需求。助您轻松上手高速稳定的出海网络。
+category: 小火箭教程
+tags:
+  - Shadowrocket
+  - 小火箭免费节点
+  - 小火箭免费订阅
+  - 二维码导入
+  - 全局路由
+  - 节点感叹号
+  - 自动更新
+  - 安全风险
 pinned: true
-permalink: "/shadowrocket/free-nodes/"
+permalink: /shadowrocket/free-nodes/
 ---
 
 > **【💡 30 秒极速直接答案：Shadowrocket (小火箭) 如何正确使用免费节点？】**

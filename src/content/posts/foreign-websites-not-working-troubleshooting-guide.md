@@ -1,12 +1,21 @@
-﻿---
-title: "国外网站打不开怎么办？DNS、浏览器、网络、地区与访问问题完整排查（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "国外网站打不开怎么办？梯子连上了网页依然打不开？本文详解DNS污染、浏览器代理冲突、时钟同步、节点地区风控（如ChatGPT/TikTok）与TUN模式排障全流程。"
-category: "梯子科普"
-tags: ["国外网站打不开", "无法访问外网", "DNS污染", "系统时钟", "节点地区", "浏览器代理冲突", "ChatGPT访问受阻", "排障指南"]
+---
+title: 国外网站打不开怎么办？DNS、浏览器、网络、地区与访问问题完整排查（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  国外网站打不开怎么办？梯子连上了网页依然打不开？本文详解DNS污染、浏览器代理冲突、时钟同步、节点地区风控（如ChatGPT/TikTok）与TUN模式排障全流程。系统化梳理系统代理配置残留、TUN网卡驱动异常、本地DNS污染死锁、分流规则误切以及第三方杀毒软件拦截等常见症结，提供跨平台全设备一步到位的实操排障秘籍。
+category: 梯子科普
+tags:
+  - 国外网站打不开
+  - 无法访问外网
+  - DNS污染
+  - 系统时钟
+  - 节点地区
+  - 浏览器代理冲突
+  - ChatGPT访问受阻
+  - 排障指南
 pinned: true
-permalink: "/tizi/cannot-open-foreign-websites/"
+permalink: /tizi/cannot-open-foreign-websites/
 ---
 
 > **【💡 30 秒极速直接答案：国外网站打不开怎么快速排查修复？】**

@@ -1,12 +1,21 @@
-﻿---
-title: "Clash 节点超时、全红、无法连接怎么办？完整排查与修复指南（2026）"
-published: 2026-08-29
-updated: 2026-08-29
-description: "Clash Verge Rev、Clash for Windows 出现节点 Timeout、节点全红、系统代理开启后无法上网怎么办？本文从订阅、节点状态、系统时间、代理模式、DNS、TUN、防火墙与客户端配置逐步排查。"
-category: "故障排查"
-tags: ["Clash", "Clash Verge Rev", "节点超时", "节点全红", "网络排查", "DNS", "系统代理"]
+---
+title: Clash 节点超时、全红、无法连接怎么办？完整排查与修复指南（2026）
+published: 2026-08-29T00:00:00.000Z
+updated: 2026-08-29T00:00:00.000Z
+description: >-
+  Clash Verge Rev、Clash for Windows 出现节点
+  Timeout、节点全红、系统代理开启后无法上网怎么办？本文从订阅、节点状态、系统时间、代理模式、DNS、TUN、防火墙与客户端配置逐步排查。深入剖析客户端驱动冲突、DNS解析死锁与规则路由异常，助您秒级定位断网原因并快速恢复网络畅通。
+category: 故障排查
+tags:
+  - Clash
+  - Clash Verge Rev
+  - 节点超时
+  - 节点全红
+  - 网络排查
+  - DNS
+  - 系统代理
 pinned: false
-permalink: "/issues/clash-nodes-timeout/"
+permalink: /issues/clash-nodes-timeout/
 ---
 
 > **文章摘要**：

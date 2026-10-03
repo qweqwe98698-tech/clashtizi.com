@@ -1,12 +1,21 @@
-﻿---
-title: "v2rayN免费节点怎么导入？免费订阅、节点更新与Timeout排查（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "v2rayN免费节点怎么导入？剪贴板URL如何批量添加？节点测速全红Timeout怎么办？本文详解v2rayN免费订阅导入、快捷键操作、绕过大陆分流与Timeout排查。"
-category: "v2rayN教程"
-tags: ["v2rayN", "v2rayN免费节点", "v2rayN免费订阅", "剪贴板导入", "Ctrl+V", "Timeout超时", "订阅更新失败", "绕过大陆"]
+---
+title: v2rayN免费节点怎么导入？免费订阅、节点更新与Timeout排查（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  v2rayN免费节点怎么导入？剪贴板URL如何批量添加？节点测速全红Timeout怎么办？本文详解v2rayN免费订阅导入、快捷键操作、绕过大陆分流与Timeout排查。深入指导跨平台客户端下载安装、节点订阅导入与自动测速、全局与规则分流模式切换以及本地DNS防污染优化，助您轻松解决各类连接异常，享受丝滑跨境网络。
+category: v2rayN教程
+tags:
+  - v2rayN
+  - v2rayN免费节点
+  - v2rayN免费订阅
+  - 剪贴板导入
+  - Ctrl+V
+  - Timeout超时
+  - 订阅更新失败
+  - 绕过大陆
 pinned: true
-permalink: "/v2rayn/free-nodes/"
+permalink: /v2rayn/free-nodes/
 ---
 
 > **【💡 30 秒极速直接答案：v2rayN 如何快速导入免费节点与解决 Timeout？】**

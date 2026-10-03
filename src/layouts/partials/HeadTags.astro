@@ -15,6 +15,7 @@ import {
 } from "../../constants/constants";
 import { defaultFavicons } from "../../constants/icon";
 import type { Favicon } from "../../types/config";
+import { getSafeSeoDescription } from "../../utils/seo-description";
 import { url } from "../../utils/url-utils";
 
 interface Props {
@@ -44,6 +45,13 @@ const keywords = siteConfig.keywords;
 // Favicons
 const favicons: Favicon[] =
 	siteConfig.favicon.length > 0 ? siteConfig.favicon : defaultFavicons;
+
+// SEO Description (Strict 150-160 characters for Bing/Google)
+const finalDescription = getSafeSeoDescription(
+	description,
+	Astro.url.pathname,
+	title,
+);
 ---
 
 <!-- Canonical URL -->
@@ -51,7 +59,7 @@ const favicons: Favicon[] =
 
 <!-- SEO Meta Tags -->
 <title>{title}</title>
-<meta name="description" content={description || title} />
+<meta name="description" content={finalDescription} />
 {
 	keywords && keywords.length > 0 && (
 		<meta name="keywords" content={keywords.join(", ")} />
@@ -63,7 +71,7 @@ const favicons: Favicon[] =
 <meta property="og:site_name" content={siteConfig.title} />
 <meta property="og:url" content={Astro.url} />
 <meta property="og:title" content={title} />
-<meta property="og:description" content={description || title} />
+<meta property="og:description" content={finalDescription} />
 {ogImageUrl && <meta property="og:image" content={ogImageUrl} />}
 {ogImageUrl && <meta property="og:image:width" content="1200" />}
 {ogImageUrl && <meta property="og:image:height" content="630" />}
@@ -79,7 +87,7 @@ const favicons: Favicon[] =
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={Astro.url} />
 <meta name="twitter:title" content={title} />
-<meta name="twitter:description" content={description || title} />
+<meta name="twitter:description" content={finalDescription} />
 {ogImageUrl && <meta name="twitter:image" content={ogImageUrl} />}
 <!-- Viewport and Generator -->
 <meta name="viewport" content="width=device-width" />

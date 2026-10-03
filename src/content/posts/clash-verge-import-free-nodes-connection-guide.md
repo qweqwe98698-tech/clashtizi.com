@@ -1,12 +1,22 @@
-﻿---
-title: "Clash Verge免费节点怎么导入？订阅、节点更新与连接失败完整教程（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "Clash Verge免费节点怎么导入？订阅下载失败、节点全红超时、连上后无法上网怎么办？本文详解Clash Verge Rev免费订阅导入、自动更新与连接失败排查全流程。"
-category: "Clash教程"
-tags: ["Clash Verge", "Clash Verge Rev", "免费节点导入", "订阅更新", "连接失败", "TUN模式", "系统代理", "排障指南"]
+---
+title: Clash Verge免费节点怎么导入？订阅、节点更新与连接失败完整教程（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  Clash Verge免费节点怎么导入？订阅下载失败、节点全红超时、连上后无法上网怎么办？本文详解Clash Verge
+  Rev免费订阅导入、自动更新与连接失败排查全流程。深入指导跨平台客户端下载安装、节点订阅导入与自动测速、全局与规则分流模式切换以及本地DNS防污染优化，助您轻松解决各类连接异常，享受丝滑跨境网络。
+category: Clash教程
+tags:
+  - Clash Verge
+  - Clash Verge Rev
+  - 免费节点导入
+  - 订阅更新
+  - 连接失败
+  - TUN模式
+  - 系统代理
+  - 排障指南
 pinned: true
-permalink: "/clash-verge-rev/import-free-nodes/"
+permalink: /clash-verge-rev/import-free-nodes/
 ---
 
 > **【💡 30 秒极速直接答案：Clash Verge 如何导入免费节点与解决连接失败？】**

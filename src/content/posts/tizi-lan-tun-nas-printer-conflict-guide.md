@@ -1,12 +1,21 @@
-﻿---
-title: "梯子局域网为什么打不开？NAS、打印机、路由器后台、mDNS 与 TUN 冲突完整排查（2026）"
-published: 2026-08-29
-updated: 2026-08-29
-description: "为什么开梯子或 TUN 后 NAS、打印机、路由器后台突然打不开？本文从私有IP、LAN路由、Rule、mDNS、IPv6、Wi-Fi隔离和TUN冲突逐层排查局域网访问异常。"
-category: "梯子工具"
-tags: ["局域网打不开", "TUN冲突", "NAS", "mDNS", "打印机", "路由器后台", "网络排查"]
+---
+title: 梯子局域网为什么打不开？NAS、打印机、路由器后台、mDNS 与 TUN 冲突完整排查（2026）
+published: 2026-08-29T00:00:00.000Z
+updated: 2026-08-29T00:00:00.000Z
+description: >-
+  为什么开梯子或 TUN 后
+  NAS、打印机、路由器后台突然打不开？本文从私有IP、LAN路由、Rule、mDNS、IPv6、Wi-Fi隔离和TUN冲突逐层排查局域网访问异常。深度排查系统代理写入失败、TUN虚拟网卡未授权、本地DNS死锁、分流规则误判以及端口占用冲突等核心故障，提供跨平台全设备一步到位的极速修复指南。
+category: 梯子工具
+tags:
+  - 局域网打不开
+  - TUN冲突
+  - NAS
+  - mDNS
+  - 打印机
+  - 路由器后台
+  - 网络排查
 pinned: false
-permalink: "/tizi/lan-tun-conflict/"
+permalink: /tizi/lan-tun-conflict/
 ---
 
 > **【💡 30 秒极速诊断：为什么开了梯子或 TUN 模式，局域网设备反而断连？】**

@@ -1,12 +1,21 @@
-﻿---
-title: "V2Ray免费节点是什么？VMess、VLESS、配置与客户端使用完整说明（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "V2Ray免费节点是什么？VMess和VLESS协议有什么区别？vless://与vmess://链接参数怎么看？本文深度解析V2Ray底层协议、Reality伪装、全平台客户端导入与避坑指南。"
-category: "机场推荐"
-tags: ["V2Ray免费节点", "VMess", "VLESS", "VLESS Reality", "节点配置", "UUID", "v2rayN", "协议对比"]
+---
+title: V2Ray免费节点是什么？VMess、VLESS、配置与客户端使用完整说明（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  V2Ray免费节点是什么？VMess和VLESS协议有什么区别？vless://与vmess://链接参数怎么看？本文深度解析V2Ray底层协议、Reality伪装、全平台客户端导入与避坑指南。详细讲解客户端安装激活、节点订阅导入与分流模式调优，助您轻松上手高速稳定的科学上网环境。助您轻松上手高速稳定的出海网络。
+category: 机场推荐
+tags:
+  - V2Ray免费节点
+  - VMess
+  - VLESS
+  - VLESS Reality
+  - 节点配置
+  - UUID
+  - v2rayN
+  - 协议对比
 pinned: true
-permalink: "/recommend/v2ray-free-nodes/"
+permalink: /recommend/v2ray-free-nodes/
 ---
 
 > **【💡 30 秒极速直接答案：V2Ray 免费节点是什么？VMess 和 VLESS 怎么选？】**

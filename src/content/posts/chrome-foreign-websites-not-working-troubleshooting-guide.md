@@ -1,12 +1,21 @@
-﻿---
-title: "Chrome打不开国外网站怎么办？DNS、代理、证书与连接错误完整排查（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "Chrome打不开国外网站怎么办？代理服务器拒绝连接、ERR_PROXY_CONNECTION_FAILED、证书错误怎么办？本文详解Chrome扩展冲突、安全DNS、QUIC禁用与Socket重置全流程。"
-category: "梯子科普"
-tags: ["Chrome打不开国外网站", "Chrome代理报错", "ERR_PROXY_CONNECTION_FAILED", "安全DNS", "QUIC协议", "SSL证书错误", "浏览器排障", "网络教程"]
+---
+title: Chrome打不开国外网站怎么办？DNS、代理、证书与连接错误完整排查（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  Chrome打不开国外网站怎么办？代理服务器拒绝连接、ERR_PROXY_CONNECTION_FAILED、证书错误怎么办？本文详解Chrome扩展冲突、安全DNS、QUIC禁用与Socket重置全流程。深入剖析客户端驱动冲突、DNS解析死锁与规则路由异常，助您秒级定位断网原因并快速恢复网络畅通。
+category: 梯子科普
+tags:
+  - Chrome打不开国外网站
+  - Chrome代理报错
+  - ERR_PROXY_CONNECTION_FAILED
+  - 安全DNS
+  - QUIC协议
+  - SSL证书错误
+  - 浏览器排障
+  - 网络教程
 pinned: true
-permalink: "/tizi/chrome-cannot-open-foreign-websites/"
+permalink: /tizi/chrome-cannot-open-foreign-websites/
 ---
 
 > **【💡 30 秒极速直接答案：Chrome 谷歌浏览器打不开国外网站怎么快速修复？】**

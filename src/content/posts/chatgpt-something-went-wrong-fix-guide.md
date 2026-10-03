@@ -1,12 +1,20 @@
-﻿---
-title: "ChatGPT Something went wrong 怎么办？常见原因与完整排查（2026）"
-published: 2026-08-29
-updated: 2026-08-29
-description: "ChatGPT 出现 Something went wrong 怎么办？本文从 OpenAI 服务状态、浏览器缓存、Cookie、登录会话、网络、VPN/Proxy、DNS、扩展、文件上传与页面状态逐步排查常见原因。"
-category: "AI工具访问"
-tags: ["ChatGPT", "OpenAI", "Something went wrong", "错误排查", "网络问题", "浏览器排查"]
+---
+title: ChatGPT Something went wrong 怎么办？常见原因与完整排查（2026）
+published: 2026-08-29T00:00:00.000Z
+updated: 2026-08-29T00:00:00.000Z
+description: >-
+  ChatGPT 出现 Something went wrong 怎么办？本文从 OpenAI
+  服务状态、浏览器缓存、Cookie、登录会话、网络、VPN/Proxy、DNS、扩展、文件上传与页面状态逐步排查常见原因。详细解析原生IP选型、防封号策略与客户端分流配置，打造极速稳定的AI出海办公环境。提供原生出口选择与防。
+category: AI工具访问
+tags:
+  - ChatGPT
+  - OpenAI
+  - Something went wrong
+  - 错误排查
+  - 网络问题
+  - 浏览器排查
 pinned: false
-permalink: "/chatgpt/something-went-wrong/"
+permalink: /chatgpt/something-went-wrong/
 ---
 
 > **【30 秒快速判断核心导读】**

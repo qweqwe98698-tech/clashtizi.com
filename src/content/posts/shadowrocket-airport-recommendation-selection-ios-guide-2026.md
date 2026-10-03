@@ -1,12 +1,21 @@
-﻿---
-title: "Shadowrocket机场推荐怎么选？iPhone节点、订阅、线路与适合人群完整指南（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "Shadowrocket小火箭机场推荐怎么选？iPhone苹果手机怎么选节点？本文详解小火箭专属订阅格式、iOS后台保活设置、IPv6防漏、IPLC专线与选型全流程。"
-category: "Shadowrocket教程"
-tags: ["Shadowrocket机场推荐", "小火箭机场", "iPhone节点推荐", "小火箭订阅", "IPLC专线", "iOS后台保活", "IPv6冲突", "选购指南"]
+---
+title: Shadowrocket机场推荐怎么选？iPhone节点、订阅、线路与适合人群完整指南（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  Shadowrocket小火箭机场推荐怎么选？iPhone苹果手机怎么选节点？本文详解小火箭专属订阅格式、iOS后台保活设置、IPv6防漏、IPLC专线与选型全流程。深入指导跨平台客户端下载安装、节点订阅导入与自动测速、全局与规则分流模式切换以及本地DNS防污染优化，助您轻松解决各类连接异常，享受丝滑跨境网络。
+category: Shadowrocket教程
+tags:
+  - Shadowrocket机场推荐
+  - 小火箭机场
+  - iPhone节点推荐
+  - 小火箭订阅
+  - IPLC专线
+  - iOS后台保活
+  - IPv6冲突
+  - 选购指南
 pinned: true
-permalink: "/shadowrocket/shadowrocket-airport/"
+permalink: /shadowrocket/shadowrocket-airport/
 ---
 
 > **【💡 30 秒极速直接答案：Shadowrocket (小火箭) 机场怎么选？iPhone 怎么调优最稳定？】**

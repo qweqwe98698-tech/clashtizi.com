@@ -1,12 +1,22 @@
-﻿---
-title: "梯子System Proxy是什么？系统代理、TUN、浏览器代理与应用不走代理完整说明（2026）"
-published: 2026-08-29
-updated: 2026-08-29
-description: "System Proxy 是什么？为什么浏览器能走代理但游戏、命令行或部分 App 不行？本文讲清系统代理、TUN、浏览器代理、PAC、Rule/Global 和应用网络栈之间的关系。"
-category: "梯子工具"
-tags: ["System Proxy", "系统代理", "浏览器代理", "TUN模式", "应用不走代理", "PAC模式", "网络架构"]
+---
+title: 梯子System Proxy是什么？系统代理、TUN、浏览器代理与应用不走代理完整说明（2026）
+published: 2026-08-29T00:00:00.000Z
+updated: 2026-08-29T00:00:00.000Z
+description: >-
+  System Proxy 是什么？为什么浏览器能走代理但游戏、命令行或部分 App
+  不行？本文讲清系统代理、TUN、浏览器代理、PAC、Rule/Global
+  和应用网络栈之间的关系。本文严格基于晚高峰电信、联通与移动三网实测表现，全面对比物理专线延迟、4K流媒体秒开率与防跑路策略，助您选出稳定可靠的高速翻墙机场。
+category: 梯子工具
+tags:
+  - System Proxy
+  - 系统代理
+  - 浏览器代理
+  - TUN模式
+  - 应用不走代理
+  - PAC模式
+  - 网络架构
 pinned: false
-permalink: "/tizi/system-proxy/"
+permalink: /tizi/system-proxy/
 ---
 
 > **【💡 30 秒看懂：System Proxy 到底管哪些流量？】**

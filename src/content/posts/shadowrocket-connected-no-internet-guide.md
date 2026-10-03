@@ -1,12 +1,21 @@
-﻿---
-title: "Shadowrocket连上但不能上网怎么办？DNS、规则、节点、IPv6与VPN连接完整排查（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "Shadowrocket 显示已连接但网页或 App 仍打不开怎么办？本文从 VPN 连接、节点、规则、DNS、IPv4/IPv6、Wi-Fi 与蜂窝网络逐层排查。"
-category: "客户端教程"
-tags: ["Shadowrocket", "小火箭", "连上但不能上网", "VPN已连接没网", "DNS错误", "规则错误", "问题排查"]
+---
+title: Shadowrocket连上但不能上网怎么办？DNS、规则、节点、IPv6与VPN连接完整排查（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  Shadowrocket 显示已连接但网页或 App 仍打不开怎么办？本文从 VPN 连接、节点、规则、DNS、IPv4/IPv6、Wi-Fi
+  与蜂窝网络逐层排查。系统化梳理系统代理配置残留、TUN网卡驱动异常、本地DNS污染死锁、分流规则误切以及第三方杀毒软件拦截等常见症结，提供跨平台全设备一步到位的实操排障秘籍。
+category: 客户端教程
+tags:
+  - Shadowrocket
+  - 小火箭
+  - 连上但不能上网
+  - VPN已连接没网
+  - DNS错误
+  - 规则错误
+  - 问题排查
 pinned: false
-permalink: "/shadowrocket/no-internet/"
+permalink: /shadowrocket/no-internet/
 ---
 
 > **【💡 30 秒极速直接答案：Shadowrocket 连上却没网，第一核心定性与分诊】**

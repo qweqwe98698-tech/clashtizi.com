@@ -1,12 +1,21 @@
-﻿---
-title: "梯子分流规则是什么？域名规则、IP规则、策略组、Rule Provider 与应用分流完整说明（2026）"
-published: 2026-08-29
-updated: 2026-08-29
-description: "梯子分流规则是什么？本文讲清域名规则、IP规则、CIDR、GEOIP、GEOSITE、策略组、Rule Provider、应用分流和规则优先级，并说明网站走错节点与Rule模式异常怎么判断。"
-category: "梯子工具"
-tags: ["分流规则", "域名规则", "IP规则", "策略组", "Rule Provider", "应用分流", "GEOIP"]
+---
+title: 梯子分流规则是什么？域名规则、IP规则、策略组、Rule Provider 与应用分流完整说明（2026）
+published: 2026-08-29T00:00:00.000Z
+updated: 2026-08-29T00:00:00.000Z
+description: >-
+  梯子分流规则是什么？本文讲清域名规则、IP规则、CIDR、GEOIP、GEOSITE、策略组、Rule
+  Provider、应用分流和规则优先级，并说明网站走错节点与Rule模式异常怎么判断。本文结合晚高峰多运营商测速实测数据，全面对比节点延迟、丢包率、流媒体4K解锁能力与真实在线率，手把手带您避坑挑选高性价比专线服务。
+category: 梯子工具
+tags:
+  - 分流规则
+  - 域名规则
+  - IP规则
+  - 策略组
+  - Rule Provider
+  - 应用分流
+  - GEOIP
 pinned: false
-permalink: "/tizi/routing-rules/"
+permalink: /tizi/routing-rules/
 ---
 
 > **【💡 30 秒看懂：分流规则到底起什么作用？】**

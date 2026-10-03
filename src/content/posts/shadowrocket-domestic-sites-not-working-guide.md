@@ -1,12 +1,21 @@
-﻿---
-title: "Shadowrocket国内网站打不开怎么办？规则、Direct、DNS与分流异常完整排查（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "Shadowrocket 外网正常但国内网站或微信打不开、淘宝转圈怎么办？本文详解全局路由模式、GEOIP 分流规则、国内 DNS 解析与 Direct 直连修复。"
-category: "客户端教程"
-tags: ["Shadowrocket", "小火箭", "国内网站打不开", "微信打不开", "分流异常", "Direct直连", "问题排查"]
+---
+title: Shadowrocket国内网站打不开怎么办？规则、Direct、DNS与分流异常完整排查（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  Shadowrocket 外网正常但国内网站或微信打不开、淘宝转圈怎么办？本文详解全局路由模式、GEOIP 分流规则、国内 DNS 解析与 Direct
+  直连修复。系统化梳理系统代理配置残留、TUN网卡驱动异常、本地DNS污染死锁、分流规则误切以及第三方杀毒软件拦截等常见症结，提供跨平台全设备一步到位的实操排障秘籍。
+category: 客户端教程
+tags:
+  - Shadowrocket
+  - 小火箭
+  - 国内网站打不开
+  - 微信打不开
+  - 分流异常
+  - Direct直连
+  - 问题排查
 pinned: false
-permalink: "/shadowrocket/domestic-sites-not-working/"
+permalink: /shadowrocket/domestic-sites-not-working/
 ---
 
 > **【💡 30 秒极速直接答案：Shadowrocket 国内网站打不开三大核心元凶与黄金解法】**

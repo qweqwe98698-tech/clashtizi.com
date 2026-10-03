@@ -1,12 +1,21 @@
-﻿---
-title: "梯子IP泄漏是什么？DNS泄漏、IPv6、WebRTC 与真实IP暴露完整检查指南（2026）"
-published: 2026-08-29
-updated: 2026-08-29
-description: "梯子 IP 泄漏是什么意思？DNS 泄漏、IPv6 泄漏、WebRTC 和 System Proxy/TUN 有什么关系？本文讲清代理旁路原理、常见误报和安全检查方法，并说明不同设备与浏览器的判断思路。"
-category: "梯子工具"
-tags: ["IP泄漏", "DNS泄漏", "IPv6", "WebRTC", "TUN", "System Proxy", "网络隐私"]
+---
+title: 梯子IP泄漏是什么？DNS泄漏、IPv6、WebRTC 与真实IP暴露完整检查指南（2026）
+published: 2026-08-29T00:00:00.000Z
+updated: 2026-08-29T00:00:00.000Z
+description: >-
+  梯子 IP 泄漏是什么意思？DNS 泄漏、IPv6 泄漏、WebRTC 和 System Proxy/TUN
+  有什么关系？本文讲清代理旁路原理、常见误报和安全检查方法，并说明不同设备与浏览器的判断思路。全面演示跨平台客户端正版安装、订阅链接一键导入与定时更新、分流策略组切换及TUN模式开启，助您零门槛搭建高速稳定的科。
+category: 梯子工具
+tags:
+  - IP泄漏
+  - DNS泄漏
+  - IPv6
+  - WebRTC
+  - TUN
+  - System Proxy
+  - 网络隐私
 pinned: false
-permalink: "/tizi/ip-leak/"
+permalink: /tizi/ip-leak/
 ---
 
 > **【💡 30 秒核心定义：什么是“梯子 IP 泄漏”？】**

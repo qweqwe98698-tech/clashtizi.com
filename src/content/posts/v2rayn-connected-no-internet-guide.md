@@ -1,12 +1,21 @@
-﻿---
-title: "v2rayN连接成功但不能上网怎么办？系统代理、TUN、DNS、路由与节点完整排查（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "v2rayN 图标变红且节点有延迟但网页打不开怎么办？本文深度排查系统代理写入、浏览器扩展冲突、TUN 虚拟网卡、DNS 死锁与路由分流异常。"
-category: "客户端教程"
-tags: ["v2rayN", "Windows客户端", "连接成功但不能上网", "已连接没网", "系统代理", "TUN模式", "问题排查"]
+---
+title: v2rayN连接成功但不能上网怎么办？系统代理、TUN、DNS、路由与节点完整排查（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  v2rayN 图标变红且节点有延迟但网页打不开怎么办？本文深度排查系统代理写入、浏览器扩展冲突、TUN 虚拟网卡、DNS
+  死锁与路由分流异常。深度剖析系统代理未写入、TUN虚拟网卡未授权、本地DNS死锁、分流规则误判全局以及端口占用冲突等底层根因，提供Windows、Mac与移动端全场景一步到位的修复指南。
+category: 客户端教程
+tags:
+  - v2rayN
+  - Windows客户端
+  - 连接成功但不能上网
+  - 已连接没网
+  - 系统代理
+  - TUN模式
+  - 问题排查
 pinned: false
-permalink: "/v2rayn/no-internet/"
+permalink: /v2rayn/no-internet/
 ---
 
 > **【💡 30 秒极速直接答案：v2rayN 连上但没网核心定性与四大排障原则】**

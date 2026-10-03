@@ -1,12 +1,20 @@
-﻿---
-title: "Clash Verge Rev节点全部Timeout怎么办？节点全红、测速失败、延迟异常与无法连接完整排查（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "Clash Verge Rev 节点全部 Timeout、全红或测速失败怎么办？本文从单节点与全节点差异、URL-Test、DNS、TLS、Mihomo Core、IPv4/IPv6、防火墙和网络冲突逐层排查。"
-category: "客户端教程"
-tags: ["Clash Verge Rev", "节点Timeout", "节点全红", "测速失败", "URL-Test", "问题排查"]
+---
+title: Clash Verge Rev节点全部Timeout怎么办？节点全红、测速失败、延迟异常与无法连接完整排查（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  Clash Verge Rev 节点全部 Timeout、全红或测速失败怎么办？本文从单节点与全节点差异、URL-Test、DNS、TLS、Mihomo
+  Core、IPv4/IPv6、防火墙和网络冲突逐层排查。深入剖析客户端驱动冲突、DNS解析死锁与规则路由异常，助您秒级定位断网原因并快速恢复网络畅通。
+category: 客户端教程
+tags:
+  - Clash Verge Rev
+  - 节点Timeout
+  - 节点全红
+  - 测速失败
+  - URL-Test
+  - 问题排查
 pinned: false
-permalink: "/clash-verge-rev/nodes-timeout/"
+permalink: /clash-verge-rev/nodes-timeout/
 ---
 
 > **【💡 30 秒极速分诊：Clash Verge Rev 节点全红到底是什么问题？】**

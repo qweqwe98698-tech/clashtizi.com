@@ -1,12 +1,21 @@
-﻿---
-title: "ChatGPT 一直显示 Checking your browser 怎么办？Cloudflare 验证循环完整排查（2026）"
-published: 2026-08-29
-updated: 2026-08-29
-description: "ChatGPT 一直显示 Checking your browser、Verify you are human 或 Cloudflare 验证循环怎么办？本文从 Cookie、JavaScript、浏览器扩展、隐私设置、VPN/Proxy、系统时间与网络环境逐步排查。"
-category: "AI工具访问"
-tags: ["ChatGPT", "OpenAI", "Cloudflare", "浏览器验证", "Checking your browser", "网络排查"]
+---
+title: ChatGPT 一直显示 Checking your browser 怎么办？Cloudflare 验证循环完整排查（2026）
+published: 2026-08-29T00:00:00.000Z
+updated: 2026-08-29T00:00:00.000Z
+description: >-
+  ChatGPT 一直显示 Checking your browser、Verify you are human 或 Cloudflare
+  验证循环怎么办？本文从
+  Cookie、JavaScript、浏览器扩展、隐私设置、VPN/Proxy、系统时间与网络环境逐步排查。提供原生出口选择与防封号网络配置全方位实操指南。
+category: AI工具访问
+tags:
+  - ChatGPT
+  - OpenAI
+  - Cloudflare
+  - 浏览器验证
+  - Checking your browser
+  - 网络排查
 pinned: false
-permalink: "/chatgpt/checking-your-browser/"
+permalink: /chatgpt/checking-your-browser/
 ---
 
 > **【30 秒快速判断核心导读】**

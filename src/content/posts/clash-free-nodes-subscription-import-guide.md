@@ -1,12 +1,22 @@
-﻿---
-title: "Clash免费节点怎么用？免费订阅、配置导入、节点更新与常见问题（2026）"
-published: 2026-08-30
-updated: 2026-08-30
-description: "Clash免费节点怎么用？Base64订阅如何转换成Clash YAML？本文详解Clash Verge Rev免费配置导入、自动定时更新、节点全红超时排查与常见报错解决指南。"
-category: "Clash教程"
-tags: ["Clash免费节点", "Clash免费订阅", "Clash Verge Rev", "Subconverter", "YAML转换", "节点更新失败", "全红超时", "常见问题"]
+---
+title: Clash免费节点怎么用？免费订阅、配置导入、节点更新与常见问题（2026）
+published: 2026-08-30T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  Clash免费节点怎么用？Base64订阅如何转换成Clash YAML？本文详解Clash Verge
+  Rev免费配置导入、自动定时更新、节点全红超时排查与常见报错解决指南。手把手指导正版客户端下载安装、多节点订阅导入与自动更新、智能分流策略组调优以及TUN全流量接管，全面满足电脑与手机跨平台极速出海办公需求。
+category: Clash教程
+tags:
+  - Clash免费节点
+  - Clash免费订阅
+  - Clash Verge Rev
+  - Subconverter
+  - YAML转换
+  - 节点更新失败
+  - 全红超时
+  - 常见问题
 pinned: true
-permalink: "/clash-verge-rev/free-nodes/"
+permalink: /clash-verge-rev/free-nodes/
 ---
 
 > **【💡 30 秒极速直接答案：Clash 如何正确使用免费节点？】**

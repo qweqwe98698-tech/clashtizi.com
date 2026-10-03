@@ -1,12 +1,22 @@
-﻿---
-title: "梯子Rule、Global、Direct是什么？规则模式、全局代理与直连模式完整区别（2026）"
-published: 2026-08-29
-updated: 2026-08-29
-description: "梯子里的 Rule、Global、Direct 分别是什么？本文讲清规则模式、全局代理、直连模式、TUN/System Proxy、策略组、Auto、Fallback 与分流逻辑之间的关系。"
-category: "梯子工具"
-tags: ["Rule模式", "Global模式", "Direct", "全局代理", "规则分流", "策略组", "Clash规则"]
+---
+title: 梯子Rule、Global、Direct是什么？规则模式、全局代理与直连模式完整区别（2026）
+published: 2026-08-29T00:00:00.000Z
+updated: 2026-08-29T00:00:00.000Z
+description: >-
+  梯子里的 Rule、Global、Direct 分别是什么？本文讲清规则模式、全局代理、直连模式、TUN/System
+  Proxy、策略组、Auto、Fallback
+  与分流逻辑之间的关系。本文结合晚高峰多运营商测速实测数据，全面对比节点延迟、丢包率、流媒体4K解锁能力与真实在线率，手把手带您避坑挑选高性价比专线服务。
+category: 梯子工具
+tags:
+  - Rule模式
+  - Global模式
+  - Direct
+  - 全局代理
+  - 规则分流
+  - 策略组
+  - Clash规则
 pinned: false
-permalink: "/tizi/rule-global-direct/"
+permalink: /tizi/rule-global-direct/
 ---
 
 > **【💡 30 秒看懂：Rule、Global、Direct 到底有什么区别？】**

@@ -1,12 +1,23 @@
-﻿---
-title: "软件不走代理怎么办？浏览器、游戏、命令行、App与系统代理完整排查（2026）"
-published: 2026-08-29
-updated: 2026-08-30
-description: "为什么浏览器能翻墙，但游戏、命令行、Telegram、Discord 或某些 App 死活不走代理？本文深度排查 WinINet 系统代理、TUN 虚拟网卡、SOCKS5 端口、环境变量与进程分流规则。"
-category: "梯子工具"
-tags: ["软件不走代理", "系统代理", "TUN模式", "应用代理", "命令行代理", "游戏加速", "分流规则", "故障排查"]
+---
+title: 软件不走代理怎么办？浏览器、游戏、命令行、App与系统代理完整排查（2026）
+published: 2026-08-29T00:00:00.000Z
+updated: 2026-08-30T00:00:00.000Z
+description: >-
+  为什么浏览器能翻墙，但游戏、命令行、Telegram、Discord 或某些 App 死活不走代理？本文深度排查 WinINet 系统代理、TUN
+  虚拟网卡、SOCKS5
+  端口、环境变量与进程分流规则。深度对比晚高峰测速、4K流媒体解锁与抗丢包能力，助您避坑选到高性价比优质专线服务。为您提供权威客观的选购参考。
+category: 梯子工具
+tags:
+  - 软件不走代理
+  - 系统代理
+  - TUN模式
+  - 应用代理
+  - 命令行代理
+  - 游戏加速
+  - 分流规则
+  - 故障排查
 pinned: true
-permalink: "/tizi/app-not-using-proxy/"
+permalink: /tizi/app-not-using-proxy/
 ---
 
 > **【💡 30 秒极速直接答案：软件不走代理核心定性与四大排障原则】**
