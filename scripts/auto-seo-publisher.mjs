@@ -607,8 +607,11 @@ function sanitizeAntiAiContent(rawMarkdown, topic) {
 			desc = `${desc.slice(0, 155)}...`;
 			clean = clean.replace(descRegex, `description: "${desc}"`);
 		} else if (desc.length < 130) {
-			const padding = ` 本文针对${topic.coreTheme.slice(0, 25)}进行晚高峰深度实测，提供企业级选购建议与网络调优指南。`;
-			desc = (desc + padding).slice(0, 158);
+			const supplement = ` 附2026年最新晚高峰测速、物理链路拓扑图与全平台调优排障实操方案。`;
+			desc = `${desc}${supplement}`;
+			if (desc.length > 160) {
+				desc = `${desc.slice(0, 156)}...`;
+			}
 			clean = clean.replace(descRegex, `description: "${desc}"`);
 		}
 	}
