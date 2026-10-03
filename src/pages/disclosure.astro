@@ -1,0 +1,58 @@
+---
+import { PageHeader } from "@components/features/page-header";
+import Markdown from "@components/misc/Markdown.astro";
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+
+const title = "商业合作与推广返利透明度披露";
+const description = "Clash梯子网（clashtizi.com）坚持客观公正实测原则。本声明向广大读者公开披露本站与部分专线服务商的推广返利机制：通过本站外链注册可能产生少许佣金用于支持真机带宽与服务器测速成本，但这绝不会增加读者的任何购买支出。本站与品牌方无雇佣或股权关联，所有测速数据均来自真实晚高峰独立实测。";
+---
+
+<MainGridLayout title={title} description={description}>
+	<script>
+		import("../scripts/right-sidebar-layout.js");
+	</script>
+	<div class="flex w-full rounded-(--radius-large) overflow-hidden relative min-h-32">
+		<div class="card-base z-10 px-9 py-6 relative w-full">
+			<PageHeader title={title} subtitle="合规发布日期：2026年10月03日" />
+
+			<Markdown class="mt-4">
+				<h2>💡 1. 为什么我们需要本披露声明？</h2>
+				<p>
+					在 <strong>Clash梯子网 (clashtizi.com)</strong>，诚信与透明度是我们服务全球极客读者的核心基石。根据国际通行的数字营销准则、联邦贸易委员会 (FTC) 指引及 Google 搜索中心《链接垃圾内容与赞助商标记政策》，我们在此全面、诚实地向所有访客公开本站的商业变现机制与推广返利（Affiliate Marketing）合作模式。
+				</p>
+
+				<h2>🤝 2. 推广返利链接（Affiliate Links）的工作机制</h2>
+				<p>
+					本站部分横评榜单、专线推荐对比表以及侧边栏“商业合作区”中包含带有特定推广参数的外部注册链接（通常标记为 <code>rel="nofollow sponsored noopener"</code>）。
+				</p>
+				<p>
+					当您点击这些链接并最终向第三方专线服务商购买套餐服务时，该服务商可能会向本站支付极小比例的推介返利佣金。<strong>此佣金完全由服务商自营销预算中支出，绝不会以任何形式转嫁给读者，亦不会增加您所支付的实际费用。</strong>相反，您往往可以通过本站专属优惠码获得 8 折至 9 折等额外价格折扣。
+				</p>
+
+				<h2>🛡️ 3. 我们的独立性原则与评测客观底线</h2>
+				<p>
+					我们深知，商业利益与客观评测之间需要建立牢不可破的防火墙。在此，我们郑重作出以下承诺：
+				</p>
+				<ul>
+					<li><strong>测试结果不可被收买</strong>：任何品牌无论是否向本站提供返利合作，均无法通过付费购买评测排名。所有进入推荐榜单的服务商，必须首先满足“长周期运营超2年”、“全IEPL/IPLC内网专线”、“晚高峰20:00-23:30无拥堵0丢包”等严苛门槛。</li>
+					<li><strong>真机测速公开透明</strong>：所有展示的测速面板图均保留真实测试环境与测试截图，测速结果不造假、不虚报、不挑选特定最优时间段。</li>
+					<li><strong>无股权或雇佣隶属关系</strong>：本站为完全独立的评测团队，与任何第三方专线机场品牌方均无雇佣合同、控股或从属关系。</li>
+				</ul>
+
+				<h2>⚡ 4. 收益的用途</h2>
+				<p>
+					本站通过推广返利所获得的所有收益，均被循环投入于站点的长线运维基础设施：
+				</p>
+				<ol>
+					<li>采购电信、联通、移动多线 1000M/2000M 物理宽带及实测真机设备；</li>
+					<li>每月自费订阅数十家主流专线大厂的商业套餐以维持长期监控；</li>
+					<li>支付 Cloudflare 企业级 CDN 加速、自动化 CI/CD 构建及全球高防服务器开销。</li>
+				</ol>
+
+				<p class="mt-6 font-semibold text-(--primary)">
+					感谢每一位使用本站推荐链接的极客朋友，正是您的默默信任与支持，让客观、真实、无水军的科学上网技术评测得以持续运转！
+				</p>
+			</Markdown>
+		</div>
+	</div>
+</MainGridLayout>

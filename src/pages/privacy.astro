@@ -1,0 +1,47 @@
+---
+import { PageHeader } from "@components/features/page-header";
+import Markdown from "@components/misc/Markdown.astro";
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+
+const title = "隐私政策与访客数据保护声明";
+const description = "Clash梯子网（clashtizi.com）严格遵循隐私保护原则与数据最小化标准。本政策详细阐述我们在访客浏览网络评测、排障指南及客户端配置文档时，对匿名访问日志、Cookie管理与第三方分析工具的处理规范，绝不收集或转让任何用户敏感个人身份信息，切实保障极客读者的个人数字隐私权益。";
+---
+
+<MainGridLayout title={title} description={description}>
+	<script>
+		import("../scripts/right-sidebar-layout.js");
+	</script>
+	<div class="flex w-full rounded-(--radius-large) overflow-hidden relative min-h-32">
+		<div class="card-base z-10 px-9 py-6 relative w-full">
+			<PageHeader title={title} subtitle="最后更新日期：2026年10月03日" />
+
+			<Markdown class="mt-4">
+				<h2>🔒 1. 我们的隐私承诺</h2>
+				<p>
+					<strong>Clash梯子网 (clashtizi.com)</strong> 极度重视极客读者与网络技术爱好者的隐私权。作为一家专注于跨国网络协议与客户端技术配置的独立评测网站，我们恪守<strong>数据最小化原则</strong>：在您访问本站时，我们绝不主动搜集任何涉及真实身份、个人姓名、联系电话或住址等个人敏感信息。
+				</p>
+
+				<h2>📋 2. 我们收集的信息类型及用途</h2>
+				<h3>2.1 服务器匿名访问日志</h3>
+				<p>
+					当您浏览本站网页时，CDN（如 Cloudflare）或静态托管服务器会自动记录基础网络请求元数据，包括：访问时间戳、访问的 URL 路径、HTTP 状态码、浏览器 User-Agent 及模糊化的 IP 地理区域（如国家/城市级别）。这些技术数据仅用于抵御恶意 DDoS 攻击、排查网络访问故障与监控全站可用性，绝不与任何个人身份相关联。
+				</p>
+
+				<h3>2.2 本地存储与 Cookie 运用</h3>
+				<p>
+					本站主要使用浏览器的 <code>localStorage</code> 来记录您的前端偏好设定，例如：<strong>明暗主题切换（深色/浅色模式）</strong>、界面字体缩放及右侧边栏折叠状态。这些存储完全驻留于您的本地设备，不会上传至任何中央数据服务器。
+				</p>
+
+				<h2>🛡️ 3. 第三方链接与外部服务</h2>
+				<p>
+					本站包含指向第三方官方网站、开源项目（如 GitHub 仓库）及合作品牌服务商的外部超链接。当您点击这些外链离开本站后，第三方服务商的数据保护政策将由其自身独立隐私条款约束。我们强烈建议您在第三方站点进行账户注册或购买之前，仔细查阅其专属隐私协议。
+				</p>
+
+				<h2>🔄 4. 政策更新与联系方式</h2>
+				<p>
+					随着网络法律法规及站点功能演进，我们可能会适时修订本隐私声明。如有任何关于本隐私政策的疑问或反馈，欢迎通过站长公示途径与我们取得联系。
+				</p>
+			</Markdown>
+		</div>
+	</div>
+</MainGridLayout>

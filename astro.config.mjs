@@ -67,6 +67,28 @@ import { resolveFontMode } from "./src/utils/fontMode.ts";
 
 const customFontsEnabled = resolveFontMode(siteConfig) === "custom";
 
+// 为 Sitemap 预计算文章的准确 lastmod 时间戳
+const urlLastmodMap = new Map();
+if (fs.existsSync(postsDir)) {
+	const files = fs.readdirSync(postsDir).filter((f) => f.endsWith(".md") || f.endsWith(".mdx"));
+	for (const file of files) {
+		const content = fs.readFileSync(path.join(postsDir, file), "utf-8");
+		const permMatch = content.match(/permalink:\s*['"]?([^'"\n\r]+)/);
+		const pubMatch = content.match(/published:\s*['"]?([^'"\n\r]+)/);
+		const updMatch = content.match(/updated:\s*['"]?([^'"\n\r]+)/);
+		const dateStr = updMatch ? updMatch[1].trim() : (pubMatch ? pubMatch[1].trim() : null);
+		let finalPath = permMatch ? permMatch[1].trim() : `/posts/${file.replace(/\.(md|mdx)$/, "")}/`;
+		if (!finalPath.startsWith("/")) finalPath = `/${finalPath}`;
+		if (!finalPath.endsWith("/")) finalPath += "/";
+		const fullUrl = new URL(finalPath.slice(1), siteConfig.siteURL).href;
+		if (dateStr) {
+			try {
+				urlLastmodMap.set(fullUrl, new Date(dateStr).toISOString());
+			} catch (_) {}
+		}
+	}
+}
+
 // https://astro.build/config
 export default defineConfig({
 	fonts: customFontsEnabled
@@ -228,6 +250,10 @@ export default defineConfig({
 					return false;
 				}
 				return true;
+			},
+			serialize(item) {
+				item.lastmod = urlLastmodMap.get(item.url) || new Date().toISOString();
+				return item;
 			},
 		}),
 		mdx(),

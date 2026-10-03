@@ -25,6 +25,7 @@ permalink: /recommend/airport/
 > 1. **真机实测全覆盖**：本文严选汇总 **17 家主流高速稳定机场品牌**，全部数据基于电信、联通、移动三网在**晚高峰拥堵时段（20:00 - 23:30）**的真机测速面板截图、丢包率监控及流媒体/ChatGPT 解锁报告。
 > 2. **线路架构核心标准**：首选 **IEPL / IPLC 企业内网专线**（数据不过 GFW 物理防火墙，晚高峰 0 丢包、4K/8K 拖拽秒开），远离易被封锁、延迟飙升的普通公网直连梯子。
 > 3. **全平台客户端支持**：支持 **Clash Verge Rev、Sing-box、Shadowrocket (小火箭)、Surge、V2RayN、Quantumult X** 一键扫码导入与订阅托管。
+> 4. 💡 **商业赞助与返利透明度声明 (Affiliate Disclosure)**：本文包含部分合作品牌的推广返利链接。如果您通过本站链接购买服务，本站可能会获得少许佣金以支持服务器与带宽测试成本，但这**绝不会增加您的任何购买费用**（甚至可使用本站独家优惠码享受折上折）。本站与各服务商均无雇佣或隶属关系，所有测速截图与横评结论均基于晚高峰真机实测，始终坚持客观独立原则。
 
 ---
 
@@ -70,7 +71,7 @@ permalink: /recommend/airport/
 - 👉 **[点击进入光速云官方注册通道](https://sahude.gsyvipaff.com/#/?code=keqgvT5Y)**
 
 #### 📊 光速云真实节点测速图与解锁实测
-![光速云节点测速实测图](/images/airports/光速云-节点测速实测.png)
+![光速云节点测速实测图](/images/airports/光速云-节点测速实测.webp)
 ![光速云流媒体与ChatGPT解锁实测](/images/airports/photo_2026-08-19_12-13-01.jpg)
 
 ---
@@ -82,7 +83,7 @@ permalink: /recommend/airport/
 - 👉 **[点击进入飞猫云官方注册通道](https://guangs.flycataff.com/#/?code=6uq0Xe9y)**
 
 #### 📊 飞猫云晚高峰节点测速图
-![飞猫云节点测速实测图](/images/airports/飞猫云-节点测速实测.png)
+![飞猫云节点测速实测图](/images/airports/飞猫云-节点测速实测.webp)
 
 ---
 
@@ -93,7 +94,7 @@ permalink: /recommend/airport/
 - 👉 **[点击进入微风网络官方注册通道](https://edp01.breezenetaff.com/#/?code=t3huofyI)**
 
 #### 📊 微风网络晚高峰节点测速图
-![微风网络节点测速实测图](/images/airports/微风-节点测速实测.png)
+![微风网络节点测速实测图](/images/airports/微风-节点测速实测.webp)
 
 ---
 
@@ -104,7 +105,7 @@ permalink: /recommend/airport/
 - 👉 **[点击进入星岛梦官方注册通道](https://guangs.xingdaomeng.com/#/?code=1TynBYnR)**
 
 #### 📊 星岛梦晚高峰节点测速图
-![星岛梦节点测速实测图](/images/airports/星岛梦-节点测速实测.png)
+![星岛梦节点测速实测图](/images/airports/星岛梦-节点测速实测.webp)
 
 ---
 
@@ -114,7 +115,7 @@ permalink: /recommend/airport/
 - 👉 **[点击进入 U1S1 官方注册通道](https://guangs.vipaff.cc/#/?code=xhX5X22f)** (优惠码：`akaka`)
 
 #### 📊 U1S1 晚高峰节点测速图
-![U1S1节点测速实测图](/images/airports/U1S1-节点测速实测.png)
+![U1S1节点测速实测图](/images/airports/U1S1-节点测速实测.webp)
 
 ---
 
@@ -124,7 +125,7 @@ permalink: /recommend/airport/
 - 👉 **[点击进入极连云官方注册通道](https://guangs.jlyvipaff.com/#/?code=VM1rKGUu)** (优惠码：`ji8888`)
 
 #### 📊 极连云晚高峰节点测速图
-![极连云节点测速实测图](/images/airports/极连云-节点测速实测.png)
+![极连云节点测速实测图](/images/airports/极连云-节点测速实测.webp)
 
 ---
 
@@ -133,7 +134,7 @@ permalink: /recommend/airport/
 - 👉 **[点击进入宇宙云官方注册通道](https://guangs.yuzoucloud.cc/#/register?code=yrThwMP1)** (优惠码：`YUZHOU553`)
 
 #### 📊 宇宙云节点测速实测图
-![宇宙云节点测速实测图](/images/airports/宇宙云-节点测速实测.png)
+![宇宙云节点测速实测图](/images/airports/宇宙云-节点测速实测.webp)
 
 ---
 
@@ -142,7 +143,7 @@ permalink: /recommend/airport/
 - 👉 **[点击进入唯兔云官方注册通道](https://guangs.v2yunvipaff.com/#/?code=xIutqOBA)** (优惠码：`rabbit`)
 
 #### 📊 唯兔云节点测速实测图
-![唯兔云节点测速实测图](/images/airports/唯兔云-节点测速实测.png)
+![唯兔云节点测速实测图](/images/airports/唯兔云-节点测速实测.webp)
 
 ---
 
@@ -151,7 +152,7 @@ permalink: /recommend/airport/
 - 👉 **[点击进入灵猫网络官方注册通道](https://vip01.civetnet.com/#/?code=8MIAyxak)** (优惠码：`lmao888`)
 
 #### 📊 灵猫网络节点测速实测图
-![灵猫网络节点测速实测图](/images/airports/灵猫网络-节点测速实测.png)
+![灵猫网络节点测速实测图](/images/airports/灵猫网络-节点测速实测.webp)
 
 ---
 
@@ -160,7 +161,7 @@ permalink: /recommend/airport/
 - 👉 **[点击进入光年梯官方注册通道](https://guangs.gntaff.com/#/?code=X1FoxjGE)** (优惠码：`gnt6666`)
 
 #### 📊 光年梯节点测速实测图
-![光年梯节点测速实测图](/images/airports/光年梯-节点测速实测.png)
+![光年梯节点测速实测图](/images/airports/光年梯-节点测速实测.webp)
 
 ---
 
@@ -169,7 +170,7 @@ permalink: /recommend/airport/
 - 👉 **[点击进入一翻云官方注册通道](https://guangs.1flyunaff.cc/#/register?code=Yr7FhB7r)** (优惠码：`yfy6666`)
 
 #### 📊 一翻云节点测速实测图
-![一翻云节点测速实测图](/images/airports/一翻云-节点测速实测.png)
+![一翻云节点测速实测图](/images/airports/一翻云-节点测速实测.webp)
 
 ---
 
@@ -178,7 +179,7 @@ permalink: /recommend/airport/
 - 👉 **[点击进入二猫云官方注册通道](https://guangs.2maoyunaff.cc/#/?code=7mjvgGbW)** (优惠码：`ermao5555`)
 
 #### 📊 二猫云节点测速实测图
-![二猫云节点测速实测图](/images/airports/二猫云-节点测速实测.png)
+![二猫云节点测速实测图](/images/airports/二猫云-节点测速实测.webp)
 
 ---
 
@@ -187,7 +188,7 @@ permalink: /recommend/airport/
 - 👉 **[点击进入SOGO云官方注册通道](https://guangs.sogoyunaff.cc/#/?code=327Vs0w7)** (优惠码：`sss777`)
 
 #### 📊 SOGO 云节点测速实测图
-![SOGO云节点测速实测图](/images/airports/SOGO云-节点测速实测.png)
+![SOGO云节点测速实测图](/images/airports/SOGO云-节点测速实测.webp)
 
 ---
 
@@ -196,7 +197,7 @@ permalink: /recommend/airport/
 - 👉 **[点击进入可信云官方注册通道](https://guangs.kosingaff.com/#/register?code=UYDtNlCY)** (优惠码：`kkk333`)
 
 #### 📊 可信云节点测速实测图
-![可信云节点测速实测图](/images/airports/可信云-节点测速实测.png)
+![可信云节点测速实测图](/images/airports/可信云-节点测速实测.webp)
 
 ---
 
@@ -205,7 +206,7 @@ permalink: /recommend/airport/
 - 👉 **[点击进入速界官方注册通道](https://guangs.speedworldaff.cc/#/register?code=xgXzEfZB)** (优惠码：`sss1111`)
 
 #### 📊 速界节点测速实测图
-![速界节点测速实测图](/images/airports/速界-节点测速实测.png)
+![速界节点测速实测图](/images/airports/速界-节点测速实测.webp)
 
 ---
 
@@ -214,7 +215,7 @@ permalink: /recommend/airport/
 - 👉 **[点击进入快狸官方注册通道](https://guangs.kuailicloud.cc/#/register?code=AiqyM8oG)** (优惠码：`kkk2222`)
 
 #### 📊 快狸节点测速实测图
-![快狸节点测速实测图](/images/airports/快狸-节点测速实测.png)
+![快狸节点测速实测图](/images/airports/快狸-节点测速实测.webp)
 
 ---
 
@@ -223,7 +224,7 @@ permalink: /recommend/airport/
 - 👉 **[点击进入全球云官方注册通道](https://guangs.gcvipaff.com/#/?code=Ov2nvU9C)** (优惠码：`qqy7777`)
 
 #### 📊 全球云节点测速实测图
-![全球云节点测速实测图](/images/airports/全球云-节点测速实测.png)
+![全球云节点测速实测图](/images/airports/全球云-节点测速实测.webp)
 
 ---
 

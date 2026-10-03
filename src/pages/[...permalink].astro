@@ -93,25 +93,121 @@ const publicDescription = getPostPublicDescription(
 	entry.data.title,
 );
 
-const jsonLd = {
-	"@context": "https://schema.org",
-	"@type": "BlogPosting",
-	headline: entry.data.title,
-	description: publicDescription,
-	keywords: entry.data.tags,
-	author: {
-		"@type": "Person",
-		name: profileConfig.name,
-		url: Astro.site,
-	},
-	datePublished: entry.data.published.toISOString(),
-	...(entry.data.updated && {
-		dateModified: entry.data.updated.toISOString(),
-	}),
-	inLanguage: entry.data.lang
-		? entry.data.lang.replace("_", "-")
-		: siteConfig.lang.replace("_", "-"),
-};
+	const siteUrl = Astro.site ? Astro.site.toString() : "https://clashtizi.com/";
+	const currentUrl = new URL(Astro.url.pathname, siteUrl).href;
+	const isRanking = Astro.url.pathname.includes("/recommend/airport");
+
+	const breadcrumbItems = [
+		{
+			"@type": "ListItem",
+			position: 1,
+			name: "首页",
+			item: siteUrl,
+		},
+	];
+
+	if (entry.data.category) {
+		breadcrumbItems.push({
+			"@type": "ListItem",
+			position: 2,
+			name: entry.data.category,
+			item: new URL(
+				`/archive/?category=${encodeURIComponent(entry.data.category)}`,
+				siteUrl,
+			).href,
+		});
+		breadcrumbItems.push({
+			"@type": "ListItem",
+			position: 3,
+			name: entry.data.title,
+			item: currentUrl,
+		});
+	} else {
+		breadcrumbItems.push({
+			"@type": "ListItem",
+			position: 2,
+			name: entry.data.title,
+			item: currentUrl,
+		});
+	}
+
+	const graphItems: any[] = [
+		{
+			"@type": "BlogPosting",
+			mainEntityOfPage: currentUrl,
+			headline: entry.data.title,
+			description: publicDescription,
+			keywords: entry.data.tags,
+			author: {
+				"@type": "Organization",
+				name: "ClashTizi 极客评测实验室",
+				url: siteUrl,
+			},
+			publisher: {
+				"@type": "Organization",
+				name: "Clash梯子网",
+				url: siteUrl,
+			},
+			datePublished: entry.data.published.toISOString(),
+			...(entry.data.updated && {
+				dateModified: entry.data.updated.toISOString(),
+			}),
+			inLanguage: entry.data.lang
+				? entry.data.lang.replace("_", "-")
+				: siteConfig.lang.replace("_", "-"),
+		},
+		{
+			"@type": "BreadcrumbList",
+			itemListElement: breadcrumbItems,
+		},
+	];
+
+	if (isRanking) {
+		graphItems.push({
+			"@type": "ItemList",
+			name: "2026 优质稳定专线机场推荐排行榜",
+			description:
+				"基于电信、联通、移动晚高峰真机实测数据评选的企业级 IEPL/IPLC 专线服务商精选榜单",
+			numberOfItems: 6,
+			itemListElement: [
+				{
+					"@type": "ListItem",
+					position: 1,
+					name: "光速云 (IEPL 纯专线 / VLESS)",
+				},
+				{
+					"@type": "ListItem",
+					position: 2,
+					name: "飞猫云 (IEPL 纯专线 / 纯净机房)",
+				},
+				{
+					"@type": "ListItem",
+					position: 3,
+					name: "微风网络 (平价稳定轻度专线)",
+				},
+				{
+					"@type": "ListItem",
+					position: 4,
+					name: "星岛梦 (企业级内网低延迟专线)",
+				},
+				{
+					"@type": "ListItem",
+					position: 5,
+					name: "无忧链接 (IPLC 物理专线架构)",
+				},
+				{
+					"@type": "ListItem",
+					position: 6,
+					name: "唯兔云 (原生落地大带宽流媒体专线)",
+				},
+			],
+		});
+	}
+
+	const jsonLd = {
+		"@context": "https://schema.org",
+		"@graph": graphItems,
+	};
 ---
 
 <MainGridLayout
@@ -185,7 +281,7 @@ const jsonLd = {
 
 			<!-- title -->
 			<div class="relative onload-animation">
-				<div
+				<h1
 					data-pagefind-body
 					data-pagefind-weight="10"
 					data-pagefind-meta="title"
@@ -196,7 +292,7 @@ const jsonLd = {
                     before:absolute before:top-3 before:-left-4.5"
 				>
 					{entry.data.title}
-				</div>
+				</h1>
 			</div>
 
 			<!-- metadata -->

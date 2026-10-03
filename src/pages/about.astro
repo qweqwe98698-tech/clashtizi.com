@@ -16,9 +16,35 @@ if (!aboutPost) {
 
 const { Content } = await render(aboutPost);
 const title = "关于我们与客观科学上网机场评测标准";
+const siteUrl = Astro.site ? Astro.site.toString() : "https://clashtizi.com/";
+
+const aboutJsonLd = {
+	"@context": "https://schema.org",
+	"@graph": [
+		{
+			"@type": "AboutPage",
+			name: title,
+			url: new URL("/about/", siteUrl).href,
+			description:
+				"Clash梯子网（clashtizi.com）是专注于跨国网络代理生态、前沿跨境传输协议实测与企业级高速专线机场客观评测的独立技术平台。",
+		},
+		{
+			"@type": "Organization",
+			name: "Clash梯子网",
+			url: siteUrl,
+			logo: new URL("/logo.png", siteUrl).href,
+		},
+	],
+};
 ---
 
 <MainGridLayout title={title} description="Clash梯子网（clashtizi.com）是专注于跨国网络代理生态、前沿跨境传输协议实测与企业级高速专线机场客观评测的独立技术平台。我们坚持晚高峰抗压实测与严格准入门槛，为外贸电商、跨境办公及科研人员提供真实高可用科学上网指南，深度解析专线物理链路架构与防跑路策略，全力打造权威可信的极客评测生态。">
+	<script
+		is:inline
+		slot="head"
+		type="application/ld+json"
+		set:html={JSON.stringify(aboutJsonLd)}
+	/>
 	<!-- 引入右侧边栏布局管理器 -->
 	<script>
 		import("../scripts/right-sidebar-layout.js");

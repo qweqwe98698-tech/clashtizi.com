@@ -1,0 +1,53 @@
+---
+import { PageHeader } from "@components/features/page-header";
+import Markdown from "@components/misc/Markdown.astro";
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+
+const title = "服务条款与技术文档免责声明";
+const description = "欢迎查阅Clash梯子网（clashtizi.com）服务条款与免责声明。本站发布的跨国网络代理协议教程、晚高峰真机测速报告及排障技术指南仅供跨境电商、海外学术文献检索与正规外贸办公参考使用。访问本站即视为您同意遵守当地法律法规，本站对第三方网络服务商的运营变动与使用风险不承担任何担保责任。";
+---
+
+<MainGridLayout title={title} description={description}>
+	<script>
+		import("../scripts/right-sidebar-layout.js");
+	</script>
+	<div class="flex w-full rounded-(--radius-large) overflow-hidden relative min-h-32">
+		<div class="card-base z-10 px-9 py-6 relative w-full">
+			<PageHeader title={title} subtitle="生效日期：2026年10月03日" />
+
+			<Markdown class="mt-4">
+				<h2>📜 1. 条款接受与服务范围</h2>
+				<p>
+					欢迎访问 <strong>Clash梯子网 (clashtizi.com)</strong>。通过访问、阅读或以其他方式使用本网站所包含的任何信息，即表示您已阅读、完全理解并同意受本服务条款与免责声明的约束。如果您不同意本条款的任何部分，请立即停止访问并离开本网站。
+				</p>
+
+				<h2>🎯 2. 合法合规用途限定</h2>
+				<p>
+					本站所发布的所有跨平台客户端软件配置教程（包括但不限于 Clash Verge Rev、Sing-box、Shadowrocket 等）、传输协议技术原理解析以及晚高峰网络性能客观实测数据，<strong>仅供用于合法的商业贸易、海外学术研究与正规办公交流场景</strong>，例如：
+				</p>
+				<ul>
+					<li>跨境电商卖家（Amazon、eBay、Shopee 等）海外店铺日常合规运营与跨国邮件联络；</li>
+					<li>高校师生、科研机构学者的海外学术文献数据库（Google Scholar、IEEE、Nature 等）检索；</li>
+					<li>正规外贸企业的跨国商务谈判与即时通讯；</li>
+					<li>海外流媒体版权内容的合规视听与个人技术体验。</li>
+				</ul>
+				<p>
+					<strong>严禁任何用户利用本站所介绍的工具、技术方案或第三方节点从事任何违反您所在国家或地区法律法规的非法活动。</strong>
+				</p>
+
+				<h2>⚖️ 3. 评测数据客观性与免责条款</h2>
+				<p>
+					1. <strong>实测数据时效性</strong>：本站所有机场评测数据与晚高峰测速截图均基于特定测试周期（20:00 - 23:30）和本地宽带网络环境。由于跨国海底光缆、运营商 QoS 策略、本地网络抖动及第三方服务商服务器负载变化，实际使用体验可能存在不可预测的差异，评测结论仅供决策参考，不构成任何形式的绝对商业担保。
+				</p>
+				<p>
+					2. <strong>第三方运营风险</strong>：本站仅作为独立的技术评测与知识分享媒体，并非任何机场服务商的实际运营商或销售主体。对于第三方服务商的套餐资费调整、节点线路更迭、突发故障或因违规违约引发的服务中断，本站不承担任何直接或连带法律责任。
+				</p>
+
+				<h2>🔒 4. 知识产权与原创内容保护</h2>
+				<p>
+					本站所有原创文字内容、实测排障拓扑图解、独家选型决策逻辑均受知识产权法律保护。除特别注明外，未经本站明确书面许可，任何个人或组织不得对本站正文进行抓取复制、恶意镜像或商业二次打包。
+				</p>
+			</Markdown>
+		</div>
+	</div>
+</MainGridLayout>

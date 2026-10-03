@@ -33,9 +33,39 @@ const pageDescription =
 	page.currentPage > 1
 		? `Clash梯子网专注于2026年最新高速稳定翻墙机场推荐、节点测速与科学上网配置指南（第${page.currentPage}页）。全面实测IEPL/IPLC纯专线大厂晚高峰抗丢包性能，提供Clash Verge、Sing-box、小火箭Shadowrocket及v2rayN多端客户端教程与流媒体解锁技巧，助您零门槛搭建安全极速出海网络。`
 		: undefined;
+
+const siteUrl = Astro.site ? Astro.site.toString() : "https://clashtizi.com/";
+const homeJsonLd =
+	page.currentPage === 1
+		? {
+				"@context": "https://schema.org",
+				"@graph": [
+					{
+						"@type": "WebSite",
+						name: siteConfig.title,
+						url: siteUrl,
+						description: siteConfig.subtitle,
+					},
+					{
+						"@type": "Organization",
+						name: siteConfig.title,
+						url: siteUrl,
+						logo: new URL("/logo.png", siteUrl).href,
+					},
+				],
+			}
+		: null;
 ---
 
 <MainGridLayout title={pageTitle} description={pageDescription}>
+	{homeJsonLd && (
+		<script
+			is:inline
+			slot="head"
+			type="application/ld+json"
+			set:html={JSON.stringify(homeJsonLd)}
+		/>
+	)}
 	{showCategoryBar && <CategoryBar />}
 	<PostPage page={page} />
 	<Pagination

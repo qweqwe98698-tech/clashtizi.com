@@ -36,6 +36,14 @@ function transformAnchor(node, options) {
 		properties.target = options.target;
 	}
 	const mergedRel = new Set([...relTokens(properties.rel), ...options.rel]);
+
+	const isAffiliate =
+		/(?:aff\b|aff\.|aff\/|\.aff|aff=|[?&#]code=|[?&#]ref=|[?&#]coupon=)/i.test(href) ||
+		/(?:gsyvipaff|flycataff|breezenetaff|xingdaomeng|worryfreeaff|v2yunvipaff|vipaff|jlyvipaff|yuzoucloud|civetnet|gntaff|1flyunaff)/i.test(href);
+	if (isAffiliate) {
+		mergedRel.add("sponsored");
+	}
+
 	if (mergedRel.size > 0) properties.rel = [...mergedRel];
 }
 

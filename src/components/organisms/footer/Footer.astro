@@ -43,49 +43,59 @@ if (footerConfig.enable) {
 </div>
 <!--<div class="transition bg-[oklch(92%_0.01_var(--hue))] dark:bg-black rounded-2xl py-8 mt-4 mb-8 flex flex-col items-center justify-center px-6">-->
 <div
-	class="transition border-dashed border-[oklch(85%_0.01_var(--hue))] dark:border-white/15 rounded-2xl mb-12 flex flex-col items-center justify-center px-6"
+	class="transition border-dashed border-[oklch(85%_0.01_var(--hue))] dark:border-white/15 rounded-2xl mb-12 flex flex-col items-center justify-center px-6 py-6"
 >
-	<div class="transition text-50 text-sm text-center">
-		{customFooterHtml && <div class="mb-2" set:html={customFooterHtml} />}
+	<div class="transition text-50 text-sm text-center max-w-4xl w-full">
+		{customFooterHtml && <div class="mb-4" set:html={customFooterHtml} />}
 
-		<div class="mb-2">
-			&copy; <span id="copyright-year">{currentYear}</span>
-			{profileConfig.name}. All Rights Reserved. /
-			<a
-				class="transition link text-[var(--primary)] font-medium"
-				href={url("rss/")}
-				onclick={`event.preventDefault(); navigateToPage('${url("rss/")}')`}
-				>RSS</a
-			> /
-			<a
-				class="transition link text-[var(--primary)] font-medium"
-				href={url("atom/")}
-				onclick={`event.preventDefault(); navigateToPage('${url("atom/")}')`}
-				>Atom</a
-			> /
-			<a
-				class="transition link text-[var(--primary)] font-medium"
-				target="_blank"
-				href={url("sitemap-index.xml")}>Sitemap</a
-			>
+		<!-- 信任信号与法律合规导航 -->
+		<div class="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 mb-3 text-xs md:text-sm text-neutral-600 dark:text-neutral-400 font-medium">
+			<a class="transition link text-[var(--primary)] hover:underline" href={url("about/")}>关于我们</a>
+			<span>·</span>
+			<a class="transition link text-[var(--primary)] hover:underline" href={url("privacy/")}>隐私政策</a>
+			<span>·</span>
+			<a class="transition link text-[var(--primary)] hover:underline" href={url("terms/")}>服务条款</a>
+			<span>·</span>
+			<a class="transition link text-[var(--primary)] hover:underline" href={url("disclosure/")}>推广返利披露</a>
+			<span>·</span>
+			<a class="transition link text-[var(--primary)] hover:underline" href={url("recommend/airport/")}>2026 专线榜单</a>
+			<span>·</span>
+			<a class="transition link text-[var(--primary)] hover:underline" href={url("friends/")}>友情链接</a>
 		</div>
 
-		<div>
+		<!-- 极客技术与站点探索 -->
+		<div class="flex flex-wrap justify-center items-center gap-x-3 gap-y-1 mb-4 text-xs text-neutral-500 dark:text-neutral-400">
+			<a class="hover:text-[var(--primary)] transition-colors" href={url("ai-tools/")}>AI 效率导航</a>
+			<span>|</span>
+			<a class="hover:text-[var(--primary)] transition-colors" href={url("projects/")}>开源项目</a>
+			<span>|</span>
+			<a class="hover:text-[var(--primary)] transition-colors" href={url("devices/")}>评测硬件设备</a>
+			<span>|</span>
+			<a class="hover:text-[var(--primary)] transition-colors" href={url("skills/")}>网络架构技能</a>
+			<span>|</span>
+			<a class="hover:text-[var(--primary)] transition-colors" href={url("timeline/")}>站点演进历程</a>
+			<span>|</span>
+			<a class="hover:text-[var(--primary)] transition-colors" href={url("diary/")}>极客随笔日记</a>
+			<span>|</span>
+			<a class="hover:text-[var(--primary)] transition-colors" href={url("anime/")}>海外流媒体追番</a>
+		</div>
+
+		<div class="pt-3 border-t border-black/5 dark:border-white/10 mb-2 flex flex-wrap justify-center items-center gap-x-3 gap-y-1 text-xs text-neutral-500">
+			<span>&copy; <span id="copyright-year">{currentYear}</span> {profileConfig.name}. All Rights Reserved.</span>
+			<span>/</span>
+			<a class="transition link text-[var(--primary)] font-medium" href={url("rss/")}>RSS 订阅</a>
+			<span>/</span>
+			<a class="transition link text-[var(--primary)] font-medium" href={url("atom/")}>Atom 订阅</a>
+			<span>/</span>
+			<a class="transition link text-[var(--primary)] font-medium" target="_blank" rel="noopener noreferrer" href={url("sitemap.xml")}>网站地图 (Sitemap)</a>
+		</div>
+
+		<div class="text-xs text-neutral-400">
 			Powered by
-			<a
-				class="transition link text-[var(--primary)] font-medium"
-				target="_blank"
-				href="https://astro.build">Astro</a
-			> &
-			<a
-				class="transition link text-[var(--primary)] font-medium"
-				target="_blank"
-				href="https://github.com/LyraVoid/Mizuki">Mizuki</a
-			>&nbsp; Version <a
-				class="transition link text-[var(--primary)] font-medium"
-				target="_blank"
-				href="https://github.com/LyraVoid/Mizuki">9.0</a
-			>
+			<a class="transition link text-[var(--primary)] font-medium" target="_blank" rel="noopener noreferrer" href="https://astro.build">Astro</a>
+			&
+			<a class="transition link text-[var(--primary)] font-medium" target="_blank" rel="noopener noreferrer" href="https://github.com/LyraVoid/Mizuki">Mizuki</a>
+			&nbsp;Version 9.0
 		</div>
 	</div>
 </div>
