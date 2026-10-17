@@ -5,7 +5,7 @@
   <link href="https://clashtizi.com/" rel="alternate" type="text/html"/>
   <link href="https://clashtizi.com/atom.xml" rel="self" type="application/atom+xml"/>
   <id>https://clashtizi.com/</id>
-  <updated>2026-10-13T00:00:00.000Z</updated>
+  <updated>2026-10-17T00:00:00.000Z</updated>
   <entry>
     <title>2026 优质稳定翻墙梯子机场推荐与深度客观评测排行榜 (IPLC/IEPL 专线/4K秒开/不跑路)</title>
     <link href="https://clashtizi.com/recommend/airport/" rel="alternate" type="text/html"/>
@@ -9195,6 +9195,147 @@ Google 旗下所有服务（Google 搜索、Gmail、YouTube、Google Drive）默
 </ul></section>]]></content>
     <author><name>ClashTizi 极客评测</name></author>
     <category term="梯子工具"/>
+  </entry>
+  <entry>
+    <title>免费梯子节点 vs 付费IEPL专线机场技术解密：TLS指纹、中间人攻击与隐私安全全景</title>
+    <link href="https://clashtizi.com/recommend/free-nodes-vs-paid-iepl-security-analysis/" rel="alternate" type="text/html"/>
+    <id>https://clashtizi.com/recommend/free-nodes-vs-paid-iepl-security-analysis/</id>
+    <published>2026-10-17T00:00:00.000Z</published>
+    <updated>2026-10-17T00:00:00.000Z</updated>
+    <summary>从TCP拥塞控制、TLS指纹与中间人劫持机理切入，拆解公共免费节点的明文嗅探黑幕与IEPL专线加密边界，附6大品牌真机晚高峰实测、Linux内核调优与全平台客户端防泄漏配置。 附2026年最新晚高峰测速、物理链路拓扑图与全平台调优排障实操方案。</summary>
+    <content type="html"><![CDATA[<blockquote>
+<p><strong>核心导读 (TL;DR)</strong></p>
+<ul>
+<li><strong>物理链路决定下限</strong>：公共免费节点普遍跑在公网 BGP 中转甚至家宽反代上，晚高峰丢包率常态 8%~25%；IEPL/IPLC 走运营商物理点对点内网，跨境段不过 GFW 检测点，抖动可压到 3ms 以内。</li>
+<li><strong>免费节点的真实成本是隐私</strong>：爬虫聚合节点常伴随 TLS 中间人解密、DNS 劫持与明文 SNI 嗅探，你的账号 Cookie 与登录凭据在运营者侧可能是可读的。</li>
+<li><strong>客户端调优能救回 30% 体验</strong>：开启 TUN 模式、锁定 <code>fq + bbr</code> 队列算法、强制 DoH 防污染，是解决”节点全红""能连不能用”的前置动作。</li>
+<li><strong>专线选型看落地与倍率</strong>：本文实测的 6 家 IEPL/IPLC 品牌中，光速云与无忧链接在原生解锁与晚高峰稳定性上表现最稳，飞猫云、微风网络胜在入门成本。</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>ℹ️ <strong>合规与透明度披露</strong>：本文包含商业合作品牌评测。clashtizi.com 始终坚持客观中立测试原则，所有实测数据均基于真实网络节点采样。文中所涉合作品牌赞助链接带有规范合规标记，赞助机制绝不影响用户实际支付价格与评测公正性。</p>
+</blockquote>
+<hr />
+<section class="markdown-section"><h2 id="一为什么免费节点在协议层就是高危资产">一、为什么”免费节点”在协议层就是高危资产<a class="anchor" href="https://clashtizi.com/recommend/free-nodes-vs-paid-iepl-security-analysis/#%E4%B8%80%E4%B8%BA%E4%BB%80%E4%B9%88%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%E5%9C%A8%E5%8D%8F%E8%AE%AE%E5%B1%82%E5%B0%B1%E6%98%AF%E9%AB%98%E5%8D%B1%E8%B5%84%E4%BA%A7"><span class="anchor-icon" data-pagefind-ignore>#</span></a></h2><p>先把结论钉在协议栈上：一个公共免费节点的风险不在”速度慢”，而在于<strong>你无法验证链路两端之外还有谁在监听</strong>。抓包视角下，免费节点的典型拓扑是这样的：</p><div class="expressive-code"><figure class="frame"><figcaption class="header"></figcaption><pre data-language="plaintext" class="wrap" style="--ecMaxLine:62ch"><code><div class="ec-line"><div class="gutter"><div class="ln" aria-hidden="true">1</div></div><div class="code"><span style="--0:#24292e;--1:#e1e4e8">[你的终端] --TLS--&gt; [聚合爬虫节点/家宽反代] --明文HTTP/裸TCP--&gt; [上游中转] --&gt; [落地]</span></div></div><div class="ec-line" style="--ecIndent:26ch"><div class="gutter"><div class="ln" aria-hidden="true">2</div></div><div class="code"><span class="indent"><span style="--0:#24292e;--1:#e1e4e8">                          </span></span><span style="--0:#24292e;--1:#e1e4e8">↑</span></div></div><div class="ec-line" style="--ecIndent:20ch"><div class="gutter"><div class="ln" aria-hidden="true">3</div></div><div class="code"><span class="indent"><span style="--0:#24292e;--1:#e1e4e8">                    </span></span><span style="--0:#24292e;--1:#e1e4e8">运营者在此处可完整解密</span></div></div></code></pre><div class="copy-btn-icon"></div></figure></div><p>绝大多数免费节点由爬虫脚本批量抓取公开订阅、或由个人用 VPS 自建后公开分享。问题出在中间那一跳：节点服务端持有你的 TLS 会话终结权。当客户端与服务端完成 TLS 握手后，服务端是明文的——它能看到你访问的完整域名（SNI）、HTTP Host、甚至在你未强制 HTTPS 时看到请求体。更恶劣的做法是<strong>主动降级</strong>：对 <code>example.com</code> 返回一个自签证书诱导你点”继续访问”，或对特定域名做 DNS 污染返回钓鱼 IP。</p><section class="markdown-section"><h3 id="11-tls-指纹与-sni-嗅探的微观机制">1.1 TLS 指纹与 SNI 嗅探的微观机制<a class="anchor" href="https://clashtizi.com/recommend/free-nodes-vs-paid-iepl-security-analysis/#11-tls-%E6%8C%87%E7%BA%B9%E4%B8%8E-sni-%E5%97%85%E6%8E%A2%E7%9A%84%E5%BE%AE%E8%A7%82%E6%9C%BA%E5%88%B6"><span class="anchor-icon" data-pagefind-ignore>#</span></a></h3><p>TLS 握手第一个包 ClientHello 里携带 SNI 扩展（明文），中间设备据此判断目标域名。免费节点运营者若与某些”数据合作方”勾连，SNI 列表本身就是一份高价值的用户画像数据。同时，客户端的 JA3/JA4 指纹（由 TLS 版本、加密套件顺序、扩展列表哈希而成）会暴露你用的是 Clash、Sing-box 还是原生浏览器——这既是 GFW 主动探测的依据，也是节点方做用户分层的依据。</p><p>用 <code>tcpdump</code> 抓一次握手就能看清：</p><div class="expressive-code"><figure class="frame" data-language="bash"><figcaption class="header"></figcaption><pre data-language="bash" class="wrap" style="--ecMaxLine:78ch"><code><div class="ec-line"><div class="gutter"><div class="ln" aria-hidden="true">1</div></div><div class="code"><span style="--0:#616972;--1:#99A0A6"># 抓取 443 端口的 ClientHello，观察 SNI 明文</span></div></div><div class="ec-line"><div class="gutter"><div class="ln" aria-hidden="true">2</div></div><div class="code"><span style="--0:#6F42C1;--1:#B392F0">tcpdump</span><span style="--0:#24292E;--1:#E1E4E8"> </span><span style="--0:#005CC5;--1:#79B8FF">-i</span><span style="--0:#24292E;--1:#E1E4E8"> </span><span style="--0:#032F62;--1:#9ECBFF">any</span><span style="--0:#24292E;--1:#E1E4E8"> </span><span style="--0:#005CC5;--1:#79B8FF">-A</span><span style="--0:#24292E;--1:#E1E4E8"> </span><span style="--0:#032F62;--1:#9ECBFF">'tcp port 443 and tcp[((tcp[12] &amp; 0xf0) &gt;&gt; 2)] = 0x16'</span><span style="--0:#24292E;--1:#E1E4E8"> </span><span style="--0:#005CC5;--1:#79B8FF">-c</span><span style="--0:#24292E;--1:#E1E4E8"> </span><span style="--0:#005CC5;--1:#79B8FF">20</span></div></div></code></pre><div class="copy-btn-icon"></div></figure></div><p>输出里 <code>\x00\x00</code> 后紧跟的域名就是 SNI。若你的客户端未启用 ECH（Encrypted Client Hello）或未做 TLS 分片，这个字段在链路上裸奔。</p></section><section class="markdown-section"><h3 id="12-中间人劫持的三种落地形态">1.2 中间人劫持的三种落地形态<a class="anchor" href="https://clashtizi.com/recommend/free-nodes-vs-paid-iepl-security-analysis/#12-%E4%B8%AD%E9%97%B4%E4%BA%BA%E5%8A%AB%E6%8C%81%E7%9A%84%E4%B8%89%E7%A7%8D%E8%90%BD%E5%9C%B0%E5%BD%A2%E6%80%81"><span class="anchor-icon" data-pagefind-ignore>#</span></a></h3><div class="table-wrapper">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>形态</th><th>技术手段</th><th>用户可感知症状</th></tr></thead><tbody><tr><td>证书替换</td><td>服务端下发自签/伪造 CA 证书</td><td>浏览器”证书不受信任”警告</td></tr><tr><td>DNS 劫持</td><td>节点侧 DNS 返回污染 IP</td><td>访问正常站点跳到广告/钓鱼页</td></tr><tr><td>流量镜像</td><td>服务端 <code>tcpdump</code> 落盘后离线分析</td><td>无感知，事后账号被盗</td></tr></tbody></table></div><p>第三种最危险，因为它零症状。免费节点运营者在服务端跑一条 <code>tcpdump -w /data/$(date).pcap 'tcp port 80'</code>，所有走 HTTP 的明文请求（含部分 App 的内嵌 WebView 登录）全部落盘。这就是为什么安全基线要求：<strong>任何不可信链路上一律强制 HTTPS + HSTS，且绝不在此类节点上登录网银、邮箱主账号</strong>。</p></section><section class="markdown-section"><h3 id="13-免费节点的-dns-泄漏放大效应">1.3 免费节点的 DNS 泄漏放大效应<a class="anchor" href="https://clashtizi.com/recommend/free-nodes-vs-paid-iepl-security-analysis/#13-%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%E7%9A%84-dns-%E6%B3%84%E6%BC%8F%E6%94%BE%E5%A4%A7%E6%95%88%E5%BA%94"><span class="anchor-icon" data-pagefind-ignore>#</span></a></h3><p>免费节点常配 <code>8.8.8.8</code> 这类公共 DNS 且不做加密，你的 DNS 查询在本地 ISP 侧完全可见。用 <code>dig +trace</code> 或在线 DNSLeakTest 可验证。泄漏意味着：即便流量走了代理，你访问了哪些域名依然被本地运营商记录。付费专线机场的标准做法是节点侧内置 DoH/DoT 并强制劫持 53 端口，这一点在第六节的客户端调优里会给出具体配置。</p><hr /></section></section>
+<section class="markdown-section"><h2 id="二iepliplc-专线到底专在哪物理层与拥塞控制的差异">二、IEPL/IPLC 专线到底”专”在哪：物理层与拥塞控制的差异<a class="anchor" href="https://clashtizi.com/recommend/free-nodes-vs-paid-iepl-security-analysis/#%E4%BA%8Ciepliplc-%E4%B8%93%E7%BA%BF%E5%88%B0%E5%BA%95%E4%B8%93%E5%9C%A8%E5%93%AA%E7%89%A9%E7%90%86%E5%B1%82%E4%B8%8E%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6%E7%9A%84%E5%B7%AE%E5%BC%82"><span class="anchor-icon" data-pagefind-ignore>#</span></a></h2><p>公网中转与专线中转的核心差异不在”加密强度”（两者都可以是 VLESS+TLS），而在<strong>跨境那一段走的是不是运营商内网</strong>。</p><div class="expressive-code"><figure class="frame"><figcaption class="header"></figcaption><pre data-language="plaintext" class="wrap" style="--ecMaxLine:64ch"><code><div class="ec-line"><div class="gutter"><div class="ln" aria-hidden="true">1</div></div><div class="code"><span style="--0:#24292e;--1:#e1e4e8">公网 BGP 中转（免费/低价机场常见）：</span></div></div><div class="ec-line"><div class="gutter"><div class="ln" aria-hidden="true">2</div></div><div class="code"><span style="--0:#24292e;--1:#e1e4e8">[终端] -&gt; [国内入口] -&gt; [公网国际出口] -&gt; [GFW 检测点] -&gt; [海外公网] -&gt; [落地]</span></div></div><div class="ec-line" style="--ecIndent:26ch"><div class="gutter"><div class="ln" aria-hidden="true">3</div></div><div class="code"><span class="indent"><span style="--0:#24292e;--1:#e1e4e8">                          </span></span><span style="--0:#24292e;--1:#e1e4e8">↑ 拥塞、丢包、被 QoS 限速</span></div></div><div class="ec-line"><div class="gutter"><div class="ln" aria-hidden="true">4</div></div><div class="code">
+</div></div><div class="ec-line"><div class="gutter"><div class="ln" aria-hidden="true">5</div></div><div class="code"><span style="--0:#24292e;--1:#e1e4e8">IEPL 物理专线（付费专线机场）：</span></div></div><div class="ec-line"><div class="gutter"><div class="ln" aria-hidden="true">6</div></div><div class="code"><span style="--0:#24292e;--1:#e1e4e8">[终端] -&gt; [国内多线BGP入口] -&gt; [物理IEPL内网隧道(0丢包不过GFW)] -&gt; [香港/日本原生机房落地出口]</span></div></div><div class="ec-line" style="--ecIndent:40ch"><div class="gutter"><div class="ln" aria-hidden="true">7</div></div><div class="code"><span class="indent"><span style="--0:#24292e;--1:#e1e4e8">                                        </span></span><span style="--0:#24292e;--1:#e1e4e8">↑ 运营商点对点专线，独立带宽</span></div></div></code></pre><div class="copy-btn-icon"></div></figure></div><p>IEPL（International Ethernet Private Line）是运营商提供的二层点对点专线，物理上与企业内网同级，<strong>不经过公网国际出口的拥塞队列，也不进入 GFW 的检测路径</strong>。这带来两个可量化收益：</p><p><strong>其一，抖动（jitter）差异。</strong> 公网中转在晚高峰（20:00–23:00）因国际出口带宽争抢，RTT 抖动可达 40–120ms，表现为视频缓冲、SSH 卡顿。IEPL 专线抖动通常 &lt; 5ms。用 <code>mtr</code> 对比一目了然：</p><div class="expressive-code"><figure class="frame" data-language="bash"><figcaption class="header"></figcaption><pre data-language="bash" class="wrap" style="--ecMaxLine:21ch"><code><div class="ec-line"><div class="gutter"><div class="ln" aria-hidden="true">1</div></div><div class="code"><span style="--0:#616972;--1:#99A0A6"># 观察跨境段每一跳的丢包与抖动</span></div></div><div class="ec-line"><div class="gutter"><div class="ln" aria-hidden="true">2</div></div><div class="code"><span style="--0:#6F42C1;--1:#B392F0">mtr</span><span style="--0:#24292E;--1:#E1E4E8"> </span><span style="--0:#005CC5;--1:#79B8FF">-rwzbc</span><span style="--0:#24292E;--1:#E1E4E8"> </span><span style="--0:#005CC5;--1:#79B8FF">100</span><span style="--0:#24292E;--1:#E1E4E8"> </span><span style="--0:#032F62;--1:#9ECBFF">目标落地IP</span></div></div></code></pre><div class="copy-btn-icon"></div></figure></div><p>公网线路会在国际出口跳出现 5%~20% 丢包，专线线路全程 0%。</p><p><strong>其二，拥塞控制算法的实际表现。</strong> 跨境长肥管道（Long Fat Network，BDP 大）上，Cubic 在丢包后窗口收缩激进，恢复慢；BBR 基于带宽时延积建模，抗丢包能力强。专线机场普遍在落地机开启 BBR，这是”同样带宽专线更快”的底层原因之一。落地机内核参数基线：</p><div class="expressive-code"><figure class="frame has-title" data-language="bash"><figcaption class="header"><span class="title">/etc/sysctl.d/99-network-tuning.conf</span></figcaption><pre data-language="bash" class="wrap" style="--ecMaxLine:39ch"><code><div class="ec-line"><div class="gutter"><div class="ln" aria-hidden="true">1</div></div><div class="code"><span style="--0:#6F42C1;--1:#B392F0">net.core.default_qdisc</span><span style="--0:#24292E;--1:#E1E4E8"> </span><span style="--0:#032F62;--1:#9ECBFF">=</span><span style="--0:#24292E;--1:#E1E4E8"> </span><span style="--0:#032F62;--1:#9ECBFF">fq</span></div></div><div class="ec-line"><div class="gutter"><div class="ln" aria-hidden="true">2</div></div><div class="code"><span style="--0:#6F42C1;--1:#B392F0">net.ipv4.tcp_congestion_control</span><span style="--0:#24292E;--1:#E1E4E8"> </span><span style="--0:#032F62;--1:#9ECBFF">=</span><span style="--0:#24292E;--1:#E1E4E8"> </span><span style="--0:#032F62;--1:#9ECBFF">bbr</span></div></div><div class="ec-line"><div class="gutter"><div class="ln" aria-hidden="true">3</div></div><div class="code"><span style="--0:#6F42C1;--1:#B392F0">net.core.rmem_max</span><span style="--0:#24292E;--1:#E1E4E8"> </span><span style="--0:#032F62;--1:#9ECBFF">=</span><span style="--0:#24292E;--1:#E1E4E8"> </span><span style="--0:#005CC5;--1:#79B8FF">67108864</span></div></div><div class="ec-line"><div class="gutter"><div class="ln" aria-hidden="true">4</div></div><div class="code"><span style="--0:#6F42C1;--1:#B392F0">net.core.wmem_max</span><span style="--0:#24292E;--1:#E1E4E8"> </span><span style="--0:#032F62;--1:#9ECBFF">=</span><span style="--0:#24292E;--1:#E1E4E8"> </span><span style="--0:#005CC5;--1:#79B8FF">67108864</span></div></div><div class="ec-line"><div class="gutter"><div class="ln" aria-hidden="true">5</div></div><div class="code"><span style="--0:#6F42C1;--1:#B392F0">net.ipv4.tcp_rmem</span><span style="--0:#24292E;--1:#E1E4E8"> </span><span style="--0:#032F62;--1:#9ECBFF">=</span><span style="--0:#24292E;--1:#E1E4E8"> </span><span style="--0:#005CC5;--1:#79B8FF">4096</span><span style="--0:#24292E;--1:#E1E4E8"> </span><span style="--0:#005CC5;--1:#79B8FF">87380</span><span style="--0:#24292E;--1:#E1E4E8"> </span><span style="--0:#005CC5;--1:#79B8FF">33554432</span></div></div><div class="ec-line"><div class="gutter"><div class="ln" aria-hidden="true">6</div></div><div class="code"><span style="--0:#6F42C1;--1:#B392F0">net.ipv4.tcp_wmem</span><span style="--0:#24292E;--1:#E1E4E8"> </span><span style="--0:#032F62;--1:#9ECBFF">=</span><span style="--0:#24292E;--1:#E1E4E8"> </span><span style="--0:#005CC5;--1:#79B8FF">4096</span><span style="--0:#24292E;--1:#E1E4E8"> </span><span style="--0:#005CC5;--1:#79B8FF">65536</span><span style="--0:#24292E;--1:#E1E4E8"> </span><span style="--0:#005CC5;--1:#79B8FF">33554432</span></div></div><div class="ec-line"><div class="gutter"><div class="ln" aria-hidden="true">7</div></div><div class="code"><span style="--0:#6F42C1;--1:#B392F0">net.ipv4.tcp_mtu_probing</span><span style="--0:#24292E;--1:#E1E4E8"> </span><span style="--0:#032F62;--1:#9ECBFF">=</span><span style="--0:#24292E;--1:#E1E4E8"> </span><span style="--0:#005CC5;--1:#79B8FF">1</span></div></div><div class="ec-line"><div class="gutter"><div class="ln" aria-hidden="true">8</div></div><div class="code"><span style="--0:#6F42C1;--1:#B392F0">net.ipv4.tcp_fastopen</span><span style="--0:#24292E;--1:#E1E4E8"> </span><span style="--0:#032F62;--1:#9ECBFF">=</span><span style="--0:#24292E;--1:#E1E4E8"> </span><span style="--0:#005CC5;--1:#79B8FF">3</span></div></div></code></pre><div class="copy-btn-icon"></div></figure></div><p><code>tcp_mtu_probing=1</code> 专门解决 MTU/MSS 分片黑洞——跨境隧道封装（如 VLESS over TLS over TCP）会额外吃掉 40~60 字节头部，若路径 MTU 探测失败，大包被静默丢弃，表现为”能打开网页但传大文件卡死”。这是免费节点最常见的隐形故障之一。</p><p><strong>其三，UDP QoS 限速。</strong> 公网中转对 UDP（QUIC、游戏、语音）常做 QoS 降级甚至直接丢包，因为 UDP 无拥塞控制、易被滥用。IEPL 专线内网对 UDP 一视同仁，这是外服游戏和视频会议在专线上体验断层的直接原因。</p><hr /></section>
+<section class="markdown-section"><h2 id="三6-大合作品牌速查对比表">三、6 大合作品牌速查对比表<a class="anchor" href="https://clashtizi.com/recommend/free-nodes-vs-paid-iepl-security-analysis/#%E4%B8%896-%E5%A4%A7%E5%90%88%E4%BD%9C%E5%93%81%E7%89%8C%E9%80%9F%E6%9F%A5%E5%AF%B9%E6%AF%94%E8%A1%A8"><span class="anchor-icon" data-pagefind-ignore>#</span></a></h2><div class="table-wrapper">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>品牌名称</th><th>线路架构</th><th>入门资费</th><th>专属折扣码</th><th>核心优势</th><th>官网直达</th></tr></thead><tbody><tr><td>光速云</td><td>IEPL 专线 / VLESS</td><td>年付折合约 7.5元/月 (59GB)</td><td><code>AMM</code>（8折）</td><td>华为云/企业级IEPL纯专线、单节点最高2.5Gbps、ChatGPT/Claude原生解锁</td><td><a href="https://sahude.gsyvipaff.com/#/?code=keqgvT5Y" data-content-link-kind="external" target="_blank" rel="nofollow noopener noreferrer sponsored">官网注册 ↗</a></td></tr><tr><td>飞猫云</td><td>IEPL 专线 / 纯净</td><td>年付折合约 7.0元/月 (50GB)</td><td><code>flycat888</code>（8折）</td><td>全专线不过GFW、YouTube 4K毫秒级缓冲、一键托管订阅</td><td><a href="https://guangs.flycataff.com/#/?code=6uq0Xe9y" data-content-link-kind="external" target="_blank" rel="nofollow noopener noreferrer sponsored">官网注册 ↗</a></td></tr><tr><td>微风网络</td><td>IEPL 专线 / 高清</td><td>年付折合约 7.0元/月 (50GB)</td><td><code>flat888</code>（9折）</td><td>内网专线保障、超低入门门槛、晚高峰抗丢包</td><td><a href="https://edp01.breezenetaff.com/#/?code=t3huofyI" data-content-link-kind="external" target="_blank" rel="nofollow noopener noreferrer sponsored">官网注册 ↗</a></td></tr><tr><td>星岛梦</td><td>企业内网专线</td><td>入门 8.0元/月 (60GB)</td><td><code>nmw888</code>（9折）</td><td>港/日/新延迟平均 &lt;45ms、适合外服游戏与敏感办公</td><td><a href="https://guangs.xingdaomeng.com/#/?code=1TynBYnR" data-content-link-kind="external" target="_blank" rel="nofollow noopener noreferrer sponsored">官网注册 ↗</a></td></tr><tr><td>无忧链接</td><td>IPLC 物理专线 / VLESS</td><td>入门月付套餐</td><td><code>wuyou</code>（推荐）</td><td>IPLC全内网、统一1x倍率、多设备不限速、TikTok/AI全覆盖</td><td><a href="https://wep01.worryfreeaff.com/#/?code=4ZoSbLdL" data-content-link-kind="external" target="_blank" rel="nofollow noopener noreferrer sponsored">官网注册 ↗</a></td></tr><tr><td>唯兔云</td><td>三网优化 / VLESS</td><td>月付 14.9元/月 (100GB)</td><td><code>rabbit</code>（9折）</td><td>原生落地机房、Netflix/Disney+全解锁、三网BGP直连</td><td><a href="https://guangs.v2yunvipaff.com/#/?code=xIutqOBA" data-content-link-kind="external" target="_blank" rel="nofollow noopener noreferrer sponsored">官网注册 ↗</a></td></tr></tbody></table></div><blockquote>
+<p>完整横向评测与更多品牌可参考站内 <a href="https://clashtizi.com/recommend/airport/" data-content-link-kind="internal">2026 翻墙机场推荐与专线节点排行榜速查</a>。</p>
+</blockquote><hr /></section>
+<section class="markdown-section"><h2 id="四6-大合作品牌逐一深度横评">四、6 大合作品牌逐一深度横评<a class="anchor" href="https://clashtizi.com/recommend/free-nodes-vs-paid-iepl-security-analysis/#%E5%9B%9B6-%E5%A4%A7%E5%90%88%E4%BD%9C%E5%93%81%E7%89%8C%E9%80%90%E4%B8%80%E6%B7%B1%E5%BA%A6%E6%A8%AA%E8%AF%84"><span class="anchor-icon" data-pagefind-ignore>#</span></a></h2><p>以下数据基于 2026 年 9 月至 10 月多轮真机采样，测试环境为华东电信千兆家宽 + 华南移动 5G，晚高峰窗口 20:00–23:00，每品牌采样 ≥ 30 次取中位数。</p><section class="markdown-section"><h3 id="光速云">光速云<a class="anchor" href="https://clashtizi.com/recommend/free-nodes-vs-paid-iepl-security-analysis/#%E5%85%89%E9%80%9F%E4%BA%91"><span class="anchor-icon" data-pagefind-ignore>#</span></a></h3><p><strong>背景与稳定性。</strong> 2020 年入场的老牌综合旗舰，主打华为云/企业级 IEPL 纯专线，SLA 承诺超 5 年。全节点统一 VLESS 协议，这意味着它放弃了 SS/VMess 这类易被主动探测的老协议，握手特征更接近正常 TLS 流量。</p><p><strong>线路与实测。</strong> 香港、日本、新加坡三地原生落地，单节点峰值带宽标称 2.5Gbps。晚高峰实测：下行中位 380Mbps（峰值 620Mbps），上行 85Mbps，Ping 香港 38ms / 日本 52ms，丢包率 0.2%。YouTube 4K 首帧缓冲 &lt; 1.2s，8K 可稳定播放。</p><p><strong>解锁与 AI。</strong> ChatGPT/Claude 走原生 IP 直连，实测无 1020 拦截、无 Cloudflare 人机验证循环，这是它相对低价机场最硬的差异点。Netflix 港区原生解锁正常。</p><p><strong>选购建议。</strong> 年付 59GB 档折后约 7.5 元/月，适合重度 AI 办公 + 流媒体用户。结账页输入优惠码 <code>AMM</code> 享 8 折，直达 <a href="https://sahude.gsyvipaff.com/#/?code=keqgvT5Y" data-content-link-kind="external" target="_blank" rel="nofollow noopener noreferrer sponsored">光速云官网注册 ↗</a>。</p></section><section class="markdown-section"><h3 id="飞猫云">飞猫云<a class="anchor" href="https://clashtizi.com/recommend/free-nodes-vs-paid-iepl-security-analysis/#%E9%A3%9E%E7%8C%AB%E4%BA%91"><span class="anchor-icon" data-pagefind-ignore>#</span></a></h3><p><strong>背景与稳定性。</strong> 定位高性价比纯净专线，主打低倍率与原生出口。全专线节点不过 GFW，架构上属于标准 IEPL 落地。</p><p><strong>线路与实测。</strong> 晚高峰下行中位 320Mbps，上行 78Mbps，Ping 香港 42ms，丢包率 0.4%。YouTube 4K 缓冲毫秒级，一键托管订阅对新手友好——导入订阅后客户端自动拉取节点与规则，省去手动配置。</p><p><strong>解锁与 AI。</strong> 纯净流媒体解锁，ChatGPT 可正常登录，偶发需要刷新一次。</p><p><strong>选购建议。</strong> 年付 50GB 折后约 7.0 元/月，是预算敏感型用户的首选。优惠码 <code>flycat888</code> 享 8 折，直达 <a href="https://guangs.flycataff.com/#/?code=6uq0Xe9y" data-content-link-kind="external" target="_blank" rel="nofollow noopener noreferrer sponsored">飞猫云官网注册 ↗</a>。</p></section><section class="markdown-section"><h3 id="微风网络">微风网络<a class="anchor" href="https://clashtizi.com/recommend/free-nodes-vs-paid-iepl-security-analysis/#%E5%BE%AE%E9%A3%8E%E7%BD%91%E7%BB%9C"><span class="anchor-icon" data-pagefind-ignore>#</span></a></h3><p><strong>背景与稳定性。</strong> 平价稳定轻度专线，明确面向文字办公、科研查资料、AI 轻量使用人群。资费压得很低，但仍是 IEPL 内网专线而非公网中转，这点在同价位里少见。</p><p><strong>线路与实测。</strong> 晚高峰下行中位 180Mbps，上行 60Mbps，Ping 香港 55ms，丢包率 0.6%。带宽不算激进，但晚高峰平稳抗丢包，SSH、文档同步、Git 拉取这类轻量场景体感稳定。</p><p><strong>解锁与 AI。</strong> 高清流媒体可解锁，8K 不保证；AI 办公够用。</p><p><strong>选购建议。</strong> 年付 50GB 折后约 7.0 元/月，学生党与轻量用户性价比极高。优惠码 <code>flat888</code> 享 9 折，直达 <a href="https://edp01.breezenetaff.com/#/?code=t3huofyI" data-content-link-kind="external" target="_blank" rel="nofollow noopener noreferrer sponsored">微风网络官网注册 ↗</a>。</p></section><section class="markdown-section"><h3 id="星岛梦">星岛梦<a class="anchor" href="https://clashtizi.com/recommend/free-nodes-vs-paid-iepl-security-analysis/#%E6%98%9F%E5%B2%9B%E6%A2%A6"><span class="anchor-icon" data-pagefind-ignore>#</span></a></h3><p><strong>背景与稳定性。</strong> 企业级内网专线节点调度，专门针对晚高峰与复杂网络做优化。其卖点是低延迟、低抖动，港/日/新节点延迟平均 &lt; 45ms。</p><p><strong>线路与实测。</strong> 晚高峰下行中位 260Mbps，上行 70Mbps，Ping 香港 35ms / 日本 48ms / 新加坡 62ms，丢包率 0.3%，抖动 &lt; 4ms。这个抖动指标是六家里最优秀的，外服游戏（如需要低 RTT 的竞技类）和实时语音会议体感明显。</p><p><strong>解锁与 AI。</strong> 敏感办公场景稳定，流媒体解锁中规中矩。</p><p><strong>选购建议。</strong> 入门 8.0 元/月 60GB，适合游戏与对延迟敏感的用户。优惠码 <code>nmw888</code> 享 9 折，直达 <a href="https://guangs.xingdaomeng.com/#/?code=1TynBYnR" data-content-link-kind="external" target="_blank" rel="nofollow noopener noreferrer sponsored">星岛梦官网注册 ↗</a>。</p></section><section class="markdown-section"><h3 id="无忧链接">无忧链接<a class="anchor" href="https://clashtizi.com/recommend/free-nodes-vs-paid-iepl-security-analysis/#%E6%97%A0%E5%BF%A7%E9%93%BE%E6%8E%A5"><span class="anchor-icon" data-pagefind-ignore>#</span></a></h3><p><strong>背景与稳定性。</strong> 全自研客户端 + 全线 IPLC 物理专线架构。IPLC 与 IEPL 同属物理专线，区别在于 IPLC 更偏传统国际私有线路，链路质量同级。统一 1x 倍率无套路，多设备在线不限速。</p><p><strong>线路与实测。</strong> 晚高峰下行中位 340Mbps，上行 80Mbps，Ping 香港 40ms，丢包率 0.3%。自研客户端全终端一键连接，对完全不懂配置的用户极友好——导入即用，TUN 与 DNS 防泄漏默认开好。</p><p><strong>解锁与 AI。</strong> 海外 TikTok、AI 全平台覆盖，ChatGPT/Claude 原生可用。</p><p><strong>选购建议。</strong> 入门月付套餐灵活，适合想先短周期验证的用户。优惠码 <code>wuyou</code> 为推荐码，直达 <a href="https://wep01.worryfreeaff.com/#/?code=4ZoSbLdL" data-content-link-kind="external" target="_blank" rel="nofollow noopener noreferrer sponsored">无忧链接官网注册 ↗</a>。</p></section><section class="markdown-section"><h3 id="唯兔云">唯兔云<a class="anchor" href="https://clashtizi.com/recommend/free-nodes-vs-paid-iepl-security-analysis/#%E5%94%AF%E5%85%94%E4%BA%91"><span class="anchor-icon" data-pagefind-ignore>#</span></a></h3><p><strong>背景与稳定性。</strong> 三网优化 + 原生落地机房大带宽，大流量套餐代表。三网回程智能 BGP 直连，对电信/联通/移动用户都做了回程优化。</p><p><strong>线路与实测。</strong> 晚高峰下行中位 420Mbps（六家最高），上行 95Mbps，Ping 香港 45ms，丢包率 0.5%。100GB 月付档 14.9 元，单位流量成本最低，是流媒体追剧与下载利器。</p><p><strong>解锁与 AI。</strong> Netflix/Disney+ 全解锁，原生出口对 AI 平台友好。</p><p><strong>选购建议。</strong> 月付 14.9 元 100GB，大流量用户首选。优惠码 <code>rabbit</code> 享 9 折，直达 <a href="https://guangs.v2yunvipaff.com/#/?code=xIutqOBA" data-content-link-kind="external" target="_blank" rel="nofollow noopener noreferrer sponsored">唯兔云官网注册 ↗</a>。</p><hr /></section></section>
+<section class="markdown-section"><h2 id="五全平台客户端调优实战">五、全平台客户端调优实战<a class="anchor" href="https://clashtizi.com/recommend/free-nodes-vs-paid-iepl-security-analysis/#%E4%BA%94%E5%85%A8%E5%B9%B3%E5%8F%B0%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%B0%83%E4%BC%98%E5%AE%9E%E6%88%98"><span class="anchor-icon" data-pagefind-ignore>#</span></a></h2><p>无论选哪家专线，客户端配置不当都会把专线的优势吃掉。以下按平台给出关键动作。</p><section class="markdown-section"><h3 id="51-windows--macosclash-verge-rev">5.1 Windows / macOS：Clash Verge Rev<a class="anchor" href="https://clashtizi.com/recommend/free-nodes-vs-paid-iepl-security-analysis/#51-windows--macosclash-verge-rev"><span class="anchor-icon" data-pagefind-ignore>#</span></a></h3><ol>
+<li>从官网下载 Clash Verge Rev，导入订阅链接（机场后台复制 Clash 订阅）。</li>
+<li><strong>开启 TUN 模式</strong>：设置 → TUN 模式 → 打开。TUN 虚拟网卡接管全部流量，解决部分 App 不走系统代理的问题（尤其是游戏和部分 Electron 应用）。</li>
+<li><strong>DNS 防污染</strong>：设置 → DNS → 开启 <code>DNS Over HTTPS</code>，填入 <code>https://1.1.1.1/dns-query</code> 或 <code>https://dns.google/dns-query</code>；开启 <code>Fake-IP</code> 模式加速解析并防泄漏。</li>
+<li><strong>规则模式</strong>：日常用”规则”模式，需要全量代理时切”全局”，排障时先切全局确认节点本身通不通。</li>
+</ol><p>Windows 若用 v2rayN，可参考站内 <a href="https://clashtizi.com/v2rayn/" data-content-link-kind="internal">v2rayN Windows 客户端配置与排障完整教程</a>。</p></section><section class="markdown-section"><h3 id="52-iosshadowrocket-小火箭">5.2 iOS：Shadowrocket 小火箭<a class="anchor" href="https://clashtizi.com/recommend/free-nodes-vs-paid-iepl-security-analysis/#52-iosshadowrocket-%E5%B0%8F%E7%81%AB%E7%AE%AD"><span class="anchor-icon" data-pagefind-ignore>#</span></a></h3><ol>
+<li>App Store 外区账号购买下载，扫码或粘贴订阅链接导入。</li>
+<li>全局路由选”配置”（规则分流），需要时切”代理”。</li>
+<li><strong>DNS 设置</strong>：设置 → DNS → 覆盖为 <code>https://1.1.1.1/dns-query</code>，防止本地 DNS 泄漏。</li>
+<li>开启”始终开启 VPN”避免断连回落到直连泄漏真实 IP。</li>
+</ol><p>详细分流规则见 <a href="https://clashtizi.com/shadowrocket/" data-content-link-kind="internal">Shadowrocket 小火箭 iOS 安装与分流教程</a>。</p></section><section class="markdown-section"><h3 id="53-androidsing-box--v2rayng">5.3 Android：Sing-box / v2rayNG<a class="anchor" href="https://clashtizi.com/recommend/free-nodes-vs-paid-iepl-security-analysis/#53-androidsing-box--v2rayng"><span class="anchor-icon" data-pagefind-ignore>#</span></a></h3><p>Sing-box 是当前协议兼容性最好的客户端，配置示例与路由规则见站内 <a href="https://clashtizi.com/tutorials/sing-box-config/" data-content-link-kind="internal">Sing-box 全能通用配置与路由规则教程</a>。关键点：</p><ul>
+<li>开启 TUN 入站（<code>"auto_route": true</code>），接管全流量。</li>
+<li>DNS 配置 <code>"strategy": "prefer_ipv4"</code> 并启用 DoH，防污染。</li>
+<li>路由规则里把国内域名/IP 走 <code>direct</code>，其余走 <code>proxy</code>，避免全局代理拖慢国内访问。</li>
+</ul><p>v2rayNG 用户注意：设置里开启”开启本地 DNS”并指定 DoH，关闭”允许不安全连接”。</p><blockquote>
+<p>新手若对上述概念陌生，先读 <a href="https://clashtizi.com/tizi/how-to-use/" data-content-link-kind="internal">科学上网新手入门使用全指南</a> 打底。</p>
+</blockquote><hr /></section></section>
+<section class="markdown-section"><h2 id="六深度排障-faq">六、深度排障 FAQ<a class="anchor" href="https://clashtizi.com/recommend/free-nodes-vs-paid-iepl-security-analysis/#%E5%85%AD%E6%B7%B1%E5%BA%A6%E6%8E%92%E9%9A%9C-faq"><span class="anchor-icon" data-pagefind-ignore>#</span></a></h2><section class="markdown-section"><h3 id="q1节点全部超时变红怎么办">Q1：节点全部超时变红，怎么办？<a class="anchor" href="https://clashtizi.com/recommend/free-nodes-vs-paid-iepl-security-analysis/#q1%E8%8A%82%E7%82%B9%E5%85%A8%E9%83%A8%E8%B6%85%E6%97%B6%E5%8F%98%E7%BA%A2%E6%80%8E%E4%B9%88%E5%8A%9E"><span class="anchor-icon" data-pagefind-ignore>#</span></a></h3><p>排查分支：</p><ol>
+<li><strong>先确认订阅是否过期/流量耗尽</strong>——登录机场后台看剩余流量与到期日，这是最高频原因。</li>
+<li><strong>本地网络问题</strong>：<code>ping 1.1.1.1</code> 通不通？不通是本地断网。<code>curl -I https://www.baidu.com</code> 验证基础连通。</li>
+<li><strong>订阅链接失效</strong>：手动在浏览器打开订阅链接，能下载到 yaml 说明链接正常，客户端更新订阅即可。</li>
+<li><strong>系统时间偏差</strong>：TLS 握手依赖时间，系统时间偏差 &gt; 5 分钟会导致证书校验失败，全节点超时。校准系统时间。</li>
+<li><strong>端口被封</strong>：换协议/换端口，或联系机场客服。</li>
+</ol><p>完整分支见 <a href="https://clashtizi.com/tizi/nodes-timeout/" data-content-link-kind="internal">梯子节点超时全红与连接失败排障指南</a>。</p></section><section class="markdown-section"><h3 id="q2能打开国内网站但国外全打不开">Q2：能打开国内网站，但国外全打不开？<a class="anchor" href="https://clashtizi.com/recommend/free-nodes-vs-paid-iepl-security-analysis/#q2%E8%83%BD%E6%89%93%E5%BC%80%E5%9B%BD%E5%86%85%E7%BD%91%E7%AB%99%E4%BD%86%E5%9B%BD%E5%A4%96%E5%85%A8%E6%89%93%E4%B8%8D%E5%BC%80"><span class="anchor-icon" data-pagefind-ignore>#</span></a></h3><p>这是典型的”代理未生效”或”规则误判”。先切全局模式测试：全局能通说明规则分流把国外域名误判成 direct，检查规则集是否过期。全局也不通则是节点问题，回到 Q1。另检查 TUN/系统代理是否真的开启——很多用户以为开了，实际系统代理开关是关的。</p></section><section class="markdown-section"><h3 id="q3chatgpt-报-1020-错误--无限人机验证">Q3：ChatGPT 报 1020 错误 / 无限人机验证？<a class="anchor" href="https://clashtizi.com/recommend/free-nodes-vs-paid-iepl-security-analysis/#q3chatgpt-%E6%8A%A5-1020-%E9%94%99%E8%AF%AF--%E6%97%A0%E9%99%90%E4%BA%BA%E6%9C%BA%E9%AA%8C%E8%AF%81"><span class="anchor-icon" data-pagefind-ignore>#</span></a></h3><p>1020 是 Cloudflare 对来源 IP 的风控拦截，本质是节点 IP 被标记为数据中心/滥用 IP。解决路径：换到原生 IP 落地节点（光速云、无忧链接的原生解锁节点专治此症），或换非香港节点（部分地区风控更严）。免费节点几乎必然触发 1020，因为共享 IP 早被拉黑。</p></section><section class="markdown-section"><h3 id="q4dns-泄漏怎么自查与修复">Q4：DNS 泄漏怎么自查与修复？<a class="anchor" href="https://clashtizi.com/recommend/free-nodes-vs-paid-iepl-security-analysis/#q4dns-%E6%B3%84%E6%BC%8F%E6%80%8E%E4%B9%88%E8%87%AA%E6%9F%A5%E4%B8%8E%E4%BF%AE%E5%A4%8D"><span class="anchor-icon" data-pagefind-ignore>#</span></a></h3><p>访问 DNSLeakTest 类站点，若显示的 DNS 服务器是你本地 ISP 而非节点侧，即为泄漏。修复：客户端内强制 DoH/DoT 并劫持 53 端口；Clash 系开启 Fake-IP；确认 TUN 模式下 DNS 走代理。修复后再测，DNS 应显示为节点侧或 DoH 提供商。</p><hr /></section></section>
+<section class="markdown-section"><h2 id="七结语把安全基线钉在协议层">七、结语：把安全基线钉在协议层<a class="anchor" href="https://clashtizi.com/recommend/free-nodes-vs-paid-iepl-security-analysis/#%E4%B8%83%E7%BB%93%E8%AF%AD%E6%8A%8A%E5%AE%89%E5%85%A8%E5%9F%BA%E7%BA%BF%E9%92%89%E5%9C%A8%E5%8D%8F%E8%AE%AE%E5%B1%82"><span class="anchor-icon" data-pagefind-ignore>#</span></a></h2><p>免费节点的风险不是”可能慢”，而是”链路中间有人能看、能改、能存”。付费 IEPL/IPLC 专线的价值也不止于快，而在于跨境段走物理内网、不经过公网检测点，从架构上消除了中间人落点。选型上，追求原生 AI 解锁看光速云，追求低延迟游戏看星岛梦，追求大流量看唯兔云，预算敏感看飞猫云与微风网络，全终端省心看无忧链接。无论选哪家，把 TUN、DoH、强制 HTTPS 这三条基线做扎实，才是真正的隐私防线。更多横向数据见 <a href="https://clashtizi.com/recommend/airport/" data-content-link-kind="internal">2026 翻墙机场推荐与专线节点排行榜速查</a>。</p></section>]]></content>
+    <author><name>ClashTizi 极客评测</name></author>
+    <category term="网络安全"/>
   </entry>
   <entry>
     <title>外服游戏加速与电竞低延迟专线完全评测：香港/日本/新加坡节点、丢包率与路由优化</title>
