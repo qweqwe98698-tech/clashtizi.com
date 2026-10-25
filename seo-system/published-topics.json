@@ -46,5 +46,13 @@
     "title": "VLESS Reality 与 Vision 流控底层机制解析：消除 TLS 指纹特征与握手延迟深度调优",
     "date": "2026-10-21T06:54:01.159Z",
     "category": "网络安全"
+  },
+  {
+    "silo": "protocols",
+    "slug": "hysteria2-udp-brutal-congestion-control",
+    "permalink": "/protocols/hysteria2-udp-brutal-congestion-control/",
+    "title": "Hysteria 2 协议与 Brutal 拥塞控制原理剖析：恶劣网络环境暴力抗丢包实测与端口跳跃",
+    "date": "2026-10-25T07:11:37.424Z",
+    "category": "教程指南"
   }
 ]
