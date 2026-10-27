@@ -17,6 +17,7 @@ tags:
   - 网络优化
 pinned: true
 permalink: /tizi/foreign-websites-spinning-slow-loading/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：国外网站一直转圈、加载极慢怎么彻底解决？】**

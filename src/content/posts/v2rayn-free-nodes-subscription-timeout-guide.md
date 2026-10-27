@@ -16,6 +16,7 @@ tags:
   - 绕过大陆
 pinned: true
 permalink: /v2rayn/free-nodes/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：v2rayN 如何快速导入免费节点与解决 Timeout？】**

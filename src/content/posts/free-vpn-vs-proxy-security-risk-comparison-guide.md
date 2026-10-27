@@ -16,6 +16,7 @@ tags:
   - 避坑指南
 pinned: true
 permalink: /recommend/free-vpn-security/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：免费 VPN 到底安不安全？风险在哪？】**

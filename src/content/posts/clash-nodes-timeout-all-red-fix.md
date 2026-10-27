@@ -16,6 +16,7 @@ tags:
   - 系统代理
 pinned: false
 permalink: /issues/clash-nodes-timeout/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **文章摘要**：

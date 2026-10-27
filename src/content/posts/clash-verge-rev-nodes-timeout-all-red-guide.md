@@ -15,6 +15,7 @@ tags:
   - 问题排查
 pinned: false
 permalink: /clash-verge-rev/nodes-timeout/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速分诊：Clash Verge Rev 节点全红到底是什么问题？】**

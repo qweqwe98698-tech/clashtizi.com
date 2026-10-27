@@ -16,6 +16,7 @@ tags:
   - ChatGPT节点
 pinned: true
 permalink: /recommend/node-regions/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速对号入座：全球四大主流节点地区核心定位与选型铁律】**

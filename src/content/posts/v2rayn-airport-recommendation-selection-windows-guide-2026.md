@@ -18,6 +18,7 @@ tags:
   - 选购指南
 pinned: true
 permalink: /v2rayn/v2rayn-airport/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：v2rayN 机场怎么选？Windows 电脑怎么调优最顺畅？】**

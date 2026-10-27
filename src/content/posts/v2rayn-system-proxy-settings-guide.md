@@ -17,6 +17,7 @@ tags:
   - 教程
 pinned: false
 permalink: /v2rayn/system-proxy/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：v2rayN 系统代理核心开关与正确使用姿势】**

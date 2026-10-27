@@ -16,6 +16,7 @@ tags:
   - 选购指南
 pinned: true
 permalink: /recommend/cost-performance-guide/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：高性价比机场怎么判断？如何科学计算真实单价？】**

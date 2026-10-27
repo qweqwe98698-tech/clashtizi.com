@@ -16,6 +16,7 @@ tags:
   - 网络隐私
 pinned: false
 permalink: /tizi/ip-leak/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒核心定义：什么是“梯子 IP 泄漏”？】**

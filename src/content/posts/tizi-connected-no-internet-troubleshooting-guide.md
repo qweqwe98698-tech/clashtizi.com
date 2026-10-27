@@ -15,6 +15,7 @@ tags:
   - 故障排查
 pinned: true
 permalink: /tizi/connected-no-internet/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：代理连接成功但没网核心定性与四大排障原则】**

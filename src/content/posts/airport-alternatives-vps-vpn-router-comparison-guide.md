@@ -16,6 +16,7 @@ tags:
   - 选型对比
 pinned: true
 permalink: /recommend/airport-alternatives/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速对号入座：五大主流出海翻墙方案决策清单】**

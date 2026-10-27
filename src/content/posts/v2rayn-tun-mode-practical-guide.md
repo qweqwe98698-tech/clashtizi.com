@@ -18,6 +18,7 @@ tags:
   - 教程
 pinned: false
 permalink: /v2rayn/tun/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：v2rayN TUN 模式核心定义与一键开启黄金法则】**

@@ -17,6 +17,7 @@ tags:
   - 常见问题
 pinned: true
 permalink: /clash-verge-rev/free-nodes/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：Clash 如何正确使用免费节点？】**

@@ -16,6 +16,7 @@ tags:
   - 问题排查
 pinned: false
 permalink: /shadowrocket/no-internet/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：Shadowrocket 连上却没网，第一核心定性与分诊】**

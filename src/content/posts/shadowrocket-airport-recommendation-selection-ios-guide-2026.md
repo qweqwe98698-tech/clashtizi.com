@@ -16,6 +16,7 @@ tags:
   - 选购指南
 pinned: true
 permalink: /shadowrocket/shadowrocket-airport/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：Shadowrocket (小火箭) 机场怎么选？iPhone 怎么调优最稳定？】**

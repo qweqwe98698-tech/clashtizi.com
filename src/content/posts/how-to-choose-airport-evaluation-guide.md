@@ -16,6 +16,7 @@ tags:
   - 新手教程
 pinned: true
 permalink: /recommend/how-to-choose-airport/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：2026 选购机场四大黄金法则与防坑底线】**

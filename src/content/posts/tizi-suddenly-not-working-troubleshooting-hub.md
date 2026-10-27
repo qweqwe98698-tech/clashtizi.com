@@ -16,6 +16,7 @@ tags:
   - 网络排查
 pinned: false
 permalink: /tizi/suddenly-not-working/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 黄金排查法则：昨天能用、今天不能用，先找“今天什么变了”！】**

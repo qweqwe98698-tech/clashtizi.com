@@ -16,6 +16,7 @@ tags:
   - 教程
 pinned: false
 permalink: /v2rayn/subscription/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：v2rayN 导入订阅核心流程与首要避坑原则】**

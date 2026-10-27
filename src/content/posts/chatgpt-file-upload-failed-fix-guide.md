@@ -17,6 +17,7 @@ tags:
   - 附件错误
 pinned: false
 permalink: /chatgpt/file-upload-failed/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【🔒 核心安全警示：上传前先评估敏感信息】**

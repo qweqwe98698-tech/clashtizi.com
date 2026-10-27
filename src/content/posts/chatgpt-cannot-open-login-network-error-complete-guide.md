@@ -17,6 +17,7 @@ tags:
   - 排障指南
 pinned: true
 permalink: /chatgpt/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：ChatGPT 打不开、登录失败与 Network Error 怎么秒解？】**

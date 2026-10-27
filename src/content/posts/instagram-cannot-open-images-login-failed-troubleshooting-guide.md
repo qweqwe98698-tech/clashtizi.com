@@ -17,6 +17,7 @@ tags:
   - 网络教程
 pinned: true
 permalink: /tizi/instagram-cannot-open/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：Instagram (ins) 打不开、图片视频加载不出与登录失败怎么秒解？】**

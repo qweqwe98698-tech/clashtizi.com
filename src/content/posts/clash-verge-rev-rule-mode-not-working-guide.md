@@ -17,6 +17,7 @@ tags:
   - 问题排查
 pinned: false
 permalink: /clash-verge-rev/rule-mode-not-working/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速分诊：为什么 Global 能翻墙，切回 Rule 就打不开？】**

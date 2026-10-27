@@ -16,6 +16,7 @@ tags:
   - 文字识别
 pinned: false
 permalink: /chatgpt/image-recognition-errors/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【⚠️ 核心警示：高风险数值务必人工复核】**

@@ -16,6 +16,7 @@ tags:
   - 选购指南
 pinned: true
 permalink: /recommend/pre-purchase-checklist/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：机场付款下单前必须确认的四大保命铁律！】**

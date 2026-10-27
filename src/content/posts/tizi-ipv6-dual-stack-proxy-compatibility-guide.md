@@ -16,6 +16,7 @@ tags:
   - 网络排查
 pinned: false
 permalink: /tizi/ipv6/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒看懂：梯子环境下的 IPv6 到底是何原理？】**

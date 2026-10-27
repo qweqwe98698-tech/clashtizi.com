@@ -17,6 +17,7 @@ tags:
   - Clash规则
 pinned: false
 permalink: /tizi/rule-global-direct/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒看懂：Rule、Global、Direct 到底有什么区别？】**

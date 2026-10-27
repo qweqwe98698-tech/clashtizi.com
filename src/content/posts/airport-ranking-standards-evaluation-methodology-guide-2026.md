@@ -16,6 +16,7 @@ tags:
   - 选购指南
 pinned: true
 permalink: /recommend/ranking-standards/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：2026 机场排行榜怎么看才能不踩坑？】**

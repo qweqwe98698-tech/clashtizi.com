@@ -16,6 +16,7 @@ tags:
   - 安全风险
 pinned: true
 permalink: /recommend/free-nodes/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：2026 免费节点去哪找？怎么导入？安全吗？】**

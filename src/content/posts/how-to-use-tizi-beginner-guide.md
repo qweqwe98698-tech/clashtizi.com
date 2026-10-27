@@ -17,6 +17,7 @@ tags:
   - 新手教程
 pinned: false
 permalink: /tizi/how-to-use/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 第一次使用梯子，新手只看这 6 步黄金流程】**

@@ -17,6 +17,7 @@ tags:
   - 新手指南
 pinned: true
 permalink: /recommend/choose-airport/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速对号入座：不同人群 2026 选购机场终极决策清单】**

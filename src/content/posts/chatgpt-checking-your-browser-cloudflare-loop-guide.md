@@ -16,6 +16,7 @@ tags:
   - 网络排查
 pinned: false
 permalink: /chatgpt/checking-your-browser/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【30 秒快速判断核心导读】**

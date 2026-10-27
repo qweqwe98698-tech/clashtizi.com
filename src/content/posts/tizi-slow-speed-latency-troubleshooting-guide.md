@@ -17,6 +17,7 @@ tags:
   - 教程
 pinned: true
 permalink: /tizi/slow-speed/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：代理速度慢核心定性与四大排障原则】**

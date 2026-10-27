@@ -16,6 +16,7 @@ tags:
   - 问题排查
 pinned: false
 permalink: /shadowrocket/domestic-sites-not-working/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：Shadowrocket 国内网站打不开三大核心元凶与黄金解法】**

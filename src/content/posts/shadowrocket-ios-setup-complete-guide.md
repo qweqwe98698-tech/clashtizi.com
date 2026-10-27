@@ -17,6 +17,7 @@ tags:
   - 订阅导入
 pinned: true
 permalink: /shadowrocket/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【📱 官方产品核心信息与 2026 资料核验卡片】**

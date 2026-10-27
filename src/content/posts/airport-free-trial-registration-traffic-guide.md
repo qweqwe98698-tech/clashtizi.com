@@ -16,6 +16,7 @@ tags:
   - 机场避坑
 pinned: true
 permalink: /recommend/free-trial/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：免费机场试用怎么找？有哪些安全陷阱？】**

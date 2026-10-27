@@ -17,6 +17,7 @@ tags:
   - 网络知识
 pinned: false
 permalink: /tizi/fake-ip/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒看懂：Fake-IP 到底是什么？】**

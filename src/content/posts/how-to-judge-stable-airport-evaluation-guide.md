@@ -17,6 +17,7 @@ tags:
   - 选购标准
 pinned: true
 permalink: /recommend/stable-airport/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：判断一个机场是否“真正稳定”的四大硬性物理指标】**

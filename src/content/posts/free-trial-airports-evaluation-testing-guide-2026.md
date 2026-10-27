@@ -16,6 +16,7 @@ tags:
   - 选购指南
 pinned: true
 permalink: /recommend/free-trial-worth-it/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：免费试用机场到底值不值得用？怎么测才不踩坑？】**

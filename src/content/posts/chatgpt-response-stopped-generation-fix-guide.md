@@ -16,6 +16,7 @@ tags:
   - 故障排查
 pinned: false
 permalink: /chatgpt/response-stopped/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【⚠️ 核心提醒：先别急着盲目按 F5 刷新页面】**

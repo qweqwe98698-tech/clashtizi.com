@@ -15,6 +15,7 @@ tags:
   - 问题排查
 pinned: false
 permalink: /clash-verge-rev/system-proxy-not-working/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速分诊：为什么开启系统代理后，软件依然不走代理？】**

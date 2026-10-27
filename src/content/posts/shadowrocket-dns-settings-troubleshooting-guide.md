@@ -18,6 +18,7 @@ tags:
   - 问题排查
 pinned: false
 permalink: /shadowrocket/dns/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：Shadowrocket DNS 核心机制与推荐配置卡片】**

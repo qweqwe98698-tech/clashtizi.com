@@ -16,6 +16,7 @@ tags:
   - 网络教程
 pinned: true
 permalink: /tizi/wifi-normal-cannot-open-foreign-websites/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：为什么连 Wi-Fi 无法访问国外网站，切 5G 流量却正常？】**

@@ -16,6 +16,7 @@ tags:
   - 入门指南
 pinned: true
 permalink: /tizi/how-to-access-foreign-websites/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：国内怎么在手机和电脑上访问国外网站？】**

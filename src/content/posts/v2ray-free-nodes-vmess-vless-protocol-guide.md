@@ -16,6 +16,7 @@ tags:
   - 协议对比
 pinned: true
 permalink: /recommend/v2ray-free-nodes/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：V2Ray 免费节点是什么？VMess 和 VLESS 怎么选？】**

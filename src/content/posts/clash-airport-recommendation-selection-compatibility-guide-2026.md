@@ -17,6 +17,7 @@ tags:
   - 选购指南
 pinned: true
 permalink: /clash-verge-rev/clash-airport/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：Clash 专属机场怎么选？如何与客户端完美兼容？】**

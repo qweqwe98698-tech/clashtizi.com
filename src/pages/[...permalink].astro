@@ -27,6 +27,8 @@ import {
 	hasCustomPermalink,
 	initPostIdMap,
 } from "@utils/permalink-utils";
+import fs from "node:fs";
+import { generateFaqSchema } from "@utils/faq-schema";
 import { getPostPublicDescription } from "@utils/post-card-content";
 import { resolvePostCoverSource } from "@utils/post-cover-source";
 import { getFileDirFromPath } from "@utils/url-utils";
@@ -35,7 +37,7 @@ import { licenseConfig } from "src/config";
 
 import { permalinkConfig } from "@/config";
 
-import { profileConfig, siteConfig } from "../config";
+import { siteConfig } from "../config";
 
 export async function getStaticPaths() {
 	const blogEntries = await getSortedPosts();
@@ -139,9 +141,10 @@ const publicDescription = getPostPublicDescription(
 			description: publicDescription,
 			keywords: entry.data.tags,
 			author: {
-				"@type": "Organization",
-				name: "ClashTizi 极客评测实验室",
-				url: siteUrl,
+				"@type": "Person",
+				name: entry.data.author || "李维 (网络基础设施架构师)",
+				jobTitle: "网络基础设施架构师",
+				url: new URL("/about/", siteUrl).href,
 			},
 			publisher: {
 				"@type": "Organization",
@@ -202,6 +205,17 @@ const publicDescription = getPostPublicDescription(
 				},
 			],
 		});
+	}
+
+	let rawBody = entry.body || "";
+	if (!rawBody && entry.filePath && fs.existsSync(entry.filePath)) {
+		try {
+			rawBody = fs.readFileSync(entry.filePath, "utf8");
+		} catch (_) {}
+	}
+	const faqSchema = generateFaqSchema(rawBody);
+	if (faqSchema) {
+		graphItems.push(faqSchema);
 	}
 
 	const jsonLd = {
@@ -299,6 +313,7 @@ const publicDescription = getPostPublicDescription(
 			<div class="onload-animation">
 				<PostMeta
 					className="mb-5"
+					author={entry.data.author}
 					published={entry.data.published}
 					publishedDateOnly={entry.data._publishedDateOnly}
 					updated={entry.data.updated}
@@ -330,6 +345,16 @@ const publicDescription = getPostPublicDescription(
 						/>
 					</>
 				)
+			}
+
+			{
+				/* 全站合规与商业合作透明度披露 */
+				<div class="mb-6 p-3.5 rounded-xl text-xs md:text-sm bg-neutral-500/5 border border-black/5 dark:border-white/10 text-neutral-600 dark:text-neutral-400 flex items-start gap-2.5 onload-animation">
+					<Icon name="material-symbols:verified-user-outline-rounded" class="text-base text-(--primary) shrink-0 mt-0.5" />
+					<div class="leading-relaxed">
+						<strong>合规与客观性声明：</strong>本站秉持长周期晚高峰客观实测标准。部分评测与教程可能包含带有规范合规标记（<code>rel="sponsored"</code>）的商业合作链接，赞助机制绝不影响用户实际支付价格与评测中立性。详见<a href="/disclosure/" class="text-(--primary) hover:underline font-medium ml-1">推广返利透明度披露</a>。
+					</div>
+				</div>
 			}
 
 			{

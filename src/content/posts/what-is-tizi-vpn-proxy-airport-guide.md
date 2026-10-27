@@ -16,6 +16,7 @@ tags:
   - 网络基础
 pinned: false
 permalink: /tizi/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒快速看懂：梯子生态核心术语大白话】**

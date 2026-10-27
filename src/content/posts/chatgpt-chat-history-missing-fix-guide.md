@@ -17,6 +17,7 @@ tags:
   - 数据恢复
 pinned: false
 permalink: /chatgpt/chat-history-missing/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【⚠️ 核心警示：排查前先别删除或重置任何东西】**

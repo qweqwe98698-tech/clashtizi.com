@@ -16,6 +16,7 @@ tags:
   - 订阅配置
 pinned: true
 permalink: /clash-verge-rev/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 软件定位与 30 秒极速上手指南】**

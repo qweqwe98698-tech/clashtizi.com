@@ -17,6 +17,7 @@ tags:
   - 故障排查
 pinned: true
 permalink: /tizi/tun/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：TUN 模式启动失败三大核心元凶与黄金排障法则】**

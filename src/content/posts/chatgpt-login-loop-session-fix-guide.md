@@ -17,6 +17,7 @@ tags:
   - 浏览器排查
 pinned: false
 permalink: /chatgpt/login-loop/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【30 秒快速判断核心导读】**

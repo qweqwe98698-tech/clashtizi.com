@@ -14,6 +14,7 @@ import {
 } from "./atoms";
 
 interface Props {
+	author?: string;
 	published: Date;
 	publishedDateOnly?: boolean;
 	updated?: Date;
@@ -34,6 +35,7 @@ interface Props {
 }
 
 const {
+	author,
 	published,
 	publishedDateOnly = false,
 	updated,
@@ -55,6 +57,15 @@ const {
 ---
 
 <div class:list={["flex flex-wrap text-neutral-500 dark:text-neutral-400 items-center gap-4 gap-x-4 gap-y-2", className]}>
+    {author && (
+        <div class="flex items-center">
+            <div class="meta-icon">
+                <Icon name="material-symbols:person-outline-rounded" class="text-xl"></Icon>
+            </div>
+            <a href="/about/" class="text-50 text-sm font-medium hover:text-(--primary) transition-colors">{author}</a>
+        </div>
+    )}
+
     <PublishedDate date={published} dateOnly={publishedDateOnly} />
 
     {!hideUpdateDate && updated && updated.getTime() !== published.getTime() && (

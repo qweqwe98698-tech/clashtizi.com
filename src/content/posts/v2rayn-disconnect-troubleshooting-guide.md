@@ -17,6 +17,7 @@ tags:
   - 问题排查
 pinned: false
 permalink: /v2rayn/disconnect/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：v2rayN 经常掉线三大核心元凶与黄金排查法则】**

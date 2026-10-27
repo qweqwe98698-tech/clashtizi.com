@@ -18,6 +18,7 @@ tags:
   - Sing-box
 pinned: false
 permalink: /v2rayn/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：v2rayN 核心架构与 2026 上手黄金法则】**

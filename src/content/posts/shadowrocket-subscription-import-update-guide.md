@@ -16,6 +16,7 @@ tags:
   - 问题排查
 pinned: false
 permalink: /shadowrocket/subscription/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：Shadowrocket 导入订阅核心流程与首要原则】**

@@ -16,6 +16,7 @@ tags:
   - 网络教程
 pinned: true
 permalink: /tizi/chrome-cannot-open-foreign-websites/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：Chrome 谷歌浏览器打不开国外网站怎么快速修复？】**

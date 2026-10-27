@@ -16,6 +16,7 @@ tags:
   - 对比指南
 pinned: false
 permalink: /tizi/vpn-vs-tizi/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒快速看懂核心对比与选择结论】**

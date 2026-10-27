@@ -15,6 +15,7 @@ tags:
   - 连接中断
 pinned: false
 permalink: /chatgpt/network-error/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【30 秒快速判断核心导读】**

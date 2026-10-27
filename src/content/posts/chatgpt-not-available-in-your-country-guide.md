@@ -15,6 +15,7 @@ tags:
   - 账号风险
 pinned: false
 permalink: /chatgpt/not-available-in-your-country/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【30 秒快速判断核心导读】**

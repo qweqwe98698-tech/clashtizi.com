@@ -16,6 +16,7 @@ tags:
   - 选购指南
 pinned: true
 permalink: /recommend/iphone-airport/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：iPhone 苹果手机机场怎么选？客户端与节点怎么调优最稳定？】**

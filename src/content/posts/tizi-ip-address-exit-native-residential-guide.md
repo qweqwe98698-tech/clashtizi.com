@@ -17,6 +17,7 @@ tags:
   - 网络基础
 pinned: false
 permalink: /tizi/ip-address/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒看懂：开梯子后 IP 为什么会变？】**

@@ -16,6 +16,7 @@ tags:
   - 使用场景
 pinned: false
 permalink: /tizi/proxy-mode-guide/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速决策：梯子模式到底应该怎么选？】**

@@ -16,6 +16,7 @@ tags:
   - 避坑指南
 pinned: true
 permalink: /recommend/today-free-nodes/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：今日免费节点到底靠不靠谱？】**

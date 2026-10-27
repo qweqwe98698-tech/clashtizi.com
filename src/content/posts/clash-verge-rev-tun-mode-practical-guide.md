@@ -15,6 +15,7 @@ tags:
   - 问题排查
 pinned: false
 permalink: /clash-verge-rev/tun/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速决策：你到底需不需要开启 TUN 模式？】**

@@ -17,6 +17,7 @@ tags:
   - 问题排查
 pinned: false
 permalink: /clash-verge-rev/no-internet/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速分诊：Clash Verge Rev 开了但没网，问题到底在哪一层？】**

@@ -17,6 +17,7 @@ tags:
   - 软件不走代理
 pinned: true
 permalink: /tizi/troubleshooting/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速分诊台：你的代理当前遇到了什么核心故障？】**

@@ -16,6 +16,7 @@ tags:
   - GEOIP
 pinned: false
 permalink: /tizi/routing-rules/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒看懂：分流规则到底起什么作用？】**

@@ -1,0 +1,140 @@
+---
+import { PageHeader } from "@components/features/page-header";
+import Markdown from "@components/misc/Markdown.astro";
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+
+const title = "科学上网机场客观评测方法论与真机实测标准";
+const description = "Clash梯子网（clashtizi.com）坚持工业级真机实测标准。本方法论公开披露晚高峰20:00-23:30测试环境（涵盖电信/联通/移动千兆光纤）、Mihomo/Sing-box内核测试协议栈、丢包率与延迟抖动量化指标，以及服务商SLA准入门槛与淘汰机制，全面保障评测数据的客观性、透明性与可信度。";
+
+const siteUrl = Astro.site ? Astro.site.toString() : "https://clashtizi.com/";
+const methodologyJsonLd = {
+	"@context": "https://schema.org",
+	"@graph": [
+		{
+			"@type": "AboutPage",
+			name: title,
+			url: new URL("/methodology/", siteUrl).href,
+			description: description,
+			inLanguage: "zh-CN",
+		},
+		{
+			"@type": "Organization",
+			name: "Clash梯子网 极客评测实验室",
+			url: siteUrl,
+			logo: new URL("/logo.png", siteUrl).href,
+		},
+	],
+};
+---
+
+<MainGridLayout title={title} description={description}>
+	<script
+		is:inline
+		slot="head"
+		type="application/ld+json"
+		set:html={JSON.stringify(methodologyJsonLd)}
+	/>
+	<script>
+		import("../scripts/right-sidebar-layout.js");
+	</script>
+	<div class="flex w-full rounded-(--radius-large) overflow-hidden relative min-h-32">
+		<div class="card-base z-10 px-9 py-6 relative w-full">
+			<PageHeader title={title} subtitle="评测标准版本：2026 Q4 · 核心主编：李维 (网络基础设施架构师)" />
+
+			<Markdown class="mt-4">
+				<h2>📐 1. 为什么必须建立透明的评测方法论？</h2>
+				<p>
+					在跨境网络代理与专线服务领域，充斥着大量“挑时段测速”、“单节点虚标百兆”以及“营销推广操纵排名”的乱象。<strong>Clash梯子网 (clashtizi.com)</strong> 认为，只有<strong>公开测试物理环境、量化考核指标、统一测试时段</strong>，才能为读者提供真正具备决策价值的技术指南。
+				</p>
+
+				<h2>🖥️ 2. 真实物理测试环境与基础设施配置</h2>
+				<p>
+					本站杜绝在海外云服务器（VPS）之间进行“内网互测”等虚假跑分，所有数据均采集自中国大陆境内真实家庭及商业宽带端点：
+				</p>
+				<ul>
+					<li><strong>宽带网络节点</strong>：
+						<ul>
+							<li>中国电信 1000M FTTH（南方骨干出口，代表典型国际公网 QoS 压力环境）</li>
+							<li>中国联通 1000M FTTH（北方骨干出口，代表 AS4837 优化回程环境）</li>
+							<li>中国移动 1000M FTTH（典型墙内穿透与跨网互联波动环境）</li>
+						</ul>
+					</li>
+					<li><strong>测试终端硬件</strong>：
+						<ul>
+							<li>桌面端：Intel Core i7-13700K / 32GB RAM / 2.5Gbps 双网口千兆有线直连（排除 WiFi 衰减干扰）</li>
+							<li>移动端：iPhone 16 Pro (iOS 18) 与 Snapdragon 8 Gen 3 (Android 15) 物理真机测试</li>
+						</ul>
+					</li>
+					<li><strong>测试客户端内核版本</strong>：
+						<ul>
+							<li>Mihomo (Clash Meta) 内核最新稳定版本，启用 TUN 模式与 Mixed-port</li>
+							<li>Sing-box 最新稳定版，启用 TProxy / TUN 透明代理与 Brutal 拥塞控制</li>
+						</ul>
+					</li>
+				</ul>
+
+				<h2>⏰ 3. 测试时段与多轮采样机制</h2>
+				<p>
+					白天网络空闲时段的测速数据对实际体验毫无参考价值。因此，本站实行严格的<strong>晚高峰长周期压测准则</strong>：
+				</p>
+				<ul>
+					<li><strong>核心测试时段</strong>：每日 <strong>20:00 至 23:30（国际出口高峰阻塞期）</strong></li>
+					<li><strong>采样频次</strong>：每个服务商连续监测 7 至 14 天，每晚对香港、日本、新加坡、美国核心节点执行至少 3 轮并发压力测试。</li>
+					<li><strong>最终取值</strong>：剔除最高值与最低异常值，采用平均有效下行带宽、中位数延迟及丢包率。</li>
+				</ul>
+
+				<h2>📊 4. 核心维度评分与量化权重模型</h2>
+				<p>
+					我们依据四大核心维度构建加权评分体系（总分 100 分）：
+				</p>
+
+				<table>
+					<thead>
+						<tr>
+							<th>评测维度</th>
+							<th>权重</th>
+							<th>核心考察指标与测试工具</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><strong>晚高峰吞吐与带宽</strong></td>
+							<td><strong>35%</strong></td>
+							<td>YouTube 4K/8K 缓冲速度（Connection Speed）、Fast.com 单线程与多线程下载速率、测速图真实面板</td>
+						</tr>
+						<tr>
+							<td><strong>稳定性、丢包与抖动</strong></td>
+							<td><strong>25%</strong></td>
+							<td>MTR 连续 100 次 ICMP/TCP 发包丢包率（目标：专线丢包率 &lt; 0.5%）、延迟抖动标准差 Jitter（&lt; 5ms）</td>
+						</tr>
+						<tr>
+							<td><strong>解锁能力与住宅 IP 纯净度</strong></td>
+							<td><strong>20%</strong></td>
+							<td>OpenAI (ChatGPT / Sora / Claude) 原生解锁率、Netflix / Disney+ 非自制剧跨区播放、FraudScore IP 风险评分</td>
+						</tr>
+						<tr>
+							<td><strong>SLA 架构与运营防跑路</strong></td>
+							<td><strong>20%</strong></td>
+							<td>物理专线类别（IEPL / IPLC / 阿里云 / 华为云 CEN）、连续在网运营年限（门槛 &gt; 2年）、工单响应效率</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h2>🛑 5. 准入门槛与服务商淘汰黑名单机制</h2>
+				<p>
+					任何服务商若想进入本站推荐榜单，必须首先通过以下<strong>底线准入审查</strong>：
+				</p>
+				<ol>
+					<li><strong>专线真伪核验</strong>：必须具备真实的 BGP 入口与内网跨境专线，凡以公网直连（直连直翻）冒充 IPLC 专线者一票否决。</li>
+					<li><strong>拒绝恶性倍率陷阱</strong>：禁止以 0.1 倍率引流后偷偷调高至 5 倍、10 倍暗扣流量。</li>
+					<li><strong>淘汰黑名单机制</strong>：一旦发现连续 48 小时失联、出现无法退费的跑路先兆、或故意售卖污染节点，立即移出推荐列表并在专题中发出风险预警。</li>
+				</ol>
+
+				<h2>⚖️ 6. 独立性与商业合作透明度承诺</h2>
+				<p>
+					本站保持绝对的技术评测独立性：<strong>任何商业赞助均不能改变评测数据与测试结论</strong>。合作方赞助链接带有规范的 <code>rel="sponsored"</code> 属性，赞助收益全额用于覆盖测试千兆物理宽带月租及长期套餐采购。详细信息请参阅我们的 <a href="/disclosure/">推广返利透明度披露</a>。
+				</p>
+			</Markdown>
+		</div>
+	</div>
+</MainGridLayout>

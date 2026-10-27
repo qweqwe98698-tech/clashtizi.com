@@ -17,6 +17,7 @@ tags:
   - 排障指南
 pinned: true
 permalink: /clash-verge-rev/import-free-nodes/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：Clash Verge 如何导入免费节点与解决连接失败？】**

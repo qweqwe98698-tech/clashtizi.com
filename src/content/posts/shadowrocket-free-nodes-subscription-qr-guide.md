@@ -16,6 +16,7 @@ tags:
   - 安全风险
 pinned: true
 permalink: /shadowrocket/free-nodes/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：Shadowrocket (小火箭) 如何正确使用免费节点？】**

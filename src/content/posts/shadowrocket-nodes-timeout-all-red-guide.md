@@ -17,6 +17,7 @@ tags:
   - 问题排查
 pinned: false
 permalink: /shadowrocket/nodes-timeout/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：Shadowrocket 节点全红 Timeout 核心定性与黄金法则】**

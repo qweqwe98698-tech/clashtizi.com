@@ -17,6 +17,7 @@ tags:
   - 账号认证
 pinned: false
 permalink: /chatgpt/wrong-authentication-method/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【30 秒快速判断核心导读】**

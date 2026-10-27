@@ -16,6 +16,7 @@ tags:
   - 防坑指南
 pinned: true
 permalink: /recommend/monthly-vs-yearly-guide/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：机场买月付还是年付好？】**

@@ -16,6 +16,7 @@ tags:
   - 排障指南
 pinned: true
 permalink: /tizi/cannot-open-foreign-websites/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：国外网站打不开怎么快速排查修复？】**

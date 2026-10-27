@@ -17,6 +17,7 @@ tags:
   - 网络知识
 pinned: false
 permalink: /tizi/dns/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒看懂：梯子里的 DNS 到底起什么作用？】**

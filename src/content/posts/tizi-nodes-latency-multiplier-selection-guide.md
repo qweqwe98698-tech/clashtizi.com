@@ -16,6 +16,7 @@ tags:
   - 网络性能
 pinned: false
 permalink: /tizi/nodes/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒看懂：梯子节点核心认知与选型原则】**

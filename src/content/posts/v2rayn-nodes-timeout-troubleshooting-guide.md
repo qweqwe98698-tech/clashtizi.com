@@ -16,6 +16,7 @@ tags:
   - 问题排查
 pinned: false
 permalink: /v2rayn/nodes-timeout/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：v2rayN 节点全部 Timeout 核心根因与黄金排查法则】**

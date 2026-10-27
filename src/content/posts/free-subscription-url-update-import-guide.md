@@ -17,6 +17,7 @@ tags:
   - 订阅转换
 pinned: true
 permalink: /recommend/free-subscription/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：免费订阅到底是什么？怎么用？】**

@@ -16,6 +16,7 @@ tags:
   - 网络基础
 pinned: false
 permalink: /tizi/airport-vs-tizi/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒看懂：机场、客户端、节点与订阅的本质关系】**

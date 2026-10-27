@@ -16,6 +16,7 @@ tags:
   - 网络排查
 pinned: false
 permalink: /tizi/lan-tun-conflict/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速诊断：为什么开了梯子或 TUN 模式，局域网设备反而断连？】**

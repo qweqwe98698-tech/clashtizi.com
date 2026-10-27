@@ -15,6 +15,7 @@ tags:
   - 网络排查
 pinned: false
 permalink: /issues/chatgpt-access-denied/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **文章摘要**：

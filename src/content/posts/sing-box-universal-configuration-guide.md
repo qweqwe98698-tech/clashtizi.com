@@ -17,6 +17,7 @@ tags:
   - 客户端教程
 pinned: false
 permalink: /tutorials/sing-box-config/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **文章摘要**：

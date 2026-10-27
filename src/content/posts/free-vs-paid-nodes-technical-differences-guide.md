@@ -16,6 +16,7 @@ tags:
   - ChatGPT解锁
 pinned: true
 permalink: /recommend/free-vs-paid-nodes/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：免费节点 vs 付费节点五大底层硬核区别】**

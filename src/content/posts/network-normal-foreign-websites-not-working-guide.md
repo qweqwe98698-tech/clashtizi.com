@@ -16,6 +16,7 @@ tags:
   - 网络排障
 pinned: true
 permalink: /tizi/network-normal-cannot-open-foreign-websites/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：本地网络正常（国内秒开），但国外网站打不开怎么办？】**

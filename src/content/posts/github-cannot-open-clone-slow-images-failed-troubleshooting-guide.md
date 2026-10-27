@@ -17,6 +17,7 @@ tags:
   - 排障指南
 pinned: true
 permalink: /tizi/github-cannot-open/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：GitHub 网页打不开、git clone 报错 443 超时怎么秒解？】**

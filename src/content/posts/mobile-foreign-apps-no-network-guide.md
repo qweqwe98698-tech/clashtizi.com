@@ -16,6 +16,7 @@ tags:
   - 排障指南
 pinned: true
 permalink: /tizi/mobile-apps-no-network-connection/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：手机国内上网正常，但海外 App 显示“无网络连接”怎么办？】**

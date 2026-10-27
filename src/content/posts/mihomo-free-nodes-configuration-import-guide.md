@@ -17,6 +17,7 @@ tags:
   - 节点导入
 pinned: true
 permalink: /recommend/mihomo-free-nodes/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：Mihomo (Clash.Meta) 免费节点怎么用？】**

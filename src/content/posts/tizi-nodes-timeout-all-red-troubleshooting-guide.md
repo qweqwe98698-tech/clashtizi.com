@@ -16,6 +16,7 @@ tags:
   - 教程
 pinned: true
 permalink: /tizi/nodes-timeout/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：节点全部 Timeout 核心定性与四大排障原则】**

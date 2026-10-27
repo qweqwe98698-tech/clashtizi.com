@@ -16,6 +16,7 @@ tags:
   - 排障指南
 pinned: true
 permalink: /tizi/youtube-cannot-open/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【💡 30 秒极速直接答案：YouTube 视频加载失败、一直转圈与播放卡顿怎么秒解？】**

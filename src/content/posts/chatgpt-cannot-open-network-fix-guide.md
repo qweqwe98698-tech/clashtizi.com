@@ -15,6 +15,7 @@ tags:
   - DNS
 pinned: false
 permalink: /chatgpt/cannot-open/
+author: "李维 (网络基础设施架构师)"
 ---
 
 > **【30 秒快速判断核心导读】**
