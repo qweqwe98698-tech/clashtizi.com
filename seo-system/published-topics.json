@@ -54,5 +54,13 @@
     "title": "Hysteria 2 协议与 Brutal 拥塞控制原理剖析：恶劣网络环境暴力抗丢包实测与端口跳跃",
     "date": "2026-10-25T07:11:37.424Z",
     "category": "教程指南"
+  },
+  {
+    "silo": "protocols",
+    "slug": "tuic-v5-vs-wireguard-performance-analysis",
+    "permalink": "/protocols/tuic-v5-vs-wireguard-performance-analysis/",
+    "title": "TUIC v5 与 WireGuard 跨国传输性能深度横评：基于 QUIC 协议的高并发多路复用实测",
+    "date": "2026-10-29T07:55:07.407Z",
+    "category": "网络安全"
   }
 ]
