@@ -62,5 +62,13 @@
     "title": "TUIC v5 与 WireGuard 跨国传输性能深度横评：基于 QUIC 协议的高并发多路复用实测",
     "date": "2026-10-29T07:55:07.407Z",
     "category": "网络安全"
+  },
+  {
+    "silo": "protocols",
+    "slug": "shadowsocks-2022-aead-ciphers-evaluation",
+    "permalink": "/protocols/shadowsocks-2022-aead-ciphers-evaluation/",
+    "title": "Shadowsocks 2022 新标准与 AEAD 加密套件剖析：抗重放攻击、长度混淆与企业网实战",
+    "date": "2026-11-01T08:33:22.694Z",
+    "category": "网络安全"
   }
 ]
