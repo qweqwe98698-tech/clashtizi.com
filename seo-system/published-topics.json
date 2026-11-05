@@ -70,5 +70,13 @@
     "title": "Shadowsocks 2022 新标准与 AEAD 加密套件剖析：抗重放攻击、长度混淆与企业网实战",
     "date": "2026-11-01T08:33:22.694Z",
     "category": "网络安全"
+  },
+  {
+    "silo": "protocols",
+    "slug": "tls-fingerprint-randomization-utls-mechanisms",
+    "permalink": "/protocols/tls-fingerprint-randomization-utls-mechanisms/",
+    "title": "TLS 客户端指纹识别与 JA3/JA4 规避技术：uTLS 伪装机制与真实流量伪装全指南",
+    "date": "2026-11-05T08:52:01.611Z",
+    "category": "网络安全"
   }
 ]
