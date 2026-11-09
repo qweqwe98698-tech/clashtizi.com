@@ -78,5 +78,13 @@
     "title": "TLS 客户端指纹识别与 JA3/JA4 规避技术：uTLS 伪装机制与真实流量伪装全指南",
     "date": "2026-11-05T08:52:01.611Z",
     "category": "网络安全"
+  },
+  {
+    "silo": "tutorials",
+    "slug": "clash-verge-rev-tun-mode-dns-leak-prevention",
+    "permalink": "/tutorials/clash-verge-rev-tun-mode-dns-leak-prevention/",
+    "title": "Clash Verge Rev 核心进阶指南：TUN 虚拟网卡模式、Fake-IP 机制与防 DNS 泄漏终极配置",
+    "date": "2026-11-09T08:57:13.026Z",
+    "category": "客户端配置"
   }
 ]
