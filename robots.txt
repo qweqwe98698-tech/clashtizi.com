@@ -1,17 +1,22 @@
 User-agent: Googlebot
 Allow: /
+Disallow: /pio/
 
 User-agent: Bingbot
 Allow: /
+Disallow: /pio/
 
 User-agent: Baiduspider
 Allow: /
+Disallow: /pio/
 
 User-agent: yisouspider
 Allow: /
+Disallow: /pio/
 
 User-agent: *
 Allow: /
+Disallow: /pio/
 
 Sitemap: https://clashtizi.com/sitemap-index.xml
 Sitemap: https://clashtizi.com/sitemap-0.xml
