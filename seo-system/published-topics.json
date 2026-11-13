@@ -86,5 +86,13 @@
     "title": "Clash Verge Rev 核心进阶指南：TUN 虚拟网卡模式、Fake-IP 机制与防 DNS 泄漏终极配置",
     "date": "2026-11-09T08:57:13.026Z",
     "category": "客户端配置"
+  },
+  {
+    "silo": "tutorials",
+    "slug": "sing-box-inbound-tproxy-routing-rules",
+    "permalink": "/tutorials/sing-box-inbound-tproxy-routing-rules/",
+    "title": "Sing-box 规则引擎与 TProxy 透明代理深度指南：全平台极简部署与企业级分流",
+    "date": "2026-11-13T08:59:07.518Z",
+    "category": "客户端配置"
   }
 ]
