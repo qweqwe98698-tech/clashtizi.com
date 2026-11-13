@@ -1,0 +1,205 @@
+---
+import type { AirportBrand } from "../../../data/airports-42";
+import type { AirportDetailRecord, ServiceStatus } from "../../../data/airports-detail";
+
+interface Props {
+	brand: AirportBrand;
+	detail: AirportDetailRecord;
+}
+
+const { brand, detail } = Astro.props;
+
+const statusConfig = {
+	measured: {
+		label: "MEASURED DATA · 实测有图",
+		dot: "bg-emerald-400",
+		badge: "bg-emerald-500/15 text-emerald-300 border-emerald-500/30",
+	},
+	vendor: {
+		label: "VENDOR DATA · 品牌方资料",
+		dot: "bg-amber-400",
+		badge: "bg-amber-500/15 text-amber-300 border-amber-500/30",
+	},
+	historical: {
+		label: "HISTORICAL ARCHIVE · 历史存档",
+		dot: "bg-sky-400",
+		badge: "bg-sky-500/15 text-sky-300 border-sky-500/30",
+	},
+}[brand.dataStatus];
+
+const getServiceBadge = (status: ServiceStatus) => {
+	switch (status) {
+		case "supported":
+			return {
+				text: "OPERATIONAL",
+				dot: "bg-emerald-400",
+				className: "text-emerald-300 bg-emerald-500/10 border-emerald-500/25",
+			};
+		case "conditional":
+			return {
+				text: "PARTIAL / NODE-DEP",
+				dot: "bg-amber-400",
+				className: "text-amber-300 bg-amber-500/10 border-amber-500/25",
+			};
+		default:
+			return {
+				text: "NOT TESTED",
+				dot: "bg-slate-400",
+				className: "text-slate-300 bg-slate-500/15 border-slate-500/30",
+			};
+	}
+};
+
+const maxDownload = detail.benchmarks?.reduce((acc, r) => Math.max(acc, r.downloadMbps), 1) || 550;
+---
+
+<section
+	class="observatory-panel my-6 rounded-2xl border border-slate-700/70 bg-[#0b1220] text-slate-100 p-5 sm:p-6 shadow-xl overflow-hidden relative"
+	style={`--brand-accent: ${detail.accentColor};`}
+	aria-label={`${brand.name} Network Observatory 技术可观测报告`}
+>
+	<!-- Subtle grid backdrop -->
+	<div
+		class="pointer-events-none absolute inset-0 opacity-[0.06]"
+		style="background-image: linear-gradient(to right, #94a3b8 1px, transparent 1px), linear-gradient(to bottom, #94a3b8 1px, transparent 1px); background-size: 28px 28px;"
+	></div>
+
+	<div class="relative z-10 space-y-5">
+		<!-- Observatory Header -->
+		<div class="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-slate-700/60">
+			<div class="flex items-center gap-3">
+				<span
+					class="w-3 h-3 rounded-full shrink-0"
+					style={`background-color: ${detail.accentColor}; box-shadow: 0 0 10px ${detail.accentColor};`}
+				></span>
+				<div>
+					<div class="text-[11px] font-mono uppercase tracking-wider text-slate-400">
+						Infrastructure Service Snapshot · Rank #{brand.rank}
+					</div>
+					<div class="text-lg sm:text-xl font-bold text-white flex items-center gap-2 flex-wrap">
+						<span>{brand.name}</span>
+						<span class="text-xs font-mono font-normal text-slate-400">({brand.alias})</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="flex items-center gap-2 flex-wrap">
+				<span class={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-mono border ${statusConfig.badge}`}>
+					<span class={`w-1.5 h-1.5 rounded-full ${statusConfig.dot}`}></span>
+					{statusConfig.label}
+				</span>
+			</div>
+		</div>
+
+		<!-- Core Telemetry Spec Strip -->
+		<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 font-mono text-xs">
+			<div class="rounded-xl bg-slate-900/80 border border-slate-800 p-3">
+				<div class="text-slate-400 text-[10px] uppercase">LINE ARCHITECTURE</div>
+				<div class="text-slate-100 font-semibold mt-1 truncate" title={brand.lineType}>{brand.lineType}</div>
+			</div>
+			<div class="rounded-xl bg-slate-900/80 border border-slate-800 p-3">
+				<div class="text-slate-400 text-[10px] uppercase">PROTOCOL</div>
+				<div class="text-slate-100 font-semibold mt-1 truncate" title={brand.protocol}>{brand.protocol}</div>
+			</div>
+			<div class="rounded-xl bg-slate-900/80 border border-slate-800 p-3">
+				<div class="text-slate-400 text-[10px] uppercase">ENTRY TIER</div>
+				<div class="font-semibold mt-1" style={`color: ${detail.accentColor};`}>{brand.entryPrice}</div>
+			</div>
+			<div class="rounded-xl bg-slate-900/80 border border-slate-800 p-3">
+				<div class="text-slate-400 text-[10px] uppercase">CLIENT MODE</div>
+				<div class="text-slate-100 font-semibold mt-1 truncate" title={brand.clientMode}>{brand.clientMode}</div>
+			</div>
+		</div>
+
+		<!-- Performance Monitoring Report (If Benchmark Available) -->
+		{detail.benchmarks && detail.benchmarks.length > 0 ? (
+			<div class="rounded-xl bg-slate-900/75 border border-slate-800 p-4 space-y-3">
+				<div class="flex flex-wrap items-center justify-between gap-2 text-xs">
+					<span class="font-mono font-semibold text-slate-200 uppercase tracking-wide">
+						Performance Monitoring Report · 区域节点延迟与吞吐参考
+					</span>
+					<span class="text-[11px] font-mono text-slate-400">
+						{detail.benchmarkLabel || "基准参考"}
+					</span>
+				</div>
+				<div class="space-y-2.5">
+					{detail.benchmarks.map((row) => {
+						const pct = Math.max(6, Math.round((row.downloadMbps / maxDownload) * 100));
+						const latColor = row.latencyMs <= 50 ? "text-emerald-400" : row.latencyMs <= 100 ? "text-cyan-400" : "text-amber-400";
+						return (
+							<div class="space-y-1">
+								<div class="flex items-center justify-between text-xs font-mono">
+									<span class="text-slate-200 font-medium w-28 shrink-0">{row.region}</span>
+									<span class={latColor}>{row.latencyMs}ms</span>
+									<span class="text-white font-semibold w-24 text-right">{row.downloadMbps} Mbps</span>
+								</div>
+								<div class="h-1.5 w-full rounded-full bg-slate-800 overflow-hidden">
+									<div
+										class="h-full rounded-full transition-all"
+										style={`width: ${pct}%; background-color: ${detail.accentColor}; opacity: 0.9;`}
+									></div>
+								</div>
+							</div>
+						);
+					})}
+				</div>
+				<p class="text-[11px] text-slate-400 pt-1">
+					说明：上述单日/非晚高峰数值仅反映对应测试节点在当次本地宽带下的吞吐，不可等价为所有地区三网全天候绝对速率。
+				</p>
+			</div>
+		) : (
+			<div class="rounded-xl bg-slate-900/75 border border-slate-800 p-4 text-xs text-slate-300 flex items-center justify-between gap-3 flex-wrap">
+				<span class="font-mono">Performance Telemetry: {brand.testImages?.length ? "请查看下方真实测速截图档案（无人工重绘单值表）" : "NOT TESTED · 暂未收录分区域单点速度表"}</span>
+				<span class="px-2 py-0.5 rounded bg-slate-800 text-slate-400 font-mono text-[11px]">严谨拒绝编造数值</span>
+			</div>
+		)}
+
+		<!-- Service Availability Matrix (3-Column Grid -> 1-Col Mobile) -->
+		<div class="rounded-xl bg-slate-900/75 border border-slate-800 p-4 space-y-3">
+			<div class="flex flex-wrap items-center justify-between gap-2 text-xs">
+				<span class="font-mono font-semibold text-slate-200 uppercase tracking-wide">
+					Service Availability Matrix · AI 与流媒体平台兼容性
+				</span>
+				<span class="text-[11px] font-mono text-slate-400">
+					数据口径：{brand.dataStatus === "measured" ? "实测+资料结合" : "品牌资料披露 (vendor)"}
+				</span>
+			</div>
+			<div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+				{[...detail.aiServices, ...detail.streamingServices].map((svc) => {
+					const st = getServiceBadge(svc.status);
+					return (
+						<div class="rounded-lg border border-slate-800 bg-slate-950/60 p-2.5 flex flex-col justify-between gap-1.5">
+							<div class="flex items-center justify-between gap-2">
+								<span class="text-xs font-semibold text-white">{svc.name}</span>
+								<span class={`inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[9px] font-mono border shrink-0 ${st.className}`}>
+									<span class={`w-1 h-1 rounded-full ${st.dot}`}></span>
+									{st.text}
+								</span>
+							</div>
+							<p class="text-[11px] text-slate-400 leading-snug">{svc.note}</p>
+						</div>
+					);
+				})}
+			</div>
+		</div>
+
+		<!-- Network Path Observatory Topology -->
+		<div class="rounded-xl bg-slate-900/75 border border-slate-800 p-4">
+			<div class="text-[11px] font-mono uppercase tracking-wide text-slate-400 mb-2">
+				Network Path Observatory · 链路架构拓扑摘要
+			</div>
+			<div class="font-mono text-xs sm:text-sm text-slate-200 flex flex-wrap items-center gap-2">
+				<span class="px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700 text-slate-200">用户客户端</span>
+				<span class="text-slate-500">→</span>
+				<span class="px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700 text-slate-200">{brand.protocol}</span>
+				<span class="text-slate-500">══</span>
+				<span class="px-2.5 py-1 rounded-md border font-semibold" style={`border-color: ${detail.accentColor}; color: ${detail.accentColor}; background: rgba(255,255,255,0.03);`}>
+					{brand.lineType}
+				</span>
+				<span class="text-slate-500">══▶</span>
+				<span class="px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700 text-slate-200">海外原生机房落地</span>
+			</div>
+			<p class="text-[11px] text-slate-400 mt-2">{detail.topologySummary}</p>
+		</div>
+	</div>
+</section>

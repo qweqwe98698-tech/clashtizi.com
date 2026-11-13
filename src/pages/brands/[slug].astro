@@ -1,0 +1,415 @@
+---
+import { AirportObservatoryCard } from "@components/features/airports";
+import { Icon } from "astro-icon/components";
+import { type AirportBrand, airports42Data } from "../../data/airports-42";
+import { type AirportDetailRecord, airportDetailsMap } from "../../data/airports-detail";
+import MainGridLayout from "../../layouts/MainGridLayout.astro";
+
+export function getStaticPaths() {
+	return Object.keys(airportDetailsMap)
+		.map((slug) => {
+			const brand = airports42Data.find((b) => b.slug === slug);
+			const detail = airportDetailsMap[slug];
+			if (!brand || !detail) return null;
+			return {
+				params: { slug },
+				props: { brand, detail },
+			};
+		})
+		.filter(Boolean);
+}
+
+interface Props {
+	brand: AirportBrand;
+	detail: AirportDetailRecord;
+}
+
+const { brand, detail } = Astro.props;
+
+const siteOrigin = Astro.site?.toString().replace(/\/$/, "") || "https://clashtizi.com";
+const canonicalUrl = `${siteOrigin}/brands/${brand.slug}/`;
+const publishedIso = "2026-08-29T00:00:00.000Z";
+const updatedIso = "2026-11-12T23:30:00+08:00";
+
+const prevBrand = airports42Data.find((b) => b.rank < brand.rank && airportDetailsMap[b.slug]) || null;
+const nextBrand = airports42Data.find((b) => b.rank > brand.rank && airportDetailsMap[b.slug]) || null;
+
+const jsonLdSchemas = [
+	{
+		"@context": "https://schema.org",
+		"@type": "BreadcrumbList",
+		itemListElement: [
+			{ "@type": "ListItem", position: 1, name: "首页", item: `${siteOrigin}/` },
+			{ "@type": "ListItem", position: 2, name: "42家机场品牌库", item: `${siteOrigin}/brands/` },
+			{ "@type": "ListItem", position: 3, name: brand.name, item: canonicalUrl },
+		],
+	},
+	{
+		"@context": "https://schema.org",
+		"@type": "Article",
+		headline: detail.h1,
+		description: detail.seoDescription,
+		mainEntityOfPage: canonicalUrl,
+		datePublished: publishedIso,
+		dateModified: updatedIso,
+		author: {
+			"@type": "Person",
+			name: "李维 (网络基础设施架构师)",
+		},
+		publisher: {
+			"@type": "Organization",
+			name: "Clash梯子网",
+			url: `${siteOrigin}/`,
+		},
+	},
+	...(detail.faqs.length > 0
+		? [
+				{
+					"@context": "https://schema.org",
+					"@type": "FAQPage",
+					mainEntity: detail.faqs.map((faq) => ({
+						"@type": "Question",
+						name: faq.q,
+						acceptedAnswer: {
+							"@type": "Answer",
+							text: faq.a,
+						},
+					})),
+				},
+			]
+		: []),
+];
+---
+
+<MainGridLayout title={detail.seoTitle} description={detail.seoDescription} setOGTypeArticle={true}>
+	<Fragment slot="head">
+		{jsonLdSchemas.map((schema) => (
+			<script type="application/ld+json" set:html={JSON.stringify(schema)} />
+		))}
+	</Fragment>
+
+	<script>
+		import("../../scripts/right-sidebar-layout.js");
+		import { loadIconify } from "../../utils/icon-loader";
+
+		loadIconify().catch((error) => {
+			console.error("Failed to load Iconify:", error);
+		});
+	</script>
+
+	<article class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative">
+		<div class="card-base z-10 px-5 sm:px-9 py-6 relative w-full space-y-6">
+			<!-- Breadcrumb -->
+			<nav aria-label="面包屑导航" class="flex items-center gap-1.5 text-xs text-black/55 dark:text-white/55 flex-wrap">
+				<a href="/" class="hover:text-[var(--primary)] transition-colors">首页</a>
+				<span>/</span>
+				<a href="/brands/" class="hover:text-[var(--primary)] transition-colors">42家机场品牌库</a>
+				<span>/</span>
+				<span class="text-black/85 dark:text-white/85 font-medium">{brand.name}</span>
+			</nav>
+
+			<!-- Header + Core Summary -->
+			<header class="space-y-4">
+				<div class="flex flex-wrap items-center gap-2">
+					<span class="px-2.5 py-1 rounded-md text-xs font-bold bg-[var(--primary)]/12 text-[var(--primary)]">
+						站内全库排位 #{brand.rank}
+					</span>
+					<span class="px-2.5 py-1 rounded-md text-xs font-medium border border-black/10 dark:border-white/10 text-black/70 dark:text-white/70">
+						数据状态：{brand.dataStatus === "measured" ? "🟢 实测有图 (measured)" : "🟡 品牌方资料 (vendor)"}
+					</span>
+					<span class="text-xs text-black/50 dark:text-white/50">
+						核实更新时间：2026-11-12
+					</span>
+				</div>
+
+				<h1 class="text-2xl sm:text-3xl font-bold text-black/95 dark:text-white/95 leading-tight">
+					{detail.h1}
+				</h1>
+
+				<!-- GEO Answer-First Summary Box -->
+				<div class="rounded-xl border-l-4 border-[var(--primary)] bg-black/[0.025] dark:bg-white/[0.03] p-4 sm:p-5 space-y-2">
+					<div class="text-xs font-bold uppercase tracking-wider text-[var(--primary)]">
+						核心结论 (Answer-First)
+					</div>
+					<p class="text-sm sm:text-base text-black/85 dark:text-white/85 leading-relaxed">
+						{detail.overviewConclusion}
+					</p>
+				</div>
+			</header>
+
+			<!-- Affiliate Disclosure + Primary Actions -->
+			<div class="rounded-xl border border-black/10 dark:border-white/10 p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-black/[0.015] dark:bg-white/[0.02]">
+				<div class="text-xs text-black/65 dark:text-white/65 space-y-1">
+					<p class="font-semibold text-black/85 dark:text-white/85 flex items-center gap-1.5">
+						<Icon name="material-symbols:verified-user-outline" class="text-[var(--primary)] text-base" />
+						<span>官方入口与透明返佣披露</span>
+					</p>
+					<p>
+						含推广链接，通过链接注册可能为本站带来佣金以维持长期测速与测试成本，不影响用户支付价格。
+					</p>
+					{brand.urlNote && (
+						<p class="text-amber-700 dark:text-amber-300 font-medium">{brand.urlNote}</p>
+					)}
+				</div>
+
+				<div class="flex flex-wrap items-center gap-2.5 shrink-0">
+					{brand.coupon && (
+						<button
+							type="button"
+							class="brand-copy-coupon inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs border border-dashed border-[var(--primary)]/50 bg-[var(--primary)]/10 text-[var(--primary)] hover:bg-[var(--primary)]/15 transition-colors cursor-pointer font-medium"
+							data-coupon={brand.coupon}
+						>
+							<Icon name="material-symbols:content-copy-outline" class="text-sm" />
+							<span>优惠码：<strong>{brand.coupon}</strong></span>
+							{brand.couponNote && <span class="opacity-80">({brand.couponNote})</span>}
+						</button>
+					)}
+					{brand.registerUrl && (
+						<a
+							href={brand.registerUrl}
+							target="_blank"
+							rel="nofollow sponsored noopener"
+							class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold bg-[var(--primary)] text-white hover:opacity-90 transition-opacity"
+						>
+							<span>前往 {brand.name} 官网</span>
+							<Icon name="material-symbols:open-in-new" class="text-sm" />
+						</a>
+					)}
+				</div>
+			</div>
+
+			<!-- Dark Network Observatory Visual Report -->
+			<AirportObservatoryCard brand={brand} detail={detail} />
+
+			<!-- Raw Speedtest & Unlock Image Evidence -->
+			{brand.testImages && brand.testImages.length > 0 && (
+				<section class="space-y-4">
+					<h2 class="text-xl font-bold text-black/90 dark:text-white/90">
+						真实节点测速图与流媒体/AI 解锁实测截图（{brand.testImages.length} 张）
+					</h2>
+					<p class="text-xs sm:text-sm text-black/65 dark:text-white/65">
+						以下图片为对应批次保留的原始截图档案，图片中具体时间与协议以图注标识为准；单日快照不构成跨地区三网全天候绝对速度承诺。
+					</p>
+					<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+						{brand.testImages.map((img, idx) => (
+							<figure class="rounded-xl border border-black/10 dark:border-white/10 overflow-hidden bg-black/[0.02] dark:bg-white/[0.02]">
+								<a href={img.src} target="_blank" rel="noopener" class="block overflow-hidden bg-black/5">
+									<img
+										src={img.src}
+										alt={img.alt}
+										loading={idx === 0 ? "eager" : "lazy"}
+										class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-200"
+									/>
+								</a>
+								<figcaption class="p-3 text-xs text-black/70 dark:text-white/70 border-t border-black/10 dark:border-white/10">
+									{img.caption}
+								</figcaption>
+							</figure>
+						))}
+					</div>
+				</section>
+			)}
+
+			<!-- Brand Background & Architecture -->
+			<section class="space-y-2.5">
+				<h2 class="text-xl font-bold text-black/90 dark:text-white/90">
+					一、{brand.name} 品牌背景与线路协议特性
+				</h2>
+				<p class="text-sm sm:text-base text-black/80 dark:text-white/80 leading-relaxed">
+					{detail.backgroundNote}
+				</p>
+				<ul class="list-disc pl-5 space-y-1 text-sm text-black/75 dark:text-white/75">
+					{brand.features.map((f) => <li>{f}</li>)}
+				</ul>
+			</section>
+
+			<!-- Packages Table -->
+			<section class="space-y-3">
+				<h2 class="text-xl font-bold text-black/90 dark:text-white/90">
+					二、{brand.name} 套餐价格与流量规格表
+				</h2>
+				<p class="text-xs sm:text-sm text-black/60 dark:text-white/60">
+					{detail.packagesNote}
+				</p>
+				<div class="overflow-x-auto rounded-xl border border-black/10 dark:border-white/10">
+					<table class="w-full text-left border-collapse text-xs sm:text-sm">
+						<thead>
+							<tr class="bg-black/[0.04] dark:bg-white/[0.04] text-black/80 dark:text-white/80 border-b border-black/10 dark:border-white/10">
+								<th class="py-2.5 px-4 font-semibold">套餐名称</th>
+								<th class="py-2.5 px-4 font-semibold">计费周期</th>
+								<th class="py-2.5 px-4 font-semibold">价格</th>
+								<th class="py-2.5 px-4 font-semibold">流量额度</th>
+								<th class="py-2.5 px-4 font-semibold">重置/有效期</th>
+							</tr>
+						</thead>
+						<tbody class="divide-y divide-black/10 dark:divide-white/10 text-black/80 dark:text-white/80">
+							{detail.packages.map((pkg) => (
+								<tr class="hover:bg-black/[0.02] dark:hover:bg-white/[0.02]">
+									<td class="py-2.5 px-4 font-medium">{pkg.name}</td>
+									<td class="py-2.5 px-4">{pkg.cycle}</td>
+									<td class="py-2.5 px-4 font-semibold text-[var(--primary)]">{pkg.price}</td>
+									<td class="py-2.5 px-4">{pkg.traffic}</td>
+									<td class="py-2.5 px-4">{pkg.trafficCycle}</td>
+								</tr>
+							))}
+						</tbody>
+					</table>
+				</div>
+			</section>
+
+			<!-- Client Mode & Suitability -->
+			<section class="grid grid-cols-1 md:grid-cols-2 gap-4">
+				<div class="rounded-xl border border-emerald-500/25 bg-emerald-500/[0.04] p-4 space-y-2.5">
+					<h2 class="text-base font-bold text-emerald-700 dark:text-emerald-300 flex items-center gap-1.5">
+						<Icon name="material-symbols:check-circle" class="text-lg" />
+						<span>适合使用 {brand.name} 的人群</span>
+					</h2>
+					<ul class="space-y-1.5 text-xs sm:text-sm text-black/80 dark:text-white/80">
+						{detail.suitableFor.map((item) => (
+							<li class="flex items-start gap-2">
+								<span class="text-emerald-500 font-bold">✓</span>
+								<span>{item}</span>
+							</li>
+						))}
+					</ul>
+				</div>
+
+				<div class="rounded-xl border border-amber-500/25 bg-amber-500/[0.04] p-4 space-y-2.5">
+					<h2 class="text-base font-bold text-amber-700 dark:text-amber-300 flex items-center gap-1.5">
+						<Icon name="material-symbols:warning" class="text-lg" />
+						<span>不推荐或需要注意的人群/限制</span>
+					</h2>
+					<ul class="space-y-1.5 text-xs sm:text-sm text-black/80 dark:text-white/80">
+						{detail.notSuitableFor.map((item) => (
+							<li class="flex items-start gap-2">
+								<span class="text-amber-500 font-bold">!</span>
+								<span>{item}</span>
+							</li>
+						))}
+						{detail.risksAndLimits.map((risk) => (
+							<li class="flex items-start gap-2 text-black/70 dark:text-white/70">
+								<span class="text-amber-500 font-bold">•</span>
+								<span>{risk}</span>
+							</li>
+						))}
+					</ul>
+				</div>
+			</section>
+
+			<!-- Client Access & Peer Comparison -->
+			<section class="space-y-3">
+				<h2 class="text-xl font-bold text-black/90 dark:text-white/90">
+					三、客户端兼容方式与同价位竞品差异
+				</h2>
+				<div class="rounded-xl border border-black/10 dark:border-white/10 p-4 space-y-2 text-sm text-black/80 dark:text-white/80">
+					<p>
+						<strong>客户端接入模式：</strong>{brand.clientMode}。
+						{brand.clientMode.includes("仅专属客户端") ? (
+							<span>
+								请注意该品牌不支持导出订阅 URL 至 Clash Verge Rev、Shadowrocket 或 OpenWrt 软路由。如需自选客户端自由规则分流，可对比支持第三方订阅的品牌。
+							</span>
+						) : (
+							<span>
+								可配合 <a href="/clash-verge-rev/" class="text-[var(--primary)] hover:underline">Clash Verge Rev</a>、<a href="/v2rayn/" class="text-[var(--primary)] hover:underline">v2rayN</a>、<a href="/shadowrocket/" class="text-[var(--primary)] hover:underline">Shadowrocket</a> 或 <a href="/tutorials/sing-box-config/" class="text-[var(--primary)] hover:underline">Sing-box</a> 导入使用。
+							</span>
+						)}
+					</p>
+					<p class="leading-relaxed">
+						<strong>同类品牌横向差异：</strong>{detail.peerComparison}
+					</p>
+				</div>
+			</section>
+
+			<!-- Visible FAQ Accordion -->
+			{detail.faqs.length > 0 && (
+				<section class="space-y-3">
+					<h2 class="text-xl font-bold text-black/90 dark:text-white/90 flex items-center gap-2">
+						<Icon name="material-symbols:help" class="text-[var(--primary)]" />
+						<span>四、{brand.name} 常见问题解答 (FAQ)</span>
+					</h2>
+					<div class="space-y-2.5">
+						{detail.faqs.map((faq) => (
+							<details class="rounded-xl border border-black/10 dark:border-white/10 p-4 group" open>
+								<summary class="font-semibold text-sm sm:text-base text-black/90 dark:text-white/90 cursor-pointer list-none flex items-center justify-between gap-2">
+									<span>{faq.q}</span>
+									<span class="text-xs text-[var(--primary)]">+</span>
+								</summary>
+								<p class="mt-2.5 text-xs sm:text-sm text-black/75 dark:text-white/75 leading-relaxed">
+									{faq.a}
+								</p>
+							</details>
+						))}
+					</div>
+				</section>
+			)}
+
+			<!-- Internal Linking Matrix -->
+			<section class="pt-4 border-t border-black/10 dark:border-white/10 space-y-3">
+				<h2 class="text-base font-bold text-black/85 dark:text-white/85">
+					延伸评测与配置指南推荐
+				</h2>
+				<div class="flex flex-wrap gap-2.5 text-xs sm:text-sm">
+					{detail.relatedGuides.map((g) => (
+						<a
+							href={g.url}
+							class="px-3 py-1.5 rounded-lg border border-black/10 dark:border-white/10 hover:border-[var(--primary)] text-[var(--primary)] transition-colors"
+						>
+							{g.title} ↗
+						</a>
+					))}
+					<a
+						href="/brands/"
+						class="px-3 py-1.5 rounded-lg border border-black/10 dark:border-white/10 hover:border-[var(--primary)] text-black/80 dark:text-white/80 transition-colors"
+					>
+						返回 42 家机场品牌库总表
+					</a>
+				</div>
+			</section>
+
+			<!-- Prev / Next Brand Nav -->
+			<nav class="pt-4 border-t border-black/10 dark:border-white/10 flex flex-wrap items-center justify-between gap-3 text-xs sm:text-sm">
+				{prevBrand ? (
+					<a href={`/brands/${prevBrand.slug}/`} class="inline-flex items-center gap-1.5 text-[var(--primary)] hover:underline">
+						<Icon name="material-symbols:arrow-back" class="text-base" />
+						<span>上一品牌：#{prevBrand.rank} {prevBrand.name}</span>
+					</a>
+				) : (
+					<span></span>
+				)}
+				{nextBrand && (
+					<a href={`/brands/${nextBrand.slug}/`} class="inline-flex items-center gap-1.5 text-[var(--primary)] hover:underline">
+						<span>下一品牌：#{nextBrand.rank} {nextBrand.name} →</span>
+					</a>
+				)}
+			</nav>
+		</div>
+	</article>
+</MainGridLayout>
+
+<script is:inline>
+	(function () {
+		function initDetailCopy() {
+			document.querySelectorAll(".brand-copy-coupon").forEach(function (btn) {
+				if (btn.dataset.bound === "true") return;
+				btn.dataset.bound = "true";
+				btn.addEventListener("click", function () {
+					var code = btn.dataset.coupon;
+					if (!code || !navigator.clipboard) return;
+					navigator.clipboard.writeText(code).then(function () {
+						var orig = btn.innerHTML;
+						btn.textContent = "已复制优惠码: " + code + " ✓";
+						setTimeout(function () {
+							btn.innerHTML = orig;
+						}, 1800);
+					});
+				});
+			});
+		}
+		if (document.readyState === "loading") {
+			document.addEventListener("DOMContentLoaded", initDetailCopy);
+		} else {
+			initDetailCopy();
+		}
+		document.addEventListener("astro:page-load", initDetailCopy);
+	})();
+</script>

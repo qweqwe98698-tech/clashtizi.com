@@ -1,0 +1,44 @@
+---
+import { siteConfig } from "@/config";
+import { getSafeSeoDescription } from "@/utils/seo-description";
+
+interface Props {
+	title: string;
+	targetUrl: string;
+	description?: string;
+}
+
+const { title, targetUrl, description } = Astro.props;
+const siteUrl = Astro.site
+	? Astro.site.toString()
+	: (siteConfig.siteURL || "https://clashtizi.com");
+const canonicalUrl = new URL(targetUrl, siteUrl).href;
+const finalDescription = getSafeSeoDescription(description, targetUrl, title);
+---
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8" />
+	<title>{title}</title>
+	<meta name="description" content={finalDescription} />
+	<meta name="robots" content="noindex, follow" />
+	<link rel="canonical" href={canonicalUrl} />
+	<meta http-equiv="refresh" content={`0;url=${targetUrl}`} />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background-color: #f9fafb; color: #1f2937; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; padding: 1.5rem; box-sizing: border-box;">
+	<div style="max-width: 32rem; width: 100%; background: #ffffff; border-radius: 1rem; padding: 2rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1); text-align: center; border: 1px solid #e5e7eb;">
+		<div style="width: 3rem; height: 3rem; background: #eff6ff; color: #2563eb; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1rem;">
+			↪
+		</div>
+		<h1 style="font-size: 1.25rem; font-weight: 700; margin: 0 0 0.75rem 0; line-height: 1.4; color: #111827;">{title}</h1>
+		<p style="font-size: 0.95rem; color: #4b5563; margin: 0 0 1.5rem 0; line-height: 1.5;">
+			本文已迁移至全新规范地址，系统正在自动为您跳转...
+		</p>
+		<a href={targetUrl} style="display: inline-block; background: #2563eb; color: #ffffff; text-decoration: none; padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-size: 0.95rem; font-weight: 500; transition: background 0.15s ease;">
+			立即访问新地址
+		</a>
+	</div>
+</body>
+</html>

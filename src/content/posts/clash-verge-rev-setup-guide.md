@@ -1,10 +1,9 @@
 ---
 title: Clash Verge Rev 2026使用教程：下载安装、订阅导入与TUN配置指南
 published: 2026-08-30T00:00:00.000Z
-updated: 2026-08-30T00:00:00.000Z
+updated: 2026-11-12T16:30:00.000Z
 description: >-
-  Clash Verge Rev 怎么下载安装和使用？本文从官方下载安装、订阅导入、节点选择、Rule/Global/Direct、System
-  Proxy、TUN、DNS 到常见问题逐步讲解，适合 Windows、macOS 与 Linux 新手。包含跨平台客户端安装、节点导入与智能分流全流程指南。
+  Clash Verge Rev 2026怎么下载安装和使用？本文从GitHub官方下载、macOS Intel与Apple Silicon(arm64)区分、Linux DEB/RPM/AppImage、订阅导入、Rule与TUN配置，到FlClash、Karing、Mihomo Party维护现状及OpenWrt OpenClash/Nikki软路由方案逐步讲解。
 category: 客户端教程
 tags:
   - Clash Verge Rev
@@ -348,7 +347,27 @@ Clash Verge Rev 是目前开源社区中最为主流的跨平台代理客户端�
 
 ---
 
-## 十七、常见问题解答 (FAQ)
+## 十七、2026 全平台生态协同：FlClash、Karing、Mihomo Party 维护状态与 OpenWrt 软路由
+
+随着桌面与路由器端 Mihomo / Sing-box 生态演进，2026 年除了 **Clash Verge Rev** 作为桌面主力外，不同系统场景还可按需搭配：
+
+- **macOS 安装包架构区分**：Intel 芯片老款 Mac 务必下载 `x64`（`x86_64`）版本；Apple Silicon M1/M2/M3/M4 系列请务必下载 **`arm64`** 原生包，能显著降低续航耗电。
+- **Linux 发行版选择**：Debian/Ubuntu 可使用 `.deb`，Fedora/RHEL 可使用 `.rpm`，通用桌面可用 `.AppImage`；无图形界面的服务器或 NAS 推荐使用 **v2rayA** Web UI 统一管理。
+- **同生态轻量跨平台客户端**：
+  - **FlClash**：基于 Flutter 开发的多端 Clash Meta（Mihomo）客户端，界面与手机端高度一致；
+  - **Clash Mi**：新一代轻量开源 Mihomo 多平台客户端；
+  - **Karing**：免费开源且同时兼容 Clash 与 Sing-box 格式的跨平台工具。
+- **⚠️ Mihomo Party 维护状态提示**：原热门项目 Mihomo Party 部分版本已进入停止活跃更新或分支迁移至 Clash Party 的阶段。下载任何桌面衍生端前，务必检查 GitHub 上游近期安全提交记录，切勿从非官方第三方镜像站安装旧包。
+- **OpenWrt 软路由推荐插件**：
+  - **OpenClash**：全功能 Clash/Mihomo 路由器插件，生态文档最全；
+  - **Nikki**：专为 **OpenWrt ≥ 24.10** 设计的现代化原生 Mihomo 插件，性能轻量；
+  - **PassWall2** / **HomeProxy**：适合 Xray / Sing-box 原生核心路由器固件场景。
+
+> 📌 需要支持标准 Clash / Mihomo 通用订阅的实测专线？可前往 **[42 家机场品牌全库](/brands/)** 按“通用订阅 / Clash Verge”一键筛选对比。
+
+---
+
+## 十八、常见问题解答 (FAQ)
 
 ### Q1：Clash Verge Rev 到底是什么？它安全吗？
 **答**：Clash Verge Rev 是一个基于开源 Tauri/Rust 框架开发的新一代跨平台代理客户端，集成了持续维护的 Mihomo 内核。只要你从官方 GitHub Release 页面下载官方编译包，其代码完全开源透明，是目前安全性极高的主流客户端之一。

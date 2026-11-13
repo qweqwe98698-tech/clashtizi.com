@@ -48,5 +48,1397 @@
 			]
 		}
 	],
-	"cleanUrls": true
+	"cleanUrls": true,
+	"redirects": [
+		{
+			"source": "/posts/airport-alternatives-vps-vpn-router-comparison-guide",
+			"destination": "/recommend/airport-alternatives/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/airport-alternatives-vps-vpn-router-comparison-guide/",
+			"destination": "/recommend/airport-alternatives/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/airport-buyers-complete-choice-guide",
+			"destination": "/recommend/choose-airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/airport-buyers-complete-choice-guide/",
+			"destination": "/recommend/choose-airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/airport-free-trial-registration-traffic-guide",
+			"destination": "/recommend/free-trial/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/airport-free-trial-registration-traffic-guide/",
+			"destination": "/recommend/free-trial/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/airport-lines-iplc-iepl-transit-evaluation-guide",
+			"destination": "/recommend/airport-lines/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/airport-lines-iplc-iepl-transit-evaluation-guide/",
+			"destination": "/recommend/airport-lines/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/airport-node-regions-selection-evaluation-guide",
+			"destination": "/recommend/node-regions/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/airport-node-regions-selection-evaluation-guide/",
+			"destination": "/recommend/node-regions/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/airport-pre-purchase-checklist-risk-guide-2026",
+			"destination": "/recommend/pre-purchase-checklist/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/airport-pre-purchase-checklist-risk-guide-2026/",
+			"destination": "/recommend/pre-purchase-checklist/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/airport-ranking-standards-evaluation-methodology-guide-2026",
+			"destination": "/recommend/ranking-standards/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/airport-ranking-standards-evaluation-methodology-guide-2026/",
+			"destination": "/recommend/ranking-standards/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/airport-recommend-selection-buyers-guide-2026",
+			"destination": "/recommend/airport-guide/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/airport-recommend-selection-buyers-guide-2026/",
+			"destination": "/recommend/airport-guide/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/airport-runaway-warning-signs-risk-guide",
+			"destination": "/recommend/airport-runaway/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/airport-runaway-warning-signs-risk-guide/",
+			"destination": "/recommend/airport-runaway/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/airport-security-privacy-logs-risk-analysis-guide",
+			"destination": "/recommend/airport-security/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/airport-security-privacy-logs-risk-analysis-guide/",
+			"destination": "/recommend/airport-security/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/android-airport-recommendation-selection-v2rayng-hiddify-guide-2026",
+			"destination": "/recommend/android-airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/android-airport-recommendation-selection-v2rayng-hiddify-guide-2026/",
+			"destination": "/recommend/android-airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/best-airport-vpn-providers-ranking",
+			"destination": "/recommend/airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/best-airport-vpn-providers-ranking/",
+			"destination": "/recommend/airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/budget-airports-10-15-20-yuan-comparison-guide-2026",
+			"destination": "/recommend/budget-airport-guide/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/budget-airports-10-15-20-yuan-comparison-guide-2026/",
+			"destination": "/recommend/budget-airport-guide/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-access-denied-login-failed-fix",
+			"destination": "/issues/chatgpt-access-denied/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-access-denied-login-failed-fix/",
+			"destination": "/issues/chatgpt-access-denied/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-ai-airport-recommendation-selection-guide-2026",
+			"destination": "/recommend/chatgpt-airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-ai-airport-recommendation-selection-guide-2026/",
+			"destination": "/recommend/chatgpt-airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-cannot-open-login-network-error-complete-guide",
+			"destination": "/chatgpt/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-cannot-open-login-network-error-complete-guide/",
+			"destination": "/chatgpt/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-cannot-open-network-fix-guide",
+			"destination": "/chatgpt/cannot-open/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-cannot-open-network-fix-guide/",
+			"destination": "/chatgpt/cannot-open/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-chat-history-missing-fix-guide",
+			"destination": "/chatgpt/chat-history-missing/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-chat-history-missing-fix-guide/",
+			"destination": "/chatgpt/chat-history-missing/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-checking-your-browser-cloudflare-loop-guide",
+			"destination": "/chatgpt/checking-your-browser/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-checking-your-browser-cloudflare-loop-guide/",
+			"destination": "/chatgpt/checking-your-browser/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-file-upload-failed-fix-guide",
+			"destination": "/chatgpt/file-upload-failed/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-file-upload-failed-fix-guide/",
+			"destination": "/chatgpt/file-upload-failed/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-image-recognition-errors-fix-guide",
+			"destination": "/chatgpt/image-recognition-errors/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-image-recognition-errors-fix-guide/",
+			"destination": "/chatgpt/image-recognition-errors/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-login-failed-fix-guide",
+			"destination": "/chatgpt/login-failed/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-login-failed-fix-guide/",
+			"destination": "/chatgpt/login-failed/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-login-loop-session-fix-guide",
+			"destination": "/chatgpt/login-loop/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-login-loop-session-fix-guide/",
+			"destination": "/chatgpt/login-loop/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-login-page-loading-redirect-fix-guide",
+			"destination": "/chatgpt/login-page-loading/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-login-page-loading-redirect-fix-guide/",
+			"destination": "/chatgpt/login-page-loading/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-network-error-fix-guide",
+			"destination": "/chatgpt/network-error/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-network-error-fix-guide/",
+			"destination": "/chatgpt/network-error/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-not-available-in-your-country-guide",
+			"destination": "/chatgpt/not-available-in-your-country/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-not-available-in-your-country-guide/",
+			"destination": "/chatgpt/not-available-in-your-country/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-response-stopped-generation-fix-guide",
+			"destination": "/chatgpt/response-stopped/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-response-stopped-generation-fix-guide/",
+			"destination": "/chatgpt/response-stopped/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-something-went-wrong-fix-guide",
+			"destination": "/chatgpt/something-went-wrong/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-something-went-wrong-fix-guide/",
+			"destination": "/chatgpt/something-went-wrong/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-verification-code-not-received-guide",
+			"destination": "/chatgpt/verification-code-not-received/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-verification-code-not-received-guide/",
+			"destination": "/chatgpt/verification-code-not-received/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-wrong-authentication-method-guide",
+			"destination": "/chatgpt/wrong-authentication-method/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chatgpt-wrong-authentication-method-guide/",
+			"destination": "/chatgpt/wrong-authentication-method/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/cheap-airport-pros-cons-evaluation-guide",
+			"destination": "/recommend/cheap-airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/cheap-airport-pros-cons-evaluation-guide/",
+			"destination": "/recommend/cheap-airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chrome-foreign-websites-not-working-troubleshooting-guide",
+			"destination": "/tizi/chrome-cannot-open-foreign-websites/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/chrome-foreign-websites-not-working-troubleshooting-guide/",
+			"destination": "/tizi/chrome-cannot-open-foreign-websites/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/clash-airport-recommendation-selection-compatibility-guide-2026",
+			"destination": "/clash-verge-rev/clash-airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/clash-airport-recommendation-selection-compatibility-guide-2026/",
+			"destination": "/clash-verge-rev/clash-airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/clash-free-nodes-subscription-import-guide",
+			"destination": "/clash-verge-rev/free-nodes/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/clash-free-nodes-subscription-import-guide/",
+			"destination": "/clash-verge-rev/free-nodes/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/clash-nodes-timeout-all-red-fix",
+			"destination": "/issues/clash-nodes-timeout/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/clash-nodes-timeout-all-red-fix/",
+			"destination": "/issues/clash-nodes-timeout/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/clash-verge-import-free-nodes-connection-guide",
+			"destination": "/clash-verge-rev/import-free-nodes/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/clash-verge-import-free-nodes-connection-guide/",
+			"destination": "/clash-verge-rev/import-free-nodes/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/clash-verge-rev-no-internet-troubleshooting-guide",
+			"destination": "/clash-verge-rev/no-internet/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/clash-verge-rev-no-internet-troubleshooting-guide/",
+			"destination": "/clash-verge-rev/no-internet/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/clash-verge-rev-nodes-timeout-all-red-guide",
+			"destination": "/clash-verge-rev/nodes-timeout/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/clash-verge-rev-nodes-timeout-all-red-guide/",
+			"destination": "/clash-verge-rev/nodes-timeout/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/clash-verge-rev-rule-mode-not-working-guide",
+			"destination": "/clash-verge-rev/rule-mode-not-working/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/clash-verge-rev-rule-mode-not-working-guide/",
+			"destination": "/clash-verge-rev/rule-mode-not-working/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/clash-verge-rev-setup-guide",
+			"destination": "/clash-verge-rev/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/clash-verge-rev-setup-guide/",
+			"destination": "/clash-verge-rev/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/clash-verge-rev-slow-speed-troubleshooting-guide",
+			"destination": "/clash-verge-rev/slow-speed/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/clash-verge-rev-slow-speed-troubleshooting-guide/",
+			"destination": "/clash-verge-rev/slow-speed/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/clash-verge-rev-subscription-import-failed-guide",
+			"destination": "/clash-verge-rev/subscription-import-failed/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/clash-verge-rev-subscription-import-failed-guide/",
+			"destination": "/clash-verge-rev/subscription-import-failed/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/clash-verge-rev-system-proxy-not-working-guide",
+			"destination": "/clash-verge-rev/system-proxy-not-working/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/clash-verge-rev-system-proxy-not-working-guide/",
+			"destination": "/clash-verge-rev/system-proxy-not-working/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/clash-verge-rev-tun-mode-practical-guide",
+			"destination": "/clash-verge-rev/tun/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/clash-verge-rev-tun-mode-practical-guide/",
+			"destination": "/clash-verge-rev/tun/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/cost-effective-airport-evaluation-calculation-guide-2026",
+			"destination": "/recommend/cost-performance-guide/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/cost-effective-airport-evaluation-calculation-guide-2026/",
+			"destination": "/recommend/cost-performance-guide/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/foreign-websites-not-working-troubleshooting-guide",
+			"destination": "/tizi/cannot-open-foreign-websites/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/foreign-websites-not-working-troubleshooting-guide/",
+			"destination": "/tizi/cannot-open-foreign-websites/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/foreign-websites-spinning-slow-loading-guide",
+			"destination": "/tizi/foreign-websites-spinning-slow-loading/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/foreign-websites-spinning-slow-loading-guide/",
+			"destination": "/tizi/foreign-websites-spinning-slow-loading/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/free-airport-trials-traffic-security-guide",
+			"destination": "/recommend/free-airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/free-airport-trials-traffic-security-guide/",
+			"destination": "/recommend/free-airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/free-nodes-clash-shadowrocket-v2rayn-guide",
+			"destination": "/recommend/free-nodes/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/free-nodes-clash-shadowrocket-v2rayn-guide/",
+			"destination": "/recommend/free-nodes/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/free-subscription-url-update-import-guide",
+			"destination": "/recommend/free-subscription/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/free-subscription-url-update-import-guide/",
+			"destination": "/recommend/free-subscription/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/free-trial-airports-evaluation-testing-guide-2026",
+			"destination": "/recommend/free-trial-worth-it/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/free-trial-airports-evaluation-testing-guide-2026/",
+			"destination": "/recommend/free-trial-worth-it/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/free-vpn-vs-proxy-security-risk-comparison-guide",
+			"destination": "/recommend/free-vpn-security/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/free-vpn-vs-proxy-security-risk-comparison-guide/",
+			"destination": "/recommend/free-vpn-security/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/free-vs-paid-airport-differences-comparison-guide",
+			"destination": "/recommend/free-vs-paid/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/free-vs-paid-airport-differences-comparison-guide/",
+			"destination": "/recommend/free-vs-paid/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/free-vs-paid-nodes-technical-differences-guide",
+			"destination": "/recommend/free-vs-paid-nodes/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/free-vs-paid-nodes-technical-differences-guide/",
+			"destination": "/recommend/free-vs-paid-nodes/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/gaming-peak-hour-troubleshooting-guide",
+			"destination": "/gaming-peak-hour/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/gaming-peak-hour-troubleshooting-guide/",
+			"destination": "/gaming-peak-hour/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/github-cannot-open-clone-slow-images-failed-troubleshooting-guide",
+			"destination": "/tizi/github-cannot-open/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/github-cannot-open-clone-slow-images-failed-troubleshooting-guide/",
+			"destination": "/tizi/github-cannot-open/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/google-cannot-open-troubleshooting-complete-guide",
+			"destination": "/tizi/google-cannot-open/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/google-cannot-open-troubleshooting-complete-guide/",
+			"destination": "/tizi/google-cannot-open/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/how-to-access-foreign-websites-beginner-guide",
+			"destination": "/tizi/how-to-access-foreign-websites/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/how-to-access-foreign-websites-beginner-guide/",
+			"destination": "/tizi/how-to-access-foreign-websites/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/how-to-choose-airport-evaluation-guide",
+			"destination": "/recommend/how-to-choose-airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/how-to-choose-airport-evaluation-guide/",
+			"destination": "/recommend/how-to-choose-airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/how-to-choose-high-speed-airport-evaluation-guide",
+			"destination": "/recommend/high-speed-airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/how-to-choose-high-speed-airport-evaluation-guide/",
+			"destination": "/recommend/high-speed-airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/how-to-choose-stable-airport-long-term-guide-2026",
+			"destination": "/recommend/stable-airport-guide/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/how-to-choose-stable-airport-long-term-guide-2026/",
+			"destination": "/recommend/stable-airport-guide/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/how-to-judge-stable-airport-evaluation-guide",
+			"destination": "/recommend/stable-airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/how-to-judge-stable-airport-evaluation-guide/",
+			"destination": "/recommend/stable-airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/how-to-use-tizi-beginner-guide",
+			"destination": "/tizi/how-to-use/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/how-to-use-tizi-beginner-guide/",
+			"destination": "/tizi/how-to-use/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/instagram-cannot-open-images-login-failed-troubleshooting-guide",
+			"destination": "/tizi/instagram-cannot-open/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/instagram-cannot-open-images-login-failed-troubleshooting-guide/",
+			"destination": "/tizi/instagram-cannot-open/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/iphone-airport-recommendation-shadowrocket-stash-ios-guide-2026",
+			"destination": "/recommend/iphone-airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/iphone-airport-recommendation-shadowrocket-stash-ios-guide-2026/",
+			"destination": "/recommend/iphone-airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/is-dedicated-line-airport-worth-buying-guide-2026",
+			"destination": "/recommend/dedicated-line-worth-it/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/is-dedicated-line-airport-worth-buying-guide-2026/",
+			"destination": "/recommend/dedicated-line-worth-it/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/low-latency-airport-recommendation-gaming-guide-2026",
+			"destination": "/recommend/low-latency-airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/low-latency-airport-recommendation-gaming-guide-2026/",
+			"destination": "/recommend/low-latency-airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/mihomo-free-nodes-configuration-import-guide",
+			"destination": "/recommend/mihomo-free-nodes/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/mihomo-free-nodes-configuration-import-guide/",
+			"destination": "/recommend/mihomo-free-nodes/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/mobile-foreign-apps-no-network-guide",
+			"destination": "/tizi/mobile-apps-no-network-connection/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/mobile-foreign-apps-no-network-guide/",
+			"destination": "/tizi/mobile-apps-no-network-connection/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/monthly-vs-yearly-airport-plans-risk-guide-2026",
+			"destination": "/recommend/monthly-vs-yearly-guide/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/monthly-vs-yearly-airport-plans-risk-guide-2026/",
+			"destination": "/recommend/monthly-vs-yearly-guide/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/netflix-airport-recommendation-unlocking-guide-2026",
+			"destination": "/recommend/netflix-airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/netflix-airport-recommendation-unlocking-guide-2026/",
+			"destination": "/recommend/netflix-airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/network-normal-foreign-websites-not-working-guide",
+			"destination": "/tizi/network-normal-cannot-open-foreign-websites/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/network-normal-foreign-websites-not-working-guide/",
+			"destination": "/tizi/network-normal-cannot-open-foreign-websites/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/pay-as-you-go-non-expiring-traffic-airport-guide-2026",
+			"destination": "/recommend/pay-as-you-go-airport-guide/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/pay-as-you-go-non-expiring-traffic-airport-guide-2026/",
+			"destination": "/recommend/pay-as-you-go-airport-guide/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/protocols-hysteria2-udp-brutal-congestion-control",
+			"destination": "/protocols/hysteria2-udp-brutal-congestion-control/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/protocols-hysteria2-udp-brutal-congestion-control/",
+			"destination": "/protocols/hysteria2-udp-brutal-congestion-control/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/protocols-shadowsocks-2022-aead-ciphers-evaluation",
+			"destination": "/protocols/shadowsocks-2022-aead-ciphers-evaluation/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/protocols-shadowsocks-2022-aead-ciphers-evaluation/",
+			"destination": "/protocols/shadowsocks-2022-aead-ciphers-evaluation/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/protocols-tls-fingerprint-randomization-utls-mechanisms",
+			"destination": "/protocols/tls-fingerprint-randomization-utls-mechanisms/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/protocols-tls-fingerprint-randomization-utls-mechanisms/",
+			"destination": "/protocols/tls-fingerprint-randomization-utls-mechanisms/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/protocols-tuic-v5-vs-wireguard-performance-analysis",
+			"destination": "/protocols/tuic-v5-vs-wireguard-performance-analysis/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/protocols-tuic-v5-vs-wireguard-performance-analysis/",
+			"destination": "/protocols/tuic-v5-vs-wireguard-performance-analysis/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/protocols-vless-reality-vision-handshake-optimization",
+			"destination": "/protocols/vless-reality-vision-handshake-optimization/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/protocols-vless-reality-vision-handshake-optimization/",
+			"destination": "/protocols/vless-reality-vision-handshake-optimization/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/recommend-cost-effective-monthly-pay-airport-plans",
+			"destination": "/recommend/cost-effective-monthly-pay-airport-plans/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/recommend-cost-effective-monthly-pay-airport-plans/",
+			"destination": "/recommend/cost-effective-monthly-pay-airport-plans/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/recommend-free-nodes-vs-paid-iepl-security-analysis",
+			"destination": "/recommend/free-nodes-vs-paid-iepl-security-analysis/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/recommend-free-nodes-vs-paid-iepl-security-analysis/",
+			"destination": "/recommend/free-nodes-vs-paid-iepl-security-analysis/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/recommend-gaming-low-latency-esports-cross-border-routes",
+			"destination": "/recommend/gaming-low-latency-esports-cross-border-routes/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/recommend-gaming-low-latency-esports-cross-border-routes/",
+			"destination": "/recommend/gaming-low-latency-esports-cross-border-routes/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/recommend-iplc-iepl-dedicated-line-selection-guide",
+			"destination": "/recommend/iplc-iepl-dedicated-line-selection-guide/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/recommend-iplc-iepl-dedicated-line-selection-guide/",
+			"destination": "/recommend/iplc-iepl-dedicated-line-selection-guide/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/recommend-streaming-4k-8k-netflix-disney-tiktok-matrix",
+			"destination": "/recommend/streaming-4k-8k-netflix-disney-tiktok-matrix/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/recommend-streaming-4k-8k-netflix-disney-tiktok-matrix/",
+			"destination": "/recommend/streaming-4k-8k-netflix-disney-tiktok-matrix/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/safari-foreign-websites-not-working-troubleshooting-guide",
+			"destination": "/tizi/safari-cannot-open-foreign-websites/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/safari-foreign-websites-not-working-troubleshooting-guide/",
+			"destination": "/tizi/safari-cannot-open-foreign-websites/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/shadowrocket-airport-recommendation-selection-ios-guide-2026",
+			"destination": "/shadowrocket/shadowrocket-airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/shadowrocket-airport-recommendation-selection-ios-guide-2026/",
+			"destination": "/shadowrocket/shadowrocket-airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/shadowrocket-connected-no-internet-guide",
+			"destination": "/shadowrocket/no-internet/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/shadowrocket-connected-no-internet-guide/",
+			"destination": "/shadowrocket/no-internet/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/shadowrocket-disconnect-troubleshooting-guide",
+			"destination": "/shadowrocket/disconnect/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/shadowrocket-disconnect-troubleshooting-guide/",
+			"destination": "/shadowrocket/disconnect/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/shadowrocket-dns-settings-troubleshooting-guide",
+			"destination": "/shadowrocket/dns/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/shadowrocket-dns-settings-troubleshooting-guide/",
+			"destination": "/shadowrocket/dns/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/shadowrocket-domestic-sites-not-working-guide",
+			"destination": "/shadowrocket/domestic-sites-not-working/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/shadowrocket-domestic-sites-not-working-guide/",
+			"destination": "/shadowrocket/domestic-sites-not-working/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/shadowrocket-free-nodes-subscription-qr-guide",
+			"destination": "/shadowrocket/free-nodes/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/shadowrocket-free-nodes-subscription-qr-guide/",
+			"destination": "/shadowrocket/free-nodes/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/shadowrocket-ios-setup-complete-guide",
+			"destination": "/shadowrocket/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/shadowrocket-ios-setup-complete-guide/",
+			"destination": "/shadowrocket/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/shadowrocket-nodes-timeout-all-red-guide",
+			"destination": "/shadowrocket/nodes-timeout/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/shadowrocket-nodes-timeout-all-red-guide/",
+			"destination": "/shadowrocket/nodes-timeout/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/shadowrocket-rules-routing-mode-guide",
+			"destination": "/shadowrocket/rules/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/shadowrocket-rules-routing-mode-guide/",
+			"destination": "/shadowrocket/rules/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/shadowrocket-slow-speed-troubleshooting-guide",
+			"destination": "/shadowrocket/slow-speed/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/shadowrocket-slow-speed-troubleshooting-guide/",
+			"destination": "/shadowrocket/slow-speed/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/shadowrocket-subscription-import-update-guide",
+			"destination": "/shadowrocket/subscription/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/shadowrocket-subscription-import-update-guide/",
+			"destination": "/shadowrocket/subscription/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/sing-box-universal-configuration-guide",
+			"destination": "/tutorials/sing-box-config/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/sing-box-universal-configuration-guide/",
+			"destination": "/tutorials/sing-box-config/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/streaming-media-airport-netflix-disney-youtube-guide-2026",
+			"destination": "/recommend/streaming-airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/streaming-media-airport-netflix-disney-youtube-guide-2026/",
+			"destination": "/recommend/streaming-airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tiktok-airport-recommendation-residential-ip-guide-2026",
+			"destination": "/recommend/tiktok-airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tiktok-airport-recommendation-residential-ip-guide-2026/",
+			"destination": "/recommend/tiktok-airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-app-not-using-proxy-troubleshooting-guide",
+			"destination": "/tizi/app-not-using-proxy/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-app-not-using-proxy-troubleshooting-guide/",
+			"destination": "/tizi/app-not-using-proxy/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-connected-no-internet-troubleshooting-guide",
+			"destination": "/tizi/connected-no-internet/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-connected-no-internet-troubleshooting-guide/",
+			"destination": "/tizi/connected-no-internet/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-dns-pollution-leak-doh-fake-ip-guide",
+			"destination": "/tizi/dns/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-dns-pollution-leak-doh-fake-ip-guide/",
+			"destination": "/tizi/dns/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-dns-resolution-failed-troubleshooting-guide",
+			"destination": "/tizi/dns-resolution-failed/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-dns-resolution-failed-troubleshooting-guide/",
+			"destination": "/tizi/dns-resolution-failed/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-fake-ip-redir-host-dns-mapping-guide",
+			"destination": "/tizi/fake-ip/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-fake-ip-redir-host-dns-mapping-guide/",
+			"destination": "/tizi/fake-ip/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-frequent-disconnect-stability-troubleshooting-guide",
+			"destination": "/tizi/disconnect/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-frequent-disconnect-stability-troubleshooting-guide/",
+			"destination": "/tizi/disconnect/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-ip-address-exit-native-residential-guide",
+			"destination": "/tizi/ip-address/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-ip-address-exit-native-residential-guide/",
+			"destination": "/tizi/ip-address/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-ip-dns-ipv6-webrtc-leak-guide",
+			"destination": "/tizi/ip-leak/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-ip-dns-ipv6-webrtc-leak-guide/",
+			"destination": "/tizi/ip-leak/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-ipv6-dual-stack-proxy-compatibility-guide",
+			"destination": "/tizi/ipv6/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-ipv6-dual-stack-proxy-compatibility-guide/",
+			"destination": "/tizi/ipv6/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-lan-tun-nas-printer-conflict-guide",
+			"destination": "/tizi/lan-tun-conflict/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-lan-tun-nas-printer-conflict-guide/",
+			"destination": "/tizi/lan-tun-conflict/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-nodes-latency-multiplier-selection-guide",
+			"destination": "/tizi/nodes/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-nodes-latency-multiplier-selection-guide/",
+			"destination": "/tizi/nodes/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-nodes-timeout-all-red-troubleshooting-guide",
+			"destination": "/tizi/nodes-timeout/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-nodes-timeout-all-red-troubleshooting-guide/",
+			"destination": "/tizi/nodes-timeout/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-proxy-mode-selection-scenario-guide",
+			"destination": "/tizi/proxy-mode-guide/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-proxy-mode-selection-scenario-guide/",
+			"destination": "/tizi/proxy-mode-guide/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-routing-rules-domain-ip-provider-guide",
+			"destination": "/tizi/routing-rules/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-routing-rules-domain-ip-provider-guide/",
+			"destination": "/tizi/routing-rules/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-rule-global-direct-proxy-modes-guide",
+			"destination": "/tizi/rule-global-direct/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-rule-global-direct-proxy-modes-guide/",
+			"destination": "/tizi/rule-global-direct/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-rule-mode-not-working-global-rule-guide",
+			"destination": "/tizi/rule-mode-not-working/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-rule-mode-not-working-global-rule-guide/",
+			"destination": "/tizi/rule-mode-not-working/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-slow-speed-latency-troubleshooting-guide",
+			"destination": "/tizi/slow-speed/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-slow-speed-latency-troubleshooting-guide/",
+			"destination": "/tizi/slow-speed/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-subscription-client-import-update-guide",
+			"destination": "/tizi/subscription/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-subscription-client-import-update-guide/",
+			"destination": "/tizi/subscription/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-subscription-update-failed-troubleshooting-guide",
+			"destination": "/tizi/subscription-update-failed/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-subscription-update-failed-troubleshooting-guide/",
+			"destination": "/tizi/subscription-update-failed/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-suddenly-not-working-troubleshooting-hub",
+			"destination": "/tizi/suddenly-not-working/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-suddenly-not-working-troubleshooting-hub/",
+			"destination": "/tizi/suddenly-not-working/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-system-proxy-browser-app-routing-guide",
+			"destination": "/tizi/system-proxy/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-system-proxy-browser-app-routing-guide/",
+			"destination": "/tizi/system-proxy/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-troubleshooting-master-guide",
+			"destination": "/tizi/troubleshooting/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-troubleshooting-master-guide/",
+			"destination": "/tizi/troubleshooting/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-tun-system-proxy-virtual-adapter-guide",
+			"destination": "/tizi/tun/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-tun-system-proxy-virtual-adapter-guide/",
+			"destination": "/tizi/tun/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-vs-airport-client-node-subscription-guide",
+			"destination": "/tizi/airport-vs-tizi/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-vs-airport-client-node-subscription-guide/",
+			"destination": "/tizi/airport-vs-tizi/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-vs-vpn-proxy-airport-compare-guide",
+			"destination": "/tizi/vpn-vs-tizi/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tizi-vs-vpn-proxy-airport-compare-guide/",
+			"destination": "/tizi/vpn-vs-tizi/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/today-free-nodes-daily-updates-security-guide",
+			"destination": "/recommend/today-free-nodes/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/today-free-nodes-daily-updates-security-guide/",
+			"destination": "/recommend/today-free-nodes/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tutorials-clash-verge-rev-tun-mode-dns-leak-prevention",
+			"destination": "/tutorials/clash-verge-rev-tun-mode-dns-leak-prevention/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tutorials-clash-verge-rev-tun-mode-dns-leak-prevention/",
+			"destination": "/tutorials/clash-verge-rev-tun-mode-dns-leak-prevention/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/v2ray-free-nodes-vmess-vless-protocol-guide",
+			"destination": "/recommend/v2ray-free-nodes/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/v2ray-free-nodes-vmess-vless-protocol-guide/",
+			"destination": "/recommend/v2ray-free-nodes/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/v2rayn-airport-recommendation-selection-windows-guide-2026",
+			"destination": "/v2rayn/v2rayn-airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/v2rayn-airport-recommendation-selection-windows-guide-2026/",
+			"destination": "/v2rayn/v2rayn-airport/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/v2rayn-connected-no-internet-guide",
+			"destination": "/v2rayn/no-internet/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/v2rayn-connected-no-internet-guide/",
+			"destination": "/v2rayn/no-internet/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/v2rayn-disconnect-troubleshooting-guide",
+			"destination": "/v2rayn/disconnect/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/v2rayn-disconnect-troubleshooting-guide/",
+			"destination": "/v2rayn/disconnect/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/v2rayn-free-nodes-subscription-timeout-guide",
+			"destination": "/v2rayn/free-nodes/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/v2rayn-free-nodes-subscription-timeout-guide/",
+			"destination": "/v2rayn/free-nodes/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/v2rayn-nodes-timeout-troubleshooting-guide",
+			"destination": "/v2rayn/nodes-timeout/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/v2rayn-nodes-timeout-troubleshooting-guide/",
+			"destination": "/v2rayn/nodes-timeout/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/v2rayn-slow-speed-troubleshooting-guide",
+			"destination": "/v2rayn/slow-speed/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/v2rayn-slow-speed-troubleshooting-guide/",
+			"destination": "/v2rayn/slow-speed/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/v2rayn-subscription-import-update-guide",
+			"destination": "/v2rayn/subscription/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/v2rayn-subscription-import-update-guide/",
+			"destination": "/v2rayn/subscription/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/v2rayn-system-proxy-settings-guide",
+			"destination": "/v2rayn/system-proxy/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/v2rayn-system-proxy-settings-guide/",
+			"destination": "/v2rayn/system-proxy/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/v2rayn-tun-mode-practical-guide",
+			"destination": "/v2rayn/tun/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/v2rayn-tun-mode-practical-guide/",
+			"destination": "/v2rayn/tun/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/v2rayn-windows-complete-setup-guide",
+			"destination": "/v2rayn/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/v2rayn-windows-complete-setup-guide/",
+			"destination": "/v2rayn/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/what-is-tizi-vpn-proxy-airport-guide",
+			"destination": "/tizi/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/what-is-tizi-vpn-proxy-airport-guide/",
+			"destination": "/tizi/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/wifi-foreign-websites-not-working-troubleshooting-guide",
+			"destination": "/tizi/wifi-normal-cannot-open-foreign-websites/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/wifi-foreign-websites-not-working-troubleshooting-guide/",
+			"destination": "/tizi/wifi-normal-cannot-open-foreign-websites/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/youtube-cannot-open-video-loading-error-troubleshooting-guide",
+			"destination": "/tizi/youtube-cannot-open/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/youtube-cannot-open-video-loading-error-troubleshooting-guide/",
+			"destination": "/tizi/youtube-cannot-open/",
+			"permanent": true
+		}
+	]
 }

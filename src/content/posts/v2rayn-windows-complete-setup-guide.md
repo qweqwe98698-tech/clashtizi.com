@@ -1,11 +1,9 @@
 ---
 title: v2rayN 2026完整使用教程：Windows下载安装、订阅导入、节点选择、系统代理与TUN完整指南
 published: 2026-08-30T00:00:00.000Z
-updated: 2026-08-30T00:00:00.000Z
+updated: 2026-11-12T16:30:00.000Z
 description: >-
-  2026 最新 v2rayN Windows 客户端新手到高阶全方位指南：从 With-Core 版本下载安装、.NET 8
-  运行时依赖、订阅链接导入与更新，到真连接延迟测速、系统代理、路由规则与 TUN
-  模式游戏加速全景详解。详细讲解客户端安装激活、节点订阅导入与分流模式调优，助您轻松上手高速稳定的科学上网环境。
+  2026最新v2rayN Windows客户端完整教程：涵盖With-Core安装包选择、.NET 8运行环境、订阅导入、Ctrl+R真连接延迟测试、系统代理与TUN游戏加速，并同步FlClash、Karing、Linux v2rayA及OpenWrt PassWall2协同配置建议。
 category: 客户端教程
 tags:
   - v2rayN
@@ -245,7 +243,19 @@ v2rayN 底部中央有一个下拉菜单【路由】，日常必须选对模式�
 
 ---
 
-## 十、常见问题解答 (FAQ)
+## 十、2026 Windows / Linux / 软路由协同客户端补充清单
+
+如果您除了在 Windows 主力机使用 **v2rayN** 外，还需要在 **macOS、Linux 或家庭 OpenWrt 软路由** 复用同一份机场订阅，可参考以下 2026 生态对照：
+
+- **Windows / macOS 备选开源方案**：除 v2rayN 与 **[Clash Verge Rev](/clash-verge-rev/)** 外，也可考虑界面统一的 **FlClash**、双内核兼容的 **Karing** 或极简的 **Clash Mi**（注意 macOS 需区分 **Intel `x64`** 与 **Apple Silicon `arm64`** 架构）。
+- **⚠️ 客户端下载安全提醒**：若听说过 **Mihomo Party**，请注意其部分仓库已停止活跃维护或转向分支，务必查验 GitHub 官方发布源；同时在移动端使用 **NekoBox for Android** 时，**切勿从 Google Play 下载**（Play 商店存在非官方/第三方风险），仅认准官方 GitHub Releases。
+- **Linux 服务器/桌面方案**：Linux 桌面推荐 DEB / RPM / AppImage 客户端；Docker、NAS 或无头服务器建议使用 **v2rayA** 网页控制台。
+- **OpenWrt 家庭软路由**：追求稳定易用首选 **PassWall2** 或 **OpenClash**；若是 OpenWrt 24.10+ 新固件环境，轻量方案可关注 **Nikki** 或 **HomeProxy**。
+- **实测机场兼容性自查**：可在 **[42 家机场品牌全库](/brands/)** 中直接筛选支持通用订阅（兼容 v2rayN / Xray / Sing-box）与独立客户端的专线品牌。
+
+---
+
+## 十一、常见问题解答 (FAQ)
 
 ### Q1：为什么双击 v2rayN.exe 没有任何反应，或者提示找不到 .NET？
 **答**：v2rayN 6.x/7.x 基于微软最新平台构建，系统必须预先安装 **Microsoft .NET Desktop Runtime 8.0 (x64)**。前往微软官网下载安装该桌面运行时补丁后即可正常启动。

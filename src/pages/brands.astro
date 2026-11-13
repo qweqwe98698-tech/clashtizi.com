@@ -1,0 +1,618 @@
+---
+import { FilterTabs } from "@components/atoms/filter-tabs";
+import { PageHeader } from "@components/features/page-header";
+import { Icon } from "astro-icon/components";
+import { type AirportBrand, airports42Data } from "../data/airports-42";
+import { airportDetailsMap } from "../data/airports-detail";
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+
+const title = "2026 全球 42 家翻墙梯子机场品牌全库：测速实测图、优惠码与专线对比筛选";
+const description =
+	"完整收录 42 家主流翻墙梯子机场品牌真实参数、IEPL/IPLC 专线架构、入门资费、独家优惠码与 19 家品牌原始节点测速/解锁实测截图，严格区分实测数据与品牌资料来源，支持按梯队、价格、协议与客户端支持情况快速检索对比。";
+
+const siteOrigin = Astro.site?.toString().replace(/\/$/, "") || "https://clashtizi.com";
+const canonicalUrl = `${siteOrigin}/brands/`;
+
+const measuredCount = airports42Data.filter((b) => b.dataStatus === "measured").length;
+const ieplCount = airports42Data.filter((b) => b.filterTags.includes("iepl-iplc")).length;
+const couponCount = airports42Data.filter((b) => Boolean(b.coupon)).length;
+
+const filterTabs = [
+	{
+		value: "all",
+		label: "全部品牌",
+		icon: "material-symbols:apps",
+		count: airports42Data.length,
+	},
+	{
+		value: "top",
+		label: "核心主推 Top11",
+		icon: "material-symbols:trophy-outline",
+		count: airports42Data.filter((b) => b.filterTags.includes("top")).length,
+	},
+	{
+		value: "measured",
+		label: "实测有图",
+		icon: "material-symbols:monitoring",
+		count: measuredCount,
+	},
+	{
+		value: "iepl-iplc",
+		label: "IEPL / IPLC 专线",
+		icon: "material-symbols:cable",
+		count: ieplCount,
+	},
+	{
+		value: "budget",
+		label: "平价入门 (5.6~9元)",
+		icon: "material-symbols:savings-outline",
+		count: airports42Data.filter((b) => b.filterTags.includes("budget")).length,
+	},
+	{
+		value: "self-app",
+		label: "专属客户端",
+		icon: "material-symbols:install-desktop",
+		count: airports42Data.filter((b) => b.filterTags.includes("self-app")).length,
+	},
+	{
+		value: "archive",
+		label: "历史备选库",
+		icon: "material-symbols:inventory-2-outline",
+		count: airports42Data.filter((b) => b.filterTags.includes("archive")).length,
+	},
+];
+
+const getStatusBadge = (status: AirportBrand["dataStatus"]) => {
+	switch (status) {
+		case "measured":
+			return {
+				label: "实测有图 (measured)",
+				className:
+					"bg-emerald-500/12 text-emerald-700 dark:text-emerald-300 border-emerald-500/25",
+				dotClass: "bg-emerald-500",
+			};
+		case "vendor":
+			return {
+				label: "品牌资料 (vendor)",
+				className:
+					"bg-amber-500/12 text-amber-700 dark:text-amber-300 border-amber-500/25",
+				dotClass: "bg-amber-500",
+			};
+		default:
+			return {
+				label: "历史存档 (historical)",
+				className:
+					"bg-sky-500/12 text-sky-700 dark:text-sky-300 border-sky-500/25",
+				dotClass: "bg-sky-500",
+			};
+	}
+};
+
+const getTierBadge = (tier: AirportBrand["tier"]) => {
+	switch (tier) {
+		case "top":
+			return "第一梯队 · 核心主推";
+		case "tested":
+			return "第二梯队 · 有图实测";
+		case "budget":
+			return "第三梯队 · 平价/多端";
+		default:
+			return "第四梯队 · 备选归档";
+	}
+};
+
+const jsonLdSchemas = [
+	{
+		"@context": "https://schema.org",
+		"@type": "BreadcrumbList",
+		itemListElement: [
+			{
+				"@type": "ListItem",
+				position: 1,
+				name: "首页",
+				item: `${siteOrigin}/`,
+			},
+			{
+				"@type": "ListItem",
+				position: 2,
+				name: "2026 翻墙机场推荐排行榜",
+				item: `${siteOrigin}/recommend/airport/`,
+			},
+			{
+				"@type": "ListItem",
+				position: 3,
+				name: "42家机场品牌库",
+				item: canonicalUrl,
+			},
+		],
+	},
+	{
+		"@context": "https://schema.org",
+		"@type": "ItemList",
+		name: "2026 全球 42 家翻墙梯子机场品牌目录",
+		description,
+		url: canonicalUrl,
+		numberOfItems: airports42Data.length,
+		itemListOrder: "https://schema.org/ItemListOrderAscending",
+		itemListElement: airports42Data.map((brand) => ({
+			"@type": "ListItem",
+			position: brand.rank,
+			name: `${brand.name} (${brand.lineType})`,
+			url: airportDetailsMap[brand.slug]
+				? `${siteOrigin}/brands/${brand.slug}/`
+				: `${canonicalUrl}#${brand.slug}`,
+		})),
+	},
+];
+---
+
+<MainGridLayout title={title} description={description}>
+	<Fragment slot="head">
+		{jsonLdSchemas.map((schema) => (
+			<script type="application/ld+json" set:html={JSON.stringify(schema)} />
+		))}
+	</Fragment>
+
+	<script>
+		import("../scripts/right-sidebar-layout.js");
+		import { loadIconify } from "../utils/icon-loader";
+
+		loadIconify().catch((error) => {
+			console.error("Failed to load Iconify:", error);
+		});
+	</script>
+
+	<div
+		id="brands-page-root"
+		class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32"
+	>
+		<div class="card-base z-10 px-5 sm:px-9 py-6 relative w-full">
+			<PageHeader
+				title="42 家机场品牌全景资料库"
+				subtitle="严格区分「实测有图」「品牌资料」与「历史存档」，覆盖线路协议、资费对比、优惠码与测速/解锁原始截图"
+			/>
+
+			<!-- Stats & Internal Nav Strip -->
+			<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-5">
+				<div class="rounded-xl border border-black/10 dark:border-white/10 p-3.5 bg-black/[0.02] dark:bg-white/[0.02]">
+					<div class="text-xs text-black/55 dark:text-white/55">收录品牌总数</div>
+					<div class="text-2xl font-bold text-[var(--primary)] mt-0.5">{airports42Data.length} 家</div>
+				</div>
+				<div class="rounded-xl border border-black/10 dark:border-white/10 p-3.5 bg-black/[0.02] dark:bg-white/[0.02]">
+					<div class="text-xs text-black/55 dark:text-white/55">公开测速/解锁图</div>
+					<div class="text-2xl font-bold text-emerald-600 dark:text-emerald-400 mt-0.5">{measuredCount} 家</div>
+				</div>
+				<div class="rounded-xl border border-black/10 dark:border-white/10 p-3.5 bg-black/[0.02] dark:bg-white/[0.02]">
+					<div class="text-xs text-black/55 dark:text-white/55">IEPL / IPLC 专线</div>
+					<div class="text-2xl font-bold text-black/85 dark:text-white/85 mt-0.5">{ieplCount} 家</div>
+				</div>
+				<div class="rounded-xl border border-black/10 dark:border-white/10 p-3.5 bg-black/[0.02] dark:bg-white/[0.02]">
+					<div class="text-xs text-black/55 dark:text-white/55">含专属优惠码</div>
+					<div class="text-2xl font-bold text-amber-600 dark:text-amber-400 mt-0.5">{couponCount} 家</div>
+				</div>
+			</div>
+
+			<!-- Compliance & E-E-A-T Notice -->
+			<div class="mb-6 rounded-xl border border-black/10 dark:border-white/10 bg-black/[0.025] dark:bg-white/[0.03] p-4 text-xs sm:text-sm text-black/75 dark:text-white/75 space-y-1.5">
+				<p class="font-semibold text-black/90 dark:text-white/90 flex items-center gap-1.5">
+					<Icon name="material-symbols:verified-user-outline" class="text-[var(--primary)] text-base" />
+					<span>评测口径说明与商业披露</span>
+				</p>
+				<p>
+					1. 本页面含合作机场推广链接（均已添加 <code class="px-1 py-0.5 rounded bg-black/5 dark:bg-white/10">rel="nofollow sponsored noopener"</code>），通过链接注册可能为本站带来佣金以支持长期带宽实测，但<strong>不影响您的实际支付价格</strong>。
+				</p>
+				<p>
+					2. 单日节点测速截图仅代表测试当时当地运营商（如联通/电信/移动特定测试环境）的快照表现，不代表全天候绝对速度或所有平台永久解锁承诺；涉及品牌方单方面说明的内容均已明确标注来源状态。
+				</p>
+				<div class="pt-1 flex flex-wrap gap-3 text-xs">
+					<a href="/recommend/airport/" class="text-[var(--primary)] hover:underline font-medium">
+						📖 阅读 42 家机场深度横评长文 ↗
+					</a>
+					<a href="/recommend/airport-lines/" class="text-[var(--primary)] hover:underline font-medium">
+						⚡ IPLC / IEPL 专线专题 ↗
+					</a>
+					<a href="/recommend/cheap-airport/" class="text-[var(--primary)] hover:underline font-medium">
+						💰 高性价比平价机场评测 ↗
+					</a>
+					<a href="/recommend/streaming-airport/" class="text-[var(--primary)] hover:underline font-medium">
+						🎬 4K 流媒体与 ChatGPT 解锁专线 ↗
+					</a>
+				</div>
+			</div>
+
+			<!-- Search & Filter Controls -->
+			<div class="mb-6 space-y-4">
+				<div class="relative">
+					<Icon
+						name="material-symbols:search"
+						class="absolute left-3.5 top-1/2 -translate-y-1/2 text-lg text-black/45 dark:text-white/45 pointer-events-none"
+					/>
+					<input
+						id="brand-search-input"
+						type="search"
+						placeholder="搜索品牌名称、拼音、协议（如 VLESS / Trojan）、价格或优惠码..."
+						aria-label="搜索机场品牌"
+						class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-black/15 dark:border-white/15 bg-transparent text-sm text-black/90 dark:text-white/90 placeholder:text-black/40 dark:placeholder:text-white/40 focus:outline-none focus:border-[var(--primary)] transition-colors"
+					/>
+				</div>
+
+				<FilterTabs tabs={filterTabs} dataAttr="category" />
+			</div>
+
+			<div class="mb-4 text-xs text-black/55 dark:text-white/55 flex items-center justify-between">
+				<span>当前匹配：<strong id="brands-visible-count" class="text-[var(--primary)]">{airports42Data.length}</strong> 家机场品牌</span>
+				<span class="hidden sm:inline">点击「查看实测截图」可放大浏览测速与解锁原图</span>
+			</div>
+
+			<!-- 42 Brands Grid -->
+			<div id="brands-grid" class="grid gap-5 items-stretch">
+				{airports42Data.map((brand) => {
+					const statusBadge = getStatusBadge(brand.dataStatus);
+					const searchIndex = [
+						brand.name,
+						brand.alias,
+						brand.lineType,
+						brand.protocol,
+						brand.entryPrice,
+						brand.coupon || "",
+						brand.clientMode,
+						...brand.features,
+					]
+						.join(" ")
+						.toLowerCase();
+
+					return (
+						<article
+							id={brand.slug}
+							class="brand-card group flex flex-col justify-between rounded-2xl border border-black/10 dark:border-white/10 p-5 transition-all duration-300 hover:border-[var(--primary)]/50 hover:shadow-lg bg-black/[0.01] dark:bg-white/[0.015]"
+							data-category={brand.filterTags.join(",")}
+							data-search={searchIndex}
+						>
+							<div>
+								<!-- Header Row -->
+								<div class="flex items-start justify-between gap-2 mb-3">
+									<div class="min-w-0">
+										<div class="flex items-center gap-2 flex-wrap">
+											<span class="inline-flex items-center justify-center px-2 py-0.5 rounded-md text-xs font-bold bg-[var(--primary)]/12 text-[var(--primary)]">
+												#{brand.rank}
+											</span>
+											<h2 class="text-lg font-bold text-black/90 dark:text-white/90 truncate">
+												{brand.name}
+											</h2>
+											<span class="text-xs text-black/45 dark:text-white/45">
+												({brand.alias})
+											</span>
+										</div>
+										<div class="mt-1 flex items-center gap-2 flex-wrap text-xs text-black/55 dark:text-white/55">
+											<span>{getTierBadge(brand.tier)}</span>
+											{brand.foundedYear && (
+												<span>· {brand.foundedYear} 运营</span>
+											)}
+										</div>
+									</div>
+
+									<span
+										class={`shrink-0 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-medium border whitespace-nowrap ${statusBadge.className}`}
+									>
+										<span class={`w-1.5 h-1.5 rounded-full ${statusBadge.dotClass}`}></span>
+										{statusBadge.label}
+									</span>
+								</div>
+
+								<!-- Spec Pills -->
+								<div class="grid grid-cols-2 gap-2 mb-3 text-xs">
+									<div class="rounded-lg bg-black/[0.03] dark:bg-white/[0.04] px-3 py-2">
+										<div class="text-black/50 dark:text-white/50 text-[11px]">入门门槛 / 流量</div>
+										<div class="font-semibold text-black/90 dark:text-white/90 mt-0.5">
+											{brand.entryPrice} · {brand.entryTraffic}
+										</div>
+									</div>
+									<div class="rounded-lg bg-black/[0.03] dark:bg-white/[0.04] px-3 py-2">
+										<div class="text-black/50 dark:text-white/50 text-[11px]">线路架构与协议</div>
+										<div class="font-semibold text-black/90 dark:text-white/90 mt-0.5 truncate" title={`${brand.lineType} · ${brand.protocol}`}>
+											{brand.lineType} · {brand.protocol}
+										</div>
+									</div>
+								</div>
+
+								<div class="text-xs text-black/65 dark:text-white/65 mb-2.5 space-y-1">
+									<div>
+										<span class="text-black/45 dark:text-white/45">主力参考：</span>
+										<span>{brand.monthlyRef}</span>
+									</div>
+									<div class="flex items-start gap-1">
+										<span class="text-black/45 dark:text-white/45 shrink-0">接入方式：</span>
+										<span
+											class={
+												brand.clientMode.includes("仅专属客户端")
+													? "text-amber-700 dark:text-amber-300 font-medium"
+													: ""
+											}
+										>
+											{brand.clientMode}
+										</span>
+									</div>
+								</div>
+
+								<!-- Features -->
+								<ul class="space-y-1 text-xs text-black/75 dark:text-white/75 mb-3">
+									{brand.features.map((feat) => (
+										<li class="flex items-start gap-1.5">
+											<span class="text-[var(--primary)] mt-0.5 shrink-0">•</span>
+											<span>{feat}</span>
+										</li>
+									))}
+								</ul>
+
+								<div class="text-[11px] px-2.5 py-1.5 rounded-lg bg-black/[0.03] dark:bg-white/[0.03] text-black/65 dark:text-white/65 mb-3">
+									<strong>解锁/数据状态：</strong>{brand.unlockSummary}
+								</div>
+
+								{brand.urlNote && (
+									<div class="text-[11px] px-2.5 py-1.5 rounded-lg bg-amber-500/10 text-amber-700 dark:text-amber-300 mb-3">
+										{brand.urlNote}
+									</div>
+								)}
+
+								<!-- Test Images Strip (if available) -->
+								{brand.testImages && brand.testImages.length > 0 && (
+									<div class="mb-3">
+										<div class="text-[11px] font-medium text-black/60 dark:text-white/60 mb-1.5">
+											实测截图证据（{brand.testImages.length} 张，点击放大）：
+										</div>
+										<div class="flex gap-2 overflow-x-auto pb-1">
+											{brand.testImages.map((img) => (
+												<button
+													type="button"
+													class="brand-img-trigger shrink-0 group/img relative rounded-lg overflow-hidden border border-black/10 dark:border-white/10 w-24 h-14 bg-black/5 dark:bg-white/5 cursor-pointer hover:border-[var(--primary)] transition-colors"
+													data-img-src={img.src}
+													data-img-title={`${brand.name} - ${img.alt}`}
+													data-img-caption={img.caption}
+												>
+													<img
+														src={img.src}
+														alt={img.alt}
+														loading="lazy"
+														class="w-full h-full object-cover group-hover/img:scale-105 transition-transform duration-200"
+													/>
+												</button>
+											))}
+										</div>
+									</div>
+								)}
+							</div>
+
+							<!-- Action Footer -->
+							<div class="pt-3 border-t border-black/8 dark:border-white/8 flex flex-wrap items-center justify-between gap-2">
+								{brand.coupon ? (
+									<button
+										type="button"
+										class="brand-copy-coupon inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs border border-dashed border-[var(--primary)]/40 bg-[var(--primary)]/8 text-[var(--primary)] hover:bg-[var(--primary)]/15 transition-colors cursor-pointer"
+										data-coupon={brand.coupon}
+										title="点击复制优惠码"
+									>
+										<Icon name="material-symbols:content-copy-outline" class="text-sm" />
+										<span>优惠码：<strong>{brand.coupon}</strong></span>
+										{brand.couponNote && (
+											<span class="text-[10px] opacity-80">({brand.couponNote})</span>
+										)}
+									</button>
+								) : (
+									<span class="text-xs text-black/45 dark:text-white/45">
+										{brand.couponNote || "官网默认优惠"}
+									</span>
+								)}
+
+								{brand.registerUrl ? (
+									<div class="flex items-center gap-2 flex-wrap">
+										{airportDetailsMap[brand.slug] && (
+											<a
+												href={`/brands/${brand.slug}/`}
+												class="inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-medium border border-[var(--primary)]/40 text-[var(--primary)] hover:bg-[var(--primary)]/10 transition-colors"
+											>
+												深度评测
+											</a>
+										)}
+										<a
+											href={brand.registerUrl}
+											target="_blank"
+											rel="nofollow sponsored noopener"
+											class="inline-flex items-center gap-1 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-[var(--primary)] text-white hover:opacity-90 transition-opacity"
+										>
+											<span>官网注册</span>
+											<Icon name="material-symbols:open-in-new" class="text-sm" />
+										</a>
+									</div>
+								) : (
+									<span class="inline-flex items-center px-3 py-1.5 rounded-lg text-xs bg-black/5 dark:bg-white/5 text-black/50 dark:text-white/50">
+										独立入口待核实
+									</span>
+								)}
+							</div>
+						</article>
+					);
+				})}
+			</div>
+
+			<div id="no-results" class="hidden text-center py-16">
+				<Icon
+					name="material-symbols:search-off-rounded"
+					class="text-6xl text-black/15 dark:text-white/15 mb-4 mx-auto"
+				/>
+				<p class="text-black/45 dark:text-white/45 text-base">
+					没有找到匹配的机场品牌，请尝试更换筛选标签或清空搜索词。
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Image Preview Lightbox Modal -->
+	<div
+		id="brand-lightbox"
+		class="fixed inset-0 z-[999] hidden items-center justify-center bg-black/80 backdrop-blur-sm p-4"
+		role="dialog"
+		aria-modal="true"
+		aria-labelledby="brand-lightbox-title"
+	>
+		<div class="relative max-w-4xl w-full rounded-2xl bg-[var(--card-bg)] border border-white/15 p-4 sm:p-5 shadow-2xl">
+			<div class="flex items-center justify-between gap-4 mb-3">
+				<h3 id="brand-lightbox-title" class="text-base font-bold text-black/90 dark:text-white/90 truncate"></h3>
+				<button
+					type="button"
+					id="brand-lightbox-close"
+					aria-label="关闭截图预览"
+					class="w-8 h-8 rounded-full flex items-center justify-center bg-black/10 dark:bg-white/10 hover:bg-black/20 dark:hover:bg-white/20 text-black/80 dark:text-white/80 cursor-pointer"
+				>
+					<Icon name="material-symbols:close" class="text-lg" />
+				</button>
+			</div>
+			<div class="max-h-[72vh] overflow-auto rounded-xl bg-black/90 flex items-center justify-center">
+				<img id="brand-lightbox-img" src="" alt="" class="max-w-full h-auto object-contain" />
+			</div>
+			<p id="brand-lightbox-caption" class="mt-3 text-xs sm:text-sm text-black/70 dark:text-white/70"></p>
+		</div>
+	</div>
+</MainGridLayout>
+
+<script is:inline>
+	(function () {
+		function initBrandsPage() {
+			var root = document.getElementById("brands-page-root");
+			if (!root || root.dataset.brandsInit === "true") return;
+			root.dataset.brandsInit = "true";
+
+			var searchInput = document.getElementById("brand-search-input");
+			var countEl = document.getElementById("brands-visible-count");
+			var noResults = document.getElementById("no-results");
+			var cards = Array.from(root.querySelectorAll(".brand-card"));
+			var tabs = Array.from(root.querySelectorAll(".filter-tabs-item"));
+			var activeCategory = "all";
+
+			function applyFilters() {
+				var query = searchInput ? searchInput.value.trim().toLowerCase() : "";
+				var visible = 0;
+
+				cards.forEach(function (card) {
+					var cats = (card.dataset.category || "").split(",");
+					var searchHaystack = card.dataset.search || "";
+					var matchTab = activeCategory === "all" || cats.indexOf(activeCategory) !== -1;
+					var matchQuery = !query || searchHaystack.indexOf(query) !== -1;
+
+					if (matchTab && matchQuery) {
+						card.classList.remove("hidden");
+						visible++;
+					} else {
+						card.classList.add("hidden");
+					}
+				});
+
+				if (countEl) countEl.textContent = String(visible);
+				if (noResults) noResults.classList.toggle("hidden", visible > 0);
+			}
+
+			tabs.forEach(function (tab) {
+				tab.addEventListener("click", function () {
+					tabs.forEach(function (t) {
+						t.classList.remove("active");
+					});
+					tab.classList.add("active");
+					activeCategory = tab.dataset.filterValue || "all";
+					applyFilters();
+				});
+			});
+
+			if (searchInput) {
+				searchInput.addEventListener("input", applyFilters);
+			}
+
+			// Coupon click-to-copy
+			root.querySelectorAll(".brand-copy-coupon").forEach(function (btn) {
+				btn.addEventListener("click", function () {
+					var code = btn.dataset.coupon;
+					if (!code || !navigator.clipboard) return;
+					navigator.clipboard.writeText(code).then(function () {
+						var orig = btn.innerHTML;
+						btn.textContent = "已复制优惠码: " + code + " ✓";
+						setTimeout(function () {
+							btn.innerHTML = orig;
+						}, 1800);
+					});
+				});
+			});
+
+			// Lightbox preview
+			var modal = document.getElementById("brand-lightbox");
+			var modalImg = document.getElementById("brand-lightbox-img");
+			var modalTitle = document.getElementById("brand-lightbox-title");
+			var modalCaption = document.getElementById("brand-lightbox-caption");
+			var modalClose = document.getElementById("brand-lightbox-close");
+
+			function closeModal() {
+				if (modal) {
+					modal.classList.add("hidden");
+					modal.classList.remove("flex");
+				}
+			}
+
+			root.querySelectorAll(".brand-img-trigger").forEach(function (trigger) {
+				trigger.addEventListener("click", function () {
+					if (!modal || !modalImg || !modalTitle || !modalCaption) return;
+					modalImg.src = trigger.dataset.imgSrc || "";
+					modalImg.alt = trigger.dataset.imgTitle || "";
+					modalTitle.textContent = trigger.dataset.imgTitle || "";
+					modalCaption.textContent = trigger.dataset.imgCaption || "";
+					modal.classList.remove("hidden");
+					modal.classList.add("flex");
+				});
+			});
+
+			if (modalClose) modalClose.addEventListener("click", closeModal);
+			if (modal) {
+				modal.addEventListener("click", function (e) {
+					if (e.target === modal) closeModal();
+				});
+			}
+			if (!window.__brandsLightboxKeyBound) {
+				window.__brandsLightboxKeyBound = true;
+				document.addEventListener("keydown", function (e) {
+					if (e.key === "Escape") {
+						var currentModal = document.getElementById("brand-lightbox");
+						if (currentModal) {
+							currentModal.classList.add("hidden");
+							currentModal.classList.remove("flex");
+						}
+					}
+				});
+			}
+		}
+
+		if (document.readyState === "loading") {
+			document.addEventListener("DOMContentLoaded", initBrandsPage);
+		} else {
+			initBrandsPage();
+		}
+		document.addEventListener("astro:page-load", initBrandsPage);
+	})();
+</script>
+
+<style is:global>
+	#brands-grid {
+		grid-template-columns: 1fr;
+	}
+
+	@media (min-width: 768px) {
+		#brands-grid {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+	}
+
+	#main-grid[data-layout-mode="grid"] #brands-grid {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
+	@media (max-width: 767px) {
+		#main-grid[data-layout-mode="grid"] #brands-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

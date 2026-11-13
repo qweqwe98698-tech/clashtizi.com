@@ -1,11 +1,9 @@
 ---
 title: Sing-box跨平台新手配置教程：多端客户端与分流规则指南（2026）
 published: 2026-08-29T00:00:00.000Z
-updated: 2026-08-29T00:00:00.000Z
+updated: 2026-11-12T16:30:00.000Z
 description: >-
-  Sing-box 怎么安装和配置？本文介绍 Windows、macOS、Android、iOS 使用方式、JSON
-  配置、订阅导入、TUN、DNS、路由，以及 Hysteria2、TUIC、VLESS
-  的区别与常见故障排查。详细讲解客户端安装激活、节点订阅导入与分流模式调优，助您轻松上手高速稳定的科学上网环境。
+  2026最新Sing-box跨平台配置教程：涵盖Windows、macOS、Android、iOS与OpenWrt客户端选择（Karing、Hiddify、NekoBox防Google Play魔改提示、HomeProxy、PassWall2），JSON配置检验及Hysteria2/TUIC/VLESS Reality实战指南。
 category: 客户端教程
 tags:
   - Sing-box
@@ -538,6 +536,21 @@ sing-box 内置了独立的 DNS 解析系统，直接与路由模块绑定：
 
 ### Q15: Sing-box 支持像 Clash 那样自动更新订阅吗？
 > **答**：现代 GUI 图形客户端均支持设置定时自动更新订阅周期；若使用命令行 Core，可通过定时脚本或外部订阅管理工具同步拉取。
+
+---
+
+## 🗺️ 2026 Sing-box 全平台图形客户端与 OpenWrt 软路由生态补完
+
+如果你不希望手写 JSON，可直接依据设备选择 2026 年主流的 Sing-box 生态图形化或路由器方案：
+
+| 平台 | 推荐客户端 / 插件 | 核心亮点与安全注意 |
+| :--- | :--- | :--- |
+| **Windows / macOS / Linux** | **Karing** / **Hiddify** / **Clash Verge Rev** | Karing 同时兼容 Clash 与 Sing-box 格式；macOS 留意区分 **Intel (`x64`)** 与 **Apple Silicon (`arm64`)**；Linux 支持 **DEB / RPM / AppImage** 及服务端 **v2rayA** |
+| **Android** | **NekoBox** / **Karing** / **Hiddify** | ⚠️ **安全警告**：**NekoBox for Android 不建议在 Google Play 下载**（商店内存在第三方风险包），请仅通过 GitHub 官方仓库获取 APK |
+| **iOS / macOS App Store** | **Sing-box (SFI)** / **Shadowrocket** / **Stash** / **Surge 5** | Sing-box 与 Karing 在外区 App Store 免费；Shadowrocket ($2.99)、Stash ($3.99)、Quantumult X 与 Surge 5 属付费买断或订阅制工具 |
+| **OpenWrt / ImmortalWrt 软路由** | **HomeProxy** / **PassWall2** / **Nikki** / **OpenClash** | **HomeProxy** 为路由器原生 Sing-box 插件；**Nikki** 面向 OpenWrt ≥ 24.10 Mihomo 环境；**PassWall2** 兼顾 Xray 与 Sing-box |
+
+> ⚠️ **桌面生态维护提醒**：原 **Mihomo Party** 存在维护停滞或分支切换情况，无论选用 Sing-box 还是 Mihomo 客户端，都建议优先选择仍在持续发布安全补丁的项目，并搭配 **[42 家机场品牌全库](/brands/)** 中支持通用订阅与 Hysteria 2 / VLESS 的专线节点。
 
 ---
 

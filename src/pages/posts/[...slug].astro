@@ -39,6 +39,7 @@ import Image from "../../components/atoms/Image/Image.astro";
 import Encryptor from "../../components/features/auth/Encryptor.astro";
 import { profileConfig, siteConfig } from "../../config";
 import { formatDateToYYYYMMDD } from "../../utils/date-utils";
+import RedirectLayout from "../../layouts/RedirectLayout.astro";
 
 export async function getStaticPaths() {
 	const blogEntries = await getSortedPosts();
@@ -110,27 +111,34 @@ export async function getStaticPaths() {
 
 const { entry, isRedirect = false, targetUrl = "" } = Astro.props;
 
-if (isRedirect && targetUrl) {
-	return Astro.redirect(targetUrl, 301);
-}
+let Content: any = null;
+let headings: any[] = [];
+let remarkPluginFrontmatter: any = { words: 0, minutes: 0 };
+let relatedPosts: any[] = [];
+let cover: any = {};
+let coverSrc = "";
+let posterCoverUrl = "";
+let ogCoverUrl = "";
+let posterAvatarUrl = "";
+let isEncrypted = false;
+let publicDescription = "";
+let jsonLd: any = {};
 
-const { Content, headings, remarkPluginFrontmatter } = await renderPostContent(
-	entry,
-	{ target: "page", site: Astro.site ?? siteConfig.siteURL },
-);
+if (!isRedirect) {
+	const rendered = await renderPostContent(
+		entry,
+		{ target: "page", site: Astro.site ?? siteConfig.siteURL },
+	);
+	Content = rendered.Content;
+	headings = rendered.headings;
+	remarkPluginFrontmatter = rendered.remarkPluginFrontmatter;
 
-// 获取相关文章
-const relatedPosts = relatedPostsConfig.enable
-	? await getRelatedPosts(entry, relatedPostsConfig.maxCount)
-	: [];
+	// 获取相关文章
+	relatedPosts = relatedPostsConfig.enable
+		? await getRelatedPosts(entry, relatedPostsConfig.maxCount)
+		: [];
 
-	let coverSrc = "";
-	let posterCoverUrl = "";
-	let ogCoverUrl = "";
-	let posterAvatarUrl = "";
-	let jsonLd: any = {};
-
-	const cover = await resolvePostCoverSource(entry.data, {
+	cover = await resolvePostCoverSource(entry.data, {
 		contentFilePath: entry.filePath,
 		basePath: getFileDirFromPath(entry.filePath || ""),
 		identity: entry.id,
@@ -198,8 +206,8 @@ const relatedPosts = relatedPostsConfig.enable
 		}
 	}
 
-	const isEncrypted = !!(entry.data.encrypted && entry.data.password);
-	const publicDescription = getPostPublicDescription(
+	isEncrypted = !!(entry.data.encrypted && entry.data.password);
+	publicDescription = getPostPublicDescription(
 		entry.data,
 		entry.data.title,
 	);
@@ -324,8 +332,17 @@ const relatedPosts = relatedPostsConfig.enable
 		"@context": "https://schema.org",
 		"@graph": graphItems,
 	};
+}
 ---
 
+{
+	isRedirect ? (
+		<RedirectLayout
+			title={entry.data.title}
+			targetUrl={targetUrl}
+			description={entry.data.description}
+		/>
+	) : (
 <MainGridLayout
 	banner={coverSrc}
 	title={entry.data.title}
@@ -544,3 +561,5 @@ const relatedPosts = relatedPostsConfig.enable
 		)
 	}
 </MainGridLayout>
+	)
+}
