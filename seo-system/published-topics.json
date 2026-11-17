@@ -94,5 +94,13 @@
     "title": "Sing-box 规则引擎与 TProxy 透明代理深度指南：全平台极简部署与企业级分流",
     "date": "2026-11-13T08:59:07.518Z",
     "category": "客户端配置"
+  },
+  {
+    "silo": "tutorials",
+    "slug": "shadowrocket-rule-provider-sub-ruleset",
+    "permalink": "/tutorials/shadowrocket-rule-provider-sub-ruleset/",
+    "title": "Shadowrocket 小火箭进阶配置全攻略：规则集订阅、HTTPS 解密与流媒体精准分流",
+    "date": "2026-11-17T09:59:34.828Z",
+    "category": "客户端配置"
   }
 ]
