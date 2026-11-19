@@ -51,6 +51,12 @@ const getServiceBadge = (status: ServiceStatus) => {
 };
 
 const maxDownload = detail.benchmarks?.reduce((acc, r) => Math.max(acc, r.downloadMbps), 1) || 550;
+
+const getLatColor = (latencyMs: number) => {
+	if (latencyMs <= 50) return "text-emerald-400";
+	if (latencyMs <= 100) return "text-cyan-400";
+	return "text-amber-400";
+};
 ---
 
 <section
@@ -125,7 +131,7 @@ const maxDownload = detail.benchmarks?.reduce((acc, r) => Math.max(acc, r.downlo
 				<div class="space-y-2.5">
 					{detail.benchmarks.map((row) => {
 						const pct = Math.max(6, Math.round((row.downloadMbps / maxDownload) * 100));
-						const latColor = row.latencyMs <= 50 ? "text-emerald-400" : row.latencyMs <= 100 ? "text-cyan-400" : "text-amber-400";
+						const latColor = getLatColor(row.latencyMs);
 						return (
 							<div class="space-y-1">
 								<div class="flex items-center justify-between text-xs font-mono">

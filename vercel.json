@@ -1301,6 +1301,26 @@
 			"permanent": true
 		},
 		{
+			"source": "/posts/tutorials-shadowrocket-rule-provider-sub-ruleset",
+			"destination": "/tutorials/shadowrocket-rule-provider-sub-ruleset/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tutorials-shadowrocket-rule-provider-sub-ruleset/",
+			"destination": "/tutorials/shadowrocket-rule-provider-sub-ruleset/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tutorials-sing-box-inbound-tproxy-routing-rules",
+			"destination": "/tutorials/sing-box-inbound-tproxy-routing-rules/",
+			"permanent": true
+		},
+		{
+			"source": "/posts/tutorials-sing-box-inbound-tproxy-routing-rules/",
+			"destination": "/tutorials/sing-box-inbound-tproxy-routing-rules/",
+			"permanent": true
+		},
+		{
 			"source": "/posts/v2ray-free-nodes-vmess-vless-protocol-guide",
 			"destination": "/recommend/v2ray-free-nodes/",
 			"permanent": true

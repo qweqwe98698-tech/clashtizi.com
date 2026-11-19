@@ -249,6 +249,16 @@ export default defineConfig({
 				if (match && customPermalinkSlugs.has(match[1])) {
 					return false;
 				}
+				// 排除 404 页面
+				if (/\/404\/?$/.test(page)) return false;
+				// 排除未启用的演示/占位功能路由及演示相册
+				if (/\/(albums|ai-tools|anime|devices|diary|friends|projects|skills|timeline)\b/i.test(page)) {
+					return false;
+				}
+				// 排除数字分页路由 (/2/, /3/ 等)，使抓取预算完全集中于核心内容
+				if (/\/\d+\/?$/.test(page)) {
+					return false;
+				}
 				return true;
 			},
 			serialize(item) {

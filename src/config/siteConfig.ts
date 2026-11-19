@@ -5,8 +5,8 @@ const SITE_LANG = "zh_CN"; // 语言代码，简体中文
 
 export const siteConfig: SiteConfig = {
 	title: "Clash梯子网",
-	subtitle: "2026 高速稳定机场推荐与科学上网配置指南",
-	siteURL: "https://clashtizi.com/", // 请替换为你的站点URL，以斜杠结尾
+	subtitle: "2026 高速稳定梯子推荐、翻墙机场排行榜与科学上网配置指南",
+	siteURL: "https://clashtizi.homes/", // 请替换为你的站点URL，以斜杠结尾
 	siteStartDate: "2025-01-01", // 站点开始运行日期，用于站点统计组件计算运行天数
 	timeZone: "Asia/Shanghai", // 文章日期使用的 IANA 时区，可改为 Asia/Tokyo、Europe/Berlin 等
 
@@ -19,15 +19,15 @@ export const siteConfig: SiteConfig = {
 
 	// 特色页面开关配置（关闭未使用的页面有助于提升 SEO，关闭后请记得在 navbarConfig 中移除对应链接）
 	featurePages: {
-		anime: true, // 番剧页面开关
-		diary: true, // 日记页面开关
-		friends: true, // 友链页面开关
-		projects: true, // 项目页面开关
-		skills: true, // 技能页面开关
-		timeline: true, // 时间线页面开关
-		albums: true, // 相册页面开关
-		devices: true, // 设备页面开关
-		aiTools: true, // AI 工具页面开关
+		anime: false, // 番剧页面开关
+		diary: false, // 日记页面开关
+		friends: false, // 友链页面开关
+		projects: false, // 项目页面开关
+		skills: false, // 技能页面开关
+		timeline: false, // 时间线页面开关
+		albums: false, // 相册页面开关
+		devices: false, // 设备页面开关
+		aiTools: false, // AI 工具页面开关
 	},
 
 	// 顶栏标题配置

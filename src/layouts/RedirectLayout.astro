@@ -11,7 +11,7 @@ interface Props {
 const { title, targetUrl, description } = Astro.props;
 const siteUrl = Astro.site
 	? Astro.site.toString()
-	: (siteConfig.siteURL || "https://clashtizi.com");
+	: (siteConfig.siteURL || "https://clashtizi.homes");
 const canonicalUrl = new URL(targetUrl, siteUrl).href;
 const finalDescription = getSafeSeoDescription(description, targetUrl, title);
 ---

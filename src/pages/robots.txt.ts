@@ -1,6 +1,6 @@
 import type { APIRoute } from "astro";
 
-const siteUrl = import.meta.env.SITE || "https://clashtizi.com/";
+const siteUrl = import.meta.env.SITE || "https://clashtizi.homes/";
 
 const robotsTxt = `
 User-agent: Googlebot
